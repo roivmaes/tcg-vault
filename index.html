@@ -24,24 +24,17 @@
             stats: ['Rajdhani', 'sans-serif'],
           },
           colors: {
-            crimson: {
-              50: '#fff1f2',
-              100: '#ffe4e6',
-              200: '#fecdd3',
-              300: '#fda4af',
-              400: '#fb7185',
-              500: '#f43f5e',
-              600: '#e11d48',
-              700: '#be123c',
-              800: '#9f1239',
-              900: '#881337',
-              950: '#4c0519',
-            },
-            dark: {
-              card: '#0a0a0c',
-              panel: '#101014',
-              surface: '#15151b',
-              border: 'rgba(255, 255, 255, 0.08)',
+            cyber: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
             },
             tcg: {
               normal: '#d4a359',
@@ -53,12 +46,11 @@
               xyz: '#0f172a',
               link: '#0284c7',
               ritual: '#38bdf8',
-              crimson: '#e11d48'
             }
           },
           boxShadow: {
-            'glow-crimson': '0 0 25px -4px rgba(225, 29, 72, 0.45)',
-            'glow-card': '0 12px 30px -10px rgba(0, 0, 0, 0.95), 0 0 15px rgba(225, 29, 72, 0.25)',
+            'glow-cyan': '0 0 25px -4px rgba(6, 182, 212, 0.5)',
+            'glow-blue': '0 0 25px -4px rgba(59, 130, 246, 0.45)',
           }
         }
       }
@@ -66,13 +58,13 @@
   </script>
 
   <style>
-    /* ATMÓSFERA CRIMSON CYBERPUNK & DARK CARBON */
+    /* ATMÓSFERA NEO-CYAN & ELECTRIC BLUE (MASTER DUEL / STEAM AAA) */
     body {
-      background-color: #050507;
+      background-color: #060911;
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(225, 29, 72, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 85% 20%, rgba(159, 18, 57, 0.09) 0%, transparent 45%),
-        radial-gradient(circle at 50% 85%, rgba(225, 29, 72, 0.08) 0%, transparent 55%),
+        radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(14, 165, 233, 0.08) 0%, transparent 55%),
         linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px, 28px 28px;
@@ -86,20 +78,20 @@
     .tcg-card {
       transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease, border-color 0.28s ease;
       transform-style: preserve-3d;
-      background: #09090c;
+      background: #090e17;
     }
     .tcg-card:hover {
-      box-shadow: 0 24px 45px -10px rgba(0, 0, 0, 0.98), 0 0 25px rgba(225, 29, 72, 0.35);
-      border-color: rgba(225, 29, 72, 0.6) !important;
+      box-shadow: 0 24px 45px -10px rgba(0, 0, 0, 0.98), 0 0 25px rgba(6, 182, 212, 0.35);
+      border-color: rgba(6, 182, 212, 0.6) !important;
     }
     .foil-overlay {
       background: linear-gradient(
         125deg,
         transparent 0%,
         rgba(255, 255, 255, 0.08) 25%,
-        rgba(255, 70, 100, 0.25) 45%,
-        rgba(180, 0, 60, 0.25) 55%,
-        rgba(255, 200, 220, 0.2) 75%,
+        rgba(34, 211, 238, 0.25) 45%,
+        rgba(59, 130, 246, 0.25) 55%,
+        rgba(165, 243, 252, 0.2) 75%,
         transparent 100%
       );
       mix-blend-mode: color-dodge;
@@ -130,51 +122,51 @@
       transform: rotateY(180deg);
     }
 
-    /* LÍNEA DE LUZ BRILLANTE EN EL HEADER - ROJO CRIMSON NEÓN */
+    /* LÍNEA DE LUZ BRILLANTE EN EL HEADER - CIAN & AZUL ELÉCTRICO */
     .header-light-bar {
-      background: linear-gradient(90deg, transparent 0%, rgba(225, 29, 72, 0.5) 20%, rgba(244, 63, 94, 0.95) 50%, rgba(159, 18, 57, 0.6) 80%, transparent 100%);
-      box-shadow: 0 0 12px rgba(225, 29, 72, 0.8);
+      background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.5) 20%, rgba(6, 182, 212, 0.95) 50%, rgba(14, 165, 233, 0.6) 80%, transparent 100%);
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.8);
     }
 
     /* INDICADOR DE PESTAÑA ACTIVA */
     .nav-tab-active {
-      background: linear-gradient(180deg, rgba(225, 29, 72, 0.25) 0%, rgba(225, 29, 72, 0.06) 100%);
-      color: #fda4af;
-      border-color: rgba(225, 29, 72, 0.7);
-      box-shadow: 0 0 20px -3px rgba(225, 29, 72, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      background: linear-gradient(180deg, rgba(6, 182, 212, 0.22) 0%, rgba(6, 182, 212, 0.05) 100%);
+      color: #67e8f9;
+      border-color: rgba(6, 182, 212, 0.7);
+      box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
     }
 
-    /* EFECTO CRISTAL GLASSMORPHISM - DARK CARBON SURFACE */
+    /* EFECTO CRISTAL GLASSMORPHISM - DEEP CYBER BLUE */
     .glass-panel {
-      background: rgba(12, 12, 16, 0.75);
+      background: rgba(10, 16, 26, 0.75);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    /* SCROLLBAR MODERNA CRIMSON */
+    /* SCROLLBAR MODERNA CIAN */
     ::-webkit-scrollbar {
       width: 7px;
       height: 7px;
     }
     ::-webkit-scrollbar-track {
-      background: #050507;
+      background: #060911;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1c1c24;
+      background: #152238;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #e11d48;
+      background: #06b6d4;
     }
   </style>
 </head>
-<body class="text-gray-100 min-h-screen flex flex-col font-sans selection:bg-rose-600 selection:text-white">
+<body class="text-gray-100 min-h-screen flex flex-col font-sans selection:bg-cyan-500 selection:text-black">
 
   <!-- ======================================================== -->
-  <!-- HEADER REDISEÑADO PREMIUM (CRIMSON CYBERPUNK)             -->
+  <!-- HEADER REDISEÑADO PREMIUM (NEO-CYAN ELECTRIC BLUE)        -->
   <!-- ======================================================== -->
-  <header class="sticky top-0 z-50 bg-[#07070a]/92 backdrop-blur-2xl border-b border-white/[0.08] shadow-[0_10px_35px_-10px_rgba(0,0,0,0.95)]">
+  <header class="sticky top-0 z-50 bg-[#060a14]/92 backdrop-blur-2xl border-b border-white/[0.08] shadow-[0_10px_35px_-10px_rgba(0,0,0,0.95)]">
     
     <!-- Línea luminosa de haz de luz en el borde superior -->
     <div class="h-[2px] w-full header-light-bar"></div>
@@ -186,21 +178,21 @@
         <div class="flex items-center gap-4 flex-shrink-0">
           <div class="flex items-center gap-3.5 cursor-pointer group" onclick="switchMainTab('inventory')">
             
-            <!-- Emblema Crimson Cyberpunk con Halo Rubí -->
+            <!-- Emblema Cyberpunk con Halo Cian / Zafiro -->
             <div class="relative flex-shrink-0">
-              <div class="absolute -inset-1 bg-gradient-to-r from-rose-600 via-red-500 to-rose-700 rounded-xl blur-md opacity-40 group-hover:opacity-85 transition duration-300"></div>
-              <div class="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#180a0e] via-[#12070a] to-[#08080c] border border-rose-500/40 p-0.5 flex items-center justify-center shadow-xl">
-                <i data-lucide="flame" class="w-5 h-5 text-rose-500 group-hover:text-rose-400 transition-colors duration-300 drop-shadow-[0_0_10px_rgba(244,63,94,0.9)]"></i>
+              <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-sky-400 to-blue-600 rounded-xl blur-md opacity-40 group-hover:opacity-85 transition duration-300"></div>
+              <div class="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#0c1929] via-[#09121f] to-[#050811] border border-cyan-500/40 p-0.5 flex items-center justify-center shadow-xl">
+                <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300 drop-shadow-[0_0_10px_rgba(6,182,212,0.9)]"></i>
               </div>
             </div>
 
             <!-- Título & Subtítulo (Espaciado y alineación perfectos) -->
             <div class="flex flex-col justify-center">
               <div class="flex items-center gap-2 whitespace-nowrap">
-                <span class="text-xl sm:text-2xl font-black font-display tracking-wider bg-gradient-to-r from-white via-rose-100 to-rose-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(225,29,72,0.35)] leading-tight">
+                <span class="text-xl sm:text-2xl font-black font-display tracking-wider bg-gradient-to-r from-white via-cyan-100 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(6,182,212,0.35)] leading-tight">
                   ROIVMAES VAULT
                 </span>
-                <span class="text-[9px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-400 border border-rose-500/40 shadow-glow-crimson self-center">
+                <span class="text-[9px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/40 shadow-glow-cyan self-center">
                   PRO
                 </span>
               </div>
@@ -210,21 +202,21 @@
         </div>
 
         <!-- NAVEGACIÓN PRINCIPAL: PESTAÑAS ESTILO CONSOLA -->
-        <nav class="hidden md:flex items-center p-1.5 bg-[#0e0e13]/90 rounded-2xl border border-white/[0.08] shadow-inner flex-shrink-0">
+        <nav class="hidden md:flex items-center p-1.5 bg-[#0a111d]/90 rounded-2xl border border-white/[0.08] shadow-inner flex-shrink-0">
           <button id="tab-btn-inventory" onclick="switchMainTab('inventory')" class="nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border whitespace-nowrap">
             <i data-lucide="archive" class="w-4 h-4"></i>
             <span>Colección</span>
             <span class="px-1.5 py-0.2 rounded-full bg-black/60 text-gray-300 text-[10px] font-mono">296</span>
           </button>
           <button id="tab-btn-decks" onclick="switchMainTab('decks')" class="flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-white transition-all border border-transparent whitespace-nowrap">
-            <i data-lucide="swords" class="w-4 h-4 text-rose-400"></i>
+            <i data-lucide="swords" class="w-4 h-4 text-cyan-400"></i>
             <span>Decks Listos</span>
-            <span id="header-deck-count-badge" class="px-1.5 py-0.2 rounded-full bg-rose-500/20 text-rose-300 text-[10px] font-bold">3</span>
+            <span id="header-deck-count-badge" class="px-1.5 py-0.2 rounded-full bg-cyan-500/20 text-cyan-300 text-[10px] font-bold">3</span>
           </button>
           <button id="tab-btn-builder" onclick="switchMainTab('builder')" class="flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-white transition-all border border-transparent whitespace-nowrap">
-            <i data-lucide="hammer" class="w-4 h-4 text-rose-400"></i>
+            <i data-lucide="hammer" class="w-4 h-4 text-cyan-400"></i>
             <span>Deck Builder</span>
-            <span class="px-1.5 py-0.2 rounded-full bg-rose-500/20 text-rose-300 text-[9px] font-black uppercase tracking-wider">PRO</span>
+            <span class="px-1.5 py-0.2 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] font-black uppercase tracking-wider">PRO</span>
           </button>
         </nav>
 
@@ -232,29 +224,29 @@
         <div class="flex items-center gap-2.5 flex-shrink-0">
           
           <!-- Mini Widget de Cartera en el Header -->
-          <div class="hidden lg:flex items-center gap-3 px-3 py-1.5 rounded-xl bg-[#0e0e14] border border-white/[0.08] shadow-inner">
+          <div class="hidden lg:flex items-center gap-3 px-3 py-1.5 rounded-xl bg-[#09121f] border border-white/[0.08] shadow-inner">
             <div class="flex items-center gap-1.5 text-xs whitespace-nowrap">
-              <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
               <span class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Cartera:</span>
-              <span id="header-quick-total-value" class="font-bold font-stats text-rose-400 text-sm">$73.99 USD</span>
+              <span id="header-quick-total-value" class="font-bold font-stats text-cyan-300 text-sm">$73.99 USD</span>
             </div>
           </div>
 
           <!-- Switcher móvil de tabs -->
-          <div class="flex md:hidden items-center p-1 bg-[#0e0e14] rounded-xl border border-white/10 text-xs">
-            <button onclick="switchMainTab('inventory')" id="mob-tab-inv" class="px-2.5 py-1 rounded-lg bg-rose-600 text-white font-bold">Cartas</button>
+          <div class="flex md:hidden items-center p-1 bg-[#09121f] rounded-xl border border-white/10 text-xs">
+            <button onclick="switchMainTab('inventory')" id="mob-tab-inv" class="px-2.5 py-1 rounded-lg bg-cyan-600 text-white font-bold">Cartas</button>
             <button onclick="switchMainTab('decks')" id="mob-tab-decks" class="px-2.5 py-1 rounded-lg text-gray-400 font-bold">Decks</button>
             <button onclick="switchMainTab('builder')" id="mob-tab-builder" class="px-2.5 py-1 rounded-lg text-gray-400 font-bold">Builder</button>
           </div>
 
           <!-- Botón de Sincronizar -->
-          <button id="btn-sync" onclick="syncWithGoogleSheet()" class="flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-xl bg-[#121218] hover:bg-[#1c1c24] text-gray-200 hover:text-white border border-white/10 hover:border-rose-500/50 transition-all shadow-md group whitespace-nowrap" title="Sincronizar cambios desde el Google Sheet">
-            <i data-lucide="refresh-cw" id="sync-icon" class="w-3.5 h-3.5 text-rose-400 group-hover:rotate-180 transition-transform duration-500"></i>
+          <button id="btn-sync" onclick="syncWithGoogleSheet()" class="flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-xl bg-[#0c1829] hover:bg-[#122238] text-gray-200 hover:text-white border border-white/10 hover:border-cyan-400/50 transition-all shadow-md group whitespace-nowrap" title="Sincronizar cambios desde el Google Sheet">
+            <i data-lucide="refresh-cw" id="sync-icon" class="w-3.5 h-3.5 text-cyan-300 group-hover:rotate-180 transition-transform duration-500"></i>
             <span class="hidden sm:inline">Sincronizar</span>
           </button>
 
           <!-- Enlace al Google Sheet Original -->
-          <a href="https://docs.google.com/spreadsheets/d/1KXhGXwg2Ab5pvTjSDBGrOR9-4KYmvnEceJsUCBaY9NA/edit?gid=0#gid=0" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-xl bg-rose-950/40 text-rose-300 border border-rose-800/60 hover:bg-rose-900/50 transition shadow-md whitespace-nowrap">
+          <a href="https://docs.google.com/spreadsheets/d/1KXhGXwg2Ab5pvTjSDBGrOR9-4KYmvnEceJsUCBaY9NA/edit?gid=0#gid=0" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-xl bg-cyan-950/40 text-cyan-200 border border-cyan-800/60 hover:bg-cyan-900/50 transition shadow-md whitespace-nowrap">
             <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i>
             <span class="hidden xl:inline">Google Sheet</span>
           </a>
@@ -270,12 +262,12 @@
   <div id="section-inventory" class="block">
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-3 w-full">
       
-      <!-- HERO CARDS DE ESTADÍSTICAS (CRIMSON CARBON EDITION) -->
+      <!-- HERO CARDS DE ESTADÍSTICAS (NEO-CYAN EDITION) -->
       <div class="grid grid-cols-2 sm:grid-cols-5 gap-3.5 mb-7">
         
         <div class="glass-panel rounded-2xl p-4 flex items-center gap-3.5 shadow-xl hover:border-white/20 transition group">
           <div class="p-3 rounded-xl bg-white/[0.04] text-gray-300 border border-white/10 group-hover:scale-110 transition-transform">
-            <i data-lucide="sparkles" class="w-5 h-5 text-rose-400"></i>
+            <i data-lucide="sparkles" class="w-5 h-5 text-cyan-300"></i>
           </div>
           <div>
             <div class="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Cartas</div>
@@ -303,23 +295,23 @@
           </div>
         </div>
 
-        <div class="rounded-2xl p-4 flex items-center gap-3.5 shadow-xl bg-gradient-to-br from-[#2a060f] via-[#16080c] to-[#0c0c10] border border-rose-500/40 shadow-glow-crimson hover:border-rose-400 transition group">
-          <div class="p-3 rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/40 group-hover:scale-110 transition-transform">
+        <div class="rounded-2xl p-4 flex items-center gap-3.5 shadow-xl bg-gradient-to-br from-[#092540] via-[#0a1526] to-[#0c0c10] border border-cyan-400/40 shadow-glow-cyan hover:border-cyan-300 transition group">
+          <div class="p-3 rounded-xl bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 group-hover:scale-110 transition-transform">
             <i data-lucide="dollar-sign" class="w-5 h-5"></i>
           </div>
           <div>
-            <div class="text-[10px] text-rose-300 uppercase font-bold tracking-wider">Valor Colección</div>
+            <div class="text-[10px] text-cyan-200 uppercase font-bold tracking-wider">Valor Colección</div>
             <div id="stat-total-value" class="text-2xl font-black font-stats text-white">$0.00</div>
           </div>
         </div>
 
         <div class="glass-panel rounded-2xl p-4 flex items-center gap-3.5 shadow-xl hover:border-white/20 transition col-span-2 sm:col-span-1 group">
           <div class="p-3 rounded-xl bg-white/[0.04] text-gray-300 border border-white/10 group-hover:scale-110 transition-transform">
-            <i data-lucide="coins" class="w-5 h-5 text-rose-400"></i>
+            <i data-lucide="coins" class="w-5 h-5 text-cyan-300"></i>
           </div>
           <div>
             <div class="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Valor Filtrado</div>
-            <div id="stat-filtered-value" class="text-2xl font-black font-stats text-rose-300">$0.00</div>
+            <div id="stat-filtered-value" class="text-2xl font-black font-stats text-cyan-200">$0.00</div>
           </div>
         </div>
 
@@ -332,13 +324,13 @@
         <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
           
           <div class="relative w-full md:w-[420px]">
-            <i data-lucide="search" class="w-4 h-4 text-rose-500 absolute left-4 top-1/2 -translate-y-1/2"></i>
+            <i data-lucide="search" class="w-4 h-4 text-cyan-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
             <input 
               type="text" 
               id="search-input" 
               oninput="applyFilters()" 
               placeholder="Buscar por nombre, efecto, arquetipo o ID..." 
-              class="w-full pl-11 pr-10 py-3 bg-[#0d0d12] border border-white/10 rounded-2xl text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-rose-500 focus:ring-2 focus:ring-rose-500/25 transition-all shadow-inner"
+              class="w-full pl-11 pr-10 py-3 bg-[#091322] border border-white/10 rounded-2xl text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/25 transition-all shadow-inner"
             >
             <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
               <i data-lucide="x" class="w-4 h-4"></i>
@@ -347,8 +339,8 @@
 
           <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
             <!-- Pestañas de Categoría del Sheet -->
-            <div class="flex items-center p-1 bg-[#0d0d12] rounded-2xl border border-white/10 overflow-x-auto shadow-inner">
-              <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-4 py-2 text-xs font-bold rounded-xl text-white bg-rose-600 transition-all whitespace-nowrap shadow-md shadow-rose-600/30">
+            <div class="flex items-center p-1 bg-[#091322] rounded-2xl border border-white/10 overflow-x-auto shadow-inner">
+              <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-4 py-2 text-xs font-bold rounded-xl text-white bg-cyan-600 transition-all whitespace-nowrap shadow-md shadow-cyan-600/30">
                 Todas
               </button>
               <button onclick="setCategoryFilter('Decks y Cajas')" data-cat="Decks y Cajas" class="cat-pill px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
@@ -360,8 +352,8 @@
             </div>
 
             <!-- TOGGLE DE VISTA: CUADRÍCULA vs TABLA -->
-            <div class="flex items-center p-1 bg-[#0d0d12] rounded-2xl border border-white/10 shrink-0 shadow-inner">
-              <button onclick="setViewMode('grid')" id="btn-view-grid" class="p-2 rounded-xl bg-[#1e1e28] text-rose-400 transition" title="Vista Cuadrícula">
+            <div class="flex items-center p-1 bg-[#091322] rounded-2xl border border-white/10 shrink-0 shadow-inner">
+              <button onclick="setViewMode('grid')" id="btn-view-grid" class="p-2 rounded-xl bg-[#1e1e28] text-cyan-300 transition" title="Vista Cuadrícula">
                 <i data-lucide="grid-3x3" class="w-4 h-4"></i>
               </button>
               <button onclick="setViewMode('table')" id="btn-view-table" class="p-2 rounded-xl text-gray-400 hover:text-white transition" title="Vista Tabla">
@@ -376,7 +368,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3.5 border-t border-white/[0.08]">
           <div>
             <label class="block text-[11px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Tipo de Carta</label>
-            <select id="filter-type" onchange="applyFilters()" class="w-full bg-[#0d0d12] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-rose-500 focus:outline-none transition">
+            <select id="filter-type" onchange="applyFilters()" class="w-full bg-[#091322] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-cyan-400 focus:outline-none transition">
               <option value="all">Todos los tipos</option>
               <option value="monster">Monstruos (Todos)</option>
               <option value="normal">Monstruos Normales</option>
@@ -392,7 +384,7 @@
 
           <div>
             <label class="block text-[11px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Atributo</label>
-            <select id="filter-attribute" onchange="applyFilters()" class="w-full bg-[#0d0d12] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-rose-500 focus:outline-none transition">
+            <select id="filter-attribute" onchange="applyFilters()" class="w-full bg-[#091322] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-cyan-400 focus:outline-none transition">
               <option value="all">Cualquier atributo</option>
               <option value="LIGHT">☀️ Luz (LIGHT)</option>
               <option value="DARK">🌑 Oscuridad (DARK)</option>
@@ -406,7 +398,7 @@
 
           <div>
             <label class="block text-[11px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Rango de Precio</label>
-            <select id="filter-price-range" onchange="applyFilters()" class="w-full bg-[#0d0d12] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-rose-500 focus:outline-none transition">
+            <select id="filter-price-range" onchange="applyFilters()" class="w-full bg-[#091322] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-cyan-400 focus:outline-none transition">
               <option value="all">Todos los precios</option>
               <option value="budget">Económicas (&lt; $0.20 USD)</option>
               <option value="mid">Intermedias ($0.20 - $1.00 USD)</option>
@@ -416,7 +408,7 @@
 
           <div>
             <label class="block text-[11px] font-bold text-gray-400 mb-1.5 uppercase tracking-wider">Ordenar por</label>
-            <select id="sort-by" onchange="applyFilters()" class="w-full bg-[#0d0d12] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-rose-500 focus:outline-none transition">
+            <select id="sort-by" onchange="applyFilters()" class="w-full bg-[#091322] border border-white/10 rounded-xl py-2 px-3 text-xs text-gray-200 focus:border-cyan-400 focus:outline-none transition">
               <option value="price_desc">💰 Mayor Costo ($$ → $)</option>
               <option value="price_asc">💰 Menor Costo ($ → $$)</option>
               <option value="id_asc">ID Original (Google Sheet)</option>
@@ -435,12 +427,12 @@
     <!-- ÁREA PRINCIPAL DE CARTAS (GRID vs TABLA) -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
       <div id="empty-state" class="hidden text-center py-24 glass-panel rounded-3xl">
-        <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-[#14141c] flex items-center justify-center text-rose-500 shadow-xl border border-white/10">
+        <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-[#0f1a2e] flex items-center justify-center text-cyan-400 shadow-xl border border-white/10">
           <i data-lucide="ghost" class="w-10 h-10"></i>
         </div>
         <h3 class="text-xl font-bold text-gray-200 mb-1">No se encontraron cartas</h3>
         <p class="text-sm text-gray-400 max-w-sm mx-auto mb-5">Intenta ajustar los filtros de búsqueda o categoría.</p>
-        <button onclick="resetFilters()" class="px-5 py-2.5 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-rose-600/30">
+        <button onclick="resetFilters()" class="px-5 py-2.5 bg-cyan-600 hover:bg-cyan-400 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-cyan-600/30">
           Restablecer Filtros
         </button>
       </div>
@@ -472,8 +464,8 @@
         <div id="pagination-info" class="text-xs text-gray-400 font-medium">
           Mostrando <span id="current-count" class="font-bold text-gray-100">0</span> de <span id="total-filtered-count" class="font-bold text-gray-100">0</span> cartas
         </div>
-        <button id="btn-load-more" onclick="loadMoreCards()" class="px-8 py-3 bg-[#101015] hover:bg-[#1a1a22] border border-white/10 hover:border-rose-500/50 text-gray-200 hover:text-white rounded-2xl text-sm font-bold transition-all shadow-xl flex items-center gap-2 group">
-          <i data-lucide="chevrons-down" class="w-4 h-4 text-rose-500 group-hover:translate-y-0.5 transition-transform"></i>
+        <button id="btn-load-more" onclick="loadMoreCards()" class="px-8 py-3 bg-[#0c1626] hover:bg-[#14223b] border border-white/10 hover:border-cyan-400/50 text-gray-200 hover:text-white rounded-2xl text-sm font-bold transition-all shadow-xl flex items-center gap-2 group">
+          <i data-lucide="chevrons-down" class="w-4 h-4 text-cyan-400 group-hover:translate-y-0.5 transition-transform"></i>
           <span>Cargar más cartas</span>
         </button>
       </div>
@@ -490,27 +482,27 @@
       <!-- SELECTOR DE DECK -->
       <div class="flex items-center justify-between flex-wrap gap-4 glass-panel p-4 rounded-3xl shadow-xl">
         <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-400 px-2">
-          <i data-lucide="folder-kanban" class="w-4 h-4 text-rose-500"></i>
+          <i data-lucide="folder-kanban" class="w-4 h-4 text-cyan-400"></i>
           <span>Selecciona tu Mazo:</span>
         </div>
         <div id="deck-selector-buttons" class="flex items-center gap-2.5 flex-wrap"></div>
       </div>
 
       <!-- HERO BANNER DEL DECK SELECCIONADO (CRIMSON CARBON) -->
-      <div id="deck-hero-card" class="bg-gradient-to-r from-[#18080c] via-[#10080b] to-[#09090d] border border-rose-500/30 rounded-3xl p-7 shadow-2xl relative overflow-hidden">
-        <div class="absolute -right-16 -top-16 w-80 h-80 bg-rose-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div id="deck-hero-card" class="bg-gradient-to-r from-[#0d1d36] via-[#091426] to-[#09090d] border border-cyan-400/30 rounded-3xl p-7 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
           <div class="space-y-3">
             <div class="flex items-center gap-2.5 flex-wrap">
-              <span id="deck-format-badge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40">
+              <span id="deck-format-badge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-cyan-400/20 text-cyan-200 border border-cyan-400/40">
                 Formato Edison (2010)
               </span>
               <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-200 border border-white/15 flex items-center gap-1.5">
-                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-rose-400"></i>
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-300"></i>
                 <span id="deck-completion-pill">43/43 Completo</span>
               </span>
-              <span class="px-3 py-1 rounded-full text-xs font-bold bg-rose-950/60 text-rose-300 border border-rose-500/40 flex items-center gap-1.5 shadow">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-950/60 text-cyan-200 border border-cyan-400/40 flex items-center gap-1.5 shadow">
                 <i data-lucide="dollar-sign" class="w-3.5 h-3.5"></i>
                 <span id="deck-cost-pill">Costo Total: $0.00 USD</span>
               </span>
@@ -526,15 +518,15 @@
           </div>
 
           <div class="flex flex-wrap lg:flex-col gap-2.5 shrink-0">
-            <button onclick="copyDeckList()" class="flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold transition shadow-lg shadow-rose-600/30">
+            <button onclick="copyDeckList()" class="flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-cyan-600 hover:bg-cyan-400 text-white text-xs font-bold transition shadow-lg shadow-cyan-600/30">
               <i data-lucide="copy" class="w-4 h-4"></i>
               <span>Copiar Lista</span>
             </button>
-            <button onclick="downloadYDK()" class="flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#14141c] hover:bg-[#1f1f2a] text-gray-200 hover:text-white border border-white/10 text-xs font-semibold transition">
-              <i data-lucide="download" class="w-4 h-4 text-rose-400"></i>
+            <button onclick="downloadYDK()" class="flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#0f1a2e] hover:bg-[#172744] text-gray-200 hover:text-white border border-white/10 text-xs font-semibold transition">
+              <i data-lucide="download" class="w-4 h-4 text-cyan-300"></i>
               <span>Descargar .YDK</span>
             </button>
-            <button onclick="editDeckInBuilder()" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-700/50 text-xs font-semibold transition">
+            <button onclick="editDeckInBuilder()" class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl bg-cyan-950/70 hover:bg-cyan-900 text-cyan-200 border border-cyan-700/50 text-xs font-semibold transition">
               <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
               <span>Editar en Builder</span>
             </button>
@@ -563,8 +555,8 @@
             <div class="text-[10px] uppercase font-bold text-purple-400">⬛ Extra Deck</div>
             <div id="deck-stat-extra" class="text-2xl font-black font-stats text-purple-300">0</div>
           </div>
-          <div class="bg-gradient-to-br from-[#2a060f] to-[#09090d] p-3.5 rounded-2xl border border-rose-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
-            <div class="text-[10px] uppercase font-bold text-rose-300">💰 Costo Deck</div>
+          <div class="bg-gradient-to-br from-[#092540] to-[#09090d] p-3.5 rounded-2xl border border-cyan-400/50 text-center col-span-2 sm:col-span-1 shadow-md">
+            <div class="text-[10px] uppercase font-bold text-cyan-200">💰 Costo Deck</div>
             <div id="deck-stat-cost-val" class="text-2xl font-black font-stats text-white">$0.00</div>
           </div>
         </div>
@@ -586,7 +578,7 @@
             </div>
             <div class="bg-[#080d1a] p-2.5 rounded-xl border border-white/[0.06]">
               <div class="text-[10px] text-gray-400">Nivel 7+ (Jefes)</div>
-              <div id="curve-high" class="font-black text-rose-400 font-stats text-lg">0</div>
+              <div id="curve-high" class="font-black text-cyan-300 font-stats text-lg">0</div>
             </div>
           </div>
         </div>
@@ -670,10 +662,10 @@
               type="text" 
               id="builder-deck-title" 
               value="Mi Mazo Personalizado #1" 
-              class="bg-[#0b0b10] border border-white/10 focus:border-rose-500 rounded-2xl px-4 py-2.5 text-base font-bold text-white focus:outline-none flex-1 font-display transition"
+              class="bg-[#0a1220] border border-white/10 focus:border-cyan-400 rounded-2xl px-4 py-2.5 text-base font-bold text-white focus:outline-none flex-1 font-display transition"
               placeholder="Nombre de tu Mazo..."
             >
-            <select id="builder-deck-format" class="bg-[#0b0b10] border border-white/10 text-xs text-gray-200 rounded-2xl px-3.5 py-2.5 focus:outline-none focus:border-rose-500 transition">
+            <select id="builder-deck-format" class="bg-[#0a1220] border border-white/10 text-xs text-gray-200 rounded-2xl px-3.5 py-2.5 focus:outline-none focus:border-cyan-400 transition">
               <option value="Avanzado / Actual">Formato Actual / Avanzado</option>
               <option value="Edison (2010)">Formato Edison (2010)</option>
               <option value="Casual / Amistoso">Casual / Amistoso</option>
@@ -682,15 +674,15 @@
         </div>
 
         <div class="flex items-center gap-2.5 flex-wrap shrink-0">
-          <button onclick="saveBuilderDeck()" class="flex items-center gap-2 px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold transition shadow-lg shadow-rose-600/30">
+          <button onclick="saveBuilderDeck()" class="flex items-center gap-2 px-5 py-3 rounded-2xl bg-cyan-600 hover:bg-cyan-400 text-white text-xs font-bold transition shadow-lg shadow-cyan-600/30">
             <i data-lucide="save" class="w-4 h-4"></i>
             <span>Guardar Mazo</span>
           </button>
-          <button onclick="exportBuilderYDK()" class="flex items-center gap-2 px-4 py-3 rounded-2xl bg-[#14141c] hover:bg-[#1f1f2a] text-gray-200 border border-white/10 text-xs font-semibold transition">
-            <i data-lucide="download" class="w-4 h-4 text-rose-400"></i>
+          <button onclick="exportBuilderYDK()" class="flex items-center gap-2 px-4 py-3 rounded-2xl bg-[#0f1a2e] hover:bg-[#172744] text-gray-200 border border-white/10 text-xs font-semibold transition">
+            <i data-lucide="download" class="w-4 h-4 text-cyan-300"></i>
             <span>Exportar .YDK</span>
           </button>
-          <button onclick="copyBuilderDeckList()" class="flex items-center gap-2 px-4 py-3 rounded-2xl bg-[#14141c] hover:bg-[#1f1f2a] text-gray-200 border border-white/10 text-xs font-semibold transition">
+          <button onclick="copyBuilderDeckList()" class="flex items-center gap-2 px-4 py-3 rounded-2xl bg-[#0f1a2e] hover:bg-[#172744] text-gray-200 border border-white/10 text-xs font-semibold transition">
             <i data-lucide="copy" class="w-4 h-4"></i>
             <span>Copiar</span>
           </button>
@@ -703,7 +695,7 @@
 
       <!-- MÉTRICAS EN VIVO -->
       <div class="grid grid-cols-2 sm:grid-cols-6 gap-3.5">
-        <div id="b-stat-box-main" class="glass-panel p-3.5 rounded-2xl border border-rose-500/40 text-center">
+        <div id="b-stat-box-main" class="glass-panel p-3.5 rounded-2xl border border-cyan-400/40 text-center">
           <div class="text-[10px] uppercase font-bold text-gray-400">Main Deck</div>
           <div class="text-2xl font-black font-stats text-white">
             <span id="b-main-count">0</span><span class="text-xs font-normal text-gray-400"> / 40-60</span>
@@ -732,8 +724,8 @@
           </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2a060f] via-[#15080c] to-[#0c0c10] p-3.5 rounded-2xl border border-rose-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
-          <div class="text-[10px] uppercase font-bold text-rose-300">💰 Costo Mazo</div>
+        <div class="bg-gradient-to-br from-[#092540] via-[#0a1526] to-[#0c0c10] p-3.5 rounded-2xl border border-cyan-400/50 text-center col-span-2 sm:col-span-1 shadow-md">
+          <div class="text-[10px] uppercase font-bold text-cyan-200">💰 Costo Mazo</div>
           <div id="b-cost-val" class="text-2xl font-black font-stats text-white">$0.00</div>
         </div>
       </div>
@@ -1360,11 +1352,11 @@
       container.innerHTML = allDecks.map((deck, idx) => {
         const isActive = idx === activeDeckIndex;
         const activeClass = isActive 
-          ? "bg-rose-600 text-white border-rose-500 shadow-glow-crimson" 
-          : "bg-[#0f0f15] hover:bg-[#1a1a24] text-gray-300 border-white/10";
+          ? "bg-cyan-600 text-white border-cyan-400 shadow-glow-cyan" 
+          : "bg-[#0f0f15] hover:bg-[#14223b] text-gray-300 border-white/10";
 
         const badgeBg = deck.tag_color === 'red'
-          ? 'bg-rose-950/70 text-rose-200 border-rose-500/40'
+          ? 'bg-cyan-950/70 text-rose-200 border-cyan-400/40'
           : (deck.tag_color === 'purple' 
             ? 'bg-purple-900/60 text-purple-200 border-purple-500/40' 
             : 'bg-amber-900/60 text-amber-200 border-amber-500/40');
@@ -1377,7 +1369,7 @@
             <i data-lucide="${deckIcon}" class="w-3.5 h-3.5"></i>
             <span>${deck.short_name || deck.name}</span>
             <span class="text-[9px] px-1.5 py-0.2 rounded border ${badgeBg}">${deck.format}</span>
-            <span class="text-[10px] font-bold font-stats text-rose-300 bg-black/60 px-2 py-0.5 rounded-lg">$${deckCost.toFixed(2)}</span>
+            <span class="text-[10px] font-bold font-stats text-cyan-200 bg-black/60 px-2 py-0.5 rounded-lg">$${deckCost.toFixed(2)}</span>
           </button>
         `;
       }).join('');
@@ -1643,7 +1635,7 @@
 
       const statBoxMain = document.getElementById('b-stat-box-main');
       if (mainTotal >= 40 && mainTotal <= 60) {
-        statBoxMain.className = "glass-panel p-3.5 rounded-2xl border border-rose-500 text-center shadow-glow-crimson";
+        statBoxMain.className = "glass-panel p-3.5 rounded-2xl border border-cyan-400 text-center shadow-glow-cyan";
       } else if (mainTotal > 60) {
         statBoxMain.className = "glass-panel p-3.5 rounded-2xl border border-red-500/80 text-center";
       } else {
