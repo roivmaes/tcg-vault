@@ -43,7 +43,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.48",
           "cardmarket": "0.43"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Judgment-Dragon-57774843"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Judgment%20Dragon"
       },
       {
         "name": "Lumina, Lightsworn Summoner",
@@ -70,7 +70,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Lumina,-Lightsworn-Summoner-95503687"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lumina%2C%20Lightsworn%20Summoner"
       },
       {
         "name": "Lyla, Lightsworn Sorceress",
@@ -97,7 +97,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.31",
           "cardmarket": "0.29"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Lyla,-Lightsworn-Sorceress-22624373"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lyla%2C%20Lightsworn%20Sorceress"
       },
       {
         "name": "Ryko, Lightsworn Hunter",
@@ -124,7 +124,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.26",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Ryko,-Lightsworn-Hunter-21502796"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ryko%2C%20Lightsworn%20Hunter"
       },
       {
         "name": "Wulf, Lightsworn Beast",
@@ -151,7 +151,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "1.14",
           "cardmarket": "0.98"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Wulf,-Lightsworn-Beast-58996430"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wulf%2C%20Lightsworn%20Beast"
       },
       {
         "name": "Celestia, Lightsworn Angel",
@@ -178,7 +178,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.34",
           "cardmarket": "0.21"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Celestia,-Lightsworn-Angel-94381039"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Celestia%2C%20Lightsworn%20Angel"
       },
       {
         "name": "Garoth, Lightsworn Warrior",
@@ -205,7 +205,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.13",
           "cardmarket": "0.06"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Garoth,-Lightsworn-Warrior-59019082"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Garoth%2C%20Lightsworn%20Warrior"
       },
       {
         "name": "Ehren, Lightsworn Monk",
@@ -232,7 +232,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.64",
           "cardmarket": "0.30"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Ehren,-Lightsworn-Monk-44178886"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ehren%2C%20Lightsworn%20Monk"
       },
       {
         "name": "Jain, Lightsworn Paladin",
@@ -259,7 +259,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.01",
           "cardmarket": "0.14"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Jain,-Lightsworn-Paladin-96235275"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jain%2C%20Lightsworn%20Paladin"
       },
       {
         "name": "Gragonith, Lightsworn Dragon",
@@ -286,7 +286,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.10",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Gragonith,-Lightsworn-Dragon-21785144"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gragonith%2C%20Lightsworn%20Dragon"
       },
       {
         "name": "Honest",
@@ -313,7 +313,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Honest-37742478"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Honest"
       },
       {
         "name": "Jinzo",
@@ -340,7 +340,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Jinzo-77585513"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
       },
       {
         "name": "Fabled Raven",
@@ -367,7 +367,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.13",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Fabled-Raven-47217354"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fabled%20Raven"
       },
       {
         "name": "Kuriboh",
@@ -394,7 +394,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.23",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Kuriboh-40640057"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Kuriboh"
       },
       {
         "name": "Nimble Momonga",
@@ -421,7 +421,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.22"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Nimble-Momonga-22567609"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Nimble%20Momonga"
       },
       {
         "name": "Mask of Darkness",
@@ -448,7 +448,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.06"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mask-of-Darkness-28933734"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mask%20of%20Darkness"
       },
       {
         "name": "Gearfried the Iron Knight",
@@ -475,7 +475,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.09",
           "cardmarket": "0.06"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Gearfried-the-Iron-Knight-423705"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gearfried%20the%20Iron%20Knight"
       },
       {
         "name": "Dark Valkyria",
@@ -502,7 +502,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.10",
           "cardmarket": "0.19"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Valkyria-83269557"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Valkyria"
       },
       {
         "name": "Twin-Headed Behemoth",
@@ -529,7 +529,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.11",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Twin-Headed-Behemoth-43586926"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Twin-Headed%20Behemoth"
       },
       {
         "name": "Spirit of the Harp",
@@ -556,7 +556,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.10",
           "cardmarket": "0.04"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Spirit-of-the-Harp-80770678"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Spirit%20of%20the%20Harp"
       },
       {
         "name": "Naturia Cliff",
@@ -583,7 +583,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.22",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Naturia-Cliff-33866130"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Cliff"
       },
       {
         "name": "Naturia Pumpkin",
@@ -610,7 +610,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.18"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Naturia-Pumpkin-96653775"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Pumpkin"
       },
       {
         "name": "Charge of the Light Brigade",
@@ -637,7 +637,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.15",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Charge-of-the-Light-Brigade-94886282"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20of%20the%20Light%20Brigade"
       },
       {
         "name": "Solar Recharge",
@@ -664,7 +664,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "2.40",
           "cardmarket": "1.29"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Solar-Recharge-691925"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solar%20Recharge"
       },
       {
         "name": "Monster Reincarnation",
@@ -691,7 +691,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Monster-Reincarnation-74848038"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reincarnation"
       },
       {
         "name": "Foolish Burial",
@@ -718,7 +718,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.13",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Foolish-Burial-81439173"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Foolish%20Burial"
       },
       {
         "name": "Mystical Space Typhoon",
@@ -745,7 +745,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mystical-Space-Typhoon-5318639"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mystical%20Space%20Typhoon"
       },
       {
         "name": "Book of Moon",
@@ -772,7 +772,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Book-of-Moon-14087893"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Book%20of%20Moon"
       },
       {
         "name": "Swords of Revealing Light",
@@ -799,7 +799,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Swords-of-Revealing-Light-72302403"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
       },
       {
         "name": "Pot of Avarice",
@@ -826,7 +826,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.56",
           "cardmarket": "0.49"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Pot-of-Avarice-67169062"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
       },
       {
         "name": "Card Destruction",
@@ -853,7 +853,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Card-Destruction-72892473"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Card%20Destruction"
       },
       {
         "name": "Dragged Down into the Grave",
@@ -880,7 +880,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dragged-Down-into-the-Grave-16435215"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dragged%20Down%20into%20the%20Grave"
       },
       {
         "name": "Mirror Force",
@@ -907,7 +907,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.65",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mirror-Force-44095762"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mirror%20Force"
       },
       {
         "name": "Bottomless Trap Hole",
@@ -934,7 +934,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.22",
           "cardmarket": "0.08"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Bottomless-Trap-Hole-29401950"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Bottomless%20Trap%20Hole"
       },
       {
         "name": "Compulsory Evacuation Device",
@@ -961,7 +961,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Compulsory-Evacuation-Device-94192409"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Compulsory%20Evacuation%20Device"
       },
       {
         "name": "Beckoning Light",
@@ -988,7 +988,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Beckoning-Light-16255442"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beckoning%20Light"
       },
       {
         "name": "Vanquishing Light",
@@ -1015,7 +1015,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.09",
           "cardmarket": "0.05"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Vanquishing-Light-32233746"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vanquishing%20Light"
       },
       {
         "name": "Mind Crush",
@@ -1042,7 +1042,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.24",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mind-Crush-15800838"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mind%20Crush"
       },
       {
         "name": "Stardust Dragon",
@@ -1069,7 +1069,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.67",
           "cardmarket": "0.65"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Stardust-Dragon-44508094"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Stardust%20Dragon"
       },
       {
         "name": "Naturia Beast",
@@ -1096,7 +1096,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.13"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Naturia-Beast-33198837"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Beast"
       },
       {
         "name": "Naturia Barkion",
@@ -1123,7 +1123,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.11",
           "cardmarket": "0.13"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Naturia-Barkion-2956282"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Barkion"
       }
     ]
   },
@@ -1171,7 +1171,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.48",
           "cardmarket": "0.55"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Reign-Beaux,-Overking-of-Dark-World-41406613"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Reign-Beaux%2C%20Overking%20of%20Dark%20World"
       },
       {
         "name": "Grapha, Dragon Lord of Dark World",
@@ -1198,7 +1198,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.16",
           "cardmarket": "0.14"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Grapha,-Dragon-Lord-of-Dark-World-34230233"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Lord%20of%20Dark%20World"
       },
       {
         "name": "Genta, Gateman of Dark World",
@@ -1225,7 +1225,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.33",
           "cardmarket": "0.31"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Genta,-Gateman-of-Dark-World-77895328"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Genta%2C%20Gateman%20of%20Dark%20World"
       },
       {
         "name": "Snoww, Unlight of Dark World",
@@ -1252,7 +1252,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.27",
           "cardmarket": "0.23"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Snoww,-Unlight-of-Dark-World-60228941"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Snoww%2C%20Unlight%20of%20Dark%20World"
       },
       {
         "name": "Sillva, Warlord of Dark World",
@@ -1279,7 +1279,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.05"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Sillva,-Warlord-of-Dark-World-32619583"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Sillva%2C%20Warlord%20of%20Dark%20World"
       },
       {
         "name": "Goldd, Wu-Lord of Dark World",
@@ -1306,7 +1306,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.15",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Goldd,-Wu-Lord-of-Dark-World-78004197"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Goldd%2C%20Wu-Lord%20of%20Dark%20World"
       },
       {
         "name": "Broww, Huntsman of Dark World",
@@ -1333,7 +1333,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.40",
           "cardmarket": "0.26"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Broww,-Huntsman-of-Dark-World-79126789"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Broww%2C%20Huntsman%20of%20Dark%20World"
       },
       {
         "name": "Beiige, Vanguard of Dark World",
@@ -1360,7 +1360,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Beiige,-Vanguard-of-Dark-World-33731070"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beiige%2C%20Vanguard%20of%20Dark%20World"
       },
       {
         "name": "Ceruli, Guru of Dark World",
@@ -1387,7 +1387,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.23",
           "cardmarket": "0.18"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Ceruli,-Guru-of-Dark-World-7623640"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ceruli%2C%20Guru%20of%20Dark%20World"
       },
       {
         "name": "Lucent, Netherlord of Dark World",
@@ -1414,7 +1414,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.23",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Lucent,-Netherlord-of-Dark-World-34968834"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lucent%2C%20Netherlord%20of%20Dark%20World"
       },
       {
         "name": "Latinum, Exarch of Dark World",
@@ -1441,7 +1441,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Latinum,-Exarch-of-Dark-World-15667446"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Latinum%2C%20Exarch%20of%20Dark%20World"
       },
       {
         "name": "Parl, Hermit of Dark World",
@@ -1468,7 +1468,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.11"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Parl,-Hermit-of-Dark-World-3289027"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Parl%2C%20Hermit%20of%20Dark%20World"
       },
       {
         "name": "Scarr, Scout of Dark World",
@@ -1495,7 +1495,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.06",
           "cardmarket": "0.03"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Scarr,-Scout-of-Dark-World-5498296"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Scarr%2C%20Scout%20of%20Dark%20World"
       },
       {
         "name": "Danger! Bigfoot!",
@@ -1522,7 +1522,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Danger!-Bigfoot!-43316238"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Bigfoot%21"
       },
       {
         "name": "Danger! Thunderbird!",
@@ -1549,7 +1549,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.22"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Danger!-Thunderbird!-90807199"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Thunderbird%21"
       },
       {
         "name": "Danger! Mothman!",
@@ -1576,7 +1576,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.38",
           "cardmarket": "0.06"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Danger!-Mothman!-52350806"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Mothman%21"
       },
       {
         "name": "Danger!? Tsuchinoko?",
@@ -1603,7 +1603,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Danger!?-Tsuchinoko?-99745551"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%3F%20Tsuchinoko%3F"
       },
       {
         "name": "Effect Veiler",
@@ -1630,7 +1630,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.14"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Effect-Veiler-97268402"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Effect%20Veiler"
       },
       {
         "name": "Droll & Lock Bird",
@@ -1657,7 +1657,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.32",
           "cardmarket": "0.33"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Droll-&-Lock-Bird-94145021"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Droll%20%26%20Lock%20Bird"
       },
       {
         "name": "The Gates of Dark World",
@@ -1684,7 +1684,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.26",
           "cardmarket": "0.22"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/The-Gates-of-Dark-World-33017655"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Gates%20of%20Dark%20World"
       },
       {
         "name": "Dark World Archives",
@@ -1711,7 +1711,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-World-Archives-76672730"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Archives"
       },
       {
         "name": "Dark World Dealings",
@@ -1738,7 +1738,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.44",
           "cardmarket": "0.39"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-World-Dealings-74117290"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Dealings"
       },
       {
         "name": "Charge Into a Dark World",
@@ -1765,7 +1765,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.09",
           "cardmarket": "0.03"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Charge-Into-a-Dark-World-85325774"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20Into%20a%20Dark%20World"
       },
       {
         "name": "Gateway to Dark World",
@@ -1792,7 +1792,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.08",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Gateway-to-Dark-World-93431518"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gateway%20to%20Dark%20World"
       },
       {
         "name": "Dark World Lightning",
@@ -1819,7 +1819,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.10",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-World-Lightning-93554166"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Lightning"
       },
       {
         "name": "Dark World Puppetry",
@@ -1846,7 +1846,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.15",
           "cardmarket": "0.27"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-World-Puppetry-30284022"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Puppetry"
       },
       {
         "name": "Card Destruction",
@@ -1873,7 +1873,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Card-Destruction-72892473"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Card%20Destruction"
       },
       {
         "name": "Dragged Down into the Grave",
@@ -1900,7 +1900,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dragged-Down-into-the-Grave-16435215"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dragged%20Down%20into%20the%20Grave"
       },
       {
         "name": "Raigeki",
@@ -1927,7 +1927,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.21",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Raigeki-12580477"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
       },
       {
         "name": "Dark Hole",
@@ -1954,7 +1954,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.24",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Hole-53129443"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Hole"
       },
       {
         "name": "Harpie's Feather Duster",
@@ -1981,7 +1981,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.96",
           "cardmarket": "0.46"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Harpie's-Feather-Duster-18144507"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
       {
         "name": "Dark Ruler No More",
@@ -2008,7 +2008,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Ruler-No-More-54693926"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
       },
       {
         "name": "Monster Reborn",
@@ -2035,7 +2035,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Monster-Reborn-83764719"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reborn"
       },
       {
         "name": "Dark World Punishment",
@@ -2062,7 +2062,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.16",
           "cardmarket": "0.04"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-World-Punishment-3167439"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Punishment"
       },
       {
         "name": "The Forces of Darkness",
@@ -2089,7 +2089,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.08",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/The-Forces-of-Darkness-29826127"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Forces%20of%20Darkness"
       },
       {
         "name": "Dark Scheme",
@@ -2116,7 +2116,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.27"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Scheme-69402394"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Scheme"
       },
       {
         "name": "Mind Crush",
@@ -2143,7 +2143,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.24",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mind-Crush-15800838"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mind%20Crush"
       },
       {
         "name": "Solemn Warning",
@@ -2170,7 +2170,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.34",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Solemn-Warning-84749824"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
       {
         "name": "Dimensional Barrier",
@@ -2197,7 +2197,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dimensional-Barrier-83326048"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
       {
         "name": "Crackdown",
@@ -2224,7 +2224,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Crackdown-36975314"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
       {
         "name": "Grapha, Dragon Overlord of Dark World",
@@ -2251,7 +2251,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.33",
           "cardmarket": "0.46"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Grapha,-Dragon-Overlord-of-Dark-World-39552584"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Overlord%20of%20Dark%20World"
       },
       {
         "name": "Clorless, Chaos King of Dark World",
@@ -2278,7 +2278,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "2.55",
           "cardmarket": "1.05"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Clorless,-Chaos-King-of-Dark-World-22723778"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Clorless%2C%20Chaos%20King%20of%20Dark%20World"
       },
       {
         "name": "Xtra HERO Dread Decimator",
@@ -2305,7 +2305,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.26",
           "cardmarket": "0.27"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Xtra-HERO-Dread-Decimator-63813056"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
       },
       {
         "name": "Decode Talker",
@@ -2332,7 +2332,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.13",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Decode-Talker-1861629"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Decode%20Talker"
       },
       {
         "name": "Link Spider",
@@ -2359,7 +2359,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.22",
           "cardmarket": "0.38"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Link-Spider-98978921"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Link%20Spider"
       }
     ]
   },
@@ -2407,7 +2407,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.29",
           "cardmarket": "0.27"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Vision-HERO-Vyon-27780618"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Vyon"
       },
       {
         "name": "Destiny HERO - Denier",
@@ -2434,7 +2434,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.22",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Destiny-HERO---Denier-16605586"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Destiny%20HERO%20-%20Denier"
       },
       {
         "name": "Evil HERO Darkest Knight",
@@ -2461,7 +2461,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.16",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Evil-HERO-Darkest-Knight-86282581"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Darkest%20Knight"
       },
       {
         "name": "Elemental HERO Neos",
@@ -2488,7 +2488,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.16"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Neos-89943723"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos"
       },
       {
         "name": "Elemental HERO Neos Alius",
@@ -2515,7 +2515,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.08"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Neos-Alius-69884162"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Alius"
       },
       {
         "name": "Winged Kuriboh",
@@ -2542,7 +2542,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.16",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Winged-Kuriboh-57116033"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Winged%20Kuriboh"
       },
       {
         "name": "Elemental HERO Bladedge",
@@ -2569,7 +2569,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Bladedge-59793705"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Bladedge"
       },
       {
         "name": "Elemental HERO Avian",
@@ -2596,7 +2596,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.16",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Avian-21844576"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Avian"
       },
       {
         "name": "Elemental HERO Burstinatrix",
@@ -2623,7 +2623,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.23",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Burstinatrix-58932615"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Burstinatrix"
       },
       {
         "name": "Elemental HERO Sparkman",
@@ -2650,7 +2650,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Sparkman-20721928"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Sparkman"
       },
       {
         "name": "Elemental HERO Clayman",
@@ -2677,7 +2677,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.27",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Clayman-84327329"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Clayman"
       },
       {
         "name": "Effect Veiler",
@@ -2704,7 +2704,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.14"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Effect-Veiler-97268402"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Effect%20Veiler"
       },
       {
         "name": "Droll & Lock Bird",
@@ -2731,7 +2731,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.32",
           "cardmarket": "0.33"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Droll-&-Lock-Bird-94145021"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Droll%20%26%20Lock%20Bird"
       },
       {
         "name": "Ghost Mourner & Moonlit Chill",
@@ -2758,7 +2758,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.27",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Ghost-Mourner-&-Moonlit-Chill-52038441"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ghost%20Mourner%20%26%20Moonlit%20Chill"
       },
       {
         "name": "Jinzo",
@@ -2785,7 +2785,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Jinzo-77585513"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
       },
       {
         "name": "Absolute King Back Jack",
@@ -2812,7 +2812,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.08",
           "cardmarket": "0.05"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Absolute-King-Back-Jack-60990740"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Absolute%20King%20Back%20Jack"
       },
       {
         "name": "A Hero Lives",
@@ -2839,7 +2839,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.11",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/A-Hero-Lives-8949584"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=A%20Hero%20Lives"
       },
       {
         "name": "Evil Assault",
@@ -2866,7 +2866,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.85",
           "cardmarket": "0.65"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Evil-Assault-3519195"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
       {
         "name": "Polymerization",
@@ -2893,7 +2893,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Polymerization-24094653"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Polymerization"
       },
       {
         "name": "Hero Flash!!",
@@ -2920,7 +2920,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.10",
           "cardmarket": "0.06"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Hero-Flash!!-191749"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Flash%21%21"
       },
       {
         "name": "Wrath of Neos",
@@ -2947,7 +2947,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.23",
           "cardmarket": "0.26"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Wrath-of-Neos-52098461"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wrath%20of%20Neos"
       },
       {
         "name": "Monster Reborn",
@@ -2974,7 +2974,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Monster-Reborn-83764719"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reborn"
       },
       {
         "name": "Raigeki",
@@ -3001,7 +3001,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.21",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Raigeki-12580477"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
       },
       {
         "name": "Dark Hole",
@@ -3028,7 +3028,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.24",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Hole-53129443"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Hole"
       },
       {
         "name": "Harpie's Feather Duster",
@@ -3055,7 +3055,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.96",
           "cardmarket": "0.46"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Harpie's-Feather-Duster-18144507"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
       {
         "name": "Twin Twisters",
@@ -3082,7 +3082,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Twin-Twisters-43898403"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Twin%20Twisters"
       },
       {
         "name": "Mystical Space Typhoon",
@@ -3109,7 +3109,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mystical-Space-Typhoon-5318639"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mystical%20Space%20Typhoon"
       },
       {
         "name": "Book of Moon",
@@ -3136,7 +3136,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.18",
           "cardmarket": "0.10"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Book-of-Moon-14087893"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Book%20of%20Moon"
       },
       {
         "name": "Dark Ruler No More",
@@ -3163,7 +3163,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Ruler-No-More-54693926"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
       },
       {
         "name": "Pot of Avarice",
@@ -3190,7 +3190,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.56",
           "cardmarket": "0.49"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Pot-of-Avarice-67169062"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
       },
       {
         "name": "Swords of Revealing Light",
@@ -3217,7 +3217,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.14",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Swords-of-Revealing-Light-72302403"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
       },
       {
         "name": "Mirror Force",
@@ -3244,7 +3244,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.65",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Mirror-Force-44095762"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mirror%20Force"
       },
       {
         "name": "Bottomless Trap Hole",
@@ -3271,7 +3271,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.22",
           "cardmarket": "0.08"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Bottomless-Trap-Hole-29401950"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Bottomless%20Trap%20Hole"
       },
       {
         "name": "Compulsory Evacuation Device",
@@ -3298,7 +3298,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.07"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Compulsory-Evacuation-Device-94192409"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Compulsory%20Evacuation%20Device"
       },
       {
         "name": "Solemn Warning",
@@ -3325,7 +3325,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.34",
           "cardmarket": "0.20"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Solemn-Warning-84749824"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
       {
         "name": "Dimensional Barrier",
@@ -3352,7 +3352,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.02"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Dimensional-Barrier-83326048"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
       {
         "name": "Crackdown",
@@ -3379,7 +3379,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.12",
           "cardmarket": "0.17"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Crackdown-36975314"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
       {
         "name": "Fiendish Chain",
@@ -3406,7 +3406,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.20",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Fiendish-Chain-50078509"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fiendish%20Chain"
       },
       {
         "name": "Drowning Mirror Force",
@@ -3433,7 +3433,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.19",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Drowning-Mirror-Force-47475363"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Drowning%20Mirror%20Force"
       },
       {
         "name": "Vision HERO Trinity",
@@ -3460,7 +3460,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.25",
           "cardmarket": "0.21"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Vision-HERO-Trinity-46759931"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Trinity"
       },
       {
         "name": "Xtra HERO Dread Decimator",
@@ -3487,7 +3487,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.26",
           "cardmarket": "0.27"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Xtra-HERO-Dread-Decimator-63813056"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
       },
       {
         "name": "Elemental HERO Escuridao",
@@ -3514,7 +3514,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.31",
           "cardmarket": "0.22"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Escuridao-33574806"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Escuridao"
       },
       {
         "name": "Elemental HERO Shining Flare Wingman",
@@ -3541,7 +3541,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.17",
           "cardmarket": "0.12"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Shining-Flare-Wingman-25366484"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Shining%20Flare%20Wingman"
       },
       {
         "name": "Elemental HERO Neos Knight",
@@ -3568,7 +3568,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.40",
           "cardmarket": "0.09"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Neos-Knight-72926163"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Knight"
       },
       {
         "name": "Elemental HERO Flame Wingman",
@@ -3595,7 +3595,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.45",
           "cardmarket": "0.36"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Flame-Wingman-35809262"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Flame%20Wingman"
       },
       {
         "name": "Elemental HERO Thunder Giant",
@@ -3622,7 +3622,7 @@ var TCG_DECKS_DATA = [
           "tcgplayer": "0.42",
           "cardmarket": "0.36"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/Elemental-HERO-Thunder-Giant-61204971"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Thunder%20Giant"
       }
     ]
   }

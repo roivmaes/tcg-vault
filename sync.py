@@ -1,4 +1,5 @@
 import urllib.request
+import urllib.parse
 import csv
 import json
 import re
@@ -109,7 +110,7 @@ def main():
                     "tcgplayer": card_prices.get('tcgplayer_price', ''),
                     "cardmarket": card_prices.get('cardmarket_price', '')
                 },
-                "ygoprodeck_url": f"https://ygoprodeck.com/card/{info.get('name','').replace(' ', '-')}-{info.get('id','')}"
+                "ygoprodeck_url": f"https://ygoprodeck.com/card/?search={urllib.parse.quote(info.get('name', item['name']))}"
             })
         else:
             unmatched.append(item['name'])

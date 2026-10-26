@@ -1,4 +1,5 @@
 import urllib.request
+import urllib.parse
 import json
 
 def fetch_deck_info():
@@ -273,7 +274,7 @@ def fetch_deck_info():
                     "tcgplayer": card_prices.get('tcgplayer_price', ''),
                     "cardmarket": card_prices.get('cardmarket_price', '')
                 },
-                "ygoprodeck_url": f"https://ygoprodeck.com/card/{c_info.get('name','').replace(' ', '-')}-{c_info.get('id','')}"
+                "ygoprodeck_url": f"https://ygoprodeck.com/card/?search={urllib.parse.quote(c_info.get('name', ''))}"
             })
 
         total_deck_cost = sum(float(c.get('prices', {}).get('tcgplayer', 0) or 0) * c.get('count', 1) for c in processed_cards)

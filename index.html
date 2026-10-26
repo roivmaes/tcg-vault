@@ -2056,7 +2056,7 @@
       }
 
       document.getElementById('modal-price-tcg').innerText = formattedPrice;
-      document.getElementById('modal-ygoprodeck-link').href = card.ygoprodeck_url || `https://ygoprodeck.com/card/?search=${encodeURIComponent(card.name)}`;
+      document.getElementById('modal-ygoprodeck-link').href = `https://ygoprodeck.com/card/?search=${encodeURIComponent(card.name)}`;
 
       document.getElementById('card-modal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
