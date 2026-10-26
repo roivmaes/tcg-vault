@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TCG Vault - Galería, Decks & Builder Yu-Gi-Oh!</title>
+  <title>TCG Vault - Galería, Decks & Visual Builder Yu-Gi-Oh!</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
@@ -34,8 +34,8 @@
               xyz: '#1e293b',
               link: '#1d6fcd',
               ritual: '#437dd4',
-              dark: '#0b0f19',
-              cardbg: '#111827',
+              dark: '#080c16',
+              cardbg: '#0f172a',
               accent: '#f59e0b',
               price: '#10b981'
             }
@@ -46,25 +46,36 @@
   </script>
 
   <style>
+    /* Fondo cibernético con malla sutil */
+    body {
+      background-color: #070a12;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+    }
+
     /* Efecto 3D Tilt y Foil Holográfico */
     .card-container {
       perspective: 1000px;
     }
     .tcg-card {
-      transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+      transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease;
       transform-style: preserve-3d;
     }
     .tcg-card:hover {
-      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(16, 185, 129, 0.25);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.85);
     }
     .foil-overlay {
       background: linear-gradient(
         115deg,
         transparent 0%,
-        rgba(255, 255, 255, 0.08) 30%,
-        rgba(255, 215, 0, 0.2) 45%,
-        rgba(0, 240, 255, 0.2) 55%,
-        rgba(255, 0, 128, 0.15) 70%,
+        rgba(255, 255, 255, 0.1) 30%,
+        rgba(255, 215, 0, 0.22) 45%,
+        rgba(0, 240, 255, 0.22) 55%,
+        rgba(255, 0, 128, 0.18) 70%,
         transparent 100%
       );
       mix-blend-mode: color-dodge;
@@ -76,16 +87,35 @@
       opacity: 1;
     }
 
+    /* Efecto Flip 3D para el Modal */
+    .flip-card-wrapper {
+      perspective: 1200px;
+    }
+    .flip-card-inner {
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+    .flip-card-inner.is-flipped {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
       height: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #0b0f19;
+      background: #070a12;
     }
     ::-webkit-scrollbar-thumb {
-      background: #273549;
+      background: #1f293d;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
@@ -93,18 +123,18 @@
     }
   </style>
 </head>
-<body class="bg-[#090d16] text-gray-100 min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-black">
+<body class="text-gray-100 min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-black">
 
   <!-- TOP BAR / HEADER -->
-  <header class="sticky top-0 z-40 bg-[#0c1220]/95 backdrop-blur-md border-b border-gray-800 shadow-xl">
+  <header class="sticky top-0 z-40 bg-[#090d18]/95 backdrop-blur-md border-b border-gray-800 shadow-2xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
         <!-- Logo y Pestañas Principales -->
         <div class="flex items-center gap-6">
-          <div class="flex items-center gap-3 cursor-pointer" onclick="switchMainTab('inventory')">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-600 via-emerald-600 to-emerald-400 p-0.5 shadow-lg shadow-emerald-500/20 flex items-center justify-center">
-              <div class="w-full h-full bg-[#0c1220] rounded-[10px] flex items-center justify-center">
+          <div class="flex items-center gap-3 cursor-pointer group" onclick="switchMainTab('inventory')">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-600 via-emerald-600 to-emerald-400 p-0.5 shadow-lg shadow-emerald-500/20 flex items-center justify-center transition-transform group-hover:scale-105">
+              <div class="w-full h-full bg-[#090d18] rounded-[10px] flex items-center justify-center">
                 <i data-lucide="layers" class="w-6 h-6 text-emerald-400"></i>
               </div>
             </div>
@@ -113,16 +143,16 @@
                 <h1 class="text-xl sm:text-2xl font-bold tracking-wider font-display bg-gradient-to-r from-emerald-200 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
                   TCG VAULT
                 </h1>
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                  Precios en Vivo
+                <span class="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  PRO
                 </span>
               </div>
-              <p class="text-[11px] text-gray-400 hidden sm:block">Colección, Decks & Deck Builder</p>
+              <p class="text-[11px] text-gray-400 hidden sm:block">Colección, Decks & Visual Builder Yu-Gi-Oh!</p>
             </div>
           </div>
 
           <!-- PESTAÑAS: INVENTARIO vs DECKS vs BUILDER -->
-          <nav class="hidden md:flex items-center p-1 bg-[#111827] rounded-xl border border-gray-800">
+          <nav class="hidden md:flex items-center p-1 bg-[#111827]/90 rounded-xl border border-gray-800">
             <button id="tab-btn-inventory" onclick="switchMainTab('inventory')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white transition-all shadow-md">
               <i data-lucide="archive" class="w-4 h-4"></i>
               <span>Colección (296)</span>
@@ -130,12 +160,12 @@
             <button id="tab-btn-decks" onclick="switchMainTab('decks')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition-all">
               <i data-lucide="swords" class="w-4 h-4 text-amber-400"></i>
               <span>Decks Listos</span>
-              <span id="header-deck-count-badge" class="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">2</span>
+              <span id="header-deck-count-badge" class="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">3</span>
             </button>
             <button id="tab-btn-builder" onclick="switchMainTab('builder')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition-all">
               <i data-lucide="hammer" class="w-4 h-4 text-emerald-400"></i>
               <span>Deck Builder</span>
-              <span class="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">NUEVO</span>
+              <span class="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">PRO</span>
             </button>
           </nav>
         </div>
@@ -152,13 +182,13 @@
           <!-- Botón de Sincronizar -->
           <button id="btn-sync" onclick="syncWithGoogleSheet()" class="flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg bg-gray-800/80 hover:bg-gray-700 text-gray-200 hover:text-white border border-gray-700 hover:border-gray-600 transition shadow-sm" title="Sincronizar cambios desde el Google Sheet">
             <i data-lucide="refresh-cw" id="sync-icon" class="w-4 h-4 text-emerald-400"></i>
-            <span class="hidden lg:inline">Sincronizar Sheet</span>
+            <span class="hidden lg:inline">Sincronizar</span>
           </button>
 
           <!-- Enlace al Google Sheet Original -->
           <a href="https://docs.google.com/spreadsheets/d/1KXhGXwg2Ab5pvTjSDBGrOR9-4KYmvnEceJsUCBaY9NA/edit?gid=0#gid=0" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-emerald-950/40 text-emerald-300 border border-emerald-800/50 hover:bg-emerald-900/40 transition">
             <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
-            <span class="hidden lg:inline">Ver Hoja</span>
+            <span class="hidden lg:inline">Hoja Google</span>
           </a>
         </div>
       </div>
@@ -173,7 +203,7 @@
       
       <!-- RESUMEN DE COLECCIÓN CON VALOR TOTAL $$ -->
       <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
-        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+        <div class="bg-[#111827]/80 backdrop-blur-md border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-lg">
           <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">
             <i data-lucide="sparkles" class="w-5 h-5"></i>
           </div>
@@ -183,7 +213,7 @@
           </div>
         </div>
 
-        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+        <div class="bg-[#111827]/80 backdrop-blur-md border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-lg">
           <div class="p-2.5 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
             <i data-lucide="package" class="w-5 h-5"></i>
           </div>
@@ -193,7 +223,7 @@
           </div>
         </div>
 
-        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+        <div class="bg-[#111827]/80 backdrop-blur-md border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-lg">
           <div class="p-2.5 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20">
             <i data-lucide="copy" class="w-5 h-5"></i>
           </div>
@@ -203,7 +233,7 @@
           </div>
         </div>
 
-        <div class="bg-gradient-to-br from-emerald-950/40 to-[#111827] border border-emerald-500/40 rounded-xl p-3.5 flex items-center gap-3 shadow-md shadow-emerald-950/30">
+        <div class="bg-gradient-to-br from-emerald-950/40 to-[#111827] border border-emerald-500/40 rounded-xl p-3.5 flex items-center gap-3 shadow-lg shadow-emerald-950/30">
           <div class="p-2.5 rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
             <i data-lucide="dollar-sign" class="w-5 h-5"></i>
           </div>
@@ -213,7 +243,7 @@
           </div>
         </div>
 
-        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md col-span-2 sm:col-span-1">
+        <div class="bg-[#111827]/80 backdrop-blur-md border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-lg col-span-2 sm:col-span-1">
           <div class="p-2.5 rounded-lg bg-teal-500/10 text-teal-400 border border-teal-500/20">
             <i data-lucide="coins" class="w-5 h-5"></i>
           </div>
@@ -224,9 +254,13 @@
         </div>
       </div>
 
-      <!-- BARRA DE FILTROS -->
-      <div class="bg-[#111827]/90 border border-gray-800 rounded-2xl p-4 sm:p-5 shadow-xl space-y-4">
+      <!-- BARRA DE FILTROS AVANZADOS -->
+      <div class="bg-[#111827]/90 backdrop-blur-md border border-gray-800 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
+        
+        <!-- Fila 1: Buscador, Categorías y Toggle de Vista (Grid vs Tabla) -->
         <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+          
+          <!-- Buscador con atajo -->
           <div class="relative w-full md:w-96">
             <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
             <input 
@@ -234,30 +268,45 @@
               id="search-input" 
               oninput="applyFilters()" 
               placeholder="Buscar por nombre, efecto, arquetipo..." 
-              class="w-full pl-10 pr-9 py-2.5 bg-[#0b0f19] border border-gray-700/80 rounded-xl text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+              class="w-full pl-10 pr-9 py-2.5 bg-[#080d1a] border border-gray-700/80 rounded-xl text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
             >
             <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300">
               <i data-lucide="x" class="w-4 h-4"></i>
             </button>
           </div>
 
-          <div class="flex items-center p-1 bg-[#0b0f19] rounded-xl border border-gray-800 w-full md:w-auto overflow-x-auto">
-            <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-4 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap">
-              Todas
-            </button>
-            <button onclick="setCategoryFilter('Decks y Cajas')" data-cat="Decks y Cajas" class="cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
-              Decks y Cajas
-            </button>
-            <button onclick="setCategoryFilter('Carta Suelta')" data-cat="Carta Suelta" class="cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
-              Carta Suelta
-            </button>
+          <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+            <!-- Pestañas de Categoría del Sheet -->
+            <div class="flex items-center p-1 bg-[#080d1a] rounded-xl border border-gray-800 overflow-x-auto">
+              <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-3.5 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap">
+                Todas
+              </button>
+              <button onclick="setCategoryFilter('Decks y Cajas')" data-cat="Decks y Cajas" class="cat-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+                Decks & Cajas
+              </button>
+              <button onclick="setCategoryFilter('Carta Suelta')" data-cat="Carta Suelta" class="cat-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+                Cartas Sueltas
+              </button>
+            </div>
+
+            <!-- TOGGLE DE VISTA: CUADRÍCULA vs TABLA/LISTA -->
+            <div class="flex items-center p-1 bg-[#080d1a] rounded-xl border border-gray-800 shrink-0">
+              <button onclick="setViewMode('grid')" id="btn-view-grid" class="p-1.5 rounded-lg bg-gray-800 text-emerald-400 transition" title="Vista en Cuadrícula Visual">
+                <i data-lucide="grid-3x3" class="w-4 h-4"></i>
+              </button>
+              <button onclick="setViewMode('table')" id="btn-view-table" class="p-1.5 rounded-lg text-gray-400 hover:text-white transition" title="Vista en Tabla / Lista Rápida">
+                <i data-lucide="list" class="w-4 h-4"></i>
+              </button>
+            </div>
           </div>
+
         </div>
 
+        <!-- Fila 2: Filtros de Tipo TCG, Atributo, Rango de Precio y Orden -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-gray-800/80">
           <div>
             <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Tipo de Carta</label>
-            <select id="filter-type" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+            <select id="filter-type" onchange="applyFilters()" class="w-full bg-[#080d1a] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
               <option value="all">Todos los tipos</option>
               <option value="monster">Monstruos (Todos)</option>
               <option value="normal">Monstruos Normales</option>
@@ -273,21 +322,32 @@
 
           <div>
             <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Atributo</label>
-            <select id="filter-attribute" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+            <select id="filter-attribute" onchange="applyFilters()" class="w-full bg-[#080d1a] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
               <option value="all">Cualquier atributo</option>
-              <option value="LIGHT">Luz (LIGHT)</option>
-              <option value="DARK">Oscuridad (DARK)</option>
-              <option value="WATER">Agua (WATER)</option>
-              <option value="FIRE">Fuego (FIRE)</option>
-              <option value="EARTH">Tierra (EARTH)</option>
-              <option value="WIND">Viento (WIND)</option>
-              <option value="DIVINE">Divino (DIVINE)</option>
+              <option value="LIGHT">☀️ Luz (LIGHT)</option>
+              <option value="DARK">🌑 Oscuridad (DARK)</option>
+              <option value="WATER">💧 Agua (WATER)</option>
+              <option value="FIRE">🔥 Fuego (FIRE)</option>
+              <option value="EARTH">⛰️ Tierra (EARTH)</option>
+              <option value="WIND">🌪️ Viento (WIND)</option>
+              <option value="DIVINE">⚡ Divino (DIVINE)</option>
+            </select>
+          </div>
+
+          <!-- FILTRO POR RANGO DE PRECIO -->
+          <div>
+            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Rango de Precio</label>
+            <select id="filter-price-range" onchange="applyFilters()" class="w-full bg-[#080d1a] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+              <option value="all">Todos los precios</option>
+              <option value="budget">Menos de $0.20 USD</option>
+              <option value="mid">$0.20 a $1.00 USD</option>
+              <option value="valuable">Joyas (> $1.00 USD)</option>
             </select>
           </div>
 
           <div>
             <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Ordenar por</label>
-            <select id="sort-by" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+            <select id="sort-by" onchange="applyFilters()" class="w-full bg-[#080d1a] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
               <option value="price_desc">💰 Mayor Costo ($$ → $)</option>
               <option value="price_asc">💰 Menor Costo ($ → $$)</option>
               <option value="id_asc">ID Original (Google Sheet)</option>
@@ -298,20 +358,12 @@
               <option value="level_desc">Nivel / Rango (Mayor)</option>
             </select>
           </div>
-
-          <div>
-            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Tamaño de Cartas</label>
-            <div class="flex items-center gap-1 bg-[#0b0f19] p-1 rounded-lg border border-gray-800">
-              <button onclick="setGridSize('sm')" id="btn-size-sm" class="flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition">Compacta</button>
-              <button onclick="setGridSize('md')" id="btn-size-md" class="flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition">Normal</button>
-              <button onclick="setGridSize('lg')" id="btn-size-lg" class="flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition">Grande</button>
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
 
-    <!-- GRID DE CARTAS TCG -->
+    <!-- ÁREA DE CARTAS TCG (CUADRÍCULA O TABLA) -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
       <div id="empty-state" class="hidden text-center py-20 bg-[#111827]/40 rounded-2xl border border-gray-800/80">
         <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-800/80 flex items-center justify-center text-gray-500">
@@ -324,8 +376,29 @@
         </button>
       </div>
 
+      <!-- VISTA EN CUADRÍCULA -->
       <div id="cards-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6"></div>
 
+      <!-- VISTA EN TABLA / LISTA -->
+      <div id="cards-table-container" class="hidden overflow-x-auto bg-[#0d1424] border border-gray-800 rounded-2xl shadow-xl">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead class="bg-[#090e1c] text-gray-400 uppercase font-mono text-[10px] border-b border-gray-800">
+            <tr>
+              <th class="py-3 px-3">Carta</th>
+              <th class="py-3 px-3">Nombre</th>
+              <th class="py-3 px-3">Tipo & Raza</th>
+              <th class="py-3 px-3 text-center">Atributo</th>
+              <th class="py-3 px-3 text-center">Nivel</th>
+              <th class="py-3 px-3 text-center">ATK / DEF</th>
+              <th class="py-3 px-3 text-right">Precio</th>
+              <th class="py-3 px-3 text-center">Fila Sheet</th>
+            </tr>
+          </thead>
+          <tbody id="cards-table-body" class="divide-y divide-gray-800/60"></tbody>
+        </table>
+      </div>
+
+      <!-- Paginación -->
       <div id="pagination-wrapper" class="mt-10 flex flex-col items-center gap-3">
         <div id="pagination-info" class="text-xs text-gray-400">
           Mostrando <span id="current-count" class="font-bold text-gray-200">0</span> de <span id="total-filtered-count" class="font-bold text-gray-200">0</span> cartas
@@ -346,7 +419,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
       
       <!-- SELECTOR DE DECK -->
-      <div class="flex items-center justify-between flex-wrap gap-4 bg-[#111827]/80 p-3 rounded-2xl border border-gray-800">
+      <div class="flex items-center justify-between flex-wrap gap-4 bg-[#111827]/80 backdrop-blur-md p-3.5 rounded-2xl border border-gray-800 shadow-xl">
         <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-400 px-2">
           <i data-lucide="folder-kanban" class="w-4 h-4 text-emerald-400"></i>
           <span>Selecciona tu Mazo:</span>
@@ -400,32 +473,56 @@
           </div>
         </div>
 
+        <!-- Estadísticas del Deck -->
         <div class="grid grid-cols-2 sm:grid-cols-6 gap-3 mt-6 pt-6 border-t border-gray-800">
-          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-gray-800/80 text-center">
+          <div class="bg-[#080d1a]/80 p-3 rounded-xl border border-gray-800/80 text-center">
             <div class="text-[10px] uppercase font-bold text-gray-400">Mazo Principal</div>
             <div id="deck-stat-main" class="text-xl font-bold font-stats text-white">40 <span class="text-xs font-normal text-gray-500">cartas</span></div>
           </div>
-          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-amber-600/30 text-center">
+          <div class="bg-[#080d1a]/80 p-3 rounded-xl border border-amber-600/30 text-center">
             <div class="text-[10px] uppercase font-bold text-amber-400">🟡 Monstruos</div>
             <div id="deck-stat-monsters" class="text-xl font-bold font-stats text-amber-300">0</div>
           </div>
-          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-emerald-600/30 text-center">
+          <div class="bg-[#080d1a]/80 p-3 rounded-xl border border-emerald-600/30 text-center">
             <div class="text-[10px] uppercase font-bold text-emerald-400">🟢 Mágicas</div>
             <div id="deck-stat-spells" class="text-xl font-bold font-stats text-emerald-300">0</div>
           </div>
-          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-pink-600/30 text-center">
+          <div class="bg-[#080d1a]/80 p-3 rounded-xl border border-pink-600/30 text-center">
             <div class="text-[10px] uppercase font-bold text-pink-400">🟣 Trampas</div>
             <div id="deck-stat-traps" class="text-xl font-bold font-stats text-pink-300">0</div>
           </div>
-          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-indigo-600/30 text-center">
+          <div class="bg-[#080d1a]/80 p-3 rounded-xl border border-indigo-600/30 text-center">
             <div class="text-[10px] uppercase font-bold text-indigo-400">⬛ Extra Deck</div>
             <div id="deck-stat-extra" class="text-xl font-bold font-stats text-indigo-300">0</div>
           </div>
-          <div class="bg-gradient-to-br from-emerald-950/60 to-[#0b0f19] p-3 rounded-xl border border-emerald-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
+          <div class="bg-gradient-to-br from-emerald-950/60 to-[#080d1a] p-3 rounded-xl border border-emerald-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
             <div class="text-[10px] uppercase font-bold text-emerald-400">💰 Costo Deck</div>
             <div id="deck-stat-cost-val" class="text-xl font-extrabold font-stats text-emerald-300">$0.00</div>
           </div>
         </div>
+
+        <!-- GRÁFICO DE CURVA DE NIVELES DE MONSTRUOS -->
+        <div class="mt-4 pt-4 border-t border-gray-800/80">
+          <div class="flex items-center justify-between text-xs font-semibold text-gray-400 mb-2">
+            <span class="flex items-center gap-1.5"><i data-lucide="bar-chart-2" class="w-3.5 h-3.5 text-amber-400"></i> Curva de Invocación (Niveles de Monstruo):</span>
+            <span id="deck-curve-summary" class="text-[11px] font-mono text-gray-500">Distribución equilibrada</span>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs">
+            <div class="bg-[#080d1a] p-2 rounded-lg border border-gray-800">
+              <div class="text-[10px] text-gray-400">Nivel 1 - 4 (Normales)</div>
+              <div id="curve-low" class="font-bold text-emerald-400 font-stats text-base">0</div>
+            </div>
+            <div class="bg-[#080d1a] p-2 rounded-lg border border-gray-800">
+              <div class="text-[10px] text-gray-400">Nivel 5 - 6 (1 Tributo)</div>
+              <div id="curve-mid" class="font-bold text-amber-400 font-stats text-base">0</div>
+            </div>
+            <div class="bg-[#080d1a] p-2 rounded-lg border border-gray-800">
+              <div class="text-[10px] text-gray-400">Nivel 7+ (Jefes)</div>
+              <div id="curve-high" class="font-bold text-rose-400 font-stats text-base">0</div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- SECCIONES DE CARTAS -->
@@ -489,8 +586,6 @@
       
       <!-- BARRA SUPERIOR DE HERRAMIENTAS DEL BUILDER -->
       <div class="bg-[#111827] border border-gray-800 rounded-2xl p-5 shadow-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-        
-        <!-- Nombre y Formato del Mazo -->
         <div class="flex-1 space-y-2">
           <div class="flex items-center gap-2">
             <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
@@ -507,10 +602,10 @@
               type="text" 
               id="builder-deck-title" 
               value="Mi Mazo Personalizado #1" 
-              class="bg-[#0b0f19] border border-gray-700 focus:border-emerald-500 rounded-xl px-3.5 py-2 text-base font-bold text-white focus:outline-none flex-1 font-display"
+              class="bg-[#080d1a] border border-gray-700 focus:border-emerald-500 rounded-xl px-3.5 py-2 text-base font-bold text-white focus:outline-none flex-1 font-display"
               placeholder="Nombre de tu Mazo..."
             >
-            <select id="builder-deck-format" class="bg-[#0b0f19] border border-gray-700 text-xs text-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:border-emerald-500">
+            <select id="builder-deck-format" class="bg-[#080d1a] border border-gray-700 text-xs text-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:border-emerald-500">
               <option value="Avanzado / Actual">Formato Actual / Avanzado</option>
               <option value="Edison (2010)">Formato Edison (2010)</option>
               <option value="Casual / Amistoso">Casual / Amistoso</option>
@@ -518,7 +613,6 @@
           </div>
         </div>
 
-        <!-- Acciones: Guardar, Descargar, Copiar, Limpiar -->
         <div class="flex items-center gap-2 flex-wrap shrink-0">
           <button onclick="saveBuilderDeck()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition shadow-lg shadow-emerald-600/30">
             <i data-lucide="save" class="w-4 h-4"></i>
@@ -537,12 +631,10 @@
             <span class="hidden sm:inline">Vaciar</span>
           </button>
         </div>
-
       </div>
 
-      <!-- MÉTRICAS EN VIVO DEL MAZO EN CONSTRUCCIÓN -->
+      <!-- MÉTRICAS EN VIVO -->
       <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
-        <!-- Main Deck Counter -->
         <div id="b-stat-box-main" class="bg-[#111827] p-3 rounded-xl border border-amber-500/40 text-center">
           <div class="text-[10px] uppercase font-bold text-gray-400">Main Deck</div>
           <div class="text-xl font-black font-stats text-white">
@@ -550,25 +642,21 @@
           </div>
         </div>
 
-        <!-- Monstruos -->
         <div class="bg-[#111827] p-3 rounded-xl border border-amber-600/30 text-center">
           <div class="text-[10px] uppercase font-bold text-amber-400">🟡 Monstruos</div>
           <div id="b-monsters-count" class="text-xl font-bold font-stats text-amber-300">0</div>
         </div>
 
-        <!-- Mágicas -->
         <div class="bg-[#111827] p-3 rounded-xl border border-emerald-600/30 text-center">
           <div class="text-[10px] uppercase font-bold text-emerald-400">🟢 Mágicas</div>
           <div id="b-spells-count" class="text-xl font-bold font-stats text-emerald-300">0</div>
         </div>
 
-        <!-- Trampas -->
         <div class="bg-[#111827] p-3 rounded-xl border border-pink-600/30 text-center">
           <div class="text-[10px] uppercase font-bold text-pink-400">🟣 Trampas</div>
           <div id="b-traps-count" class="text-xl font-bold font-stats text-pink-300">0</div>
         </div>
 
-        <!-- Extra Deck -->
         <div class="bg-[#111827] p-3 rounded-xl border border-indigo-600/30 text-center">
           <div class="text-[10px] uppercase font-bold text-indigo-400">⬛ Extra Deck</div>
           <div class="text-xl font-bold font-stats text-indigo-300">
@@ -576,37 +664,30 @@
           </div>
         </div>
 
-        <!-- Costo Total -->
         <div class="bg-gradient-to-br from-emerald-950/60 to-[#111827] p-3 rounded-xl border border-emerald-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
           <div class="text-[10px] uppercase font-bold text-emerald-400">💰 Costo Mazo</div>
           <div id="b-cost-val" class="text-xl font-extrabold font-stats text-emerald-300">$0.00</div>
         </div>
       </div>
 
-      <!-- ÁREA SPLIT-VIEW: TAPETE DEL MAZO (IZQ) vs CATÁLOGO PARA AGREGAR (DER) -->
+      <!-- SPLIT-VIEW -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        
-        <!-- ============================================== -->
-        <!-- COLUMNA IZQUIERDA: EL TAPETE DEL MAZO (7 cols) -->
-        <!-- ============================================== -->
+        <!-- COLUMNA IZQUIERDA: EL TAPETE DEL MAZO -->
         <div class="lg:col-span-7 bg-[#0d1424] border border-gray-800 rounded-2xl p-5 shadow-2xl space-y-6">
           <div class="flex items-center justify-between border-b border-gray-800 pb-3">
             <div class="flex items-center gap-2">
               <i data-lucide="layers-3" class="w-5 h-5 text-emerald-400"></i>
               <h3 class="text-base font-bold font-display text-white">Cartas en tu Mazo</h3>
             </div>
-            <span class="text-xs text-gray-400">Usa los botones <span class="text-emerald-400 font-bold">+</span> / <span class="text-red-400 font-bold">-</span> para ajustar copias</span>
+            <span class="text-xs text-gray-400">Ajusta con <span class="text-emerald-400 font-bold">+</span> / <span class="text-red-400 font-bold">-</span></span>
           </div>
 
-          <!-- Estado vacío si no hay cartas -->
           <div id="b-empty-deck-notice" class="text-center py-12 text-gray-500 space-y-2">
             <i data-lucide="sparkle" class="w-8 h-8 mx-auto text-gray-600"></i>
             <p class="text-sm font-medium">Tu mazo está vacío.</p>
-            <p class="text-xs text-gray-400 max-w-xs mx-auto">Selecciona cartas del catálogo de la derecha y haz clic en <strong>"+ Añadir"</strong> para empezar a armarlo.</p>
+            <p class="text-xs text-gray-400 max-w-xs mx-auto">Selecciona cartas del catálogo de la derecha y haz clic en <strong>"+ Añadir"</strong> para empezar.</p>
           </div>
 
-          <!-- Contenedores por tipo -->
-          <!-- 1. Monstruos en el Builder -->
           <div id="b-monsters-section" class="space-y-2 hidden">
             <div class="flex items-center justify-between text-xs font-bold text-amber-400 border-b border-amber-500/20 pb-1">
               <span>🟡 Monstruos (<span id="b-section-m-count">0</span>)</span>
@@ -614,7 +695,6 @@
             <div id="b-monsters-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
           </div>
 
-          <!-- 2. Mágicas en el Builder -->
           <div id="b-spells-section" class="space-y-2 hidden">
             <div class="flex items-center justify-between text-xs font-bold text-emerald-400 border-b border-emerald-500/20 pb-1">
               <span>🟢 Cartas Mágicas (<span id="b-section-s-count">0</span>)</span>
@@ -622,7 +702,6 @@
             <div id="b-spells-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
           </div>
 
-          <!-- 3. Trampas en el Builder -->
           <div id="b-traps-section" class="space-y-2 hidden">
             <div class="flex items-center justify-between text-xs font-bold text-pink-400 border-b border-pink-500/20 pb-1">
               <span>🟣 Cartas de Trampa (<span id="b-section-t-count">0</span>)</span>
@@ -630,19 +709,15 @@
             <div id="b-traps-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
           </div>
 
-          <!-- 4. Extra Deck en el Builder -->
           <div id="b-extra-section" class="space-y-2 hidden">
             <div class="flex items-center justify-between text-xs font-bold text-indigo-400 border-b border-indigo-500/20 pb-1">
               <span>⬛ Extra Deck (Sincronías, Fusiones, Links) (<span id="b-section-e-count">0</span>)</span>
             </div>
             <div id="b-extra-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
           </div>
-
         </div>
 
-        <!-- ======================================================== -->
-        <!-- COLUMNA DERECHA: CATÁLOGO DE INVENTARIO PARA AGREGAR (5 cols) -->
-        <!-- ======================================================== -->
+        <!-- COLUMNA DERECHA: CATÁLOGO DE INVENTARIO -->
         <div class="lg:col-span-5 bg-[#0f172a] border border-gray-800 rounded-2xl p-5 shadow-2xl space-y-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -652,7 +727,6 @@
             <span class="text-xs text-gray-400 font-mono"><span id="b-catalog-count">296</span> disponibles</span>
           </div>
 
-          <!-- Buscador y filtro rápido del catálogo -->
           <div class="space-y-2">
             <div class="relative">
               <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
@@ -665,7 +739,6 @@
               >
             </div>
 
-            <!-- Filtros rápidos de tipo -->
             <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-[11px]">
               <button onclick="setBuilderCatalogFilter('all')" data-bcat="all" class="b-cat-btn px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold whitespace-nowrap">Todas</button>
               <button onclick="setBuilderCatalogFilter('monster')" data-bcat="monster" class="b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Monstruos</button>
@@ -675,13 +748,8 @@
             </div>
           </div>
 
-          <!-- Cuadrícula con scroll del catálogo -->
-          <div id="b-catalog-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[720px] overflow-y-auto pr-1">
-            <!-- Renderizado dinámicamente -->
-          </div>
-
+          <div id="b-catalog-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[720px] overflow-y-auto pr-1"></div>
         </div>
-
       </div>
 
     </div>
@@ -689,12 +757,12 @@
 
 
   <!-- ========================================== -->
-  <!-- MODAL DE DETALLE DE CARTA TCG (COMPARTIDO) -->
+  <!-- MODAL DE DETALLE TEATRO 3D (FLIP CARD)     -->
   <!-- ========================================== -->
-  <div id="card-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+  <div id="card-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
     <div class="absolute inset-0" onclick="closeModal()"></div>
 
-    <div class="relative bg-[#0d1322] border border-gray-700/80 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh] z-10">
+    <div class="relative bg-[#0d1322] border border-gray-700/80 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh] z-10 animate-in fade-in zoom-in-95 duration-200">
       <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 text-gray-300 hover:text-white flex items-center justify-center transition border border-gray-700">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
@@ -706,20 +774,40 @@
         <i data-lucide="chevron-right" class="w-5 h-5"></i>
       </button>
 
+      <!-- Columna Izquierda: Imagen HD con Flip 3D -->
       <div class="md:w-1/2 bg-[#080c14] p-6 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-800">
-        <div class="relative group cursor-zoom-in" onclick="openFullImage()">
-          <img id="modal-card-img" src="" alt="Carta TCG" class="w-64 sm:w-72 max-h-[420px] object-contain rounded-lg shadow-2xl transition-transform duration-300 group-hover:scale-[1.03]">
-          <div class="absolute top-2 left-2 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-xs font-bold text-emerald-400 border border-emerald-500/40 flex items-center gap-1 shadow-lg">
-            <i data-lucide="tag" class="w-3.5 h-3.5"></i>
-            <span id="modal-card-floating-price">$0.00</span>
-          </div>
-          <div class="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-[11px] text-gray-300 flex items-center gap-1 pointer-events-none">
-            <i data-lucide="maximize-2" class="w-3 h-3"></i>
-            <span>Ver HD</span>
+        
+        <div class="flip-card-wrapper w-64 sm:w-72 max-h-[420px]">
+          <div id="modal-flip-inner" class="flip-card-inner relative w-full h-full aspect-[293/427]">
+            <!-- Frente -->
+            <div class="flip-card-front absolute inset-0 rounded-lg overflow-hidden cursor-zoom-in group shadow-2xl" onclick="openFullImage()">
+              <img id="modal-card-img" src="" alt="Carta TCG" class="w-full h-full object-contain">
+              <div class="absolute top-2 left-2 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-xs font-bold text-emerald-400 border border-emerald-500/40 flex items-center gap-1 shadow-lg">
+                <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+                <span id="modal-card-floating-price">$0.00</span>
+              </div>
+              <div class="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-[11px] text-gray-300 flex items-center gap-1 pointer-events-none">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Ver HD</span>
+              </div>
+            </div>
+
+            <!-- Reverso (Back Card Oficial) -->
+            <div class="flip-card-back absolute inset-0 rounded-lg overflow-hidden shadow-2xl flex items-center justify-center bg-[#070a12]">
+              <img src="https://images.ygoprodeck.com/images/cards/back.jpg" alt="Dorso de Carta" class="w-full h-full object-contain">
+            </div>
           </div>
         </div>
+
+        <!-- Botón para Girar Carta en 3D -->
+        <button onclick="toggleCardFlip()" class="mt-4 flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white border border-gray-700 text-xs font-semibold transition">
+          <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Girar Carta (Reverso)</span>
+        </button>
+
       </div>
 
+      <!-- Columna Derecha: Información completa -->
       <div class="md:w-1/2 p-6 overflow-y-auto space-y-4">
         <div class="flex items-center justify-between">
           <span id="modal-card-category" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
@@ -741,7 +829,7 @@
 
         <div id="modal-stats-bar" class="flex items-center gap-3 py-2 border-y border-gray-800 text-xs">
           <div id="modal-attribute-box" class="flex items-center gap-1.5 font-bold">
-            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <span id="modal-attr-icon">☀️</span>
             <span id="modal-card-attribute">DARK</span>
           </div>
           <div id="modal-level-box" class="flex items-center gap-1 font-bold text-amber-400">
@@ -766,8 +854,16 @@
 
         <div>
           <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Descripción / Efecto:</h4>
-          <div id="modal-card-desc" class="bg-[#090d16] p-3.5 rounded-xl border border-gray-800/80 text-xs text-gray-300 leading-relaxed font-normal whitespace-pre-line max-h-48 overflow-y-auto">
+          <div id="modal-card-desc" class="bg-[#080d1a] p-3.5 rounded-xl border border-gray-800/80 text-xs text-gray-300 leading-relaxed font-normal whitespace-pre-line max-h-40 overflow-y-auto">
             Texto del efecto...
+          </div>
+        </div>
+
+        <!-- INDICADOR DE USO EN MAZOS -->
+        <div id="modal-deck-usage" class="bg-[#080d1a] p-2.5 rounded-xl border border-gray-800 text-xs space-y-1">
+          <span class="text-gray-400 block text-[10px] uppercase font-semibold">Uso en tus Mazos:</span>
+          <div id="modal-deck-usage-tags" class="flex items-center gap-1.5 flex-wrap">
+            <!-- Renderizado dinámico -->
           </div>
         </div>
 
@@ -794,7 +890,7 @@
   <!-- FOOTER -->
   <footer class="border-t border-gray-800/80 bg-[#080c14] py-6 text-center text-xs text-gray-500 mt-auto">
     <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p>TCG Vault • Galería, Decks & Visual Builder Yu-Gi-Oh!</p>
+      <p>TCG Vault PRO • Galería, Decks & Visual Builder Yu-Gi-Oh!</p>
       <p class="text-gray-600">Sincronizado con Google Sheets & YGOPRODeck API</p>
     </div>
   </footer>
@@ -808,7 +904,6 @@
     let allCards = (typeof TCG_INITIAL_CARDS !== 'undefined') ? TCG_INITIAL_CARDS : [];
     let initialDecks = (typeof TCG_DECKS_DATA !== 'undefined') ? TCG_DECKS_DATA : [];
     
-    // Cargar mazos guardados de localStorage si existen
     function loadSavedCustomDecks() {
       try {
         const raw = localStorage.getItem('TCG_CUSTOM_DECKS');
@@ -825,23 +920,45 @@
 
     let filteredCards = [];
     let currentCategory = 'all';
+    let currentPriceFilter = 'all';
+    let viewMode = 'grid'; // 'grid' | 'table'
     let currentPage = 1;
     const PAGE_SIZE = 36;
     let currentModalIndex = -1;
-    let modalMode = 'inventory'; // 'inventory' | 'deck' | 'builder'
+    let modalMode = 'inventory';
 
-    // ==========================================
+    // ESTILO VISUAL DE MARCO (AURAS Y BORDES OFICIALES)
+    const FRAME_STYLES = {
+      'normal': { border: 'border-amber-600/60', topBar: 'bg-amber-600', glow: 'hover:shadow-amber-600/25', badge: 'bg-amber-600/20 text-amber-300 border-amber-600/40' },
+      'effect': { border: 'border-orange-600/60', topBar: 'bg-orange-600', glow: 'hover:shadow-orange-600/25', badge: 'bg-orange-600/20 text-orange-300 border-orange-600/40' },
+      'spell': { border: 'border-emerald-600/60', topBar: 'bg-emerald-600', glow: 'hover:shadow-emerald-600/25', badge: 'bg-emerald-600/20 text-emerald-300 border-emerald-600/40' },
+      'trap': { border: 'border-pink-600/60', topBar: 'bg-pink-600', glow: 'hover:shadow-pink-600/25', badge: 'bg-pink-600/20 text-pink-300 border-pink-600/40' },
+      'fusion': { border: 'border-purple-600/60', topBar: 'bg-purple-600', glow: 'hover:shadow-purple-600/25', badge: 'bg-purple-600/20 text-purple-300 border-purple-600/40' },
+      'synchro': { border: 'border-slate-300/60', topBar: 'bg-slate-300', glow: 'hover:shadow-slate-300/25', badge: 'bg-slate-200/20 text-slate-200 border-slate-300/40' },
+      'xyz': { border: 'border-slate-700/80', topBar: 'bg-slate-800', glow: 'hover:shadow-slate-800/40', badge: 'bg-slate-800/60 text-slate-300 border-slate-600/40' },
+      'link': { border: 'border-blue-600/60', topBar: 'bg-blue-600', glow: 'hover:shadow-blue-600/25', badge: 'bg-blue-600/20 text-blue-300 border-blue-600/40' },
+      'ritual': { border: 'border-sky-600/60', topBar: 'bg-sky-600', glow: 'hover:shadow-sky-600/25', badge: 'bg-sky-600/20 text-sky-300 border-sky-600/40' }
+    };
+
+    const ATTR_ICONS = {
+      'LIGHT': '☀️',
+      'DARK': '🌑',
+      'WATER': '💧',
+      'FIRE': '🔥',
+      'EARTH': '⛰️',
+      'WIND': '🌪️',
+      'DIVINE': '⚡'
+    };
+
     // ESTADO DEL DECK BUILDER
-    // ==========================================
     let builderDeck = {
       id: 'custom_' + Date.now(),
       name: 'Mi Mazo Personalizado #1',
       format: 'Avanzado / Actual',
-      cards: {} // Map: cardName -> { card, count: 1..3 }
+      cards: {}
     };
     let builderCatalogCategory = 'all';
 
-    // NAVEGACIÓN ENTRE TABS
     function switchMainTab(tab) {
       const secInv = document.getElementById('section-inventory');
       const secDecks = document.getElementById('section-decks');
@@ -880,6 +997,27 @@
       lucide.createIcons();
     }
 
+    function setViewMode(mode) {
+      viewMode = mode;
+      const btnGrid = document.getElementById('btn-view-grid');
+      const btnTable = document.getElementById('btn-view-table');
+      const grid = document.getElementById('cards-grid');
+      const table = document.getElementById('cards-table-container');
+
+      if (mode === 'grid') {
+        grid.classList.remove('hidden');
+        table.classList.add('hidden');
+        btnGrid.className = "p-1.5 rounded-lg bg-gray-800 text-emerald-400 transition";
+        btnTable.className = "p-1.5 rounded-lg text-gray-400 hover:text-white transition";
+      } else {
+        grid.classList.add('hidden');
+        table.classList.remove('hidden');
+        btnGrid.className = "p-1.5 rounded-lg text-gray-400 hover:text-white transition";
+        btnTable.className = "p-1.5 rounded-lg bg-gray-800 text-emerald-400 transition";
+      }
+      renderCards();
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       updateStatistics();
@@ -915,40 +1053,19 @@
       currentCategory = category;
       document.querySelectorAll('.cat-pill').forEach(btn => {
         if (btn.dataset.cat === category) {
-          btn.className = "cat-pill active-cat px-4 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap shadow-md";
+          btn.className = "cat-pill active-cat px-3.5 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap shadow-md";
         } else {
-          btn.className = "cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap";
+          btn.className = "cat-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap";
         }
       });
       applyFilters();
-    }
-
-    function setGridSize(size) {
-      const grid = document.getElementById('cards-grid');
-      const btnSm = document.getElementById('btn-size-sm');
-      const btnMd = document.getElementById('btn-size-md');
-      const btnLg = document.getElementById('btn-size-lg');
-
-      [btnSm, btnMd, btnLg].forEach(b => {
-        b.className = "flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition";
-      });
-
-      if (size === 'sm') {
-        grid.className = "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3";
-        btnSm.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
-      } else if (size === 'lg') {
-        grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6";
-        btnLg.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
-      } else {
-        grid.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6";
-        btnMd.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
-      }
     }
 
     function applyFilters() {
       const query = document.getElementById('search-input').value.trim().toLowerCase();
       const typeFilter = document.getElementById('filter-type').value;
       const attrFilter = document.getElementById('filter-attribute').value;
+      const priceRange = document.getElementById('filter-price-range').value;
       const sortBy = document.getElementById('sort-by').value;
 
       document.getElementById('clear-search').classList.toggle('hidden', query.length === 0);
@@ -987,6 +1104,13 @@
           if (!card.attribute || card.attribute.toUpperCase() !== attrFilter) return false;
         }
 
+        if (priceRange !== 'all') {
+          const p = parseFloat(card.prices?.tcgplayer) || 0;
+          if (priceRange === 'budget' && p >= 0.20) return false;
+          if (priceRange === 'mid' && (p < 0.20 || p > 1.00)) return false;
+          if (priceRange === 'valuable' && p <= 1.00) return false;
+        }
+
         return true;
       });
 
@@ -1013,6 +1137,7 @@
 
     function renderCards() {
       const grid = document.getElementById('cards-grid');
+      const tableBody = document.getElementById('cards-table-body');
       const empty = document.getElementById('empty-state');
       const paginationWrapper = document.getElementById('pagination-wrapper');
 
@@ -1020,6 +1145,7 @@
 
       if (filteredCards.length === 0) {
         grid.innerHTML = '';
+        tableBody.innerHTML = '';
         empty.classList.remove('hidden');
         paginationWrapper.classList.add('hidden');
         return;
@@ -1032,74 +1158,137 @@
       document.getElementById('current-count').innerText = visibleCards.length;
       document.getElementById('btn-load-more').classList.toggle('hidden', visibleCards.length >= filteredCards.length);
 
-      grid.innerHTML = visibleCards.map((card, idx) => {
-        const isMonster = card.atk !== null && card.atk !== undefined;
-        const categoryBadgeColor = card.category && card.category.includes('Decks') 
-          ? 'bg-blue-500/20 text-blue-300 border-blue-500/30' 
-          : 'bg-purple-500/20 text-purple-300 border-purple-500/30';
+      if (viewMode === 'grid') {
+        grid.innerHTML = visibleCards.map((card, idx) => {
+          const isMonster = card.atk !== null && card.atk !== undefined;
+          const frame = card.frameType || 'normal';
+          const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+          const attrIcon = ATTR_ICONS[card.attribute] || '🔮';
 
-        const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
-        const priceFormatted = `$${priceNum.toFixed(2)}`;
+          const categoryBadgeColor = card.category && card.category.includes('Decks') 
+            ? 'bg-blue-500/20 text-blue-300 border-blue-500/30' 
+            : 'bg-purple-500/20 text-purple-300 border-purple-500/30';
 
-        return `
-          <div class="card-container group" onclick="openModal(${idx}, 'inventory')">
-            <div class="tcg-card relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/60 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
-              
-              <div class="foil-overlay absolute inset-0 z-10 pointer-events-none"></div>
+          const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+          const priceFormatted = `$${priceNum.toFixed(2)}`;
 
-              <div class="relative w-full aspect-[293/427] bg-[#080c14] overflow-hidden flex items-center justify-center p-1.5">
-                <img 
-                  src="${card.image_url_small || card.image_url}" 
-                  alt="${card.name}" 
-                  loading="lazy" 
-                  class="w-full h-full object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
-                  onerror="this.src='https://images.ygoprodeck.com/images/cards_small/back.jpg'"
-                >
+          return `
+            <div class="card-container group" onclick="openModal(${idx}, 'inventory')">
+              <div class="tcg-card relative bg-[#0f172a] rounded-xl overflow-hidden border ${style.border} ${style.glow} transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
                 
-                <span class="absolute top-2.5 left-2.5 text-[9px] font-bold px-1.5 py-0.5 rounded border backdrop-blur-md ${categoryBadgeColor} z-20 shadow">
-                  ${card.category || 'TCG'}
-                </span>
+                <!-- Borde Temático Superior -->
+                <div class="h-1 w-full ${style.topBar}"></div>
 
-                <span class="absolute bottom-2.5 right-2.5 text-[11px] font-black px-2 py-0.5 rounded-lg bg-black/85 text-emerald-400 border border-emerald-500/40 shadow-xl font-stats z-20 flex items-center gap-0.5">
-                  <span class="text-[9px] text-emerald-500 font-bold">$</span>${priceNum.toFixed(2)}
-                </span>
+                <div class="foil-overlay absolute inset-0 z-10 pointer-events-none"></div>
 
-                <span class="absolute top-2.5 right-2.5 text-[9px] font-mono text-gray-400 bg-black/70 px-1.5 py-0.5 rounded z-20">
-                  #${card.sheet_id}
-                </span>
-              </div>
+                <div class="relative w-full aspect-[293/427] bg-[#070b14] overflow-hidden flex items-center justify-center p-1.5">
+                  <img 
+                    src="${card.image_url_small || card.image_url}" 
+                    alt="${card.name}" 
+                    loading="lazy" 
+                    class="w-full h-full object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
+                    onerror="this.src='https://images.ygoprodeck.com/images/cards_small/back.jpg'"
+                  >
+                  
+                  <!-- Badge Categoría -->
+                  <span class="absolute top-2.5 left-2.5 text-[9px] font-bold px-1.5 py-0.5 rounded border backdrop-blur-md ${categoryBadgeColor} z-20 shadow">
+                    ${card.category || 'TCG'}
+                  </span>
 
-              <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0e1524]">
-                <div>
-                  <h3 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
-                    ${card.name}
-                  </h3>
-                  <p class="text-[10px] text-gray-400 truncate mt-0.5">
-                    ${card.humanReadableCardType || card.type}
-                  </p>
-                </div>
+                  <!-- Atributo & Nivel sobre la imagen -->
+                  ${card.attribute ? `
+                    <span class="absolute top-2.5 right-11 text-[11px] bg-black/75 px-1.5 py-0.5 rounded border border-gray-700/80 z-20" title="${card.attribute}">
+                      ${attrIcon}
+                    </span>
+                  ` : ''}
 
-                <div class="mt-2 pt-1.5 border-t border-gray-800/80 flex items-center justify-between text-[11px] font-stats">
-                  ${isMonster ? `
-                    <div class="flex items-center gap-2">
-                      <span class="text-red-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">A/</span>${card.atk}</span>
-                      <span class="text-blue-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">D/</span>${card.def}</span>
-                    </div>
-                  ` : `
-                    <span class="text-[10px] text-gray-400 truncate">${card.race || 'Mágica/Trampa'}</span>
-                  `}
+                  <!-- Badge ID -->
+                  <span class="absolute top-2.5 right-2.5 text-[9px] font-mono text-gray-400 bg-black/80 px-1.5 py-0.5 rounded z-20">
+                    #${card.sheet_id}
+                  </span>
 
-                  <span class="font-extrabold text-emerald-400 text-xs tracking-tight">
-                    ${priceFormatted}
+                  <!-- Costo $$ flotante -->
+                  <span class="absolute bottom-2.5 right-2.5 text-[11px] font-black px-2 py-0.5 rounded-lg bg-black/90 text-emerald-400 border border-emerald-500/40 shadow-xl font-stats z-20 flex items-center gap-0.5">
+                    <span class="text-[9px] text-emerald-500 font-bold">$</span>${priceNum.toFixed(2)}
                   </span>
                 </div>
 
-              </div>
+                <!-- Pie de la tarjeta -->
+                <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0b101d]">
+                  <div>
+                    <h3 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
+                      ${card.name}
+                    </h3>
+                    <p class="text-[10px] text-gray-400 truncate mt-0.5">
+                      ${card.humanReadableCardType || card.type}
+                    </p>
+                  </div>
 
+                  <div class="mt-2 pt-1.5 border-t border-gray-800/80 flex items-center justify-between text-[11px] font-stats">
+                    ${isMonster ? `
+                      <div class="flex items-center gap-2">
+                        <span class="text-red-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">A/</span>${card.atk}</span>
+                        <span class="text-blue-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">D/</span>${card.def}</span>
+                        ${card.level ? `<span class="text-amber-400 font-normal text-[10px]">⭐${card.level}</span>` : ''}
+                      </div>
+                    ` : `
+                      <span class="text-[10px] text-gray-400 truncate">${card.race || 'Mágica/Trampa'}</span>
+                    `}
+
+                    <span class="font-extrabold text-emerald-400 text-xs tracking-tight">
+                      ${priceFormatted}
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-          </div>
-        `;
-      }).join('');
+          `;
+        }).join('');
+      } else {
+        // VISTA EN TABLA / LISTA
+        tableBody.innerHTML = visibleCards.map((card, idx) => {
+          const frame = card.frameType || 'normal';
+          const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+          const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+
+          return `
+            <tr class="hover:bg-gray-800/40 cursor-pointer transition" onclick="openModal(${idx}, 'inventory')">
+              <td class="py-2 px-3">
+                <img src="${card.image_url_small || card.image_url}" class="w-8 h-12 object-contain rounded" alt="${card.name}">
+              </td>
+              <td class="py-2 px-3">
+                <div class="font-bold text-gray-200 text-xs hover:text-emerald-400">${card.name}</div>
+                <div class="text-[10px] text-gray-500">${card.category}</div>
+              </td>
+              <td class="py-2 px-3">
+                <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${style.badge}">
+                  ${card.humanReadableCardType || card.type}
+                </span>
+                <span class="text-[10px] text-gray-400 ml-1.5">${card.race}</span>
+              </td>
+              <td class="py-2 px-3 text-center text-xs">
+                ${card.attribute ? `${ATTR_ICONS[card.attribute] || ''} ${card.attribute}` : '-'}
+              </td>
+              <td class="py-2 px-3 text-center font-stats font-bold text-amber-400">
+                ${card.level ? `⭐ ${card.level}` : '-'}
+              </td>
+              <td class="py-2 px-3 text-center font-stats">
+                ${card.atk !== null && card.atk !== undefined ? `
+                  <span class="text-red-400 font-bold">${card.atk}</span> / <span class="text-blue-400 font-bold">${card.def}</span>
+                ` : '-'}
+              </td>
+              <td class="py-2 px-3 text-right font-stats font-extrabold text-emerald-400 text-xs">
+                $${priceNum.toFixed(2)}
+              </td>
+              <td class="py-2 px-3 text-center font-mono text-[11px] text-gray-400">
+                #${card.sheet_id}
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
 
       lucide.createIcons();
     }
@@ -1124,7 +1313,6 @@
             : 'bg-amber-900/60 text-amber-200 border-amber-500/40');
 
         const deckIcon = deck.tag_color === 'red' ? 'flame' : (deck.tag_color === 'purple' ? 'zap' : 'shield');
-
         const deckCost = deck.stats?.total_cost || 0;
 
         return `
@@ -1195,7 +1383,22 @@
       document.getElementById('deck-traps-count-pill').innerText = `${activeDeck.stats.traps} Cartas`;
       document.getElementById('deck-extra-count-pill').innerText = `${activeDeck.stats.extra_total} Cartas`;
 
+      // CÁLCULO DE CURVA DE NIVELES DE MONSTRUOS
       const monsters = activeDeck.cards.filter(c => c.section === 'monsters');
+      let low = 0, mid = 0, high = 0;
+      monsters.forEach(m => {
+        const lvl = m.level || 4;
+        const cnt = m.count || 1;
+        if (lvl <= 4) low += cnt;
+        else if (lvl <= 6) mid += cnt;
+        else high += cnt;
+      });
+
+      document.getElementById('curve-low').innerText = low;
+      document.getElementById('curve-mid').innerText = mid;
+      document.getElementById('curve-high').innerText = high;
+      document.getElementById('deck-curve-summary').innerText = low >= 12 ? '✓ Alta consistencia de inicio' : '⚠️ Pocos monstruos nivel 1-4';
+
       const spells = activeDeck.cards.filter(c => c.section === 'spells');
       const traps = activeDeck.cards.filter(c => c.section === 'traps');
       const extra = activeDeck.cards.filter(c => c.section === 'extra');
@@ -1214,6 +1417,8 @@
 
       container.innerHTML = cardList.map((card) => {
         let locationLabel = card.sheet_id ? `Sheet #${card.sheet_id}` : (card.custom_location || 'En tu Colección');
+        const frame = card.frameType || 'normal';
+        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
 
         const ownedBadge = `
           <span class="bg-emerald-500/30 text-emerald-300 border-emerald-500/40 text-[9px] px-1.5 py-0.5 rounded border backdrop-blur-md flex items-center gap-0.5 shadow">
@@ -1226,11 +1431,12 @@
 
         return `
           <div class="card-container group" onclick="openDeckCardModal('${card.name}')">
-            <div class="tcg-card relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/70 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
+            <div class="tcg-card relative bg-[#0f172a] rounded-xl overflow-hidden border ${style.border} ${style.glow} transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
               
+              <div class="h-1 w-full ${style.topBar}"></div>
               <div class="foil-overlay absolute inset-0 z-10 pointer-events-none"></div>
 
-              <div class="relative w-full aspect-[293/427] bg-[#080c14] overflow-hidden flex items-center justify-center p-1.5">
+              <div class="relative w-full aspect-[293/427] bg-[#070b14] overflow-hidden flex items-center justify-center p-1.5">
                 <img 
                   src="${card.image_url_small || card.image_url}" 
                   alt="${card.name}" 
@@ -1251,7 +1457,7 @@
                 </div>
               </div>
 
-              <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0e1524]">
+              <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0b101d]">
                 <div>
                   <h4 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
                     ${card.name}
@@ -1292,7 +1498,7 @@
     }
 
     // ========================================================
-    // LÓGICA DEL CONSTRUCTOR DE MAZOS (VISUAL DECK BUILDER)
+    // LÓGICA DEL CONSTRUCTOR DE MAZOS (DECK BUILDER)
     // ========================================================
     function getCardSection(card) {
       const type = (card.type || '').toLowerCase();
@@ -1372,7 +1578,6 @@
         return acc + (price * e.count);
       }, 0);
 
-      // Actualizar métricas
       document.getElementById('b-main-count').innerText = mainTotal;
       document.getElementById('b-monsters-count').innerText = countMonsters;
       document.getElementById('b-spells-count').innerText = countSpells;
@@ -1389,7 +1594,6 @@
         statBoxMain.className = "bg-[#111827] p-3 rounded-xl border border-amber-500/50 text-center";
       }
 
-      // Mostrar/Ocultar secciones
       const emptyNotice = document.getElementById('b-empty-deck-notice');
       emptyNotice.classList.toggle('hidden', cardEntries.length > 0);
 
@@ -1419,12 +1623,14 @@
       container.innerHTML = entries.map(entry => {
         const card = entry.card;
         const count = entry.count;
+        const frame = card.frameType || 'normal';
+        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
         const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
 
         return `
-          <div class="relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/60 p-2 flex flex-col justify-between group shadow-md">
+          <div class="relative bg-[#111827] rounded-xl overflow-hidden border ${style.border} p-2 flex flex-col justify-between group shadow-md">
             
-            <div class="relative w-full aspect-[293/427] bg-[#080c14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+            <div class="relative w-full aspect-[293/427] bg-[#070b14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
               <img src="${card.image_url_small || card.image_url}" alt="${card.name}" class="w-full h-full object-contain">
               
               <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-1.5 py-0.5 rounded border border-emerald-500/30">
@@ -1444,7 +1650,6 @@
               </div>
             </div>
 
-            <!-- Controles de Copias -->
             <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-gray-800 gap-1">
               <button onclick="removeCardFromBuilder('${card.name}')" class="flex-1 py-1 bg-gray-800 hover:bg-gray-700 text-red-400 font-bold text-xs rounded transition flex items-center justify-center" title="Quitar 1 copia">
                 <i data-lucide="minus" class="w-3 h-3"></i>
@@ -1469,7 +1674,6 @@
       populateModalWithCard(card);
     }
 
-    // FILTRO DEL CATÁLOGO EN EL BUILDER
     function setBuilderCatalogFilter(cat) {
       builderCatalogCategory = cat;
       document.querySelectorAll('.b-cat-btn').forEach(b => {
@@ -1511,12 +1715,14 @@
       container.innerHTML = matches.map(card => {
         const inDeck = builderDeck.cards[card.name];
         const countInDeck = inDeck ? inDeck.count : 0;
+        const frame = card.frameType || 'normal';
+        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
         const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
 
         return `
-          <div class="relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/50 p-2 flex flex-col justify-between shadow-md">
+          <div class="relative bg-[#111827] rounded-xl overflow-hidden border ${style.border} p-2 flex flex-col justify-between shadow-md">
             
-            <div class="relative w-full aspect-[293/427] bg-[#080c14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+            <div class="relative w-full aspect-[293/427] bg-[#070b14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
               <img src="${card.image_url_small || card.image_url}" alt="${card.name}" loading="lazy" class="w-full h-full object-contain">
               
               <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-1.5 py-0.5 rounded border border-emerald-500/30">
@@ -1553,7 +1759,6 @@
       lucide.createIcons();
     }
 
-    // GUARDAR MAZO CREADO
     function saveBuilderDeck() {
       const cardEntries = Object.values(builderDeck.cards);
       if (cardEntries.length === 0) {
@@ -1583,7 +1788,6 @@
         return acc + (price * e.count);
       }, 0);
 
-      // Crear estructura compatible de deck
       const formattedCards = cardEntries.map(e => ({
         name: e.card.name,
         section: getCardSection(e.card),
@@ -1624,12 +1828,11 @@
           spells: countSpells,
           traps: countTraps,
           owned_count: mainTotal + countExtra,
-          total_cost: roundNumber(totalCost, 2)
+          total_cost: Math.round(totalCost * 100) / 100
         },
         cards: formattedCards
       };
 
-      // Guardar o reemplazar en customDecks
       const existingIdx = customDecks.findIndex(d => d.id === deckObj.id);
       if (existingIdx !== -1) {
         customDecks[existingIdx] = deckObj;
@@ -1649,11 +1852,7 @@
         document.getElementById('builder-saved-status').className = "text-[10px] text-gray-400 bg-gray-800 px-2 py-0.5 rounded";
       }, 3000);
 
-      alert(`¡Mazo '${deckObj.name}' guardado exitosamente!\nAhora también puedes verlo y jugarlo en la pestaña 'Decks Listos'.`);
-    }
-
-    function roundNumber(num, dec) {
-      return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
+      alert(`¡Mazo '${deckObj.name}' guardado exitosamente!\nPuedes verlo en la pestaña 'Decks Listos'.`);
     }
 
     function exportBuilderYDK() {
@@ -1719,7 +1918,6 @@
       });
     }
 
-    // ACCIONES GENERALES DE DECKS
     function copyDeckList() {
       if (!activeDeck) return;
       let text = `=== ${activeDeck.name} ===\n`;
@@ -1759,17 +1957,13 @@
 
       main.forEach(c => {
         const id = getCardYdkId(c.name);
-        for (let i = 0; i < c.count; i++) {
-          ydkContent += `${id}\n`;
-        }
+        for (let i = 0; i < c.count; i++) ydkContent += `${id}\n`;
       });
 
       ydkContent += "#extra\n";
       extra.forEach(c => {
         const id = getCardYdkId(c.name);
-        for (let i = 0; i < c.count; i++) {
-          ydkContent += `${id}\n`;
-        }
+        for (let i = 0; i < c.count; i++) ydkContent += `${id}\n`;
       });
 
       ydkContent += "!side\n";
@@ -1792,9 +1986,18 @@
       return "0";
     }
 
+    // MODAL DE DETALLE TEATRO 3D
+    function toggleCardFlip() {
+      const inner = document.getElementById('modal-flip-inner');
+      inner.classList.toggle('is-flipped');
+    }
+
     function populateModalWithCard(card) {
       const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
       const formattedPrice = `$${unitPrice.toFixed(2)} USD`;
+
+      // Reset flip
+      document.getElementById('modal-flip-inner').classList.remove('is-flipped');
 
       document.getElementById('modal-card-img').src = card.image_url || card.image_url_small;
       document.getElementById('modal-card-name').innerText = card.name;
@@ -1807,6 +2010,7 @@
       const attrBox = document.getElementById('modal-attribute-box');
       if (card.attribute) {
         attrBox.classList.remove('hidden');
+        document.getElementById('modal-attr-icon').innerText = ATTR_ICONS[card.attribute] || '🔮';
         document.getElementById('modal-card-attribute').innerText = card.attribute;
       } else {
         attrBox.classList.add('hidden');
@@ -1829,6 +2033,26 @@
         document.getElementById('modal-card-def').innerText = card.def !== null ? card.def : '-';
       } else {
         atkDefRow.classList.add('hidden');
+      }
+
+      // INDICADOR DE USO EN MAZOS
+      const usageContainer = document.getElementById('modal-deck-usage-tags');
+      const usedInDecks = [];
+      allDecks.forEach(d => {
+        const found = d.cards.find(c => c.name.toLowerCase() === card.name.toLowerCase());
+        if (found) {
+          usedInDecks.push(`${d.short_name || d.name} (x${found.count})`);
+        }
+      });
+
+      if (usedInDecks.length > 0) {
+        usageContainer.innerHTML = usedInDecks.map(tag => `
+          <span class="px-2 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-500/30 text-[10px] font-semibold">
+            ✓ ${tag}
+          </span>
+        `).join('');
+      } else {
+        usageContainer.innerHTML = `<span class="text-gray-500 text-[10px]">No está asignada a ningún mazo activo</span>`;
       }
 
       document.getElementById('modal-price-tcg').innerText = formattedPrice;
@@ -1918,6 +2142,7 @@
       document.getElementById('search-input').value = '';
       document.getElementById('filter-type').value = 'all';
       document.getElementById('filter-attribute').value = 'all';
+      document.getElementById('filter-price-range').value = 'all';
       document.getElementById('sort-by').value = 'price_desc';
       setCategoryFilter('all');
     }
