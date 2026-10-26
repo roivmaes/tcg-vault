@@ -547,6 +547,10 @@
               <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
               <span>Editar en Builder</span>
             </button>
+            <button id="hero-btn-delete-deck" onclick="deleteCurrentActiveDeck()" class="hidden flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-2xl bg-red-950/50 hover:bg-red-900/70 text-red-300 border border-red-800/40 text-xs font-semibold transition" title="Eliminar este mazo">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+              <span>Eliminar Mazo</span>
+            </button>
           </div>
         </div>
 
@@ -1381,17 +1385,63 @@
         const deckIcon = deck.tag_color === 'red' ? 'flame' : (deck.tag_color === 'purple' ? 'zap' : 'shield');
         const deckCost = deck.stats?.total_cost || 0;
 
+        const isCustom = customDecks.some(cd => cd.id === deck.id);
+
         return `
-          <button onclick="selectDeck(${idx})" class="flex items-center gap-2.5 px-4 py-2 rounded-2xl border text-xs font-semibold transition ${activeClass}">
-            <i data-lucide="${deckIcon}" class="w-3.5 h-3.5"></i>
-            <span>${deck.short_name || deck.name}</span>
-            <span class="text-[9px] px-1.5 py-0.2 rounded border ${badgeBg}">${deck.format}</span>
-            <span class="text-[10px] font-bold font-stats text-cyan-200 bg-black/60 px-2 py-0.5 rounded-lg">$${deckCost.toFixed(2)}</span>
-          </button>
+          <div class="flex items-center group/btn relative">
+            <button onclick="selectDeck(${idx})" class="flex items-center gap-2.5 px-4 py-2 ${isCustom ? 'pr-8' : ''} rounded-2xl border text-xs font-semibold transition ${activeClass}">
+              <i data-lucide="${deckIcon}" class="w-3.5 h-3.5"></i>
+              <span>${deck.short_name || deck.name}</span>
+              <span class="text-[9px] px-1.5 py-0.2 rounded border ${badgeBg}">${deck.format}</span>
+              <span class="text-[10px] font-bold font-stats text-cyan-200 bg-black/60 px-2 py-0.5 rounded-lg">$${deckCost.toFixed(2)}</span>
+            </button>
+            ${isCustom ? `
+              <button onclick="event.stopPropagation(); deleteCustomDeck('${deck.id}')" class="absolute right-2 p-1 text-gray-400 hover:text-red-400 hover:bg-red-950/60 rounded-lg transition" title="Eliminar mazo creado">
+                <i data-lucide="trash-2" class="w-3 h-3"></i>
+              </button>
+            ` : ''}
+          </div>
         `;
       }).join('');
 
       lucide.createIcons();
+    }
+
+    
+    // ==========================================
+    // ELIMINACIÓN DE MAZOS CREADOS
+    // ==========================================
+    function deleteCustomDeck(deckId) {
+      const deckToDelete = customDecks.find(d => d.id === deckId);
+      const deckName = deckToDelete ? deckToDelete.name : "este mazo";
+
+      if (!confirm(`¿Estás seguro de que deseas eliminar permanentemente el mazo '${deckName}'?`)) {
+        return;
+      }
+
+      customDecks = customDecks.filter(d => d.id !== deckId);
+      localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(customDecks));
+
+      allDecks = [...initialDecks, ...customDecks];
+      document.getElementById('header-deck-count-badge').innerText = allDecks.length;
+
+      // Si el mazo eliminado era el seleccionado, seleccionar el primero
+      if (activeDeck && activeDeck.id === deckId) {
+        activeDeckIndex = 0;
+        activeDeck = allDecks[0];
+      } else if (activeDeckIndex >= allDecks.length) {
+        activeDeckIndex = 0;
+        activeDeck = allDecks[0];
+      }
+
+      renderDeckSelector();
+      renderDeckView();
+      alert(`El mazo '${deckName}' fue eliminado.`);
+    }
+
+    function deleteCurrentActiveDeck() {
+      if (!activeDeck) return;
+      deleteCustomDeck(activeDeck.id);
     }
 
     function selectDeck(idx) {
@@ -1430,6 +1480,11 @@
       document.getElementById('deck-title').innerText = activeDeck.name;
       document.getElementById('deck-desc').innerText = activeDeck.description;
       document.getElementById('deck-format-badge').innerText = activeDeck.format;
+
+      // Mostrar botón eliminar solo si es un mazo creado por el usuario
+      const isCustomDeck = customDecks.some(d => d.id === activeDeck.id);
+      const delBtn = document.getElementById('hero-btn-delete-deck');
+      if (delBtn) delBtn.classList.toggle('hidden', !isCustomDeck);
 
       const completionPct = Math.round((activeDeck.stats.owned_count / (activeDeck.stats.main_total + activeDeck.stats.extra_total)) * 100);
       document.getElementById('deck-completion-pill').innerText = `${activeDeck.stats.owned_count}/${activeDeck.stats.main_total + activeDeck.stats.extra_total} Completo (${completionPct}% Listo para Duelo)`;
