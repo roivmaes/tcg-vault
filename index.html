@@ -2416,6 +2416,8 @@
       document.getElementById('sim-stat-monsters').innerText = monsters;
       document.getElementById('sim-stat-spells').innerText = spells;
       document.getElementById('sim-stat-traps').innerText = traps;
+      const countPill = document.getElementById('sim-hand-count-pill');
+      if (countPill) countPill.innerText = simulatedHand.length;
 
       let verdict = "⚡ Equilibrada";
       if (monsters === 0) verdict = "⚠️ Sin Monstruos (Ladrillo)";
@@ -2538,19 +2540,20 @@
   </script>
 
   <!-- ========================================== -->
+  <!-- ========================================== -->
   <!-- MODAL: SIMULADOR DE MANO INICIAL (5 CARTAS) -->
   <!-- ========================================== -->
-  <div id="hand-simulator-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-4">
-    <div class="relative w-full max-w-4xl bg-gradient-to-b from-[#0c192e] to-[#060a14] rounded-3xl border border-cyan-500/40 shadow-2xl p-6 sm:p-8 space-y-6">
+  <div id="hand-simulator-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-3 sm:p-5">
+    <div class="relative w-full max-w-5xl max-h-[92vh] flex flex-col bg-gradient-to-b from-[#0c192e] to-[#060a14] rounded-3xl border border-cyan-500/40 shadow-2xl overflow-hidden">
       
-      <!-- Encabezado del Simulador -->
-      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+      <!-- 1. Encabezado Fijo del Simulador -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 shrink-0 bg-[#08101d]/90">
         <div class="flex items-center gap-3">
           <div class="p-2.5 rounded-2xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-            <i data-lucide="dices" class="w-6 h-6"></i>
+            <i data-lucide="dices" class="w-5 h-5"></i>
           </div>
           <div>
-            <h3 class="text-xl sm:text-2xl font-black font-display text-white">Simulador de Mano Inicial (Turno 1)</h3>
+            <h3 class="text-lg sm:text-xl font-black font-display text-white">Simulador de Mano Inicial (Turno 1)</h3>
             <p id="sim-deck-name" class="text-xs text-gray-400">Probando mazo...</p>
           </div>
         </div>
@@ -2559,47 +2562,57 @@
         </button>
       </div>
 
-      <!-- Tapete de Duelo: 5 Cartas de la Mano -->
-      <div>
-        <div class="text-center mb-3">
-          <span class="text-xs uppercase font-bold tracking-widest text-cyan-400">Tus 5 Cartas Iniciales Robadas al Azar:</span>
+      <!-- 2. Cuerpo con Scroll Autónomo (Tapete de Cartas + Métricas) -->
+      <div class="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+        
+        <!-- Tapete de Duelo: Cartas en Mano -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <span class="text-xs uppercase font-bold tracking-widest text-cyan-400">
+              Cartas en tu Mano (<span id="sim-hand-count-pill">5</span>):
+            </span>
+            <span class="text-[11px] text-gray-400">Haz clic en cualquier carta para ver sus detalles</span>
+          </div>
+
+          <!-- Cuadrícula flexible adaptativa: miniatura de cartas en mano -->
+          <div id="sim-hand-cards" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-3.5 items-start">
+            <!-- Inyectado por JS -->
+          </div>
         </div>
-        <div id="sim-hand-cards" class="grid grid-cols-2 sm:grid-cols-5 gap-3.5 sm:gap-4 min-h-[220px] items-center justify-center">
-          <!-- Inyectado por JS -->
+
+        <!-- Métricas de la Mano Robada -->
+        <div id="sim-hand-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-[#080e1a]/95 p-3.5 rounded-2xl border border-white/[0.08] text-center text-xs">
+          <div>
+            <span class="text-gray-400 block text-[10px] uppercase font-bold">🟡 Monstruos</span>
+            <span id="sim-stat-monsters" class="font-black text-amber-300 font-stats text-base">0</span>
+          </div>
+          <div>
+            <span class="text-gray-400 block text-[10px] uppercase font-bold">🟢 Mágicas</span>
+            <span id="sim-stat-spells" class="font-black text-emerald-300 font-stats text-base">0</span>
+          </div>
+          <div>
+            <span class="text-gray-400 block text-[10px] uppercase font-bold">🟣 Trampas</span>
+            <span id="sim-stat-traps" class="font-black text-pink-300 font-stats text-base">0</span>
+          </div>
+          <div>
+            <span class="text-gray-400 block text-[10px] uppercase font-bold">⚖️ Jugabilidad T1</span>
+            <span id="sim-stat-verdict" class="font-black text-cyan-300 font-stats text-base">Calculando...</span>
+          </div>
         </div>
+
       </div>
 
-      <!-- Métricas de la Mano Robada -->
-      <div id="sim-hand-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-[#080e1a] p-4 rounded-2xl border border-white/[0.08] text-center text-xs">
-        <div>
-          <span class="text-gray-400 block text-[10px] uppercase font-bold">🟡 Monstruos</span>
-          <span id="sim-stat-monsters" class="font-black text-amber-300 font-stats text-base">0</span>
-        </div>
-        <div>
-          <span class="text-gray-400 block text-[10px] uppercase font-bold">🟢 Mágicas</span>
-          <span id="sim-stat-spells" class="font-black text-emerald-300 font-stats text-base">0</span>
-        </div>
-        <div>
-          <span class="text-gray-400 block text-[10px] uppercase font-bold">🟣 Trampas</span>
-          <span id="sim-stat-traps" class="font-black text-pink-300 font-stats text-base">0</span>
-        </div>
-        <div>
-          <span class="text-gray-400 block text-[10px] uppercase font-bold">⚖️ Jugabilidad T1</span>
-          <span id="sim-stat-verdict" class="font-black text-cyan-300 font-stats text-base">Calculando...</span>
-        </div>
-      </div>
-
-      <!-- Botones de Acción: Mulligan & Robar 1 Carta Adicional -->
-      <div class="flex items-center justify-between gap-3 pt-2 border-t border-white/10 flex-wrap">
-        <button onclick="drawAnotherCard()" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0d1c33] hover:bg-[#132a4f] text-cyan-200 border border-cyan-500/30 text-xs font-bold transition shadow">
-          <i data-lucide="plus-circle" class="w-4 h-4 text-cyan-400"></i>
+      <!-- 3. Barra de Botones Inferior FIJA (Siempre visible en pantalla) -->
+      <div class="px-6 py-4 border-t border-white/10 shrink-0 bg-[#060a14] flex items-center justify-between gap-3 flex-wrap">
+        <button onclick="drawAnotherCard()" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0d1c33] hover:bg-[#132a4f] text-cyan-200 border border-cyan-500/40 text-xs font-bold transition shadow group">
+          <i data-lucide="plus-circle" class="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform"></i>
           <span>Robar Carta Turno 2 (+1)</span>
         </button>
 
         <div class="flex items-center gap-2.5">
           <button onclick="rerollHand()" class="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-black uppercase tracking-wider transition shadow-lg shadow-cyan-600/30 group">
             <i data-lucide="refresh-cw" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-500"></i>
-            <span>Mulligan (Robar Nueva Mano)</span>
+            <span>Mulligan (Nueva Mano)</span>
           </button>
           <button onclick="closeHandSimulator()" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-xs font-semibold transition">
             Cerrar
@@ -2610,7 +2623,6 @@
     </div>
   </div>
 
-  <!-- ========================================== -->
   <!-- MODAL: COMPARTIR CATÁLOGO PÚBLICO          -->
   <!-- ========================================== -->
   <div id="share-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-4">
