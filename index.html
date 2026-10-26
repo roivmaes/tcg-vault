@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCG Vault - Galería, Decks & Builder Yu-Gi-Oh!</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Outfit:wght@300;400;500;600;700;800&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Cinzel', 'serif'],
+            stats: ['Rajdhani', 'sans-serif'],
+          },
+          colors: {
+            tcg: {
+              normal: '#d4a359',
+              effect: '#cf6326',
+              spell: '#1d9e74',
+              trap: '#bc1c6c',
+              fusion: '#9b4db7',
+              synchro: '#e5e7eb',
+              xyz: '#1e293b',
+              link: '#1d6fcd',
+              ritual: '#437dd4',
+              dark: '#0b0f19',
+              cardbg: '#111827',
+              accent: '#f59e0b',
+              price: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Efecto 3D Tilt y Foil Holográfico */
+    .card-container {
+      perspective: 1000px;
+    }
+    .tcg-card {
+      transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+      transform-style: preserve-3d;
+    }
+    .tcg-card:hover {
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(16, 185, 129, 0.25);
+    }
+    .foil-overlay {
+      background: linear-gradient(
+        115deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.08) 30%,
+        rgba(255, 215, 0, 0.2) 45%,
+        rgba(0, 240, 255, 0.2) 55%,
+        rgba(255, 0, 128, 0.15) 70%,
+        transparent 100%
+      );
+      mix-blend-mode: color-dodge;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .tcg-card:hover .foil-overlay {
+      opacity: 1;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #273549;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #10b981;
+    }
+  </style>
+</head>
+<body class="bg-[#090d16] text-gray-100 min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-black">
+
+  <!-- TOP BAR / HEADER -->
+  <header class="sticky top-0 z-40 bg-[#0c1220]/95 backdrop-blur-md border-b border-gray-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo y Pestañas Principales -->
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3 cursor-pointer" onclick="switchMainTab('inventory')">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-600 via-emerald-600 to-emerald-400 p-0.5 shadow-lg shadow-emerald-500/20 flex items-center justify-center">
+              <div class="w-full h-full bg-[#0c1220] rounded-[10px] flex items-center justify-center">
+                <i data-lucide="layers" class="w-6 h-6 text-emerald-400"></i>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h1 class="text-xl sm:text-2xl font-bold tracking-wider font-display bg-gradient-to-r from-emerald-200 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
+                  TCG VAULT
+                </h1>
+                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  Precios en Vivo
+                </span>
+              </div>
+              <p class="text-[11px] text-gray-400 hidden sm:block">Colección, Decks & Deck Builder</p>
+            </div>
+          </div>
+
+          <!-- PESTAÑAS: INVENTARIO vs DECKS vs BUILDER -->
+          <nav class="hidden md:flex items-center p-1 bg-[#111827] rounded-xl border border-gray-800">
+            <button id="tab-btn-inventory" onclick="switchMainTab('inventory')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white transition-all shadow-md">
+              <i data-lucide="archive" class="w-4 h-4"></i>
+              <span>Colección (296)</span>
+            </button>
+            <button id="tab-btn-decks" onclick="switchMainTab('decks')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition-all">
+              <i data-lucide="swords" class="w-4 h-4 text-amber-400"></i>
+              <span>Decks Listos</span>
+              <span id="header-deck-count-badge" class="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">2</span>
+            </button>
+            <button id="tab-btn-builder" onclick="switchMainTab('builder')" class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition-all">
+              <i data-lucide="hammer" class="w-4 h-4 text-emerald-400"></i>
+              <span>Deck Builder</span>
+              <span class="px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">NUEVO</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Acciones rápidas -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Switcher móvil -->
+          <div class="flex md:hidden items-center p-1 bg-[#111827] rounded-lg border border-gray-800 text-xs mr-1">
+            <button onclick="switchMainTab('inventory')" id="mob-tab-inv" class="px-2 py-1 rounded bg-emerald-600 text-white font-bold">Colección</button>
+            <button onclick="switchMainTab('decks')" id="mob-tab-decks" class="px-2 py-1 rounded text-gray-400 font-bold">Decks</button>
+            <button onclick="switchMainTab('builder')" id="mob-tab-builder" class="px-2 py-1 rounded text-gray-400 font-bold">Builder</button>
+          </div>
+
+          <!-- Botón de Sincronizar -->
+          <button id="btn-sync" onclick="syncWithGoogleSheet()" class="flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg bg-gray-800/80 hover:bg-gray-700 text-gray-200 hover:text-white border border-gray-700 hover:border-gray-600 transition shadow-sm" title="Sincronizar cambios desde el Google Sheet">
+            <i data-lucide="refresh-cw" id="sync-icon" class="w-4 h-4 text-emerald-400"></i>
+            <span class="hidden lg:inline">Sincronizar Sheet</span>
+          </button>
+
+          <!-- Enlace al Google Sheet Original -->
+          <a href="https://docs.google.com/spreadsheets/d/1KXhGXwg2Ab5pvTjSDBGrOR9-4KYmvnEceJsUCBaY9NA/edit?gid=0#gid=0" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-emerald-950/40 text-emerald-300 border border-emerald-800/50 hover:bg-emerald-900/40 transition">
+            <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
+            <span class="hidden lg:inline">Ver Hoja</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- VISTA 1: INVENTARIO / COLECCIÓN GENERAL   -->
+  <!-- ========================================== -->
+  <div id="section-inventory" class="block">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2 w-full">
+      
+      <!-- RESUMEN DE COLECCIÓN CON VALOR TOTAL $$ -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
+        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+          <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-[11px] text-gray-400 uppercase font-semibold">Total Cartas</div>
+            <div id="stat-total" class="text-xl font-bold font-stats text-white">0</div>
+          </div>
+        </div>
+
+        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+          <div class="p-2.5 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            <i data-lucide="package" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-[11px] text-gray-400 uppercase font-semibold">Decks y Cajas</div>
+            <div id="stat-decks" class="text-xl font-bold font-stats text-white">0</div>
+          </div>
+        </div>
+
+        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md">
+          <div class="p-2.5 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20">
+            <i data-lucide="copy" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-[11px] text-gray-400 uppercase font-semibold">Cartas Sueltas</div>
+            <div id="stat-sueltas" class="text-xl font-bold font-stats text-white">0</div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-950/40 to-[#111827] border border-emerald-500/40 rounded-xl p-3.5 flex items-center gap-3 shadow-md shadow-emerald-950/30">
+          <div class="p-2.5 rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-[11px] text-emerald-400/90 uppercase font-semibold">Valor Total ($$)</div>
+            <div id="stat-total-value" class="text-xl font-bold font-stats text-emerald-300">$0.00</div>
+          </div>
+        </div>
+
+        <div class="bg-[#111827]/80 border border-gray-800/80 rounded-xl p-3.5 flex items-center gap-3 shadow-md col-span-2 sm:col-span-1">
+          <div class="p-2.5 rounded-lg bg-teal-500/10 text-teal-400 border border-teal-500/20">
+            <i data-lucide="coins" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-[11px] text-gray-400 uppercase font-semibold">Valor Filtrado</div>
+            <div id="stat-filtered-value" class="text-xl font-bold font-stats text-teal-300">$0.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BARRA DE FILTROS -->
+      <div class="bg-[#111827]/90 border border-gray-800 rounded-2xl p-4 sm:p-5 shadow-xl space-y-4">
+        <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+          <div class="relative w-full md:w-96">
+            <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="text" 
+              id="search-input" 
+              oninput="applyFilters()" 
+              placeholder="Buscar por nombre, efecto, arquetipo..." 
+              class="w-full pl-10 pr-9 py-2.5 bg-[#0b0f19] border border-gray-700/80 rounded-xl text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+            >
+            <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div class="flex items-center p-1 bg-[#0b0f19] rounded-xl border border-gray-800 w-full md:w-auto overflow-x-auto">
+            <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-4 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap">
+              Todas
+            </button>
+            <button onclick="setCategoryFilter('Decks y Cajas')" data-cat="Decks y Cajas" class="cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+              Decks y Cajas
+            </button>
+            <button onclick="setCategoryFilter('Carta Suelta')" data-cat="Carta Suelta" class="cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+              Carta Suelta
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-gray-800/80">
+          <div>
+            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Tipo de Carta</label>
+            <select id="filter-type" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+              <option value="all">Todos los tipos</option>
+              <option value="monster">Monstruos (Todos)</option>
+              <option value="normal">Monstruos Normales</option>
+              <option value="effect">Monstruos de Efecto</option>
+              <option value="spell">Mágicas (Spells)</option>
+              <option value="trap">Trampas (Traps)</option>
+              <option value="fusion">Fusiones</option>
+              <option value="synchro">Synchros</option>
+              <option value="xyz">Xyz</option>
+              <option value="link">Links</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Atributo</label>
+            <select id="filter-attribute" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+              <option value="all">Cualquier atributo</option>
+              <option value="LIGHT">Luz (LIGHT)</option>
+              <option value="DARK">Oscuridad (DARK)</option>
+              <option value="WATER">Agua (WATER)</option>
+              <option value="FIRE">Fuego (FIRE)</option>
+              <option value="EARTH">Tierra (EARTH)</option>
+              <option value="WIND">Viento (WIND)</option>
+              <option value="DIVINE">Divino (DIVINE)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Ordenar por</label>
+            <select id="sort-by" onchange="applyFilters()" class="w-full bg-[#0b0f19] border border-gray-700/80 rounded-lg py-2 px-2.5 text-xs text-gray-200 focus:border-emerald-500 focus:outline-none">
+              <option value="price_desc">💰 Mayor Costo ($$ → $)</option>
+              <option value="price_asc">💰 Menor Costo ($ → $$)</option>
+              <option value="id_asc">ID Original (Google Sheet)</option>
+              <option value="name_asc">Nombre (A → Z)</option>
+              <option value="name_desc">Nombre (Z → A)</option>
+              <option value="atk_desc">Mayor ATK</option>
+              <option value="def_desc">Mayor DEF</option>
+              <option value="level_desc">Nivel / Rango (Mayor)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold text-gray-400 mb-1 uppercase tracking-wider">Tamaño de Cartas</label>
+            <div class="flex items-center gap-1 bg-[#0b0f19] p-1 rounded-lg border border-gray-800">
+              <button onclick="setGridSize('sm')" id="btn-size-sm" class="flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition">Compacta</button>
+              <button onclick="setGridSize('md')" id="btn-size-md" class="flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition">Normal</button>
+              <button onclick="setGridSize('lg')" id="btn-size-lg" class="flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition">Grande</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DE CARTAS TCG -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
+      <div id="empty-state" class="hidden text-center py-20 bg-[#111827]/40 rounded-2xl border border-gray-800/80">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-800/80 flex items-center justify-center text-gray-500">
+          <i data-lucide="ghost" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-200 mb-1">No se encontraron cartas</h3>
+        <p class="text-sm text-gray-400 max-w-sm mx-auto mb-4">Intenta ajustar los filtros de búsqueda o categoría.</p>
+        <button onclick="resetFilters()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold">
+          Restablecer Filtros
+        </button>
+      </div>
+
+      <div id="cards-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6"></div>
+
+      <div id="pagination-wrapper" class="mt-10 flex flex-col items-center gap-3">
+        <div id="pagination-info" class="text-xs text-gray-400">
+          Mostrando <span id="current-count" class="font-bold text-gray-200">0</span> de <span id="total-filtered-count" class="font-bold text-gray-200">0</span> cartas
+        </div>
+        <button id="btn-load-more" onclick="loadMoreCards()" class="px-6 py-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-700 text-gray-200 hover:text-white rounded-xl text-sm font-semibold transition-all shadow-md flex items-center gap-2">
+          <i data-lucide="chevrons-down" class="w-4 h-4 text-emerald-400"></i>
+          <span>Cargar más cartas</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- VISTA 2: APARTADO DE DECKS (MAZOS)         -->
+  <!-- ========================================== -->
+  <div id="section-decks" class="hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
+      
+      <!-- SELECTOR DE DECK -->
+      <div class="flex items-center justify-between flex-wrap gap-4 bg-[#111827]/80 p-3 rounded-2xl border border-gray-800">
+        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-400 px-2">
+          <i data-lucide="folder-kanban" class="w-4 h-4 text-emerald-400"></i>
+          <span>Selecciona tu Mazo:</span>
+        </div>
+
+        <div id="deck-selector-buttons" class="flex items-center gap-2 flex-wrap"></div>
+      </div>
+
+      <!-- CABECERA DEL DECK SELECCIONADO -->
+      <div id="deck-hero-card" class="bg-gradient-to-r from-[#111827] via-[#141d2e] to-[#0f172a] border border-emerald-500/30 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2.5 flex-wrap">
+              <span id="deck-format-badge" class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                Formato Edison (2010)
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                <span id="deck-completion-pill">43/43 Completo</span>
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-950/70 text-emerald-300 border border-emerald-500/40 flex items-center gap-1 shadow">
+                <i data-lucide="dollar-sign" class="w-3.5 h-3.5"></i>
+                <span id="deck-cost-pill">Costo Total: $0.00 USD</span>
+              </span>
+            </div>
+
+            <h2 id="deck-title" class="text-2xl sm:text-3xl font-black font-display text-white tracking-wide">
+              Nombre del Deck
+            </h2>
+
+            <p id="deck-desc" class="text-xs sm:text-sm text-gray-300 max-w-3xl leading-relaxed">
+              Descripción del deck...
+            </p>
+          </div>
+
+          <div class="flex flex-wrap lg:flex-col gap-2.5 shrink-0">
+            <button onclick="copyDeckList()" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition shadow-lg shadow-emerald-600/30">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+              <span>Copiar Lista</span>
+            </button>
+            <button onclick="downloadYDK()" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-200 hover:text-white border border-gray-700 text-xs font-semibold transition">
+              <i data-lucide="download" class="w-4 h-4 text-emerald-400"></i>
+              <span>Descargar .YDK</span>
+            </button>
+            <button onclick="editDeckInBuilder()" class="flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-indigo-950/70 hover:bg-indigo-900 text-indigo-300 border border-indigo-700/50 text-xs font-semibold transition">
+              <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+              <span>Editar en Builder</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-6 gap-3 mt-6 pt-6 border-t border-gray-800">
+          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-gray-800/80 text-center">
+            <div class="text-[10px] uppercase font-bold text-gray-400">Mazo Principal</div>
+            <div id="deck-stat-main" class="text-xl font-bold font-stats text-white">40 <span class="text-xs font-normal text-gray-500">cartas</span></div>
+          </div>
+          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-amber-600/30 text-center">
+            <div class="text-[10px] uppercase font-bold text-amber-400">🟡 Monstruos</div>
+            <div id="deck-stat-monsters" class="text-xl font-bold font-stats text-amber-300">0</div>
+          </div>
+          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-emerald-600/30 text-center">
+            <div class="text-[10px] uppercase font-bold text-emerald-400">🟢 Mágicas</div>
+            <div id="deck-stat-spells" class="text-xl font-bold font-stats text-emerald-300">0</div>
+          </div>
+          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-pink-600/30 text-center">
+            <div class="text-[10px] uppercase font-bold text-pink-400">🟣 Trampas</div>
+            <div id="deck-stat-traps" class="text-xl font-bold font-stats text-pink-300">0</div>
+          </div>
+          <div class="bg-[#0b0f19]/80 p-3 rounded-xl border border-indigo-600/30 text-center">
+            <div class="text-[10px] uppercase font-bold text-indigo-400">⬛ Extra Deck</div>
+            <div id="deck-stat-extra" class="text-xl font-bold font-stats text-indigo-300">0</div>
+          </div>
+          <div class="bg-gradient-to-br from-emerald-950/60 to-[#0b0f19] p-3 rounded-xl border border-emerald-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
+            <div class="text-[10px] uppercase font-bold text-emerald-400">💰 Costo Deck</div>
+            <div id="deck-stat-cost-val" class="text-xl font-extrabold font-stats text-emerald-300">$0.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIONES DE CARTAS -->
+      <section class="space-y-3">
+        <div class="flex items-center justify-between border-b border-amber-500/30 pb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+            <h3 class="text-lg font-bold font-display text-amber-300">Monstruos</h3>
+            <span id="deck-monsters-count-pill" class="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">0 Cartas</span>
+          </div>
+          <span class="text-xs text-gray-400">Haz clic en cualquier carta para ver su efecto e información</span>
+        </div>
+        <div id="deck-monsters-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4"></div>
+      </section>
+
+      <section class="space-y-3 pt-4">
+        <div class="flex items-center justify-between border-b border-emerald-500/30 pb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+            <h3 class="text-lg font-bold font-display text-emerald-300">Cartas Mágicas</h3>
+            <span id="deck-spells-count-pill" class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">0 Cartas</span>
+          </div>
+          <span class="text-xs text-gray-400">Molienda, robo, disrupción y limpiacampos</span>
+        </div>
+        <div id="deck-spells-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4"></div>
+      </section>
+
+      <section class="space-y-3 pt-4">
+        <div class="flex items-center justify-between border-b border-pink-500/30 pb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-pink-500"></span>
+            <h3 class="text-lg font-bold font-display text-pink-300">Cartas de Trampa</h3>
+            <span id="deck-traps-count-pill" class="text-xs font-mono px-2 py-0.5 rounded bg-pink-500/10 text-pink-400 border border-pink-500/20">0 Cartas</span>
+          </div>
+          <span class="text-xs text-gray-400">Protección, anulación y contratrampas</span>
+        </div>
+        <div id="deck-traps-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4"></div>
+      </section>
+
+      <section class="space-y-3 pt-4">
+        <div class="flex items-center justify-between border-b border-indigo-500/30 pb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-indigo-500"></span>
+            <h3 class="text-lg font-bold font-display text-indigo-300">Extra Deck</h3>
+            <span id="deck-extra-count-pill" class="text-xs font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">0 Cartas</span>
+          </div>
+          <span class="text-xs text-gray-400">Fusiones, Sincronías y Enlaces (Links)</span>
+        </div>
+        <div id="deck-extra-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4"></div>
+      </section>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- VISTA 3: CONSTRUCTOR VISUAL DE DECKS       -->
+  <!-- ========================================== -->
+  <div id="section-builder" class="hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
+      
+      <!-- BARRA SUPERIOR DE HERRAMIENTAS DEL BUILDER -->
+      <div class="bg-[#111827] border border-gray-800 rounded-2xl p-5 shadow-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        
+        <!-- Nombre y Formato del Mazo -->
+        <div class="flex-1 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+              <i data-lucide="wrench" class="w-3.5 h-3.5"></i>
+              Deck Builder Interactivo
+            </span>
+            <span id="builder-saved-status" class="text-[10px] text-gray-400 bg-gray-800 px-2 py-0.5 rounded">
+              Editando
+            </span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input 
+              type="text" 
+              id="builder-deck-title" 
+              value="Mi Mazo Personalizado #1" 
+              class="bg-[#0b0f19] border border-gray-700 focus:border-emerald-500 rounded-xl px-3.5 py-2 text-base font-bold text-white focus:outline-none flex-1 font-display"
+              placeholder="Nombre de tu Mazo..."
+            >
+            <select id="builder-deck-format" class="bg-[#0b0f19] border border-gray-700 text-xs text-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:border-emerald-500">
+              <option value="Avanzado / Actual">Formato Actual / Avanzado</option>
+              <option value="Edison (2010)">Formato Edison (2010)</option>
+              <option value="Casual / Amistoso">Casual / Amistoso</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Acciones: Guardar, Descargar, Copiar, Limpiar -->
+        <div class="flex items-center gap-2 flex-wrap shrink-0">
+          <button onclick="saveBuilderDeck()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition shadow-lg shadow-emerald-600/30">
+            <i data-lucide="save" class="w-4 h-4"></i>
+            <span>Guardar Mazo</span>
+          </button>
+          <button onclick="exportBuilderYDK()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 text-xs font-semibold transition">
+            <i data-lucide="download" class="w-4 h-4 text-emerald-400"></i>
+            <span>Exportar .YDK</span>
+          </button>
+          <button onclick="copyBuilderDeckList()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 text-xs font-semibold transition">
+            <i data-lucide="copy" class="w-4 h-4"></i>
+            <span>Copiar</span>
+          </button>
+          <button onclick="clearBuilderDeck()" class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-red-950/40 hover:bg-red-900/60 text-red-300 border border-red-800/40 text-xs font-semibold transition" title="Limpiar todo el mazo">
+            <i data-lucide="trash-2" class="w-4 h-4"></i>
+            <span class="hidden sm:inline">Vaciar</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- MÉTRICAS EN VIVO DEL MAZO EN CONSTRUCCIÓN -->
+      <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
+        <!-- Main Deck Counter -->
+        <div id="b-stat-box-main" class="bg-[#111827] p-3 rounded-xl border border-amber-500/40 text-center">
+          <div class="text-[10px] uppercase font-bold text-gray-400">Main Deck</div>
+          <div class="text-xl font-black font-stats text-white">
+            <span id="b-main-count">0</span><span class="text-xs font-normal text-gray-400"> / 40-60</span>
+          </div>
+        </div>
+
+        <!-- Monstruos -->
+        <div class="bg-[#111827] p-3 rounded-xl border border-amber-600/30 text-center">
+          <div class="text-[10px] uppercase font-bold text-amber-400">🟡 Monstruos</div>
+          <div id="b-monsters-count" class="text-xl font-bold font-stats text-amber-300">0</div>
+        </div>
+
+        <!-- Mágicas -->
+        <div class="bg-[#111827] p-3 rounded-xl border border-emerald-600/30 text-center">
+          <div class="text-[10px] uppercase font-bold text-emerald-400">🟢 Mágicas</div>
+          <div id="b-spells-count" class="text-xl font-bold font-stats text-emerald-300">0</div>
+        </div>
+
+        <!-- Trampas -->
+        <div class="bg-[#111827] p-3 rounded-xl border border-pink-600/30 text-center">
+          <div class="text-[10px] uppercase font-bold text-pink-400">🟣 Trampas</div>
+          <div id="b-traps-count" class="text-xl font-bold font-stats text-pink-300">0</div>
+        </div>
+
+        <!-- Extra Deck -->
+        <div class="bg-[#111827] p-3 rounded-xl border border-indigo-600/30 text-center">
+          <div class="text-[10px] uppercase font-bold text-indigo-400">⬛ Extra Deck</div>
+          <div class="text-xl font-bold font-stats text-indigo-300">
+            <span id="b-extra-count">0</span><span class="text-xs font-normal text-gray-400"> / 15</span>
+          </div>
+        </div>
+
+        <!-- Costo Total -->
+        <div class="bg-gradient-to-br from-emerald-950/60 to-[#111827] p-3 rounded-xl border border-emerald-500/50 text-center col-span-2 sm:col-span-1 shadow-md">
+          <div class="text-[10px] uppercase font-bold text-emerald-400">💰 Costo Mazo</div>
+          <div id="b-cost-val" class="text-xl font-extrabold font-stats text-emerald-300">$0.00</div>
+        </div>
+      </div>
+
+      <!-- ÁREA SPLIT-VIEW: TAPETE DEL MAZO (IZQ) vs CATÁLOGO PARA AGREGAR (DER) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        <!-- ============================================== -->
+        <!-- COLUMNA IZQUIERDA: EL TAPETE DEL MAZO (7 cols) -->
+        <!-- ============================================== -->
+        <div class="lg:col-span-7 bg-[#0d1424] border border-gray-800 rounded-2xl p-5 shadow-2xl space-y-6">
+          <div class="flex items-center justify-between border-b border-gray-800 pb-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="layers-3" class="w-5 h-5 text-emerald-400"></i>
+              <h3 class="text-base font-bold font-display text-white">Cartas en tu Mazo</h3>
+            </div>
+            <span class="text-xs text-gray-400">Usa los botones <span class="text-emerald-400 font-bold">+</span> / <span class="text-red-400 font-bold">-</span> para ajustar copias</span>
+          </div>
+
+          <!-- Estado vacío si no hay cartas -->
+          <div id="b-empty-deck-notice" class="text-center py-12 text-gray-500 space-y-2">
+            <i data-lucide="sparkle" class="w-8 h-8 mx-auto text-gray-600"></i>
+            <p class="text-sm font-medium">Tu mazo está vacío.</p>
+            <p class="text-xs text-gray-400 max-w-xs mx-auto">Selecciona cartas del catálogo de la derecha y haz clic en <strong>"+ Añadir"</strong> para empezar a armarlo.</p>
+          </div>
+
+          <!-- Contenedores por tipo -->
+          <!-- 1. Monstruos en el Builder -->
+          <div id="b-monsters-section" class="space-y-2 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-amber-400 border-b border-amber-500/20 pb-1">
+              <span>🟡 Monstruos (<span id="b-section-m-count">0</span>)</span>
+            </div>
+            <div id="b-monsters-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+          </div>
+
+          <!-- 2. Mágicas en el Builder -->
+          <div id="b-spells-section" class="space-y-2 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-emerald-400 border-b border-emerald-500/20 pb-1">
+              <span>🟢 Cartas Mágicas (<span id="b-section-s-count">0</span>)</span>
+            </div>
+            <div id="b-spells-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+          </div>
+
+          <!-- 3. Trampas en el Builder -->
+          <div id="b-traps-section" class="space-y-2 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-pink-400 border-b border-pink-500/20 pb-1">
+              <span>🟣 Cartas de Trampa (<span id="b-section-t-count">0</span>)</span>
+            </div>
+            <div id="b-traps-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+          </div>
+
+          <!-- 4. Extra Deck en el Builder -->
+          <div id="b-extra-section" class="space-y-2 hidden">
+            <div class="flex items-center justify-between text-xs font-bold text-indigo-400 border-b border-indigo-500/20 pb-1">
+              <span>⬛ Extra Deck (Sincronías, Fusiones, Links) (<span id="b-section-e-count">0</span>)</span>
+            </div>
+            <div id="b-extra-cards" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+          </div>
+
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- COLUMNA DERECHA: CATÁLOGO DE INVENTARIO PARA AGREGAR (5 cols) -->
+        <!-- ======================================================== -->
+        <div class="lg:col-span-5 bg-[#0f172a] border border-gray-800 rounded-2xl p-5 shadow-2xl space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <i data-lucide="book-open-check" class="w-5 h-5 text-amber-400"></i>
+              <h3 class="text-base font-bold font-display text-white">Tu Inventario</h3>
+            </div>
+            <span class="text-xs text-gray-400 font-mono"><span id="b-catalog-count">296</span> disponibles</span>
+          </div>
+
+          <!-- Buscador y filtro rápido del catálogo -->
+          <div class="space-y-2">
+            <div class="relative">
+              <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+              <input 
+                type="text" 
+                id="b-search-input" 
+                oninput="filterBuilderCatalog()" 
+                placeholder="Buscar carta para añadir..." 
+                class="w-full pl-9 pr-3 py-2 bg-[#080d1a] border border-gray-700 rounded-xl text-xs text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500"
+              >
+            </div>
+
+            <!-- Filtros rápidos de tipo -->
+            <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-[11px]">
+              <button onclick="setBuilderCatalogFilter('all')" data-bcat="all" class="b-cat-btn px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold whitespace-nowrap">Todas</button>
+              <button onclick="setBuilderCatalogFilter('monster')" data-bcat="monster" class="b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Monstruos</button>
+              <button onclick="setBuilderCatalogFilter('spell')" data-bcat="spell" class="b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Mágicas</button>
+              <button onclick="setBuilderCatalogFilter('trap')" data-bcat="trap" class="b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Trampas</button>
+              <button onclick="setBuilderCatalogFilter('extra')" data-bcat="extra" class="b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Extra Deck</button>
+            </div>
+          </div>
+
+          <!-- Cuadrícula con scroll del catálogo -->
+          <div id="b-catalog-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[720px] overflow-y-auto pr-1">
+            <!-- Renderizado dinámicamente -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- MODAL DE DETALLE DE CARTA TCG (COMPARTIDO) -->
+  <!-- ========================================== -->
+  <div id="card-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="absolute inset-0" onclick="closeModal()"></div>
+
+    <div class="relative bg-[#0d1322] border border-gray-700/80 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh] z-10">
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 text-gray-300 hover:text-white flex items-center justify-center transition border border-gray-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <button onclick="prevCard()" class="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/70 hover:bg-emerald-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700">
+        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+      </button>
+      <button onclick="nextCard()" class="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/70 hover:bg-emerald-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700">
+        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+      </button>
+
+      <div class="md:w-1/2 bg-[#080c14] p-6 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-800">
+        <div class="relative group cursor-zoom-in" onclick="openFullImage()">
+          <img id="modal-card-img" src="" alt="Carta TCG" class="w-64 sm:w-72 max-h-[420px] object-contain rounded-lg shadow-2xl transition-transform duration-300 group-hover:scale-[1.03]">
+          <div class="absolute top-2 left-2 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-xs font-bold text-emerald-400 border border-emerald-500/40 flex items-center gap-1 shadow-lg">
+            <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+            <span id="modal-card-floating-price">$0.00</span>
+          </div>
+          <div class="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-[11px] text-gray-300 flex items-center gap-1 pointer-events-none">
+            <i data-lucide="maximize-2" class="w-3 h-3"></i>
+            <span>Ver HD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:w-1/2 p-6 overflow-y-auto space-y-4">
+        <div class="flex items-center justify-between">
+          <span id="modal-card-category" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+            Categoría
+          </span>
+          <span id="modal-card-id" class="text-xs font-mono text-gray-400">
+            ID #0
+          </span>
+        </div>
+
+        <div>
+          <h2 id="modal-card-name" class="text-2xl font-bold font-display text-white tracking-wide">
+            Nombre de la Carta
+          </h2>
+          <p id="modal-card-type-line" class="text-xs text-gray-400 font-medium mt-0.5">
+            [ Tipo / Subtipo ]
+          </p>
+        </div>
+
+        <div id="modal-stats-bar" class="flex items-center gap-3 py-2 border-y border-gray-800 text-xs">
+          <div id="modal-attribute-box" class="flex items-center gap-1.5 font-bold">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <span id="modal-card-attribute">DARK</span>
+          </div>
+          <div id="modal-level-box" class="flex items-center gap-1 font-bold text-amber-400">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            <span id="modal-card-level">Nivel 8</span>
+          </div>
+          <div id="modal-race-box" class="text-gray-400 font-medium">
+            <span id="modal-card-race">Dragón</span>
+          </div>
+        </div>
+
+        <div id="modal-atk-def-row" class="grid grid-cols-2 gap-3">
+          <div class="bg-[#111827] p-2.5 rounded-xl border border-gray-800 text-center">
+            <div class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Ataque (ATK)</div>
+            <div id="modal-card-atk" class="text-xl font-bold font-stats text-red-400">3000</div>
+          </div>
+          <div class="bg-[#111827] p-2.5 rounded-xl border border-gray-800 text-center">
+            <div class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Defensa (DEF)</div>
+            <div id="modal-card-def" class="text-xl font-bold font-stats text-blue-400">2500</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Descripción / Efecto:</h4>
+          <div id="modal-card-desc" class="bg-[#090d16] p-3.5 rounded-xl border border-gray-800/80 text-xs text-gray-300 leading-relaxed font-normal whitespace-pre-line max-h-48 overflow-y-auto">
+            Texto del efecto...
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-gray-800 flex items-center justify-between">
+          <div class="text-xs">
+            <span class="text-gray-400 block text-[10px] uppercase">TCGPlayer Market:</span>
+            <span id="modal-price-tcg" class="font-extrabold text-emerald-400 font-stats text-base">$0.00 USD</span>
+          </div>
+          
+          <a id="modal-ygoprodeck-link" href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-xs font-medium text-emerald-300 border border-gray-700 transition">
+            <span>YGOPRODeck</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL IMAGEN COMPLETA HD -->
+  <div id="full-image-modal" class="fixed inset-0 z-50 hidden bg-black/95 flex items-center justify-center p-4" onclick="closeFullImage()">
+    <img id="full-image-target" src="" alt="Full Card" class="max-w-full max-h-[95vh] object-contain rounded-xl shadow-2xl">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800/80 bg-[#080c14] py-6 text-center text-xs text-gray-500 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>TCG Vault • Galería, Decks & Visual Builder Yu-Gi-Oh!</p>
+      <p class="text-gray-600">Sincronizado con Google Sheets & YGOPRODeck API</p>
+    </div>
+  </footer>
+
+  <!-- ARCHIVOS DE DATOS LOCALES -->
+  <script src="cards_data.js"></script>
+  <script src="decks_data.js"></script>
+
+  <!-- LÓGICA DE LA APLICACIÓN -->
+  <script>
+    let allCards = (typeof TCG_INITIAL_CARDS !== 'undefined') ? TCG_INITIAL_CARDS : [];
+    let initialDecks = (typeof TCG_DECKS_DATA !== 'undefined') ? TCG_DECKS_DATA : [];
+    
+    // Cargar mazos guardados de localStorage si existen
+    function loadSavedCustomDecks() {
+      try {
+        const raw = localStorage.getItem('TCG_CUSTOM_DECKS');
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    let customDecks = loadSavedCustomDecks();
+    let allDecks = [...initialDecks, ...customDecks];
+    let activeDeckIndex = 0;
+    let activeDeck = allDecks.length > 0 ? allDecks[0] : null;
+
+    let filteredCards = [];
+    let currentCategory = 'all';
+    let currentPage = 1;
+    const PAGE_SIZE = 36;
+    let currentModalIndex = -1;
+    let modalMode = 'inventory'; // 'inventory' | 'deck' | 'builder'
+
+    // ==========================================
+    // ESTADO DEL DECK BUILDER
+    // ==========================================
+    let builderDeck = {
+      id: 'custom_' + Date.now(),
+      name: 'Mi Mazo Personalizado #1',
+      format: 'Avanzado / Actual',
+      cards: {} // Map: cardName -> { card, count: 1..3 }
+    };
+    let builderCatalogCategory = 'all';
+
+    // NAVEGACIÓN ENTRE TABS
+    function switchMainTab(tab) {
+      const secInv = document.getElementById('section-inventory');
+      const secDecks = document.getElementById('section-decks');
+      const secBuilder = document.getElementById('section-builder');
+      
+      const btnInv = document.getElementById('tab-btn-inventory');
+      const btnDecks = document.getElementById('tab-btn-decks');
+      const btnBuilder = document.getElementById('tab-btn-builder');
+
+      const mobInv = document.getElementById('mob-tab-inv');
+      const mobDecks = document.getElementById('mob-tab-decks');
+      const mobBuilder = document.getElementById('mob-tab-builder');
+
+      [secInv, secDecks, secBuilder].forEach(s => s.classList.add('hidden'));
+      [btnInv, btnDecks, btnBuilder].forEach(b => b.className = "flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition-all");
+      [mobInv, mobDecks, mobBuilder].forEach(m => m.className = "px-2 py-1 rounded text-gray-400 font-bold");
+
+      if (tab === 'inventory') {
+        secInv.classList.remove('hidden');
+        btnInv.className = "flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white transition-all shadow-md";
+        mobInv.className = "px-2 py-1 rounded bg-emerald-600 text-white font-bold";
+      } else if (tab === 'decks') {
+        secDecks.classList.remove('hidden');
+        btnDecks.className = "flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white transition-all shadow-md";
+        mobDecks.className = "px-2 py-1 rounded bg-emerald-600 text-white font-bold";
+        renderDeckSelector();
+        renderDeckView();
+      } else if (tab === 'builder') {
+        secBuilder.classList.remove('hidden');
+        btnBuilder.className = "flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white transition-all shadow-md";
+        mobBuilder.className = "px-2 py-1 rounded bg-emerald-600 text-white font-bold";
+        renderBuilderView();
+        filterBuilderCatalog();
+      }
+
+      lucide.createIcons();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      updateStatistics();
+      applyFilters();
+
+      if (allDecks.length > 0) {
+        document.getElementById('header-deck-count-badge').innerText = allDecks.length;
+      }
+
+      window.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('card-modal');
+        if (!modal.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeModal();
+          if (e.key === 'ArrowLeft') prevCard();
+          if (e.key === 'ArrowRight') nextCard();
+        }
+      });
+    });
+
+    function updateStatistics() {
+      const total = allCards.length;
+      const decks = allCards.filter(c => c.category && c.category.toLowerCase().includes('decks')).length;
+      const sueltas = allCards.filter(c => c.category && c.category.toLowerCase().includes('suelta')).length;
+      const totalVal = allCards.reduce((acc, c) => acc + (parseFloat(c.prices?.tcgplayer) || 0), 0);
+
+      document.getElementById('stat-total').innerText = total;
+      document.getElementById('stat-decks').innerText = decks;
+      document.getElementById('stat-sueltas').innerText = sueltas;
+      document.getElementById('stat-total-value').innerText = `$${totalVal.toFixed(2)}`;
+    }
+
+    function setCategoryFilter(category) {
+      currentCategory = category;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          btn.className = "cat-pill active-cat px-4 py-1.5 text-xs font-semibold rounded-lg text-white bg-emerald-600 transition-all whitespace-nowrap shadow-md";
+        } else {
+          btn.className = "cat-pill px-4 py-1.5 text-xs font-semibold rounded-lg text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap";
+        }
+      });
+      applyFilters();
+    }
+
+    function setGridSize(size) {
+      const grid = document.getElementById('cards-grid');
+      const btnSm = document.getElementById('btn-size-sm');
+      const btnMd = document.getElementById('btn-size-md');
+      const btnLg = document.getElementById('btn-size-lg');
+
+      [btnSm, btnMd, btnLg].forEach(b => {
+        b.className = "flex-1 py-1 text-center text-xs rounded text-gray-400 hover:text-white transition";
+      });
+
+      if (size === 'sm') {
+        grid.className = "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3";
+        btnSm.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
+      } else if (size === 'lg') {
+        grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6";
+        btnLg.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
+      } else {
+        grid.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6";
+        btnMd.className = "flex-1 py-1 text-center text-xs rounded bg-gray-800 text-emerald-400 font-semibold transition";
+      }
+    }
+
+    function applyFilters() {
+      const query = document.getElementById('search-input').value.trim().toLowerCase();
+      const typeFilter = document.getElementById('filter-type').value;
+      const attrFilter = document.getElementById('filter-attribute').value;
+      const sortBy = document.getElementById('sort-by').value;
+
+      document.getElementById('clear-search').classList.toggle('hidden', query.length === 0);
+
+      filteredCards = allCards.filter(card => {
+        if (currentCategory !== 'all') {
+          if (!card.category || !card.category.toLowerCase().includes(currentCategory.toLowerCase())) {
+            return false;
+          }
+        }
+
+        if (query) {
+          const matchName = card.name.toLowerCase().includes(query);
+          const matchOrig = card.original_name && card.original_name.toLowerCase().includes(query);
+          const matchDesc = card.desc && card.desc.toLowerCase().includes(query);
+          const matchArch = card.archetype && card.archetype.toLowerCase().includes(query);
+          const matchRace = card.race && card.race.toLowerCase().includes(query);
+          if (!matchName && !matchOrig && !matchDesc && !matchArch && !matchRace) return false;
+        }
+
+        if (typeFilter !== 'all') {
+          const t = (card.type || '').toLowerCase();
+          const frame = (card.frameType || '').toLowerCase();
+          if (typeFilter === 'monster' && !t.includes('monster')) return false;
+          if (typeFilter === 'normal' && frame !== 'normal') return false;
+          if (typeFilter === 'effect' && frame !== 'effect') return false;
+          if (typeFilter === 'spell' && !t.includes('spell')) return false;
+          if (typeFilter === 'trap' && !t.includes('trap')) return false;
+          if (typeFilter === 'fusion' && !t.includes('fusion')) return false;
+          if (typeFilter === 'synchro' && !t.includes('synchro')) return false;
+          if (typeFilter === 'xyz' && !t.includes('xyz')) return false;
+          if (typeFilter === 'link' && !t.includes('link')) return false;
+        }
+
+        if (attrFilter !== 'all') {
+          if (!card.attribute || card.attribute.toUpperCase() !== attrFilter) return false;
+        }
+
+        return true;
+      });
+
+      filteredCards.sort((a, b) => {
+        const priceA = parseFloat(a.prices?.tcgplayer) || 0;
+        const priceB = parseFloat(b.prices?.tcgplayer) || 0;
+
+        if (sortBy === 'price_desc') return priceB - priceA;
+        if (sortBy === 'price_asc') return priceA - priceB;
+        if (sortBy === 'name_asc') return a.name.localeCompare(b.name);
+        if (sortBy === 'name_desc') return b.name.localeCompare(a.name);
+        if (sortBy === 'atk_desc') return (b.atk ?? -1) - (a.atk ?? -1);
+        if (sortBy === 'def_desc') return (b.def ?? -1) - (a.def ?? -1);
+        if (sortBy === 'level_desc') return (b.level ?? -1) - (a.level ?? -1);
+        return parseInt(a.sheet_id || 0) - parseInt(b.sheet_id || 0);
+      });
+
+      const filteredVal = filteredCards.reduce((acc, c) => acc + (parseFloat(c.prices?.tcgplayer) || 0), 0);
+      document.getElementById('stat-filtered-value').innerText = `$${filteredVal.toFixed(2)}`;
+
+      currentPage = 1;
+      renderCards();
+    }
+
+    function renderCards() {
+      const grid = document.getElementById('cards-grid');
+      const empty = document.getElementById('empty-state');
+      const paginationWrapper = document.getElementById('pagination-wrapper');
+
+      document.getElementById('total-filtered-count').innerText = filteredCards.length;
+
+      if (filteredCards.length === 0) {
+        grid.innerHTML = '';
+        empty.classList.remove('hidden');
+        paginationWrapper.classList.add('hidden');
+        return;
+      }
+
+      empty.classList.add('hidden');
+      paginationWrapper.classList.remove('hidden');
+
+      const visibleCards = filteredCards.slice(0, currentPage * PAGE_SIZE);
+      document.getElementById('current-count').innerText = visibleCards.length;
+      document.getElementById('btn-load-more').classList.toggle('hidden', visibleCards.length >= filteredCards.length);
+
+      grid.innerHTML = visibleCards.map((card, idx) => {
+        const isMonster = card.atk !== null && card.atk !== undefined;
+        const categoryBadgeColor = card.category && card.category.includes('Decks') 
+          ? 'bg-blue-500/20 text-blue-300 border-blue-500/30' 
+          : 'bg-purple-500/20 text-purple-300 border-purple-500/30';
+
+        const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+        const priceFormatted = `$${priceNum.toFixed(2)}`;
+
+        return `
+          <div class="card-container group" onclick="openModal(${idx}, 'inventory')">
+            <div class="tcg-card relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/60 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
+              
+              <div class="foil-overlay absolute inset-0 z-10 pointer-events-none"></div>
+
+              <div class="relative w-full aspect-[293/427] bg-[#080c14] overflow-hidden flex items-center justify-center p-1.5">
+                <img 
+                  src="${card.image_url_small || card.image_url}" 
+                  alt="${card.name}" 
+                  loading="lazy" 
+                  class="w-full h-full object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
+                  onerror="this.src='https://images.ygoprodeck.com/images/cards_small/back.jpg'"
+                >
+                
+                <span class="absolute top-2.5 left-2.5 text-[9px] font-bold px-1.5 py-0.5 rounded border backdrop-blur-md ${categoryBadgeColor} z-20 shadow">
+                  ${card.category || 'TCG'}
+                </span>
+
+                <span class="absolute bottom-2.5 right-2.5 text-[11px] font-black px-2 py-0.5 rounded-lg bg-black/85 text-emerald-400 border border-emerald-500/40 shadow-xl font-stats z-20 flex items-center gap-0.5">
+                  <span class="text-[9px] text-emerald-500 font-bold">$</span>${priceNum.toFixed(2)}
+                </span>
+
+                <span class="absolute top-2.5 right-2.5 text-[9px] font-mono text-gray-400 bg-black/70 px-1.5 py-0.5 rounded z-20">
+                  #${card.sheet_id}
+                </span>
+              </div>
+
+              <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0e1524]">
+                <div>
+                  <h3 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
+                    ${card.name}
+                  </h3>
+                  <p class="text-[10px] text-gray-400 truncate mt-0.5">
+                    ${card.humanReadableCardType || card.type}
+                  </p>
+                </div>
+
+                <div class="mt-2 pt-1.5 border-t border-gray-800/80 flex items-center justify-between text-[11px] font-stats">
+                  ${isMonster ? `
+                    <div class="flex items-center gap-2">
+                      <span class="text-red-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">A/</span>${card.atk}</span>
+                      <span class="text-blue-400 font-bold"><span class="text-[9px] text-gray-500 font-normal">D/</span>${card.def}</span>
+                    </div>
+                  ` : `
+                    <span class="text-[10px] text-gray-400 truncate">${card.race || 'Mágica/Trampa'}</span>
+                  `}
+
+                  <span class="font-extrabold text-emerald-400 text-xs tracking-tight">
+                    ${priceFormatted}
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // ==========================================
+    // RENDERIZADO DE DECKS LISTOS
+    // ==========================================
+    function renderDeckSelector() {
+      const container = document.getElementById('deck-selector-buttons');
+      if (!container || allDecks.length === 0) return;
+
+      container.innerHTML = allDecks.map((deck, idx) => {
+        const isActive = idx === activeDeckIndex;
+        const activeClass = isActive 
+          ? "bg-emerald-600 text-white border-emerald-500 shadow-md shadow-emerald-600/30" 
+          : "bg-gray-800/80 hover:bg-gray-700 text-gray-300 border-gray-700";
+
+        const badgeBg = deck.tag_color === 'red'
+          ? 'bg-rose-950/70 text-rose-200 border-rose-500/40'
+          : (deck.tag_color === 'purple' 
+            ? 'bg-purple-900/60 text-purple-200 border-purple-500/40' 
+            : 'bg-amber-900/60 text-amber-200 border-amber-500/40');
+
+        const deckIcon = deck.tag_color === 'red' ? 'flame' : (deck.tag_color === 'purple' ? 'zap' : 'shield');
+
+        const deckCost = deck.stats?.total_cost || 0;
+
+        return `
+          <button onclick="selectDeck(${idx})" class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl border text-xs font-semibold transition ${activeClass}">
+            <i data-lucide="${deckIcon}" class="w-3.5 h-3.5"></i>
+            <span>${deck.short_name || deck.name}</span>
+            <span class="text-[9px] px-1.5 py-0.2 rounded border ${badgeBg}">${deck.format}</span>
+            <span class="text-[10px] font-bold font-stats text-emerald-300 bg-black/40 px-1.5 py-0.2 rounded">$${deckCost.toFixed(2)}</span>
+          </button>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    function selectDeck(idx) {
+      activeDeckIndex = idx;
+      activeDeck = allDecks[idx];
+      renderDeckSelector();
+      renderDeckView();
+    }
+
+    function editDeckInBuilder() {
+      if (!activeDeck) return;
+      builderDeck = {
+        id: activeDeck.id || 'custom_' + Date.now(),
+        name: activeDeck.name || 'Mazo Editado',
+        format: activeDeck.format || 'Avanzado / Actual',
+        cards: {}
+      };
+
+      activeDeck.cards.forEach(c => {
+        const fullCard = allCards.find(item => item.name.toLowerCase() === c.name.toLowerCase()) || c;
+        builderDeck.cards[c.name] = {
+          card: fullCard,
+          count: c.count || 1
+        };
+      });
+
+      document.getElementById('builder-deck-title').value = builderDeck.name;
+      document.getElementById('builder-deck-format').value = builderDeck.format;
+
+      switchMainTab('builder');
+    }
+
+    function renderDeckView() {
+      if (!activeDeck) return;
+
+      document.getElementById('deck-title').innerText = activeDeck.name;
+      document.getElementById('deck-desc').innerText = activeDeck.description;
+      document.getElementById('deck-format-badge').innerText = activeDeck.format;
+
+      const completionPct = Math.round((activeDeck.stats.owned_count / (activeDeck.stats.main_total + activeDeck.stats.extra_total)) * 100);
+      document.getElementById('deck-completion-pill').innerText = `${activeDeck.stats.owned_count}/${activeDeck.stats.main_total + activeDeck.stats.extra_total} Completo (${completionPct}% Listo para Duelo)`;
+
+      const deckCost = activeDeck.stats?.total_cost || 0;
+      document.getElementById('deck-cost-pill').innerText = `Costo Total: $${deckCost.toFixed(2)} USD`;
+      document.getElementById('deck-stat-cost-val').innerText = `$${deckCost.toFixed(2)}`;
+
+      document.getElementById('deck-stat-main').innerHTML = `${activeDeck.stats.main_total} <span class="text-xs font-normal text-gray-500">cartas</span>`;
+      document.getElementById('deck-stat-monsters').innerText = activeDeck.stats.monsters;
+      document.getElementById('deck-stat-spells').innerText = activeDeck.stats.spells;
+      document.getElementById('deck-stat-traps').innerText = activeDeck.stats.traps;
+      document.getElementById('deck-stat-extra').innerText = `${activeDeck.stats.extra_total} cartas`;
+
+      document.getElementById('deck-monsters-count-pill').innerText = `${activeDeck.stats.monsters} Cartas`;
+      document.getElementById('deck-spells-count-pill').innerText = `${activeDeck.stats.spells} Cartas`;
+      document.getElementById('deck-traps-count-pill').innerText = `${activeDeck.stats.traps} Cartas`;
+      document.getElementById('deck-extra-count-pill').innerText = `${activeDeck.stats.extra_total} Cartas`;
+
+      const monsters = activeDeck.cards.filter(c => c.section === 'monsters');
+      const spells = activeDeck.cards.filter(c => c.section === 'spells');
+      const traps = activeDeck.cards.filter(c => c.section === 'traps');
+      const extra = activeDeck.cards.filter(c => c.section === 'extra');
+
+      renderDeckGrid('deck-monsters-grid', monsters);
+      renderDeckGrid('deck-spells-grid', spells);
+      renderDeckGrid('deck-traps-grid', traps);
+      renderDeckGrid('deck-extra-grid', extra);
+
+      lucide.createIcons();
+    }
+
+    function renderDeckGrid(containerId, cardList) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      container.innerHTML = cardList.map((card) => {
+        let locationLabel = card.sheet_id ? `Sheet #${card.sheet_id}` : (card.custom_location || 'En tu Colección');
+
+        const ownedBadge = `
+          <span class="bg-emerald-500/30 text-emerald-300 border-emerald-500/40 text-[9px] px-1.5 py-0.5 rounded border backdrop-blur-md flex items-center gap-0.5 shadow">
+            <i data-lucide="check" class="w-2.5 h-2.5 text-emerald-400"></i> ${locationLabel}
+          </span>
+        `;
+
+        const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
+        const totalCardPrice = unitPrice * (card.count || 1);
+
+        return `
+          <div class="card-container group" onclick="openDeckCardModal('${card.name}')">
+            <div class="tcg-card relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/70 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
+              
+              <div class="foil-overlay absolute inset-0 z-10 pointer-events-none"></div>
+
+              <div class="relative w-full aspect-[293/427] bg-[#080c14] overflow-hidden flex items-center justify-center p-1.5">
+                <img 
+                  src="${card.image_url_small || card.image_url}" 
+                  alt="${card.name}" 
+                  loading="lazy" 
+                  class="w-full h-full object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
+                >
+                
+                <span class="absolute top-2.5 right-2.5 text-xs font-black px-2 py-0.5 rounded-lg bg-emerald-500 text-black shadow-lg font-stats z-20">
+                  x${card.count}
+                </span>
+
+                <span class="absolute bottom-2.5 right-2.5 text-[11px] font-black px-2 py-0.5 rounded-lg bg-black/85 text-emerald-400 border border-emerald-500/40 shadow-xl font-stats z-20 flex items-center gap-0.5">
+                  <span class="text-[9px] text-emerald-500 font-bold">$</span>${unitPrice.toFixed(2)}
+                </span>
+
+                <div class="absolute top-2.5 left-2.5 z-20">
+                  ${ownedBadge}
+                </div>
+              </div>
+
+              <div class="p-2.5 flex-1 flex flex-col justify-between bg-[#0e1524]">
+                <div>
+                  <h4 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
+                    ${card.name}
+                  </h4>
+                  <p class="text-[10px] text-amber-300/90 truncate font-medium mt-0.5" title="${card.note || ''}">
+                    ${card.note || card.type}
+                  </p>
+                </div>
+
+                <div class="mt-2 pt-1 border-t border-gray-800/80 flex items-center justify-between text-[10px] font-stats">
+                  ${card.atk !== null && card.atk !== undefined ? `
+                    <span class="text-red-400 font-bold">ATK/${card.atk}</span>
+                  ` : `
+                    <span class="text-gray-400">${card.type.includes('Spell') ? 'Mágica' : 'Trampa'}</span>
+                  `}
+
+                  <span class="text-emerald-400 font-bold text-xs">
+                    ${card.count > 1 ? `x${card.count} = $${totalCardPrice.toFixed(2)}` : `$${unitPrice.toFixed(2)}`}
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function openDeckCardModal(cardName) {
+      if (!activeDeck) return;
+      const idx = activeDeck.cards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase());
+      if (idx !== -1) {
+        modalMode = 'deck';
+        currentModalIndex = idx;
+        populateModalWithCard(activeDeck.cards[idx]);
+      }
+    }
+
+    // ========================================================
+    // LÓGICA DEL CONSTRUCTOR DE MAZOS (VISUAL DECK BUILDER)
+    // ========================================================
+    function getCardSection(card) {
+      const type = (card.type || '').toLowerCase();
+      if (type.includes('fusion') || type.includes('synchro') || type.includes('xyz') || type.includes('link')) {
+        return 'extra';
+      }
+      if (type.includes('spell')) return 'spells';
+      if (type.includes('trap')) return 'traps';
+      return 'monsters';
+    }
+
+    function addCardToBuilder(cardName) {
+      const card = allCards.find(c => c.name.toLowerCase() === cardName.toLowerCase());
+      if (!card) return;
+
+      const current = builderDeck.cards[card.name];
+      const count = current ? current.count : 0;
+
+      if (count >= 3) {
+        alert(`Ya alcanzaste el máximo legal de 3 copias para '${card.name}'.`);
+        return;
+      }
+
+      builderDeck.cards[card.name] = {
+        card: card,
+        count: count + 1
+      };
+
+      renderBuilderView();
+      filterBuilderCatalog();
+    }
+
+    function removeCardFromBuilder(cardName) {
+      const current = builderDeck.cards[cardName];
+      if (!current) return;
+
+      if (current.count > 1) {
+        current.count -= 1;
+      } else {
+        delete builderDeck.cards[cardName];
+      }
+
+      renderBuilderView();
+      filterBuilderCatalog();
+    }
+
+    function deleteCardFromBuilder(cardName) {
+      delete builderDeck.cards[cardName];
+      renderBuilderView();
+      filterBuilderCatalog();
+    }
+
+    function clearBuilderDeck() {
+      if (Object.keys(builderDeck.cards).length === 0) return;
+      if (confirm("¿Estás seguro de que deseas vaciar todas las cartas del mazo actual?")) {
+        builderDeck.cards = {};
+        renderBuilderView();
+        filterBuilderCatalog();
+      }
+    }
+
+    function renderBuilderView() {
+      const cardEntries = Object.values(builderDeck.cards);
+      const monsters = cardEntries.filter(e => getCardSection(e.card) === 'monsters');
+      const spells = cardEntries.filter(e => getCardSection(e.card) === 'spells');
+      const traps = cardEntries.filter(e => getCardSection(e.card) === 'traps');
+      const extra = cardEntries.filter(e => getCardSection(e.card) === 'extra');
+
+      const countMonsters = monsters.reduce((acc, e) => acc + e.count, 0);
+      const countSpells = spells.reduce((acc, e) => acc + e.count, 0);
+      const countTraps = traps.reduce((acc, e) => acc + e.count, 0);
+      const countExtra = extra.reduce((acc, e) => acc + e.count, 0);
+      const mainTotal = countMonsters + countSpells + countTraps;
+
+      const totalCost = cardEntries.reduce((acc, e) => {
+        const price = parseFloat(e.card.prices?.tcgplayer) || 0;
+        return acc + (price * e.count);
+      }, 0);
+
+      // Actualizar métricas
+      document.getElementById('b-main-count').innerText = mainTotal;
+      document.getElementById('b-monsters-count').innerText = countMonsters;
+      document.getElementById('b-spells-count').innerText = countSpells;
+      document.getElementById('b-traps-count').innerText = countTraps;
+      document.getElementById('b-extra-count').innerText = countExtra;
+      document.getElementById('b-cost-val').innerText = `$${totalCost.toFixed(2)}`;
+
+      const statBoxMain = document.getElementById('b-stat-box-main');
+      if (mainTotal >= 40 && mainTotal <= 60) {
+        statBoxMain.className = "bg-[#111827] p-3 rounded-xl border border-emerald-500/80 text-center shadow-lg shadow-emerald-950/40";
+      } else if (mainTotal > 60) {
+        statBoxMain.className = "bg-[#111827] p-3 rounded-xl border border-red-500/80 text-center";
+      } else {
+        statBoxMain.className = "bg-[#111827] p-3 rounded-xl border border-amber-500/50 text-center";
+      }
+
+      // Mostrar/Ocultar secciones
+      const emptyNotice = document.getElementById('b-empty-deck-notice');
+      emptyNotice.classList.toggle('hidden', cardEntries.length > 0);
+
+      renderBuilderCardSection('b-monsters-section', 'b-monsters-cards', 'b-section-m-count', monsters);
+      renderBuilderCardSection('b-spells-section', 'b-spells-cards', 'b-section-s-count', spells);
+      renderBuilderCardSection('b-traps-section', 'b-traps-cards', 'b-section-t-count', traps);
+      renderBuilderCardSection('b-extra-section', 'b-extra-cards', 'b-section-e-count', extra);
+
+      lucide.createIcons();
+    }
+
+    function renderBuilderCardSection(sectionId, cardsContainerId, countId, entries) {
+      const section = document.getElementById(sectionId);
+      const container = document.getElementById(cardsContainerId);
+      const countSpan = document.getElementById(countId);
+
+      const totalInSection = entries.reduce((acc, e) => acc + e.count, 0);
+      countSpan.innerText = totalInSection;
+
+      if (entries.length === 0) {
+        section.classList.add('hidden');
+        container.innerHTML = '';
+        return;
+      }
+
+      section.classList.remove('hidden');
+      container.innerHTML = entries.map(entry => {
+        const card = entry.card;
+        const count = entry.count;
+        const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
+
+        return `
+          <div class="relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/60 p-2 flex flex-col justify-between group shadow-md">
+            
+            <div class="relative w-full aspect-[293/427] bg-[#080c14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+              <img src="${card.image_url_small || card.image_url}" alt="${card.name}" class="w-full h-full object-contain">
+              
+              <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-1.5 py-0.5 rounded border border-emerald-500/30">
+                $${unitPrice.toFixed(2)}
+              </span>
+
+              <span class="absolute top-1.5 right-1.5 bg-emerald-500 text-black font-black font-stats text-xs px-2 py-0.5 rounded-lg shadow-lg">
+                x${count}
+              </span>
+            </div>
+
+            <div class="mt-2">
+              <h5 class="text-[11px] font-bold text-gray-200 truncate" title="${card.name}">${card.name}</h5>
+              <div class="flex items-center justify-between text-[10px] text-gray-400 font-stats mt-0.5">
+                <span>Total: $${(unitPrice * count).toFixed(2)}</span>
+                <span class="text-amber-400 font-mono">#${card.sheet_id || ''}</span>
+              </div>
+            </div>
+
+            <!-- Controles de Copias -->
+            <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-gray-800 gap-1">
+              <button onclick="removeCardFromBuilder('${card.name}')" class="flex-1 py-1 bg-gray-800 hover:bg-gray-700 text-red-400 font-bold text-xs rounded transition flex items-center justify-center" title="Quitar 1 copia">
+                <i data-lucide="minus" class="w-3 h-3"></i>
+              </button>
+              <button onclick="addCardToBuilder('${card.name}')" class="flex-1 py-1 bg-gray-800 hover:bg-gray-700 text-emerald-400 font-bold text-xs rounded transition flex items-center justify-center" title="Añadir otra copia">
+                <i data-lucide="plus" class="w-3 h-3"></i>
+              </button>
+              <button onclick="deleteCardFromBuilder('${card.name}')" class="p-1 bg-red-950/40 hover:bg-red-900 text-red-300 rounded transition" title="Remover del mazo">
+                <i data-lucide="x" class="w-3 h-3"></i>
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function openBuilderCardModal(cardName) {
+      const card = allCards.find(c => c.name.toLowerCase() === cardName.toLowerCase());
+      if (!card) return;
+      modalMode = 'builder';
+      populateModalWithCard(card);
+    }
+
+    // FILTRO DEL CATÁLOGO EN EL BUILDER
+    function setBuilderCatalogFilter(cat) {
+      builderCatalogCategory = cat;
+      document.querySelectorAll('.b-cat-btn').forEach(b => {
+        if (b.dataset.bcat === cat) {
+          b.className = "b-cat-btn px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold whitespace-nowrap shadow";
+        } else {
+          b.className = "b-cat-btn px-2.5 py-1 rounded-lg bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap";
+        }
+      });
+      filterBuilderCatalog();
+    }
+
+    function filterBuilderCatalog() {
+      const query = document.getElementById('b-search-input').value.trim().toLowerCase();
+      const container = document.getElementById('b-catalog-grid');
+      const countSpan = document.getElementById('b-catalog-count');
+
+      const matches = allCards.filter(card => {
+        if (query) {
+          const matchName = card.name.toLowerCase().includes(query);
+          const matchOrig = card.original_name && card.original_name.toLowerCase().includes(query);
+          const matchDesc = card.desc && card.desc.toLowerCase().includes(query);
+          if (!matchName && !matchOrig && !matchDesc) return false;
+        }
+
+        if (builderCatalogCategory !== 'all') {
+          const section = getCardSection(card);
+          if (builderCatalogCategory === 'monster' && section !== 'monsters') return false;
+          if (builderCatalogCategory === 'spell' && section !== 'spells') return false;
+          if (builderCatalogCategory === 'trap' && section !== 'traps') return false;
+          if (builderCatalogCategory === 'extra' && section !== 'extra') return false;
+        }
+
+        return true;
+      });
+
+      countSpan.innerText = matches.length;
+
+      container.innerHTML = matches.map(card => {
+        const inDeck = builderDeck.cards[card.name];
+        const countInDeck = inDeck ? inDeck.count : 0;
+        const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+
+        return `
+          <div class="relative bg-[#111827] rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-500/50 p-2 flex flex-col justify-between shadow-md">
+            
+            <div class="relative w-full aspect-[293/427] bg-[#080c14] rounded-lg overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+              <img src="${card.image_url_small || card.image_url}" alt="${card.name}" loading="lazy" class="w-full h-full object-contain">
+              
+              <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-1.5 py-0.5 rounded border border-emerald-500/30">
+                $${priceNum.toFixed(2)}
+              </span>
+
+              ${countInDeck > 0 ? `
+                <span class="absolute top-1.5 right-1.5 bg-emerald-500 text-black font-black font-stats text-xs px-2 py-0.5 rounded-lg shadow-lg">
+                  x${countInDeck}
+                </span>
+              ` : ''}
+            </div>
+
+            <div class="mt-2">
+              <h5 class="text-[11px] font-bold text-gray-100 truncate" title="${card.name}">${card.name}</h5>
+              <div class="flex items-center justify-between text-[10px] text-gray-400 font-stats mt-0.5">
+                <span>${card.race || card.type}</span>
+                <span class="text-amber-400 font-mono">#${card.sheet_id || ''}</span>
+              </div>
+            </div>
+
+            <button 
+              onclick="addCardToBuilder('${card.name}')" 
+              class="mt-2 w-full py-1.5 bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg transition flex items-center justify-center gap-1 shadow"
+            >
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              <span>${countInDeck > 0 ? `Añadir (${countInDeck}/3)` : 'Añadir'}</span>
+            </button>
+
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // GUARDAR MAZO CREADO
+    function saveBuilderDeck() {
+      const cardEntries = Object.values(builderDeck.cards);
+      if (cardEntries.length === 0) {
+        alert("El mazo está vacío. Añade algunas cartas antes de guardarlo.");
+        return;
+      }
+
+      const titleInput = document.getElementById('builder-deck-title').value.trim() || "Mazo Personalizado";
+      const formatInput = document.getElementById('builder-deck-format').value;
+
+      builderDeck.name = titleInput;
+      builderDeck.format = formatInput;
+
+      const monsters = cardEntries.filter(e => getCardSection(e.card) === 'monsters');
+      const spells = cardEntries.filter(e => getCardSection(e.card) === 'spells');
+      const traps = cardEntries.filter(e => getCardSection(e.card) === 'traps');
+      const extra = cardEntries.filter(e => getCardSection(e.card) === 'extra');
+
+      const countMonsters = monsters.reduce((acc, e) => acc + e.count, 0);
+      const countSpells = spells.reduce((acc, e) => acc + e.count, 0);
+      const countTraps = traps.reduce((acc, e) => acc + e.count, 0);
+      const countExtra = extra.reduce((acc, e) => acc + e.count, 0);
+      const mainTotal = countMonsters + countSpells + countTraps;
+
+      const totalCost = cardEntries.reduce((acc, e) => {
+        const price = parseFloat(e.card.prices?.tcgplayer) || 0;
+        return acc + (price * e.count);
+      }, 0);
+
+      // Crear estructura compatible de deck
+      const formattedCards = cardEntries.map(e => ({
+        name: e.card.name,
+        section: getCardSection(e.card),
+        count: e.count,
+        note: `En inventario (Sheet #${e.card.sheet_id || ''})`,
+        owned: true,
+        sheet_id: e.card.sheet_id,
+        sheet_category: e.card.category,
+        type: e.card.type,
+        humanReadableCardType: e.card.humanReadableCardType,
+        frameType: e.card.frameType,
+        desc: e.card.desc,
+        race: e.card.race,
+        archetype: e.card.archetype,
+        atk: e.card.atk,
+        def: e.card.def,
+        level: e.card.level,
+        attribute: e.card.attribute,
+        image_url: e.card.image_url,
+        image_url_small: e.card.image_url_small,
+        prices: e.card.prices,
+        ygoprodeck_url: e.card.ygoprodeck_url
+      }));
+
+      const deckObj = {
+        id: builderDeck.id,
+        name: builderDeck.name,
+        short_name: builderDeck.name.length > 20 ? builderDeck.name.substring(0, 18) + '...' : builderDeck.name,
+        subtitle: `Mazo de ${mainTotal} Cartas Creado por Ti`,
+        format: builderDeck.format,
+        tag: "Personalizado",
+        tag_color: "emerald",
+        description: `Mazo creado con el Deck Builder visual. Contiene ${mainTotal} cartas en el Main Deck y ${countExtra} en el Extra Deck.`,
+        stats: {
+          main_total: mainTotal,
+          extra_total: countExtra,
+          monsters: countMonsters,
+          spells: countSpells,
+          traps: countTraps,
+          owned_count: mainTotal + countExtra,
+          total_cost: roundNumber(totalCost, 2)
+        },
+        cards: formattedCards
+      };
+
+      // Guardar o reemplazar en customDecks
+      const existingIdx = customDecks.findIndex(d => d.id === deckObj.id);
+      if (existingIdx !== -1) {
+        customDecks[existingIdx] = deckObj;
+      } else {
+        customDecks.push(deckObj);
+      }
+
+      localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(customDecks));
+      allDecks = [...initialDecks, ...customDecks];
+
+      document.getElementById('header-deck-count-badge').innerText = allDecks.length;
+      document.getElementById('builder-saved-status').innerText = "✓ Guardado con éxito";
+      document.getElementById('builder-saved-status').className = "text-[10px] text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/30";
+
+      setTimeout(() => {
+        document.getElementById('builder-saved-status').innerText = "Editando";
+        document.getElementById('builder-saved-status').className = "text-[10px] text-gray-400 bg-gray-800 px-2 py-0.5 rounded";
+      }, 3000);
+
+      alert(`¡Mazo '${deckObj.name}' guardado exitosamente!\nAhora también puedes verlo y jugarlo en la pestaña 'Decks Listos'.`);
+    }
+
+    function roundNumber(num, dec) {
+      return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
+    }
+
+    function exportBuilderYDK() {
+      const cardEntries = Object.values(builderDeck.cards);
+      if (cardEntries.length === 0) {
+        alert("El mazo está vacío.");
+        return;
+      }
+
+      let ydk = `#created by TCG Vault Visual Builder - ${builderDeck.name}\n#main\n`;
+      const main = cardEntries.filter(e => getCardSection(e.card) !== 'extra');
+      const extra = cardEntries.filter(e => getCardSection(e.card) === 'extra');
+
+      main.forEach(e => {
+        const id = getCardYdkId(e.card.name);
+        for (let i = 0; i < e.count; i++) ydk += `${id}\n`;
+      });
+
+      ydk += "#extra\n";
+      extra.forEach(e => {
+        const id = getCardYdkId(e.card.name);
+        for (let i = 0; i < e.count; i++) ydk += `${id}\n`;
+      });
+
+      ydk += "!side\n";
+
+      const blob = new Blob([ydk], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${(builderDeck.name || 'custom_deck').replace(/\s+/g, '_')}.ydk`;
+      a.click();
+    }
+
+    function copyBuilderDeckList() {
+      const cardEntries = Object.values(builderDeck.cards);
+      if (cardEntries.length === 0) {
+        alert("El mazo está vacío.");
+        return;
+      }
+
+      let text = `=== ${builderDeck.name} ===\n`;
+      text += `Formato: ${builderDeck.format}\n\n`;
+
+      const monsters = cardEntries.filter(e => getCardSection(e.card) === 'monsters');
+      const spells = cardEntries.filter(e => getCardSection(e.card) === 'spells');
+      const traps = cardEntries.filter(e => getCardSection(e.card) === 'traps');
+      const extra = cardEntries.filter(e => getCardSection(e.card) === 'extra');
+
+      text += `🟡 MONSTRUOS:\n`;
+      monsters.forEach(e => text += `${e.count}x ${e.card.name}\n`);
+
+      text += `\n🟢 MÁGICAS:\n`;
+      spells.forEach(e => text += `${e.count}x ${e.card.name}\n`);
+
+      text += `\n🟣 TRAMPAS:\n`;
+      traps.forEach(e => text += `${e.count}x ${e.card.name}\n`);
+
+      text += `\n⬛ EXTRA DECK:\n`;
+      extra.forEach(e => text += `${e.count}x ${e.card.name}\n`);
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert("¡Lista copiada al portapapeles!");
+      });
+    }
+
+    // ACCIONES GENERALES DE DECKS
+    function copyDeckList() {
+      if (!activeDeck) return;
+      let text = `=== ${activeDeck.name} ===\n`;
+      text += `Formato: ${activeDeck.format}\n`;
+      text += `Costo Total Estimado: $${(activeDeck.stats?.total_cost || 0).toFixed(2)} USD\n\n`;
+
+      const monsters = activeDeck.cards.filter(c => c.section === 'monsters');
+      const spells = activeDeck.cards.filter(c => c.section === 'spells');
+      const traps = activeDeck.cards.filter(c => c.section === 'traps');
+      const extra = activeDeck.cards.filter(c => c.section === 'extra');
+
+      text += `🟡 MONSTRUOS (${activeDeck.stats.monsters}):\n`;
+      monsters.forEach(c => text += `${c.count}x ${c.name} - $${(parseFloat(c.prices?.tcgplayer) || 0).toFixed(2)} c/u (${c.note})\n`);
+
+      text += `\n🟢 MÁGICAS (${activeDeck.stats.spells}):\n`;
+      spells.forEach(c => text += `${c.count}x ${c.name} - $${(parseFloat(c.prices?.tcgplayer) || 0).toFixed(2)} c/u (${c.note})\n`);
+
+      text += `\n🟣 TRAMPAS (${activeDeck.stats.traps}):\n`;
+      traps.forEach(c => text += `${c.count}x ${c.name} - $${(parseFloat(c.prices?.tcgplayer) || 0).toFixed(2)} c/u (${c.note})\n`);
+
+      text += `\n⬛ EXTRA DECK (${activeDeck.stats.extra_total}):\n`;
+      extra.forEach(c => text += `${c.count}x ${c.name} - $${(parseFloat(c.prices?.tcgplayer) || 0).toFixed(2)} c/u (${c.note})\n`);
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert(`¡Lista con precios del mazo '${activeDeck.short_name || activeDeck.name}' copiada al portapapeles con éxito!`);
+      }).catch(err => {
+        console.error("Error al copiar:", err);
+      });
+    }
+
+    function downloadYDK() {
+      if (!activeDeck) return;
+      let ydkContent = `#created by TCG Vault - ${activeDeck.name}\n#main\n`;
+      
+      const main = activeDeck.cards.filter(c => c.section !== 'extra');
+      const extra = activeDeck.cards.filter(c => c.section === 'extra');
+
+      main.forEach(c => {
+        const id = getCardYdkId(c.name);
+        for (let i = 0; i < c.count; i++) {
+          ydkContent += `${id}\n`;
+        }
+      });
+
+      ydkContent += "#extra\n";
+      extra.forEach(c => {
+        const id = getCardYdkId(c.name);
+        for (let i = 0; i < c.count; i++) {
+          ydkContent += `${id}\n`;
+        }
+      });
+
+      ydkContent += "!side\n";
+
+      const safeName = activeDeck.id || "deck";
+      const blob = new Blob([ydkContent], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${safeName}.ydk`;
+      a.click();
+    }
+
+    function getCardYdkId(name) {
+      const match = allCards.find(c => c.name.toLowerCase() === name.toLowerCase());
+      if (match && match.image_url) {
+        const parts = match.image_url.split('/');
+        const file = parts[parts.length - 1];
+        return file.replace('.jpg', '');
+      }
+      return "0";
+    }
+
+    function populateModalWithCard(card) {
+      const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
+      const formattedPrice = `$${unitPrice.toFixed(2)} USD`;
+
+      document.getElementById('modal-card-img').src = card.image_url || card.image_url_small;
+      document.getElementById('modal-card-name').innerText = card.name;
+      document.getElementById('modal-card-category').innerText = card.sheet_category || card.category || (card.owned ? 'En Inventario' : 'Mazo Activo');
+      document.getElementById('modal-card-id').innerText = card.sheet_id ? `ID #${card.sheet_id}` : `Mazo: x${card.count || 1}`;
+      document.getElementById('modal-card-type-line').innerText = `[ ${card.type} • ${card.race || 'General'} ]`;
+      document.getElementById('modal-card-desc').innerText = card.desc || 'Sin descripción disponible.';
+      document.getElementById('modal-card-floating-price').innerText = formattedPrice;
+
+      const attrBox = document.getElementById('modal-attribute-box');
+      if (card.attribute) {
+        attrBox.classList.remove('hidden');
+        document.getElementById('modal-card-attribute').innerText = card.attribute;
+      } else {
+        attrBox.classList.add('hidden');
+      }
+
+      const lvlBox = document.getElementById('modal-level-box');
+      if (card.level !== null && card.level !== undefined) {
+        lvlBox.classList.remove('hidden');
+        document.getElementById('modal-card-level').innerText = `Nivel ${card.level}`;
+      } else {
+        lvlBox.classList.add('hidden');
+      }
+
+      document.getElementById('modal-card-race').innerText = card.archetype ? `${card.race} (${card.archetype})` : card.race;
+
+      const atkDefRow = document.getElementById('modal-atk-def-row');
+      if (card.atk !== null && card.atk !== undefined) {
+        atkDefRow.classList.remove('hidden');
+        document.getElementById('modal-card-atk').innerText = card.atk;
+        document.getElementById('modal-card-def').innerText = card.def !== null ? card.def : '-';
+      } else {
+        atkDefRow.classList.add('hidden');
+      }
+
+      document.getElementById('modal-price-tcg').innerText = formattedPrice;
+      document.getElementById('modal-ygoprodeck-link').href = card.ygoprodeck_url || `https://ygoprodeck.com/card/?search=${encodeURIComponent(card.name)}`;
+
+      document.getElementById('card-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function openModal(indexInFiltered, mode = 'inventory') {
+      modalMode = mode;
+      currentModalIndex = indexInFiltered;
+      const card = filteredCards[indexInFiltered];
+      if (!card) return;
+      populateModalWithCard(card);
+    }
+
+    function closeModal() {
+      document.getElementById('card-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function nextCard() {
+      if (modalMode === 'inventory') {
+        if (currentModalIndex < filteredCards.length - 1) {
+          openModal(currentModalIndex + 1, 'inventory');
+        } else {
+          openModal(0, 'inventory');
+        }
+      } else if (modalMode === 'deck' && activeDeck) {
+        if (currentModalIndex < activeDeck.cards.length - 1) {
+          currentModalIndex++;
+          populateModalWithCard(activeDeck.cards[currentModalIndex]);
+        } else {
+          currentModalIndex = 0;
+          populateModalWithCard(activeDeck.cards[0]);
+        }
+      }
+    }
+
+    function prevCard() {
+      if (modalMode === 'inventory') {
+        if (currentModalIndex > 0) {
+          openModal(currentModalIndex - 1, 'inventory');
+        } else {
+          openModal(filteredCards.length - 1, 'inventory');
+        }
+      } else if (modalMode === 'deck' && activeDeck) {
+        if (currentModalIndex > 0) {
+          currentModalIndex--;
+          populateModalWithCard(activeDeck.cards[currentModalIndex]);
+        } else {
+          currentModalIndex = activeDeck.cards.length - 1;
+          populateModalWithCard(activeDeck.cards[currentModalIndex]);
+        }
+      }
+    }
+
+    function openFullImage() {
+      let card = null;
+      if (modalMode === 'inventory') {
+        card = filteredCards[currentModalIndex];
+      } else if (modalMode === 'deck' && activeDeck) {
+        card = activeDeck.cards[currentModalIndex];
+      }
+      if (!card) return;
+      document.getElementById('full-image-target').src = card.image_url;
+      document.getElementById('full-image-modal').classList.remove('hidden');
+    }
+
+    function closeFullImage() {
+      document.getElementById('full-image-modal').classList.add('hidden');
+    }
+
+    function loadMoreCards() {
+      currentPage++;
+      renderCards();
+    }
+
+    function clearSearch() {
+      document.getElementById('search-input').value = '';
+      applyFilters();
+    }
+
+    function resetFilters() {
+      document.getElementById('search-input').value = '';
+      document.getElementById('filter-type').value = 'all';
+      document.getElementById('filter-attribute').value = 'all';
+      document.getElementById('sort-by').value = 'price_desc';
+      setCategoryFilter('all');
+    }
+
+    async function syncWithGoogleSheet() {
+      const icon = document.getElementById('sync-icon');
+      icon.classList.add('animate-spin');
+
+      try {
+        const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1KXhGXwg2Ab5pvTjSDBGrOR9-4KYmvnEceJsUCBaY9NA/export?format=csv&gid=0";
+        let response;
+        try {
+          response = await fetch(SHEET_CSV_URL);
+          if (!response.ok) throw new Error("CORS");
+        } catch (e) {
+          response = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(SHEET_CSV_URL)}`);
+        }
+        alert("Sincronización en vivo completada. Si hay cambios en el Google Sheet, ejecuta 'actualizar_desde_google.bat' para recalcular metadatos HD.");
+      } catch (err) {
+        alert("Sincronización: Mostrando las cartas precargadas. Ejecuta 'actualizar_desde_google.bat' para sincronizar con la nube.");
+      } finally {
+        icon.classList.remove('animate-spin');
+      }
+    }
+  </script>
+</body>
+</html>
