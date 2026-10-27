@@ -15,11 +15,11 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 En la pestaña **"Decks Listos"** puedes alternar entre tus 3 barajas de duelo:
 
-### 1. 🔴 Mazo HÉROE (Elemental, Vision, Evil & Destiny HERO) — *(NUEVO)*
-* **Composición:** **40 Main Deck** (16 Monstruos, 16 Mágicas, 8 Trampas) + **7 Extra Deck** (Fusiones y Enlaces).
-* **Estrategia:** Combos con *Vision HERO Vyon* (Sheet #290) y *Destiny HERO Denier* (Sheet #183), invocaciones con *A Hero Lives*, soporte devastador con *Evil Assault* para *Evil HERO Darkest Knight*, doble *Polymerization* y como rematador final en el Extra Deck a **Vision HERO Trinity** (Sheet #289) con 5000 ATK y triple golpe, y **Xtra HERO Dread Decimator** (Sheet #296).
-* **Costo Estimado:** **$12.32 USD**.
-* **Estado:** **47/47 Completo (100% Listo para Duelo)**.
+### 1. 🔴 Mazo HÉROE (Elemental, Vision, Evil & Destiny HERO) — *(OPTIMIZADO)*
+* **Composición:** **40 Main Deck** (13 Monstruos, 20 Mágicas, 7 Trampas) + **5 Extra Deck** (Fusiones y Enlaces).
+* **Estrategia:** Núcleo optimizado y 100% legal con tu inventario real. Tu motor principal es *Elemental HERO Blazeman* (Sheet #297) para buscar automáticamente *Polymerization*, junto a *Vision HERO Vyon* (Sheet #290) y *Destiny HERO Denier* (Sheet #183) para preparar el cementerio. En el Extra Deck tus jefes son **Vision HERO Trinity** (5000 ATK y triple ataque), **Elemental HERO Nova Master** (Sheet #300, invocado con Blazeman y con robo al destruir), **Elemental HERO Neos Knight** (doble ataque), **Elemental HERO Escuridao** y **Xtra HERO Dread Decimator** para potenciar tus zonas de enlace.
+* **Costo Estimado:** **$11.35 USD**.
+* **Estado:** **45/45 Completo (100% Listo para Duelo)**.
 
 ### 2. 🟣 Dark World (Formato Actual / Moderno)
 * **Composición:** **40 Main Deck** (19 Monstruos, 14 Mágicas, 7 Trampas) + **5 Extra Deck**.

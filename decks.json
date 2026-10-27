@@ -15,7 +15,7 @@
       "spells": 10,
       "traps": 6,
       "owned_count": 43,
-      "total_cost": 12.44
+      "total_cost": 12.58
     },
     "cards": [
       {
@@ -67,8 +67,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/95503687.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95503687.jpg",
         "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.16",
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lumina%2C%20Lightsworn%20Summoner"
       },
@@ -95,7 +95,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22624373.jpg",
         "prices": {
           "tcgplayer": "0.31",
-          "cardmarket": "0.29"
+          "cardmarket": "0.34"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lyla%2C%20Lightsworn%20Sorceress"
       },
@@ -148,8 +148,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/58996430.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58996430.jpg",
         "prices": {
-          "tcgplayer": "1.14",
-          "cardmarket": "0.98"
+          "tcgplayer": "1.26",
+          "cardmarket": "1.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wulf%2C%20Lightsworn%20Beast"
       },
@@ -175,7 +175,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/94381039.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94381039.jpg",
         "prices": {
-          "tcgplayer": "0.34",
+          "tcgplayer": "0.33",
           "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Celestia%2C%20Lightsworn%20Angel"
@@ -230,7 +230,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/44178886.jpg",
         "prices": {
           "tcgplayer": "0.64",
-          "cardmarket": "0.30"
+          "cardmarket": "0.36"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ehren%2C%20Lightsworn%20Monk"
       },
@@ -311,7 +311,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37742478.jpg",
         "prices": {
           "tcgplayer": "0.12",
-          "cardmarket": "0.12"
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Honest"
       },
@@ -338,7 +338,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77585513.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.15"
+          "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
       },
@@ -364,7 +364,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/47217354.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47217354.jpg",
         "prices": {
-          "tcgplayer": "0.13",
+          "tcgplayer": "0.10",
           "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fabled%20Raven"
@@ -419,7 +419,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22567609.jpg",
         "prices": {
           "tcgplayer": "0.12",
-          "cardmarket": "0.22"
+          "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Nimble%20Momonga"
       },
@@ -554,7 +554,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/80770678.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.04"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Spirit%20of%20the%20Harp"
       },
@@ -635,7 +635,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94886282.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.17"
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20of%20the%20Light%20Brigade"
       },
@@ -662,7 +662,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/691925.jpg",
         "prices": {
           "tcgplayer": "2.40",
-          "cardmarket": "1.29"
+          "cardmarket": "1.25"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solar%20Recharge"
       },
@@ -715,7 +715,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/81439173.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/81439173.jpg",
         "prices": {
-          "tcgplayer": "0.13",
+          "tcgplayer": "0.15",
           "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Foolish%20Burial"
@@ -743,7 +743,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5318639.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.07"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mystical%20Space%20Typhoon"
       },
@@ -797,7 +797,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72302403.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.02"
+          "cardmarket": "0.03"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
       },
@@ -823,7 +823,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/67169062.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/67169062.jpg",
         "prices": {
-          "tcgplayer": "0.56",
+          "tcgplayer": "0.60",
           "cardmarket": "0.49"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
@@ -932,7 +932,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/29401950.jpg",
         "prices": {
           "tcgplayer": "0.22",
-          "cardmarket": "0.08"
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Bottomless%20Trap%20Hole"
       },
@@ -1040,7 +1040,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/15800838.jpg",
         "prices": {
           "tcgplayer": "0.24",
-          "cardmarket": "0.17"
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mind%20Crush"
       },
@@ -1094,7 +1094,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33198837.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.13"
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Beast"
       },
@@ -1120,7 +1120,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/2956282.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/2956282.jpg",
         "prices": {
-          "tcgplayer": "0.11",
+          "tcgplayer": "0.12",
           "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Barkion"
@@ -1143,7 +1143,7 @@
       "spells": 14,
       "traps": 7,
       "owned_count": 45,
-      "total_cost": 12.63
+      "total_cost": 12.77
     },
     "cards": [
       {
@@ -1168,8 +1168,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/41406613.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/41406613.jpg",
         "prices": {
-          "tcgplayer": "0.48",
-          "cardmarket": "0.55"
+          "tcgplayer": "0.47",
+          "cardmarket": "0.61"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Reign-Beaux%2C%20Overking%20of%20Dark%20World"
       },
@@ -1196,7 +1196,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34230233.jpg",
         "prices": {
           "tcgplayer": "0.16",
-          "cardmarket": "0.14"
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Lord%20of%20Dark%20World"
       },
@@ -1223,7 +1223,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77895328.jpg",
         "prices": {
           "tcgplayer": "0.33",
-          "cardmarket": "0.31"
+          "cardmarket": "0.35"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Genta%2C%20Gateman%20of%20Dark%20World"
       },
@@ -1249,8 +1249,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/60228941.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60228941.jpg",
         "prices": {
-          "tcgplayer": "0.27",
-          "cardmarket": "0.23"
+          "tcgplayer": "0.28",
+          "cardmarket": "0.25"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Snoww%2C%20Unlight%20of%20Dark%20World"
       },
@@ -1277,7 +1277,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/32619583.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.05"
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Sillva%2C%20Warlord%20of%20Dark%20World"
       },
@@ -1331,7 +1331,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79126789.jpg",
         "prices": {
           "tcgplayer": "0.40",
-          "cardmarket": "0.26"
+          "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Broww%2C%20Huntsman%20of%20Dark%20World"
       },
@@ -1358,7 +1358,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33731070.jpg",
         "prices": {
           "tcgplayer": "0.17",
-          "cardmarket": "0.12"
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beiige%2C%20Vanguard%20of%20Dark%20World"
       },
@@ -1384,8 +1384,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/7623640.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/7623640.jpg",
         "prices": {
-          "tcgplayer": "0.23",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.22",
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ceruli%2C%20Guru%20of%20Dark%20World"
       },
@@ -1601,7 +1601,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/99745551.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.12"
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%3F%20Tsuchinoko%3F"
       },
@@ -1654,7 +1654,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/94145021.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94145021.jpg",
         "prices": {
-          "tcgplayer": "0.32",
+          "tcgplayer": "0.34",
           "cardmarket": "0.33"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Droll%20%26%20Lock%20Bird"
@@ -1681,7 +1681,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/33017655.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33017655.jpg",
         "prices": {
-          "tcgplayer": "0.26",
+          "tcgplayer": "0.27",
           "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Gates%20of%20Dark%20World"
@@ -1709,7 +1709,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/76672730.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.20"
+          "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Archives"
       },
@@ -1736,7 +1736,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/74117290.jpg",
         "prices": {
           "tcgplayer": "0.44",
-          "cardmarket": "0.39"
+          "cardmarket": "0.38"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Dealings"
       },
@@ -1762,7 +1762,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/85325774.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/85325774.jpg",
         "prices": {
-          "tcgplayer": "0.09",
+          "tcgplayer": "0.10",
           "cardmarket": "0.03"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20Into%20a%20Dark%20World"
@@ -1817,7 +1817,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/93554166.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.10"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Lightning"
       },
@@ -1844,7 +1844,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/30284022.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.27"
+          "cardmarket": "0.26"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Puppetry"
       },
@@ -1924,7 +1924,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/12580477.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12580477.jpg",
         "prices": {
-          "tcgplayer": "0.21",
+          "tcgplayer": "0.22",
           "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
@@ -1978,8 +1978,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/18144507.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144507.jpg",
         "prices": {
-          "tcgplayer": "0.96",
-          "cardmarket": "0.46"
+          "tcgplayer": "0.93",
+          "cardmarket": "0.48"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
@@ -2005,7 +2005,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/54693926.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/54693926.jpg",
         "prices": {
-          "tcgplayer": "0.19",
+          "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
@@ -2141,7 +2141,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/15800838.jpg",
         "prices": {
           "tcgplayer": "0.24",
-          "cardmarket": "0.17"
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mind%20Crush"
       },
@@ -2168,7 +2168,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84749824.jpg",
         "prices": {
           "tcgplayer": "0.34",
-          "cardmarket": "0.20"
+          "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
@@ -2195,7 +2195,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/83326048.jpg",
         "prices": {
           "tcgplayer": "0.17",
-          "cardmarket": "0.02"
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
@@ -2221,8 +2221,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/36975314.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36975314.jpg",
         "prices": {
-          "tcgplayer": "0.12",
-          "cardmarket": "0.17"
+          "tcgplayer": "0.11",
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
@@ -2248,8 +2248,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/39552584.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/39552584.jpg",
         "prices": {
-          "tcgplayer": "0.33",
-          "cardmarket": "0.46"
+          "tcgplayer": "0.34",
+          "cardmarket": "0.54"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Overlord%20of%20Dark%20World"
       },
@@ -2275,8 +2275,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/22723778.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22723778.jpg",
         "prices": {
-          "tcgplayer": "2.55",
-          "cardmarket": "1.05"
+          "tcgplayer": "2.60",
+          "cardmarket": "1.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Clorless%2C%20Chaos%20King%20of%20Dark%20World"
       },
@@ -2302,8 +2302,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/63813056.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63813056.jpg",
         "prices": {
-          "tcgplayer": "0.26",
-          "cardmarket": "0.27"
+          "tcgplayer": "0.33",
+          "cardmarket": "0.28"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
       },
@@ -2330,7 +2330,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/1861629.jpg",
         "prices": {
           "tcgplayer": "0.13",
-          "cardmarket": "0.10"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Decode%20Talker"
       },
@@ -2357,7 +2357,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/98978921.jpg",
         "prices": {
           "tcgplayer": "0.22",
-          "cardmarket": "0.38"
+          "cardmarket": "0.34"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Link%20Spider"
       }
@@ -2367,19 +2367,19 @@
     "id": "hero_deck",
     "name": "Mazo HÉROE (Elemental, Vision, Evil & Destiny)",
     "short_name": "Mazo HÉROE",
-    "subtitle": "Mazo de Fusión & Link de 40 Cartas + 7 Extra Deck",
+    "subtitle": "Mazo de Fusión & Link de 40 Cartas + 5 Extra Deck",
     "format": "Avanzado / Casual GX",
     "tag": "HÉROE / Fusiones",
     "tag_color": "red",
-    "description": "Mazo temático HÉROE unificado de 40 cartas principales y 7 en el Extra Deck. Aprovecha a Vision HERO Vyon y Destiny HERO Denier para enviar recursos al cementerio, fusiones devastadoras con Polymerization y Evil Assault, y soporte defensivo de primer nivel.",
+    "description": "Mazo HÉROE corregido y 100% optimizado a tu inventario real (40 Main Deck + 5 Extra Deck). Núcleo versátil con Blazeman como buscador de Polymerization, Vyon y Denier para el cementerio, Nova Master y Trinity como rematadores y un amplio paquete de magias de control y soporte HÉROE.",
     "stats": {
       "main_total": 40,
-      "extra_total": 7,
-      "monsters": 16,
-      "spells": 16,
-      "traps": 8,
-      "owned_count": 47,
-      "total_cost": 12.32
+      "extra_total": 5,
+      "monsters": 13,
+      "spells": 20,
+      "traps": 7,
+      "owned_count": 45,
+      "total_cost": 11.35
     },
     "cards": [
       {
@@ -2404,7 +2404,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/27780618.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/27780618.jpg",
         "prices": {
-          "tcgplayer": "0.29",
+          "tcgplayer": "0.26",
           "cardmarket": "0.27"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Vyon"
@@ -2431,8 +2431,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/16605586.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/16605586.jpg",
         "prices": {
-          "tcgplayer": "0.22",
-          "cardmarket": "0.17"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Destiny%20HERO%20-%20Denier"
       },
@@ -2458,10 +2458,64 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/86282581.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86282581.jpg",
         "prices": {
-          "tcgplayer": "0.16",
-          "cardmarket": "0.07"
+          "tcgplayer": "0.15",
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Darkest%20Knight"
+      },
+      {
+        "name": "Elemental HERO Blazeman",
+        "section": "monsters",
+        "count": 1,
+        "note": "Sheet #297 - ¡Tu mejor buscador de Polymerization!",
+        "owned": true,
+        "sheet_id": "297",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "If this card is Normal or Special Summoned: You can add 1 \"Polymerization\" from your Deck to your hand. During your Main Phase: You can activate this effect; you cannot Special Summon monsters for the rest of this turn, except Fusion Monsters, also send 1 \"Elemental HERO\" monster from your Deck to the GY, except \"Elemental HERO Blazeman\", and if you do, this card's Attribute and ATK/DEF become the same as the monster sent to the GY, until the end of this turn. You can only use 1 \"Elemental HERO Blazeman\" effect per turn, and only once that turn.",
+        "race": "Warrior",
+        "archetype": "Elemental HERO",
+        "atk": 1200,
+        "def": 1800,
+        "level": 4,
+        "attribute": "FIRE",
+        "image_url": "https://images.ygoprodeck.com/images/cards/63060238.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63060238.jpg",
+        "prices": {
+          "tcgplayer": "0.68",
+          "cardmarket": "0.25"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Blazeman"
+      },
+      {
+        "name": "Elemental HERO Wildheart",
+        "section": "monsters",
+        "count": 1,
+        "note": "Sheet #298 - Inmune a cartas de trampa",
+        "owned": true,
+        "sheet_id": "298",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "This card is unaffected by Trap effects.",
+        "race": "Warrior",
+        "archetype": "Elemental HERO",
+        "atk": 1500,
+        "def": 1600,
+        "level": 4,
+        "attribute": "EARTH",
+        "image_url": "https://images.ygoprodeck.com/images/cards/86188410.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86188410.jpg",
+        "prices": {
+          "tcgplayer": "0.11",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Wildheart"
       },
       {
         "name": "Elemental HERO Neos",
@@ -2486,7 +2540,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/89943723.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.16"
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos"
       },
@@ -2521,7 +2575,7 @@
         "name": "Winged Kuriboh",
         "section": "monsters",
         "count": 1,
-        "note": "Sheet #294 - Para defenderte y anular daño",
+        "note": "Sheet #294 - Para defenderte y anular daño de combate",
         "owned": true,
         "sheet_id": "294",
         "sheet_category": "Carta Suelta",
@@ -2543,141 +2597,6 @@
           "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Winged%20Kuriboh"
-      },
-      {
-        "name": "Elemental HERO Bladedge",
-        "section": "monsters",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Daño de penetración (2600 ATK)",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Effect Monster",
-        "humanReadableCardType": "Effect Monster",
-        "frameType": "effect",
-        "desc": "If this card attacks a Defense Position monster, inflict piercing battle damage to your opponent.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 2600,
-        "def": 1800,
-        "level": 7,
-        "attribute": "EARTH",
-        "image_url": "https://images.ygoprodeck.com/images/cards/59793705.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/59793705.jpg",
-        "prices": {
-          "tcgplayer": "0.20",
-          "cardmarket": "0.12"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Bladedge"
-      },
-      {
-        "name": "Elemental HERO Avian",
-        "section": "monsters",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Material de fusión clásico",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Normal Monster",
-        "humanReadableCardType": "Normal Monster",
-        "frameType": "normal",
-        "desc": "A winged Elemental HERO who wheels through the sky and manipulates the wind. His signature move, Featherbreak, gives villainy a blow from sky-high.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 1000,
-        "def": 1000,
-        "level": 3,
-        "attribute": "WIND",
-        "image_url": "https://images.ygoprodeck.com/images/cards/21844576.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21844576.jpg",
-        "prices": {
-          "tcgplayer": "0.16",
-          "cardmarket": "0.07"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Avian"
-      },
-      {
-        "name": "Elemental HERO Burstinatrix",
-        "section": "monsters",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Material de fusión clásico",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Normal Monster",
-        "humanReadableCardType": "Normal Monster",
-        "frameType": "normal",
-        "desc": "A flame manipulator who was the first Elemental HERO woman. Her Burstfire burns away villainy.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 1200,
-        "def": 800,
-        "level": 3,
-        "attribute": "FIRE",
-        "image_url": "https://images.ygoprodeck.com/images/cards/58932615.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58932615.jpg",
-        "prices": {
-          "tcgplayer": "0.23",
-          "cardmarket": "0.09"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Burstinatrix"
-      },
-      {
-        "name": "Elemental HERO Sparkman",
-        "section": "monsters",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Material de fusión clásico (1600 ATK)",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Normal Monster",
-        "humanReadableCardType": "Normal Monster",
-        "frameType": "normal",
-        "desc": "''An Elemental HERO and a warrior of light who proficiently wields many kinds of armaments. His Static Shockwave cuts off the path of villainy.''",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 1600,
-        "def": 1400,
-        "level": 4,
-        "attribute": "LIGHT",
-        "image_url": "https://images.ygoprodeck.com/images/cards/20721928.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/20721928.jpg",
-        "prices": {
-          "tcgplayer": "0.20",
-          "cardmarket": "0.02"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Sparkman"
-      },
-      {
-        "name": "Elemental HERO Clayman",
-        "section": "monsters",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Muralla defensiva (2000 DEF)",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Normal Monster",
-        "humanReadableCardType": "Normal Monster",
-        "frameType": "normal",
-        "desc": "An Elemental HERO with a clay body built-to-last. He'll preserve his Elemental HERO colleagues at any cost.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 800,
-        "def": 2000,
-        "level": 4,
-        "attribute": "EARTH",
-        "image_url": "https://images.ygoprodeck.com/images/cards/84327329.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84327329.jpg",
-        "prices": {
-          "tcgplayer": "0.27",
-          "cardmarket": "0.07"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Clayman"
       },
       {
         "name": "Effect Veiler",
@@ -2728,7 +2647,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/94145021.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94145021.jpg",
         "prices": {
-          "tcgplayer": "0.32",
+          "tcgplayer": "0.34",
           "cardmarket": "0.33"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Droll%20%26%20Lock%20Bird"
@@ -2756,7 +2675,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52038441.jpg",
         "prices": {
           "tcgplayer": "0.27",
-          "cardmarket": "0.20"
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ghost%20Mourner%20%26%20Moonlit%20Chill"
       },
@@ -2764,7 +2683,7 @@
         "name": "Jinzo",
         "section": "monsters",
         "count": 1,
-        "note": "Sheet #92 (Legendary Decks II) - Evita trampas al atacar",
+        "note": "Sheet #83 (Legendary Decks II) - Bloquea trampas del rival",
         "owned": true,
         "sheet_id": "83",
         "sheet_category": "Decks y Cajas",
@@ -2783,7 +2702,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77585513.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.15"
+          "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
       },
@@ -2836,7 +2755,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/8949584.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/8949584.jpg",
         "prices": {
-          "tcgplayer": "0.11",
+          "tcgplayer": "0.10",
           "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=A%20Hero%20Lives"
@@ -2864,7 +2783,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3519195.jpg",
         "prices": {
           "tcgplayer": "0.85",
-          "cardmarket": "0.65"
+          "cardmarket": "0.71"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
@@ -2872,7 +2791,7 @@
         "name": "Polymerization",
         "section": "spells",
         "count": 2,
-        "note": "Sheet #111 (Legendary Decks II) - 2 copias para asegurar fusiones",
+        "note": "Sheet #111 (Legendary Decks II) - 2 copias para asegurar tus fusiones",
         "owned": true,
         "sheet_id": "111",
         "sheet_category": "Decks y Cajas",
@@ -2896,64 +2815,10 @@
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Polymerization"
       },
       {
-        "name": "Hero Flash!!",
-        "section": "spells",
-        "count": 1,
-        "note": "Sheet #201 - Flash H.E.R.O. ofensiva final",
-        "owned": true,
-        "sheet_id": "201",
-        "sheet_category": "Carta Suelta",
-        "custom_location": null,
-        "type": "Spell Card",
-        "humanReadableCardType": "Normal Spell",
-        "frameType": "spell",
-        "desc": "Banish \"H - Heated Heart\", \"E - Emergency Call\", \"R - Righteous Justice\" and \"O - Oversoul\" from your Graveyard; Special Summon 1 \"Elemental HERO\" Normal Monster from your Deck. All \"Elemental HERO\" Normal Monsters you currently control can attack your opponent directly this turn.",
-        "race": "Normal",
-        "archetype": "Elemental HERO",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/191749.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/191749.jpg",
-        "prices": {
-          "tcgplayer": "0.10",
-          "cardmarket": "0.06"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Flash%21%21"
-      },
-      {
-        "name": "Wrath of Neos",
-        "section": "spells",
-        "count": 1,
-        "note": "Sheet #295 - Destruye todo el campo con Neos",
-        "owned": true,
-        "sheet_id": "295",
-        "sheet_category": "Carta Suelta",
-        "custom_location": null,
-        "type": "Spell Card",
-        "humanReadableCardType": "Normal Spell",
-        "frameType": "spell",
-        "desc": "Select 1 face-up \"Elemental HERO Neos\" you control. Return it to the Deck and destroy all cards on the field.",
-        "race": "Normal",
-        "archetype": "Elemental HERO",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/52098461.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52098461.jpg",
-        "prices": {
-          "tcgplayer": "0.23",
-          "cardmarket": "0.26"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wrath%20of%20Neos"
-      },
-      {
         "name": "Monster Reborn",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #103 (Legendary Decks II) - Resurrección universal",
+        "note": "Sheet #102 (Legendary Decks II) - Resurrección universal",
         "owned": true,
         "sheet_id": "102",
         "sheet_category": "Decks y Cajas",
@@ -2977,10 +2842,172 @@
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reborn"
       },
       {
+        "name": "Skyscraper 2 - Hero City",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #306 - Revive Héroes destruidos en batalla",
+        "owned": true,
+        "sheet_id": "306",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Field Spell",
+        "frameType": "spell",
+        "desc": "Once per turn, during your Main Phase, if you control this card: You can target 1 \"Elemental HERO\" monster in your Graveyard that was destroyed by battle; Special Summon that target.",
+        "race": "Field",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/47596607.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47596607.jpg",
+        "prices": {
+          "tcgplayer": "0.14",
+          "cardmarket": "0.12"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Skyscraper%202%20-%20Hero%20City"
+      },
+      {
+        "name": "Fifth Hope",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #307 - Devuelve 5 Héroes del cementerio al mazo y roba 2",
+        "owned": true,
+        "sheet_id": "307",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Target 5 \"Elemental HERO\" cards in your Graveyard; shuffle them into the Deck, then draw 2 cards (draw 3 cards instead, if you had no other cards on your side of the field and in your hand when you activated this card).",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/55428811.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/55428811.jpg",
+        "prices": {
+          "tcgplayer": "0.17",
+          "cardmarket": "0.11"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fifth%20Hope"
+      },
+      {
+        "name": "H - Heated Heart",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #312 - +500 ATK y daño de penetración a un Héroe",
+        "owned": true,
+        "sheet_id": "312",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Target 1 face-up monster you control; until the end of this turn, it gains 500 ATK, and if it attacks a Defense Position monster, inflict piercing battle damage to your opponent.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/74825788.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/74825788.jpg",
+        "prices": {
+          "tcgplayer": "0.07",
+          "cardmarket": "0.02"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=H%20-%20Heated%20Heart"
+      },
+      {
+        "name": "R - Righteous Justice",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #309 - Destruye Mágicas/Trampas según cuántos Héroes tengas",
+        "owned": true,
+        "sheet_id": "309",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Destroy Spell/Trap Cards equal to the number of \"Elemental HERO\" cards you control.",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/37318031.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37318031.jpg",
+        "prices": {
+          "tcgplayer": "0.08",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=R%20-%20Righteous%20Justice"
+      },
+      {
+        "name": "Hero Flash!!",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #201 - Flash H.E.R.O. ofensiva final",
+        "owned": true,
+        "sheet_id": "201",
+        "sheet_category": "Carta Suelta",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Banish \"H - Heated Heart\", \"E - Emergency Call\", \"R - Righteous Justice\" and \"O - Oversoul\" from your Graveyard; Special Summon 1 \"Elemental HERO\" Normal Monster from your Deck. All \"Elemental HERO\" Normal Monsters you currently control can attack your opponent directly this turn.",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/191749.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/191749.jpg",
+        "prices": {
+          "tcgplayer": "0.07",
+          "cardmarket": "0.06"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Flash%21%21"
+      },
+      {
+        "name": "Wrath of Neos",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #295 - Destruye todo el campo si tienes a Neos",
+        "owned": true,
+        "sheet_id": "295",
+        "sheet_category": "Carta Suelta",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Select 1 face-up \"Elemental HERO Neos\" you control. Return it to the Deck and destroy all cards on the field.",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/52098461.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52098461.jpg",
+        "prices": {
+          "tcgplayer": "0.23",
+          "cardmarket": "0.29"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wrath%20of%20Neos"
+      },
+      {
         "name": "Raigeki",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #118 (Spirit Charmers) - Limpiador total de monstruos",
+        "note": "Sheet #116 (Spirit Charmers) - Limpiador total de monstruos rivales",
         "owned": true,
         "sheet_id": "116",
         "sheet_category": "Decks y Cajas",
@@ -2998,7 +3025,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/12580477.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12580477.jpg",
         "prices": {
-          "tcgplayer": "0.21",
+          "tcgplayer": "0.22",
           "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
@@ -3007,7 +3034,7 @@
         "name": "Dark Hole",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #37 (Legendary Decks II) - Destrucción de campo",
+        "note": "Sheet #31 (Legendary Decks II) - Destrucción de campo",
         "owned": true,
         "sheet_id": "31",
         "sheet_category": "Decks y Cajas",
@@ -3034,7 +3061,7 @@
         "name": "Harpie's Feather Duster",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #78 (Obelisk) - Limpiador de Mágicas/Trampas",
+        "note": "Sheet #78 (Obelisk) - Limpiador total de Mágicas/Trampas",
         "owned": true,
         "sheet_id": "78",
         "sheet_category": "Decks y Cajas",
@@ -3052,8 +3079,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/18144507.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144507.jpg",
         "prices": {
-          "tcgplayer": "0.96",
-          "cardmarket": "0.46"
+          "tcgplayer": "0.93",
+          "cardmarket": "0.48"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
@@ -3088,7 +3115,7 @@
         "name": "Mystical Space Typhoon",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #104 (Starter Set) - Destrucción rápida",
+        "note": "Sheet #106 (Starter Set) - Destrucción rápida",
         "owned": true,
         "sheet_id": "106",
         "sheet_category": "Decks y Cajas",
@@ -3107,7 +3134,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5318639.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.07"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mystical%20Space%20Typhoon"
       },
@@ -3142,7 +3169,7 @@
         "name": "Dark Ruler No More",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #38 (Spirit Charmers) - Niega efectos en campo rival",
+        "note": "Sheet #34 (Spirit Charmers) - Niega efectos en campo rival",
         "owned": true,
         "sheet_id": "34",
         "sheet_category": "Decks y Cajas",
@@ -3160,7 +3187,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/54693926.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/54693926.jpg",
         "prices": {
-          "tcgplayer": "0.19",
+          "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
@@ -3169,7 +3196,7 @@
         "name": "Pot of Avarice",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #114 (Obelisk) - Devuelve Héroes usados y roba 2",
+        "note": "Sheet #113 (Obelisk) - Devuelve Héroes usados y roba 2",
         "owned": true,
         "sheet_id": "113",
         "sheet_category": "Decks y Cajas",
@@ -3187,7 +3214,7 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/67169062.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/67169062.jpg",
         "prices": {
-          "tcgplayer": "0.56",
+          "tcgplayer": "0.60",
           "cardmarket": "0.49"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
@@ -3196,7 +3223,7 @@
         "name": "Swords of Revealing Light",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #144 (Legendary Decks II) - Protección 3 turnos",
+        "note": "Sheet #141 (Legendary Decks II) - Protección 3 turnos",
         "owned": true,
         "sheet_id": "141",
         "sheet_category": "Decks y Cajas",
@@ -3215,15 +3242,69 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72302403.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.02"
+          "cardmarket": "0.03"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
+      },
+      {
+        "name": "Hero Signal",
+        "section": "traps",
+        "count": 1,
+        "note": "Sheet #308 - Trae un Héroe de tu mazo cuando destruyen un monstruo tuyo",
+        "owned": true,
+        "sheet_id": "308",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Trap Card",
+        "humanReadableCardType": "Normal Trap",
+        "frameType": "trap",
+        "desc": "When a monster you control is destroyed by battle and sent to the Graveyard: Special Summon 1 Level 4 or lower \"Elemental HERO\" monster from your hand or Deck.",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/22020907.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22020907.jpg",
+        "prices": {
+          "tcgplayer": "0.10",
+          "cardmarket": "0.06"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Signal"
+      },
+      {
+        "name": "Hero Counterattack",
+        "section": "traps",
+        "count": 1,
+        "note": "Sheet #311 - Invocación sorpresa y destrucción de monstruo rival",
+        "owned": true,
+        "sheet_id": "311",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Trap Card",
+        "humanReadableCardType": "Normal Trap",
+        "frameType": "trap",
+        "desc": "When an \"Elemental HERO\" monster you control is destroyed by battle: Your opponent chooses and reveals 1 random card from your hand, then, if it is an \"Elemental HERO\" monster, you destroy 1 monster your opponent controls and Special Summon the chosen monster.",
+        "race": "Normal",
+        "archetype": "Elemental HERO",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/19024706.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19024706.jpg",
+        "prices": {
+          "tcgplayer": "0.14",
+          "cardmarket": "0.05"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Counterattack"
       },
       {
         "name": "Mirror Force",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #101 (Legendary Decks II) - Castigo al ataque rival",
+        "note": "Sheet #101 (Legendary Decks II) - Castigo total al ataque rival",
         "owned": true,
         "sheet_id": "101",
         "sheet_category": "Decks y Cajas",
@@ -3269,7 +3350,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/29401950.jpg",
         "prices": {
           "tcgplayer": "0.22",
-          "cardmarket": "0.08"
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Bottomless%20Trap%20Hole"
       },
@@ -3277,7 +3358,7 @@
         "name": "Compulsory Evacuation Device",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #24 (Starter Set) - Devuelve a la mano",
+        "note": "Sheet #24 (Starter Set) - Devuelve monstruo a la mano",
         "owned": true,
         "sheet_id": "24",
         "sheet_category": "Decks y Cajas",
@@ -3304,7 +3385,7 @@
         "name": "Solemn Warning",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #137 (Spirit Charmers) - Paga 2000 LP y niega invocación",
+        "note": "Sheet #133 (Spirit Charmers) - Paga 2000 LP y niega invocación",
         "owned": true,
         "sheet_id": "133",
         "sheet_category": "Decks y Cajas",
@@ -3323,42 +3404,15 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84749824.jpg",
         "prices": {
           "tcgplayer": "0.34",
-          "cardmarket": "0.20"
+          "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
-      },
-      {
-        "name": "Dimensional Barrier",
-        "section": "traps",
-        "count": 1,
-        "note": "Sheet #43 (Spirit Charmers) - Bloquea Extra Deck rival",
-        "owned": true,
-        "sheet_id": "43",
-        "sheet_category": "Decks y Cajas",
-        "custom_location": null,
-        "type": "Trap Card",
-        "humanReadableCardType": "Normal Trap",
-        "frameType": "trap",
-        "desc": "Declare 1 monster card type (Ritual, Fusion, Synchro, Xyz, or Pendulum); for the rest of this turn, neither player can Special Summon monsters of the declared type, also negate the effects of all monsters of that type while they are on the field. You can only activate 1 \"Dimensional Barrier\" per turn.",
-        "race": "Normal",
-        "archetype": "",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/83326048.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/83326048.jpg",
-        "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.02"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
       {
         "name": "Crackdown",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #32 (Freezing Chains) - Roba un monstruo rival",
+        "note": "Sheet #26 (Freezing Chains) - Roba el control de un monstruo rival",
         "owned": true,
         "sheet_id": "26",
         "sheet_category": "Decks y Cajas",
@@ -3376,64 +3430,10 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/36975314.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36975314.jpg",
         "prices": {
-          "tcgplayer": "0.12",
-          "cardmarket": "0.17"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
-      },
-      {
-        "name": "Fiendish Chain",
-        "section": "traps",
-        "count": 1,
-        "note": "Sheet #57 (Freezing Chains) - Niega efectos y ataque",
-        "owned": true,
-        "sheet_id": "57",
-        "sheet_category": "Decks y Cajas",
-        "custom_location": null,
-        "type": "Trap Card",
-        "humanReadableCardType": "Continuous Trap",
-        "frameType": "trap",
-        "desc": "Activate this card by targeting 1 Effect Monster on the field; negate the effects of that face-up monster while it is on the field, also that face-up monster cannot attack. When it is destroyed, destroy this card.",
-        "race": "Continuous",
-        "archetype": "",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/50078509.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50078509.jpg",
-        "prices": {
-          "tcgplayer": "0.20",
-          "cardmarket": "0.12"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fiendish%20Chain"
-      },
-      {
-        "name": "Drowning Mirror Force",
-        "section": "traps",
-        "count": 1,
-        "note": "Sheet #46 (Obelisk) - Devuelve monstruos al mazo",
-        "owned": true,
-        "sheet_id": "46",
-        "sheet_category": "Decks y Cajas",
-        "custom_location": null,
-        "type": "Trap Card",
-        "humanReadableCardType": "Normal Trap",
-        "frameType": "trap",
-        "desc": "When an opponent's monster declares a direct attack: Shuffle all your opponent's Attack Position monsters into the Deck.",
-        "race": "Normal",
-        "archetype": "",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/47475363.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47475363.jpg",
-        "prices": {
-          "tcgplayer": "0.19",
+          "tcgplayer": "0.11",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Drowning%20Mirror%20Force"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
       {
         "name": "Vision HERO Trinity",
@@ -3457,8 +3457,8 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/46759931.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/46759931.jpg",
         "prices": {
-          "tcgplayer": "0.25",
-          "cardmarket": "0.21"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Trinity"
       },
@@ -3484,16 +3484,70 @@
         "image_url": "https://images.ygoprodeck.com/images/cards/63813056.jpg",
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63813056.jpg",
         "prices": {
-          "tcgplayer": "0.26",
-          "cardmarket": "0.27"
+          "tcgplayer": "0.33",
+          "cardmarket": "0.28"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
+      },
+      {
+        "name": "Elemental HERO Nova Master",
+        "section": "extra",
+        "count": 1,
+        "note": "Sheet #300 - Requiere 1 Héroe + 1 FUEGO (Blazeman). Roba 1 carta al destruir",
+        "owned": true,
+        "sheet_id": "300",
+        "sheet_category": "Cartas Sueltas",
+        "custom_location": null,
+        "type": "Fusion Monster",
+        "humanReadableCardType": "Fusion Effect Monster",
+        "frameType": "fusion",
+        "desc": "1 \"Elemental HERO\" monster + 1 FIRE monster\r\nMust be Fusion Summoned. If this card destroys an opponent's monster by battle: Draw 1 card.",
+        "race": "Warrior",
+        "archetype": "Elemental HERO",
+        "atk": 2600,
+        "def": 2100,
+        "level": 8,
+        "attribute": "FIRE",
+        "image_url": "https://images.ygoprodeck.com/images/cards/1945387.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/1945387.jpg",
+        "prices": {
+          "tcgplayer": "0.21",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Nova%20Master"
+      },
+      {
+        "name": "Elemental HERO Neos Knight",
+        "section": "extra",
+        "count": 1,
+        "note": "Sheet #193 - Requiere Neos + 1 Guerrero. Golpea 2 veces",
+        "owned": true,
+        "sheet_id": "193",
+        "sheet_category": "Carta Suelta",
+        "custom_location": null,
+        "type": "Fusion Monster",
+        "humanReadableCardType": "Fusion Effect Monster",
+        "frameType": "fusion",
+        "desc": "\"Elemental HERO Neos\" + 1 Warrior monster\r\nMust be Fusion Summoned. Gains ATK equal to half the original ATK of the Warrior Fusion Material used for its Fusion Summon, except \"Elemental HERO Neos\". Can make a second attack during each Battle Phase. Your opponent takes no battle damage from attacks involving this card.",
+        "race": "Warrior",
+        "archetype": "Elemental HERO",
+        "atk": 2500,
+        "def": 1000,
+        "level": 7,
+        "attribute": "LIGHT",
+        "image_url": "https://images.ygoprodeck.com/images/cards/72926163.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72926163.jpg",
+        "prices": {
+          "tcgplayer": "0.37",
+          "cardmarket": "0.12"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Knight"
       },
       {
         "name": "Elemental HERO Escuridao",
         "section": "extra",
         "count": 1,
-        "note": "Sheet #190 - Fusión genérica muy versátil",
+        "note": "Sheet #190 - Requiere 1 Héroe + 1 OSCURIDAD (Vyon, Denier, Drakes)",
         "owned": true,
         "sheet_id": "190",
         "sheet_category": "Carta Suelta",
@@ -3512,117 +3566,9 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33574806.jpg",
         "prices": {
           "tcgplayer": "0.31",
-          "cardmarket": "0.22"
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Escuridao"
-      },
-      {
-        "name": "Elemental HERO Shining Flare Wingman",
-        "section": "extra",
-        "count": 1,
-        "note": "Sheet #194 - Gana ATK por cada Héroe en cementerio",
-        "owned": true,
-        "sheet_id": "194",
-        "sheet_category": "Carta Suelta",
-        "custom_location": null,
-        "type": "Fusion Monster",
-        "humanReadableCardType": "Fusion Effect Monster",
-        "frameType": "fusion",
-        "desc": "\"Elemental HERO Flame Wingman\" + \"Elemental HERO Sparkman\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. This card gains 300 ATK for each \"Elemental HERO\" card in your Graveyard. When this card destroys a monster by battle and sends it to the Graveyard: Inflict damage to your opponent equal to the ATK of the destroyed monster in the Graveyard.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 2500,
-        "def": 2100,
-        "level": 8,
-        "attribute": "LIGHT",
-        "image_url": "https://images.ygoprodeck.com/images/cards/25366484.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/25366484.jpg",
-        "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.12"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Shining%20Flare%20Wingman"
-      },
-      {
-        "name": "Elemental HERO Neos Knight",
-        "section": "extra",
-        "count": 1,
-        "note": "Sheet #193 - Fusión ofensiva con doble ataque",
-        "owned": true,
-        "sheet_id": "193",
-        "sheet_category": "Carta Suelta",
-        "custom_location": null,
-        "type": "Fusion Monster",
-        "humanReadableCardType": "Fusion Effect Monster",
-        "frameType": "fusion",
-        "desc": "\"Elemental HERO Neos\" + 1 Warrior monster\r\nMust be Fusion Summoned. Gains ATK equal to half the original ATK of the Warrior Fusion Material used for its Fusion Summon, except \"Elemental HERO Neos\". Can make a second attack during each Battle Phase. Your opponent takes no battle damage from attacks involving this card.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 2500,
-        "def": 1000,
-        "level": 7,
-        "attribute": "LIGHT",
-        "image_url": "https://images.ygoprodeck.com/images/cards/72926163.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72926163.jpg",
-        "prices": {
-          "tcgplayer": "0.40",
-          "cardmarket": "0.09"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Knight"
-      },
-      {
-        "name": "Elemental HERO Flame Wingman",
-        "section": "extra",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Quema daño de efecto al destruir",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Fusion Monster",
-        "humanReadableCardType": "Fusion Effect Monster",
-        "frameType": "fusion",
-        "desc": "\"Elemental HERO Avian\" + \"Elemental HERO Burstinatrix\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. When this card destroys a monster by battle and sends it to the Graveyard: Inflict damage to your opponent equal to the ATK of the destroyed monster in the Graveyard.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 2100,
-        "def": 1200,
-        "level": 6,
-        "attribute": "WIND",
-        "image_url": "https://images.ygoprodeck.com/images/cards/35809262.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/35809262.jpg",
-        "prices": {
-          "tcgplayer": "0.45",
-          "cardmarket": "0.36"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Flame%20Wingman"
-      },
-      {
-        "name": "Elemental HERO Thunder Giant",
-        "section": "extra",
-        "count": 1,
-        "note": "Caja Speed Duel GX - Destrucción por descarte",
-        "owned": true,
-        "sheet_id": null,
-        "sheet_category": null,
-        "custom_location": "Caja Speed Duel GX",
-        "type": "Fusion Monster",
-        "humanReadableCardType": "Fusion Effect Monster",
-        "frameType": "fusion",
-        "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Clayman\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. Once per turn: You can discard 1 card to target 1 face-up monster on the field with original ATK less than the ATK of this card; destroy that target.",
-        "race": "Warrior",
-        "archetype": "Elemental HERO",
-        "atk": 2400,
-        "def": 1500,
-        "level": 6,
-        "attribute": "LIGHT",
-        "image_url": "https://images.ygoprodeck.com/images/cards/61204971.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/61204971.jpg",
-        "prices": {
-          "tcgplayer": "0.42",
-          "cardmarket": "0.36"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Thunder%20Giant"
       }
     ]
   }

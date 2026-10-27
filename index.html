@@ -1014,9 +1014,21 @@
     function loadAllDecks() {
       try {
         const raw = localStorage.getItem('TCG_ALL_DECKS');
-        if (raw) return JSON.parse(raw);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          const updated = parsed.map(p => {
+            const fresh = initialDecks.find(id => id.id === p.id);
+            return fresh || p;
+          });
+          initialDecks.forEach(id => {
+            if (!updated.some(u => u.id === id.id)) {
+              updated.unshift(id);
+            }
+          });
+          localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(updated));
+          return updated;
+        }
       } catch (e) {}
-      // Primera vez: cargar los mazos iniciales y guardarlos
       localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(initialDecks));
       return [...initialDecks];
     }
