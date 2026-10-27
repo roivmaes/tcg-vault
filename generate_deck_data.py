@@ -164,9 +164,9 @@ def fetch_deck_info():
                 {"name": "Absolute King Back Jack", "count": 1, "section": "monsters", "note": "Sheet #123 (Caja Dark World) - Relleno defensivo / Trampa"},
 
                 # MÁGICAS (20)
-                {"name": "A Hero Lives", "count": 1, "section": "spells", "note": "Sheet #157 - Pagas mitad de LP e invocas Héroe directo del Deck"},
-                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "Sheet #197 - Soporte supremo para tu Darkest Knight"},
+                {"name": "A Hero Lives", "count": 2, "section": "spells", "note": "Sheet #157 - 2 copias: Tu mejor jugada inicial, invoca Héroe directo del Deck"},
                 {"name": "Polymerization", "count": 2, "section": "spells", "note": "Sheet #111 (Legendary Decks II) - 2 copias para asegurar tus fusiones"},
+                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "Sheet #197 - Soporte supremo para tu Darkest Knight"},
                 {"name": "Monster Reborn", "count": 1, "section": "spells", "note": "Sheet #102 (Legendary Decks II) - Resurrección universal"},
                 {"name": "Skyscraper 2 - Hero City", "count": 1, "section": "spells", "note": "Sheet #306 - Revive Héroes destruidos en batalla"},
                 {"name": "Fifth Hope", "count": 1, "section": "spells", "note": "Sheet #307 - Devuelve 5 Héroes del cementerio al mazo y roba 2"},
@@ -182,16 +182,15 @@ def fetch_deck_info():
                 {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Sheet #11 (Starter Set) - Control y libro de la luna"},
                 {"name": "Dark Ruler No More", "count": 1, "section": "spells", "note": "Sheet #34 (Spirit Charmers) - Niega efectos en campo rival"},
                 {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Sheet #113 (Obelisk) - Devuelve Héroes usados y roba 2"},
-                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Sheet #141 (Legendary Decks II) - Protección 3 turnos"},
 
                 # TRAMPAS (7)
-                {"name": "Hero Signal", "count": 1, "section": "traps", "note": "Sheet #308 - Trae un Héroe de tu mazo cuando destruyen un monstruo tuyo"},
-                {"name": "Hero Counterattack", "count": 1, "section": "traps", "note": "Sheet #311 - Invocación sorpresa y destrucción de monstruo rival"},
+                {"name": "Hero Signal", "count": 1, "section": "traps", "note": "Sheet #308 - Trae a Winged Kuriboh o Blazeman si destruyen un monstruo"},
+                {"name": "Crackdown", "count": 1, "section": "traps", "note": "Sheet #26 (Freezing Chains) - Roba el control de un monstruo rival"},
                 {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Sheet #101 (Legendary Decks II) - Castigo total al ataque rival"},
                 {"name": "Bottomless Trap Hole", "count": 1, "section": "traps", "note": "Sheet #12 (Legendary Decks II) - Destierro en invocación"},
                 {"name": "Compulsory Evacuation Device", "count": 1, "section": "traps", "note": "Sheet #24 (Starter Set) - Devuelve monstruo a la mano"},
                 {"name": "Solemn Warning", "count": 1, "section": "traps", "note": "Sheet #133 (Spirit Charmers) - Paga 2000 LP y niega invocación"},
-                {"name": "Crackdown", "count": 1, "section": "traps", "note": "Sheet #26 (Freezing Chains) - Roba el control de un monstruo rival"},
+                {"name": "Drowning Mirror Force", "count": 1, "section": "traps", "note": "Sheet #46 (Obelisk) - Devuelve monstruos atacantes al mazo"},
 
                 # EXTRA DECK (5)
                 {"name": "Vision HERO Trinity", "count": 1, "section": "extra", "note": "Sheet #289 - ¡Tu jefe final! Gana 5000 ATK y golpea 3 veces"},

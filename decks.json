@@ -2379,7 +2379,7 @@
       "spells": 20,
       "traps": 7,
       "owned_count": 45,
-      "total_cost": 11.35
+      "total_cost": 11.36
     },
     "cards": [
       {
@@ -2736,8 +2736,8 @@
       {
         "name": "A Hero Lives",
         "section": "spells",
-        "count": 1,
-        "note": "Sheet #157 - Pagas mitad de LP e invocas Héroe directo del Deck",
+        "count": 2,
+        "note": "Sheet #157 - 2 copias: Tu mejor jugada inicial, invoca Héroe directo del Deck",
         "owned": true,
         "sheet_id": "157",
         "sheet_category": "Carta Suelta",
@@ -2759,33 +2759,6 @@
           "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=A%20Hero%20Lives"
-      },
-      {
-        "name": "Evil Assault",
-        "section": "spells",
-        "count": 1,
-        "note": "Sheet #197 - Soporte supremo para tu Darkest Knight",
-        "owned": true,
-        "sheet_id": "197",
-        "sheet_category": "Carta Suelta",
-        "custom_location": null,
-        "type": "Spell Card",
-        "humanReadableCardType": "Normal Spell",
-        "frameType": "spell",
-        "desc": "Discard 1 card; take 1 Level 4 or lower \"Evil HERO\" monster from your Deck and either add it to your hand or Special Summon it, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except \"HERO\" monsters. If this card is in your GY, except the turn it was sent there: You can banish this card from your GY; add 1 \"Dark Fusion\" from your GY to your hand. You can only use each effect of \"Evil Assault\" once per turn.",
-        "race": "Normal",
-        "archetype": "",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/3519195.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3519195.jpg",
-        "prices": {
-          "tcgplayer": "0.85",
-          "cardmarket": "0.71"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
       {
         "name": "Polymerization",
@@ -2813,6 +2786,33 @@
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Polymerization"
+      },
+      {
+        "name": "Evil Assault",
+        "section": "spells",
+        "count": 1,
+        "note": "Sheet #197 - Soporte supremo para tu Darkest Knight",
+        "owned": true,
+        "sheet_id": "197",
+        "sheet_category": "Carta Suelta",
+        "custom_location": null,
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Discard 1 card; take 1 Level 4 or lower \"Evil HERO\" monster from your Deck and either add it to your hand or Special Summon it, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except \"HERO\" monsters. If this card is in your GY, except the turn it was sent there: You can banish this card from your GY; add 1 \"Dark Fusion\" from your GY to your hand. You can only use each effect of \"Evil Assault\" once per turn.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/3519195.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3519195.jpg",
+        "prices": {
+          "tcgplayer": "0.85",
+          "cardmarket": "0.71"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
       {
         "name": "Monster Reborn",
@@ -3220,37 +3220,10 @@
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
       },
       {
-        "name": "Swords of Revealing Light",
-        "section": "spells",
-        "count": 1,
-        "note": "Sheet #141 (Legendary Decks II) - Protección 3 turnos",
-        "owned": true,
-        "sheet_id": "141",
-        "sheet_category": "Decks y Cajas",
-        "custom_location": null,
-        "type": "Spell Card",
-        "humanReadableCardType": "Normal Spell",
-        "frameType": "spell",
-        "desc": "After this card's activation, it remains on the field, but you must destroy it during the End Phase of your opponent's 3rd turn. When this card is activated: If your opponent controls a face-down monster, flip all monsters they control face-up. While this card is face-up on the field, your opponent's monsters cannot declare an attack.",
-        "race": "Normal",
-        "archetype": "",
-        "atk": null,
-        "def": null,
-        "level": null,
-        "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/72302403.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72302403.jpg",
-        "prices": {
-          "tcgplayer": "0.14",
-          "cardmarket": "0.03"
-        },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
-      },
-      {
         "name": "Hero Signal",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #308 - Trae un Héroe de tu mazo cuando destruyen un monstruo tuyo",
+        "note": "Sheet #308 - Trae a Winged Kuriboh o Blazeman si destruyen un monstruo",
         "owned": true,
         "sheet_id": "308",
         "sheet_category": "Cartas Sueltas",
@@ -3274,31 +3247,31 @@
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Signal"
       },
       {
-        "name": "Hero Counterattack",
+        "name": "Crackdown",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #311 - Invocación sorpresa y destrucción de monstruo rival",
+        "note": "Sheet #26 (Freezing Chains) - Roba el control de un monstruo rival",
         "owned": true,
-        "sheet_id": "311",
-        "sheet_category": "Cartas Sueltas",
+        "sheet_id": "26",
+        "sheet_category": "Decks y Cajas",
         "custom_location": null,
         "type": "Trap Card",
-        "humanReadableCardType": "Normal Trap",
+        "humanReadableCardType": "Continuous Trap",
         "frameType": "trap",
-        "desc": "When an \"Elemental HERO\" monster you control is destroyed by battle: Your opponent chooses and reveals 1 random card from your hand, then, if it is an \"Elemental HERO\" monster, you destroy 1 monster your opponent controls and Special Summon the chosen monster.",
-        "race": "Normal",
-        "archetype": "Elemental HERO",
+        "desc": "Activate by targeting 1 face-up monster your opponent controls; take control of that monster. While you control that monster, it cannot attack or activate effects. When that monster leaves the field, destroy this card.",
+        "race": "Continuous",
+        "archetype": "",
         "atk": null,
         "def": null,
         "level": null,
         "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/19024706.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19024706.jpg",
+        "image_url": "https://images.ygoprodeck.com/images/cards/36975314.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36975314.jpg",
         "prices": {
-          "tcgplayer": "0.14",
-          "cardmarket": "0.05"
+          "tcgplayer": "0.11",
+          "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Counterattack"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
       {
         "name": "Mirror Force",
@@ -3409,31 +3382,31 @@
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
       {
-        "name": "Crackdown",
+        "name": "Drowning Mirror Force",
         "section": "traps",
         "count": 1,
-        "note": "Sheet #26 (Freezing Chains) - Roba el control de un monstruo rival",
+        "note": "Sheet #46 (Obelisk) - Devuelve monstruos atacantes al mazo",
         "owned": true,
-        "sheet_id": "26",
+        "sheet_id": "46",
         "sheet_category": "Decks y Cajas",
         "custom_location": null,
         "type": "Trap Card",
-        "humanReadableCardType": "Continuous Trap",
+        "humanReadableCardType": "Normal Trap",
         "frameType": "trap",
-        "desc": "Activate by targeting 1 face-up monster your opponent controls; take control of that monster. While you control that monster, it cannot attack or activate effects. When that monster leaves the field, destroy this card.",
-        "race": "Continuous",
+        "desc": "When an opponent's monster declares a direct attack: Shuffle all your opponent's Attack Position monsters into the Deck.",
+        "race": "Normal",
         "archetype": "",
         "atk": null,
         "def": null,
         "level": null,
         "attribute": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/36975314.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36975314.jpg",
+        "image_url": "https://images.ygoprodeck.com/images/cards/47475363.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47475363.jpg",
         "prices": {
-          "tcgplayer": "0.11",
+          "tcgplayer": "0.19",
           "cardmarket": "0.15"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Drowning%20Mirror%20Force"
       },
       {
         "name": "Vision HERO Trinity",
