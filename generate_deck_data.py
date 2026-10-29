@@ -25,70 +25,81 @@ def generate_all_decks():
 
     # DEFINICIÓN DE LOS 3 DECKS ACTUALIZADOS (100% LEGALES Y EN COLECCIÓN)
     decks_definitions = [
-        # 1. HÉROE (VERSIÓN 100% VERIFICADA CON TU INVENTARIO) - 40 Main + 7 Extra
+        # 1. HÉROE OPTIMIZADO (40 Main + 12 Extra)
         {
             "id": "hero_deck",
             "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
-            "short_name": "Mazo HÉROE",
-            "subtitle": "Mazo equilibrado de 40 cartas que aprovecha los monstruos clásicos de Midterm Paradox junto con el motor moderno de cartas sueltas",
+            "short_name": "Mazo HÉROE Optimizado",
+            "subtitle": "Mazo HÉROE Optimizado (40 cartas): Motor Horus, control de alto nivel y 12 cartas en el Extra Deck",
             "format": "Avanzado / Moderno",
-            "tag": "HÉROE / Fusiones Clásicas & Modernas",
+            "tag": "HÉROE / Motor Horus & Control",
             "tag_color": "red",
-            "description": "Un mazo equilibrado con 40 cartas exactas en el Main Deck y 7 en el Extra Deck. Aprovecha al máximo los héroes clásicos de Midterm Paradox (Avian, Burstinatrix, Clayman, Sparkman, Bubbleman) junto con el motor moderno de cartas sueltas (Vyon, Denier, Blazeman, Evil Assault).",
+            "description": "Mazo HÉROE optimizado que combina el núcleo agresivo de Trinity y Cross Crusader con el motor Horus (Imsety, Sarcophagus, The Zombie Vampire) y control de alto nivel (Accesscode Talker, Silhouhatte Rabbit, Angel Statue - Azurune).",
             "cards_spec": [
-                # MONSTRUOS (14)
-                {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "De tus cartas sueltas (Sheet #290) - Envía a Denier al cementerio"},
-                {"name": "Destiny HERO - Denier", "count": 1, "section": "monsters", "note": "De tus cartas sueltas (Sheet #183) - Se revive del cementerio"},
-                {"name": "Elemental HERO Bladedge", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #513) - 2600 ATK con daño de penetración"},
-                {"name": "Elemental HERO Blazeman", "count": 1, "section": "monsters", "note": "De tus cartas sueltas (Sheet #514) - Buscador de Polymerization"},
-                {"name": "Elemental HERO Wildheart", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #515) - Inmune a cartas de trampa"},
-                {"name": "Elemental HERO Neos", "count": 1, "section": "monsters", "note": "De tus cartas sueltas (Sheet #191) - Tu as clásico de 2500 ATK"},
-                {"name": "Elemental HERO Neos Alius", "count": 1, "section": "monsters", "note": "De tus cartas sueltas (Sheet #192) - Guerrero Géminis de 1900 ATK"},
-                {"name": "Elemental HERO Avian", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #420) - Material de Fusión"},
-                {"name": "Elemental HERO Burstinatrix", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #421) - Material de Fusión"},
-                {"name": "Elemental HERO Clayman", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #422) - Muro defensivo de 2000 DEF"},
-                {"name": "Elemental HERO Sparkman", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #423) - Guerrero clásico de 1600 ATK"},
-                {"name": "Elemental HERO Bubbleman", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #424) - Invocación especial y robo de 2 cartas"},
-                {"name": "Effect Veiler", "count": 1, "section": "monsters", "note": "De Spirit Charmers (Sheet #47) - Handtrap para negar efectos"},
-                {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "De Midterm Paradox (Sheet #425) - Anula un ataque desde el cementerio"},
+                # MONSTRUOS (15)
+                # Núcleo HÉROE (8)
+                {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Carta suelta — Envía a Denier al cementerio y busca Polymerization"},
+                {"name": "Destiny HERO - Denier", "count": 1, "section": "monsters", "note": "Carta suelta — Se invoca gratis desde el cementerio para hacer Link/Fusión"},
+                {"name": "Elemental HERO Blazeman", "count": 1, "section": "monsters", "note": "Carta suelta / Midterm — Busca Polymerization al ser invocado"},
+                {"name": "Elemental HERO Wildheart", "count": 1, "section": "monsters", "note": "Carta suelta / Midterm — Guerrero inmune a todas las trampas"},
+                {"name": "Elemental HERO Neos Alius", "count": 1, "section": "monsters", "note": "Carta suelta — Atacante de 1900 ATK y atributo LUZ"},
+                {"name": "Elemental HERO Neos", "count": 1, "section": "monsters", "note": "Carta suelta — Material para Neos Knight y Wrath of Neos"},
+                {"name": "Evil HERO Vicious Claws", "count": 2, "section": "monsters", "note": "2 copias — Cartas sueltas, nivel 7 para descartar con Evil Assault o Sarcophagus"},
 
-                # MAGIAS (17)
-                {"name": "A Hero Lives", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #429) - Invoca un HÉROE directo del Deck"},
-                {"name": "Polymerization", "count": 2, "section": "spells", "note": "2 copias de Midterm Paradox (Sheet #495) - Fusión principal"},
-                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "De tus cartas sueltas (Sheet #197) - Busca o invoca HÉROE"},
-                {"name": "Monster Reborn", "count": 1, "section": "spells", "note": "De tus cajas (Sheet #320) - Resurrección universal"},
-                {"name": "Skyscraper", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #427) - Campo: +1000 ATK al atacar"},
-                {"name": "Skyscraper 2 - Hero City", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #428) - Revive Héroes destruidos en batalla"},
-                {"name": "Fifth Hope", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #433) - Recicla 5 Héroes y roba 2"},
-                {"name": "Elemental Recharge", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #430) - Gana 1000 LP por cada HÉROE Elemental"},
-                {"name": "Raigeki", "count": 1, "section": "spells", "note": "De Spirit Charmers (Sheet #116) - Limpiador total de monstruos"},
-                {"name": "Dark Hole", "count": 1, "section": "spells", "note": "De tus cajas (Sheet #353) - Destrucción total de campo"},
-                {"name": "Harpie's Feather Duster", "count": 1, "section": "spells", "note": "De Obelisk the Tormentor (Sheet #78) - Limpia magias y trampas rivales"},
-                {"name": "Twin Twisters", "count": 1, "section": "spells", "note": "De Spirit Charmers (Sheet #149) - Descarta 1 y destruye 2 magias/trampas"},
-                {"name": "Dark Ruler No More", "count": 1, "section": "spells", "note": "De Spirit Charmers (Sheet #34) - Niega efectos boca arriba del rival"},
-                {"name": "Form Change", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #435) - Magia de cambio y juego rápido"},
-                {"name": "Power Bond", "count": 1, "section": "spells", "note": "De Midterm Paradox (Sheet #452) - Duplica el ATK original de fusiones máquina"},
-                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "De tus cajas (Sheet #498) - Destruye magia o trampa"},
+                # Motor Horus y Control de Alto Nivel (7)
+                {"name": "Imsety, Glory of Horus", "count": 1, "section": "monsters", "note": "Descarta 1 carta para buscar King's Sarcophagus y robar 1 carta"},
+                {"name": "Duamutef, Blessing of Horus", "count": 1, "section": "monsters", "note": "Se invoca desde el cementerio y da robo extra"},
+                {"name": "Hapi, Guidance of Horus", "count": 1, "section": "monsters", "note": "Se invoca desde el cementerio y recupera cartas"},
+                {"name": "Qebehsenuef, Protection of Horus", "count": 1, "section": "monsters", "note": "Protege a tus monstruos de ataques y efectos"},
+                {"name": "Fairy Tail - Luna", "count": 1, "section": "monsters", "note": "Interrupción rápida regresando monstruos rivales a la mano"},
+                {"name": "Lord of the Heavenly Prison", "count": 1, "section": "monsters", "note": "Protege tus magias/trampas seteadas e invoca desde mano"},
+                {"name": "Winged Kuriboh", "count": 1, "section": "monsters", "note": "Escudo defensivo que reduce el daño de combate a cero"},
 
-                # TRAMPAS (9)
-                {"name": "Hero Signal", "count": 1, "section": "traps", "note": "De Midterm Paradox (Sheet #432) - Invoca un HÉROE nivel 4 o menor al destruirse un monstruo"},
-                {"name": "Feather Wind", "count": 1, "section": "traps", "note": "De Midterm Paradox (Sheet #434) - Niega activación de magia o trampa si controlas a Avian"},
-                {"name": "Solemn Warning", "count": 1, "section": "traps", "note": "De Spirit Charmers (Sheet #133) - Paga 2000 LP y niega una invocación"},
-                {"name": "Dimensional Barrier", "count": 1, "section": "traps", "note": "De Spirit Charmers (Sheet #43) - Bloquea invocaciones del Extra Deck"},
-                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "De tus cajas (Sheet #499) - Destruye todos los monstruos en ataque del rival"},
-                {"name": "Call of the Haunted", "count": 1, "section": "traps", "note": "De tus cajas (Sheet #500) - Revive cualquier monstruo del cementerio"},
-                {"name": "Heavy Storm Duster", "count": 1, "section": "traps", "note": "De tus cajas (Sheet #79) - Destruye hasta 2 magias/trampas"},
-                {"name": "Dark Smog", "count": 1, "section": "traps", "note": "De tus cajas (Sheet #516) - Destierra del cementerio rival y descarta demonio"},
-                {"name": "Kunai with Chain", "count": 1, "section": "traps", "note": "De Midterm Paradox (Sheet #489) - Frena ataque y equipa +500 ATK"},
+                # MAGIAS (18)
+                # Buscadores & Fusiones (12)
+                {"name": "A Hero Lives", "count": 1, "section": "spells", "note": "Paga la mitad de tus LP para invocar un HÉROE directamente del mazo"},
+                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "Descarta 1 carta para buscar o invocar un HÉROE Malvado del mazo"},
+                {"name": "Polymerization", "count": 2, "section": "spells", "note": "2 copias — Magia de fusión para Trinity, Nova Master, Escuridao o Neos Knight"},
+                {"name": "King's Sarcophagus", "count": 1, "section": "spells", "note": "Permite revivir a los 4 Horus desde el cementerio y manda monstruos al GY"},
+                {"name": "The Warrior Returning Alive", "count": 2, "section": "spells", "note": "2 copias — Recupera cualquier HÉROE del cementerio directo a la mano"},
+                {"name": "Skyscraper 2 - Hero City", "count": 1, "section": "spells", "note": "Revive HÉROES Elementales destruidos en batalla cada turno"},
+                {"name": "Fifth Hope", "count": 1, "section": "spells", "note": "Recicla 5 HÉROES Elementales al mazo y roba hasta 3 cartas"},
+                {"name": "H - Heated Heart", "count": 1, "section": "spells", "note": "Otorga +500 ATK y daño de penetración a un monstruo"},
+                {"name": "R - Righteous Justice", "count": 1, "section": "spells", "note": "Destruye magias/trampas del rival igual al número de HÉROES en tu campo"},
+                {"name": "Wrath of Neos", "count": 1, "section": "spells", "note": "Destruye todas las cartas en el campo regresando a Neos al mazo"},
 
-                # EXTRA DECK (7)
-                {"name": "Elemental HERO Escuridao", "count": 1, "section": "extra", "note": "De tus cartas sueltas (Sheet #190) - Fusión con monstruos OSCURIDAD (Vyon, Denier)"},
-                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "De tus cartas sueltas (Sheet #193) - Fusión Neos + Guerrero: doble ataque"},
-                {"name": "Elemental HERO Shining Flare Wingman", "count": 1, "section": "extra", "note": "De tus cartas sueltas (Sheet #194) - Gana 300 ATK por cada HÉROE en cementerio"},
-                {"name": "Elemental HERO Tempest", "count": 1, "section": "extra", "note": "De Midterm Paradox (Sheet #419) - Inmune a ser destruido en batalla enviando 1 carta al GY"},
-                {"name": "Super Vehicroid Jumbo Drill", "count": 1, "section": "extra", "note": "De Midterm Paradox (Sheet #436) - 3000 ATK penetración; potenciable con Power Bond"},
-                {"name": "Super Vehicroid - Stealth Union", "count": 1, "section": "extra", "note": "De Midterm Paradox (Sheet #437) - 3600 ATK; absorbe monstruos del rival"},
-                {"name": "UFOroid Fighter", "count": 1, "section": "extra", "note": "De Midterm Paradox (Sheet #438) - Fusión con Guerrero: suma ATK original"}
+                # Control y Limpieza (6)
+                {"name": "Monster Reborn", "count": 1, "section": "spells", "note": "Resurrección universal de cualquier monstruo"},
+                {"name": "Harpie's Feather Duster", "count": 1, "section": "spells", "note": "Destruye todas las magias y trampas del rival"},
+                {"name": "Dark Ruler No More", "count": 1, "section": "spells", "note": "Niega los efectos de todos los monstruos boca arriba del rival"},
+                {"name": "Dark Hole", "count": 1, "section": "spells", "note": "Destruye todos los monstruos en el campo"},
+                {"name": "Fissure", "count": 1, "section": "spells", "note": "Destruye al monstruo con menor ATK del rival sin hacer objetivo"},
+                {"name": "Sol and Luna", "count": 1, "section": "spells", "note": "Magia rápida de disrupción: voltea un monstruo tuyo y uno rival boca abajo"},
+
+                # TRAMPAS (7)
+                {"name": "Angel Statue - Azurune", "count": 1, "section": "traps", "note": "Trampa monstruo continua con 1800 DEF que niega una Invocación Especial"},
+                {"name": "Crackdown", "count": 1, "section": "traps", "note": "Toma el control permanente de un monstruo rival boca arriba"},
+                {"name": "Fiendish Chain", "count": 1, "section": "traps", "note": "Niega efectos y evita que el monstruo rival pueda atacar"},
+                {"name": "Drowning Mirror Force", "count": 1, "section": "traps", "note": "Baraja al mazo todos los monstruos en ataque del rival tras un ataque directo"},
+                {"name": "Heavy Storm Duster", "count": 1, "section": "traps", "note": "Destruye hasta 2 cartas mágicas o de trampa en el campo"},
+                {"name": "Hero Signal", "count": 1, "section": "traps", "note": "Invoca un HÉROE nivel 4 o menor cuando destruyen un monstruo tuyo"},
+                {"name": "Hero Counterattack", "count": 1, "section": "traps", "note": "Invoca un HÉROE de tu mano al azar cuando recibes un ataque"},
+
+                # EXTRA DECK (12)
+                # Núcleo HÉROE (7)
+                {"name": "Xtra HERO Cross Crusader", "count": 2, "section": "extra", "note": "2 copias Link-2 — Revive un Destiny HERO y busca cualquier HÉROE del mazo"},
+                {"name": "Vision HERO Trinity", "count": 1, "section": "extra", "note": "Fusión de 5000 ATK que puede atacar tres veces a monstruos"},
+                {"name": "Xtra HERO Dread Decimator", "count": 1, "section": "extra", "note": "Link-3 — Otorga daño de penetración y ATK a todos tus HÉROES apuntados"},
+                {"name": "Elemental HERO Nova Master", "count": 1, "section": "extra", "note": "Fusión HÉROE + FUEGO (Blazeman) — Roba 1 carta cada vez que destruye por batalla"},
+                {"name": "Elemental HERO Escuridao", "count": 1, "section": "extra", "note": "Fusión HÉROE + OSCURIDAD (Vyon, Denier) — Gana ATK por cada HÉROE en GY"},
+                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "Fusión Neos + Guerrero — Doble ataque y ATK masivo"},
+
+                # Genéricos y Motores de Alto Nivel (5)
+                {"name": "Accesscode Talker", "count": 1, "section": "extra", "note": "Jefe Link-4 — Llega hasta 5300 ATK y destruye múltiples cartas sin respuesta"},
+                {"name": "Silhouhatte Rabbit", "count": 1, "section": "extra", "note": "Link-2 — Coloca Angel Statue - Azurune directo del mazo para interrumpir"},
+                {"name": "The Zombie Vampire", "count": 1, "section": "extra", "note": "XYZ Rango 8 — Se invoca con 2 monstruos Horus nivel 8; militea 4 cartas y revive"},
+                {"name": "Castel, the Skyblaster Musketeer", "count": 1, "section": "extra", "note": "XYZ Rango 4 — Baraja al mazo cualquier carta boca arriba del rival"},
+                {"name": "Daigusto Emeral", "count": 1, "section": "extra", "note": "XYZ Rango 4 — Recicla 3 monstruos al mazo y roba 1 carta o revive no-efecto"}
             ]
         },
 
