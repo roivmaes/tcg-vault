@@ -17,9 +17,9 @@ Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configur
 * **Extra Deck (8):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, ***Elemental HERO Gaia***.
 * **Estado:** **48/48 Completo (100% en Colección)**.
 
-### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010)
-* **Composición:** **40 Main Deck** (22 Monstruos, 11 Mágicas, 7 Trampas) + **1 Extra Deck**.
-* **Estrategia:** Mazo 100% legal para el formato histórico Edison (Abril 2010). Sin Naturias en el Extra Deck y con una **segunda copia de *Ryko, Lightsworn Hunter*** en lugar de *Fabled Raven*. Incorpora a ***Necro Gardna*** (defensa clave desde el cementerio), ***Jenis, Lightsworn Mender***, ***Shire, Lightsworn Spirit***, ***D.D. Crow***, ***Mobius the Frost Monarch*** y la magia de campo ***Realm of Light***.
+### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010) — *(Definitivo Edison)*
+* **Composición:** **40 Main Deck** (22 Monstruos, 10 Mágicas, 8 Trampas) + **1 Extra Deck**.
+* **Estrategia:** Mazo definitivo de 40 cartas para el formato histórico Edison (Abril 2010). Se potenció con **2 copias de *Cyber Dragon*** (presencia ofensiva inmediata de 2100 ATK), ***Breaker the Magical Warrior*** (1900 ATK y destructor de magias/trampas), ***Heavy Storm*** (limpiador masivo de magias/trampas), ***Torrential Tribute*** (destrucción total de campo tras invocación), ***Solemn Judgment*** (la contranegación definitiva) y ***Call of the Haunted*** (revivir en ataque). Mantiene el motor con 2x *Ryko*, *Judgment Dragon*, *Lumina*, *Lyla*, *Wulf*, *Honest*, *Jinzo*, *D.D. Crow*, *Mobius*, *Necro Gardna*, *Aurkus*, *Shire* y *Realm of Light*.
 * **Extra Deck (1 Carta Legal):** ***Stardust Dragon***.
 * **Estado:** **41/41 Completo (100% en Colección)**.
 

@@ -89,22 +89,22 @@ def generate_all_decks():
             ]
         },
 
-        # 2. LIGHTSWORN (FORMATO EDISON - ABRIL 2010) - 40 Main + 1 Extra
+        # 2. LIGHTSWORN DEFINITIVO (FORMATO EDISON - RETRO 2010) - 40 Main + 1 Extra
         {
             "id": "lightsworn_edison_2010",
             "name": "Mazo LIGHTSWORN (Formato EDISON - Retro 2010)",
             "short_name": "Lightsworn Edison",
-            "subtitle": "Mazo 100% legal para Edison. Sin Naturias en el Extra Deck y con una segunda copia de Ryko en lugar de Fabled Raven",
+            "subtitle": "Mazo Edison Definitivo (40 cartas): Mejorado con Cyber Dragon (x2), Breaker, Heavy Storm, Torrential Tribute, Solemn Judgment y Call of the Haunted",
             "format": "Edison (Abril 2010)",
             "tag": "Retro / Edison",
             "tag_color": "amber",
-            "description": "Mazo 100% legal para Edison. Sin Naturias en el Extra Deck y con una segunda copia de Ryko en lugar de Fabled Raven. Añadimos Necro Gardna, Jenis, Shire, D.D. Crow, Mobius the Frost Monarch y Realm of Light.",
+            "description": "Mazo LIGHTSWORN definitivo (40 cartas) para formato Edison. Incorpora Cyber Dragon (x2) para presencia ofensiva inmediata de 2100 ATK, Breaker the Magical Warrior para destruir magias/trampas, Heavy Storm, Torrential Tribute, Solemn Judgment y Call of the Haunted.",
             "cards_spec": [
                 # MONSTRUOS (22)
                 {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Tu jefe final"},
                 {"name": "Lumina, Lightsworn Summoner", "count": 1, "section": "monsters", "note": "Invocadora / Resucitadora"},
                 {"name": "Lyla, Lightsworn Sorceress", "count": 1, "section": "monsters", "note": "Destructora de Mágicas/Trampas"},
-                {"name": "Ryko, Lightsworn Hunter", "count": 2, "section": "monsters", "note": "2 copias (Copia 2 reemplaza a Fabled Raven): Destrucción Flip y Molienda"},
+                {"name": "Ryko, Lightsworn Hunter", "count": 2, "section": "monsters", "note": "2 copias: Destrucción Flip y Molienda"},
                 {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "Invocación especial al cementerio"},
                 {"name": "Celestia, Lightsworn Angel", "count": 1, "section": "monsters", "note": "Tributo Lightsworn / Destrucción x2"},
                 {"name": "Garoth, Lightsworn Warrior", "count": 1, "section": "monsters", "note": "Robo y aceleración"},
@@ -112,37 +112,34 @@ def generate_all_decks():
                 {"name": "Jain, Lightsworn Paladin", "count": 2, "section": "monsters", "note": "2 copias (Principal + Suelta)"},
                 {"name": "Gragonith, Lightsworn Dragon", "count": 1, "section": "monsters", "note": "Daño de penetración y ATK"},
                 {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "Sheet #438 - Protege a tus Lightsworn contra efectos que seleccionen"},
-                {"name": "Jenis, Lightsworn Mender", "count": 1, "section": "monsters", "note": "Sheet #439 - Daño de efecto y recuperación de LP al moler cartas"},
                 {"name": "Shire, Lightsworn Spirit", "count": 1, "section": "monsters", "note": "Sheet #440 - Gana 300 ATK por cada Lightsworn distinto en cementerio"},
                 {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "Sheet #441 - Se destierra del cementerio para anular un ataque rival"},
                 {"name": "Honest", "count": 1, "section": "monsters", "note": "Hand-trap de ATK para LIGHT"},
                 {"name": "Jinzo", "count": 1, "section": "monsters", "note": "De Legendary Decks II - Bloqueo de trampas"},
                 {"name": "D.D. Crow", "count": 1, "section": "monsters", "note": "Sheet #362 - Handtrap clásica legal en Edison: destierra carta del cementerio rival"},
                 {"name": "Mobius the Frost Monarch", "count": 1, "section": "monsters", "note": "Sheet #374 - Monarca legal en Edison: destruye hasta 2 Mágicas/Trampas al tributarse"},
-                {"name": "Nimble Momonga", "count": 1, "section": "monsters", "note": "Recuperación de LP y bloqueo"},
-                {"name": "Dark Valkyria", "count": 1, "section": "monsters", "note": "Géminis con contador mágico"},
-
-                # MAGIAS (11)
+                {"name": "Cyber Dragon", "count": 2, "section": "monsters", "note": "Sheet #404/#405 - 2 copias: Invocación especial de 2100 ATK si el rival controla monstruos"},
+                {"name": "Breaker the Magical Warrior", "count": 1, "section": "monsters", "note": "Sheet #455 - 1900 ATK al invocarse y destruye una magia/trampa rival"},
                 {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "Buscador clave Lightsworn"},
                 {"name": "Solar Recharge", "count": 1, "section": "spells", "note": "Robo x2 y molienda"},
                 {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "Recupera Judgment Dragon"},
                 {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "Envía a Wulf o Necro Gardna al cementerio"},
                 {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "Tu clásico rompe-magias"},
                 {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Control y libro de la luna"},
-                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Protección por 3 turnos"},
                 {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Recicla 5 y roba 2"},
                 {"name": "Card Destruction", "count": 1, "section": "spells", "note": "Prestada de Dark World, perfecta para Edison"},
-                {"name": "Dragged Down into the Grave", "count": 1, "section": "spells", "note": "Prestada de Dark World"},
                 {"name": "Realm of Light", "count": 1, "section": "spells", "note": "Sheet #442 - Magia de campo legal en Edison; acumula contadores y da ATK masivo"},
+                {"name": "Heavy Storm", "count": 1, "section": "spells", "note": "Sheet #456 - Limpiador masivo de todas las magias y trampas del campo"},
 
-                # TRAMPAS (7)
+                # TRAMPAS (8)
                 {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Castigo total al ataque rival"},
                 {"name": "Bottomless Trap Hole", "count": 1, "section": "traps", "note": "Destrucción y destierro"},
                 {"name": "Compulsory Evacuation Device", "count": 1, "section": "traps", "note": "Devuelve al rival a la mano"},
                 {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "Recupera monstruos LIGHT"},
-                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "Niega y destruye tributando"},
-                {"name": "Mind Crush", "count": 1, "section": "traps", "note": "Prestada de Dark World"},
-                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "Sheet #443 - Trampa continua que revive Lightsworns y envía cartas al cementerio"},
+                {"name": "Mind Crush", "count": 1, "section": "traps", "note": "Adivina o nombra una carta de la mano rival y deséchala"},
+                {"name": "Torrential Tribute", "count": 1, "section": "traps", "note": "Sheet #457 - Destruye todos los monstruos del campo tras una invocación"},
+                {"name": "Solemn Judgment", "count": 1, "section": "traps", "note": "Sheet #458 - Paga la mitad de tus LP y niega cualquier invocación, magia o trampa"},
+                {"name": "Call of the Haunted", "count": 1, "section": "traps", "note": "Sheet #403 - Revive cualquier monstruo del cementerio en posición de ataque"},
 
                 # EXTRA DECK (1 CARTA LEGAL EDISON)
                 {"name": "Stardust Dragon", "count": 1, "section": "extra", "note": "Sincronía 8 - Anulación de destrucción (100% legal Edison)"}
