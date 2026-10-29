@@ -11,10 +11,10 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
-### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno)
+### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Midterm Paradox + Cartas Sueltas)*
 * **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Una baraja agresiva centrada en fusiones rápidas con *Polymerization*, soporte de cartas temáticas de tu colección y acceso a *Xtra HERO Cross Crusader*. Cuenta con 2 copias de *A Hero Lives*, 2 copias de *Polymerization*, *Evil Assault*, *Hero Flash!!* (Sheet #201), *Evil HERO Vicious Claws* (x2), *Elemental HERO Bladedge* (2600 ATK penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Blazeman*, *Wildheart*, *Neos*, *Neos Alius*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores de campo.
-* **Extra Deck (7):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
+* **Estrategia:** Un mazo equilibrado que aprovecha al máximo los héroes clásicos de *Speed Duel GX: Midterm Paradox* (*Avian*, *Burstinatrix*, *Clayman*, *Sparkman*, *Bubbleman*, *Wildheart*, *Bladedge*) junto con el motor moderno de tus cartas sueltas (*Vyon*, *Denier*, *Blazeman*, *Evil Assault*, *Neos*, *Neos Alius*).
+* **Extra Deck (7):** *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, *Elemental HERO Shining Flare Wingman*, *Elemental HERO Tempest*, *Super Vehicroid Jumbo Drill*, *Super Vehicroid - Stealth Union*, *UFOroid Fighter*.
 * **Estado:** **47/47 Completo (100% en Colección)**.
 
 ### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010)
