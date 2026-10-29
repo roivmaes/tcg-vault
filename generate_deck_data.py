@@ -25,16 +25,16 @@ def generate_all_decks():
 
     # DEFINICIÓN DE LOS 3 DECKS ACTUALIZADOS (100% LEGALES Y EN COLECCIÓN)
     decks_definitions = [
-        # 1. HÉROE (FORMATO AVANZADO / MODERNO) - 40 Main + 8 Extra
+        # 1. HÉROE (FORMATO AVANZADO / MODERNO) - 40 Main + 7 Extra
         {
             "id": "hero_deck",
             "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
             "short_name": "Mazo HÉROE",
-            "subtitle": "Un mazo agresivo de fusiones, ahora mejorado con Miracle Fusion y Elemental HERO Gaia",
+            "subtitle": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader",
             "format": "Avanzado / Moderno",
             "tag": "HÉROE / Fusiones & Enlaces",
             "tag_color": "red",
-            "description": "Un mazo agresivo de fusiones, ahora mejorado con Miracle Fusion y Elemental HERO Gaia. Cuenta con tus 2 copias de A Hero Lives, Evil HERO Vicious Claws y Xtra HERO Cross Crusader en el Extra Deck.",
+            "description": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader.",
             "cards_spec": [
                 # MONSTRUOS (14)
                 {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Sheet #290 - Envía a Denier al cementerio"},
@@ -78,14 +78,13 @@ def generate_all_decks():
                 {"name": "Heavy Storm Duster", "count": 1, "section": "traps", "note": "De Freezing Chains - Destruye 2 Mágicas/Trampas"},
                 {"name": "Unending Nightmare", "count": 1, "section": "traps", "note": "Sheet #454 - Destruye cartas boca arriba por 1000 LP"},
 
-                # EXTRA DECK (8)
+                # EXTRA DECK (7)
                 {"name": "Xtra HERO Cross Crusader", "count": 2, "section": "extra", "note": "Sheet #330/#331 - 2 copias: Motor Link clave para revivir Destiny HERO y buscar HÉROE"},
                 {"name": "Vision HERO Trinity", "count": 1, "section": "extra", "note": "Sheet #289 - Sube a 5000 ATK y ataca 3 veces"},
                 {"name": "Xtra HERO Dread Decimator", "count": 1, "section": "extra", "note": "Sheet #296 - Enlace potenciador de daño"},
                 {"name": "Elemental HERO Nova Master", "count": 1, "section": "extra", "note": "Sheet #300 - Fusión Blazeman + HÉROE; roba al destruir"},
                 {"name": "Elemental HERO Escuridao", "count": 1, "section": "extra", "note": "Sheet #190 - Fusión con monstruos de OSCURIDAD"},
-                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "Sheet #193 - Fusión de Neos + Guerrero; doble golpe"},
-                {"name": "Elemental HERO Gaia", "count": 1, "section": "extra", "note": "Sheet #436 - Fusión HÉROE + TIERRA (Wildheart/Vicious Claws); reduce a la mitad el ATK rival y gana ese ATK"}
+                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "Sheet #193 - Fusión de Neos + Guerrero; doble golpe"}
             ]
         },
 
@@ -94,11 +93,11 @@ def generate_all_decks():
             "id": "lightsworn_edison_2010",
             "name": "Mazo LIGHTSWORN (Formato EDISON - Retro 2010)",
             "short_name": "Lightsworn Edison",
-            "subtitle": "Mazo Edison Definitivo (40 cartas): Mejorado con Cyber Dragon (x2), Breaker, Heavy Storm, Torrential Tribute, Solemn Judgment y Call of the Haunted",
+            "subtitle": "Optimizado al máximo con cartas del propio inventario (Cyber Dragon, Heavy Storm, Solemn Judgment, Torrential Tribute) y limpio de cartas ilegales o lentas",
             "format": "Edison (Abril 2010)",
             "tag": "Retro / Edison",
             "tag_color": "amber",
-            "description": "Mazo LIGHTSWORN definitivo (40 cartas) para formato Edison. Incorpora Cyber Dragon (x2) para presencia ofensiva inmediata de 2100 ATK, Breaker the Magical Warrior para destruir magias/trampas, Heavy Storm, Torrential Tribute, Solemn Judgment y Call of the Haunted.",
+            "description": "Optimizado al máximo con cartas del propio inventario (Cyber Dragon, Heavy Storm, Solemn Judgment, Torrential Tribute) y limpio de cartas ilegales o lentas.",
             "cards_spec": [
                 # MONSTRUOS (22)
                 {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Tu jefe final"},
@@ -151,11 +150,11 @@ def generate_all_decks():
             "id": "dark_world_modern",
             "name": "Mazo DARK WORLD \"Puro\" (Formato Avanzado / Moderno)",
             "short_name": "Dark World Puro",
-            "subtitle": "Tu estrategia de descarte, coronada con el poder destructivo de ZEUS en el Extra Deck",
+            "subtitle": "La estrategia clásica de descarte de la mano, coronada con Xyz potentes modernos y la amenaza destructiva de ZEUS",
             "format": "Avanzado / Moderno",
             "tag": "Dark World Puro",
             "tag_color": "purple",
-            "description": "Tu estrategia de descarte, coronada con el poder destructivo de ZEUS, Daigusto Emeral y Number 20: Giga-Brilliant en el Extra Deck. 100% puro y temático.",
+            "description": "La estrategia clásica de descarte de la mano, coronada con Xyz potentes modernos y la amenaza destructiva de ZEUS.",
             "cards_spec": [
                 # MONSTRUOS (24)
                 {"name": "Reign-Beaux, Overking of Dark World", "count": 1, "section": "monsters", "note": "Jefe supremo del mazo principal"},
