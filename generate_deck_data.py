@@ -25,36 +25,35 @@ def generate_all_decks():
 
     # DEFINICIÓN DE LOS 3 DECKS ACTUALIZADOS (100% LEGALES Y EN COLECCIÓN)
     decks_definitions = [
-        # 1. HÉROE (FORMATO AVANZADO / MODERNO) - 40 Main + 8 Extra
+        # 1. HÉROE (FORMATO AVANZADO / MODERNO) - 40 Main + 7 Extra
         {
             "id": "hero_deck",
             "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
             "short_name": "Mazo HÉROE",
-            "subtitle": "Un mazo agresivo que ahora es mucho más consistente gracias a tus 2 'A Hero Lives' y tus 'Cross Crusader'",
+            "subtitle": "Mazo Corregido: 40 Main Deck + 7 Extra Deck con Evil HERO Vicious Claws y Cross Crusader",
             "format": "Avanzado / Moderno",
             "tag": "HÉROE / Fusiones & Enlaces",
             "tag_color": "red",
-            "description": "Un mazo agresivo que ahora es mucho más consistente gracias a tus 2 'A Hero Lives' y tus 'Cross Crusader'. Concentra todas tus Handtraps y magias limpiacampos (Board Breakers) para competir con la velocidad de los mazos modernos.",
+            "description": "Mazo HÉROE corregido con sinergia 100% legal y jugable. Incorpora Héroe Malvado Garras Cruentas (Evil HERO Vicious Claws x2) para invocación especial inmediata, Bladedge para daño de penetración, doble A Hero Lives y doble Xtra HERO Cross Crusader en el Extra Deck.",
             "cards_spec": [
-                # MONSTRUOS (14)
+                # MONSTRUOS (14 - CORREGIDO)
                 {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Sheet #290 - Envía a Denier al cementerio"},
                 {"name": "Destiny HERO - Denier", "count": 1, "section": "monsters", "note": "Sheet #183 - Se revive del cementerio"},
-                {"name": "Evil HERO Darkest Knight", "count": 1, "section": "monsters", "note": "Sheet #198 - Evil HERO Drakes Knight"},
+                {"name": "Elemental HERO Bladedge", "count": 1, "section": "monsters", "note": "Sheet #323 - Regresa al Main Deck; daño de penetración (2600 ATK)"},
                 {"name": "Elemental HERO Blazeman", "count": 1, "section": "monsters", "note": "Sheet #297 - Buscador estrella de Polymerization"},
                 {"name": "Elemental HERO Wildheart", "count": 1, "section": "monsters", "note": "Sheet #298 - Inmune a trampas"},
                 {"name": "Elemental HERO Neos", "count": 1, "section": "monsters", "note": "Sheet #191 - Tu clásico as"},
                 {"name": "Elemental HERO Neos Alius", "count": 1, "section": "monsters", "note": "Sheet #192 - Guerrero Géminis"},
-                {"name": "Elemental HERO Bladedge", "count": 1, "section": "monsters", "note": "Sheet #323 - Daño de penetración (2600 ATK)"},
+                {"name": "Evil HERO Vicious Claws", "count": 2, "section": "monsters", "note": "Sheet #331 - Héroe Malvado Garras Cruentas (2 copias): Invocación especial si controlas un HÉROE"},
                 {"name": "Winged Kuriboh", "count": 2, "section": "monsters", "note": "2 copias (Principal + Speed Duel GX) - Evita daño letal"},
                 {"name": "Effect Veiler", "count": 1, "section": "monsters", "note": "Sheet #47 - Handtrap niega efecto rival"},
                 {"name": "Droll & Lock Bird", "count": 1, "section": "monsters", "note": "Sheet #45 - Handtrap frena robo y búsquedas"},
                 {"name": "Ghost Mourner & Moonlit Chill", "count": 1, "section": "monsters", "note": "Sheet #67 - Handtrap niega y quema daño"},
-                {"name": "Absolute King Back Jack", "count": 1, "section": "monsters", "note": "Sheet #2 - Rey Absoluto Back Jack para defensa y control de trampas"},
 
                 # MAGIAS (17)
                 {"name": "A Hero Lives", "count": 2, "section": "spells", "note": "2 copias: Tu mejor jugada inicial"},
                 {"name": "Polymerization", "count": 2, "section": "spells", "note": "2 copias para asegurar tus fusiones"},
-                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "Sheet #197 - Soporte para Darkest Knight"},
+                {"name": "Evil Assault", "count": 1, "section": "spells", "note": "Sheet #197 - Soporte de búsqueda e invocación HÉROE"},
                 {"name": "Monster Reborn", "count": 1, "section": "spells", "note": "Sheet #102 - Resurrección universal"},
                 {"name": "Skyscraper 2 - Hero City", "count": 1, "section": "spells", "note": "Sheet #306 - Revive Héroes destruidos en batalla"},
                 {"name": "Fifth Hope", "count": 1, "section": "spells", "note": "Sheet #307 - Recicla 5 Héroes y roba 2"},
@@ -79,14 +78,13 @@ def generate_all_decks():
                 {"name": "Heavy Storm Duster", "count": 1, "section": "traps", "note": "De Freezing Chains - Destruye 2 Mágicas/Trampas"},
                 {"name": "Unending Nightmare", "count": 1, "section": "traps", "note": "Sheet #324 - Destruye cartas boca arriba por 1000 LP"},
 
-                # EXTRA DECK (8)
+                # EXTRA DECK (7 - CORREGIDO)
                 {"name": "Xtra HERO Cross Crusader", "count": 2, "section": "extra", "note": "Sheet #326 - 2 copias: Motor Link clave para revivir Destiny HERO y buscar HÉROE"},
                 {"name": "Vision HERO Trinity", "count": 1, "section": "extra", "note": "Sheet #289 - Sube a 5000 ATK y ataca 3 veces"},
                 {"name": "Xtra HERO Dread Decimator", "count": 1, "section": "extra", "note": "Sheet #296 - Enlace potenciador de daño"},
                 {"name": "Elemental HERO Nova Master", "count": 1, "section": "extra", "note": "Sheet #300 - Fusión Blazeman + HÉROE; roba al destruir"},
                 {"name": "Elemental HERO Escuridao", "count": 1, "section": "extra", "note": "Sheet #190 - Fusión con monstruos de OSCURIDAD"},
-                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "Sheet #193 - Fusión de Neos + Guerrero; doble golpe"},
-                {"name": "Evil HERO Darkest Knight", "count": 1, "section": "extra", "note": "Sheet #198 - Héroe Malvado El Caballero Más Oscuro (Fusión SUDA)"}
+                {"name": "Elemental HERO Neos Knight", "count": 1, "section": "extra", "note": "Sheet #193 - Fusión de Neos + Guerrero; doble golpe"}
             ]
         },
 
@@ -234,8 +232,6 @@ def generate_all_decks():
                     c_info = name_map.get("twin-headed behemoth")
                 elif card_name == "Dandy Withelion" or card_name == "Dandylion":
                     c_info = name_map.get("dandylion")
-                elif card_name == "Héroe Malvado El Caballero Más Oscuro" or card_name == "Evil HERO Darkest Knight":
-                    c_info = name_map.get("evil hero darkest knight")
                 elif card_name == "The Fabled Cerburrel":
                     c_info = name_map.get("the fabled cerburrel")
 

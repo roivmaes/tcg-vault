@@ -11,11 +11,11 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas en físico** en tu inventario.
 
-### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno)
-* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **8 Extra Deck**.
-* **Estrategia:** Un mazo agresivo mucho más consistente gracias a tus 2 *A Hero Lives* y tus 2 *Xtra HERO Cross Crusader*. Núcleo HÉROE ágil con *Vision HERO Vyon*, *Destiny HERO Denier*, *Evil HERO Darkest Knight*, *Elemental HERO Blazeman*, *Wildheart*, *Neos*, *Neos Alius* y *Bladedge*. Equipado con el arsenal completo de Handtraps (*Effect Veiler*, *Droll & Lock Bird*, *Ghost Mourner*, *Rey Absoluto Back Jack*) y limpiadores masivos (*Raigeki*, *Dark Hole*, *Harpie's Feather Duster*, *Twin Twisters*, *Dark Ruler No More*, *Crackdown*, *Solemn Warning*, *Dimensional Barrier*).
-* **Extra Deck (8):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, *Héroe Malvado El Caballero Más Oscuro (Evil HERO Darkest Knight)*.
-* **Estado:** **48/48 Completo (100% en Colección)**.
+### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Corregido)*
+* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
+* **Estrategia:** Versión corregida y 100% legal con tu inventario real. Incorpora **2 copias de *Héroe Malvado Garras Cruentas* (*Evil HERO Vicious Claws*)** para invocación especial gratuita si controlas cualquier monstruo HÉROE, junto a ***Elemental HERO Bladedge*** (2600 ATK con daño de penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Elemental HERO Blazeman*, *Wildheart*, *Neos* y *Neos Alius*. Cuenta con 2 *A Hero Lives*, 2 *Polymerization*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores.
+* **Extra Deck (7):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
+* **Estado:** **47/47 Completo (100% en Colección)**.
 
 ### 2. 🟣 Mazo DARK WORLD "Puro" (Formato Avanzado / Moderno)
 * **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **3 Extra Deck**.
