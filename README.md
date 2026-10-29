@@ -12,8 +12,8 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
 ### 1. 🔴 Mazo HÉROE Definitivo (Formato Avanzado / Moderno) — *(100% Cajas Físicas & Rápido/Agresivo)*
-* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Una estructura rápida y agresiva 100% fiel a tus cajas físicas reales. Reemplaza cartas inexistentes por piezas de control directo (*Jinzo* para frenar trampas, *Bottomless Trap Hole*, *Flash H.E.R.O.* / *Hero Flash!!*) y acelera fusiones hacia *Vision HERO Trinity* (5000 ATK, 3 ataques) y enlaces con doble *Xtra HERO Cross Crusader*.
+* **Composición:** **40 Main Deck** (13 Monstruos, 18 Mágicas, 9 Trampas) + **7 Extra Deck**.
+* **Estrategia:** Una estructura rápida y agresiva 100% fiel a tus cajas físicas reales. Reemplaza cartas inexistentes por piezas de control directo (*Jinzo* para frenar trampas, *Book of Moon* para interrupción rápida, *Bottomless Trap Hole*, *Flash H.E.R.O.* / *Hero Flash!!*) y acelera fusiones hacia *Vision HERO Trinity* (5000 ATK, 3 ataques) y enlaces con doble *Xtra HERO Cross Crusader*.
 * **Extra Deck (7):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
 * **Estado:** **47/47 Completo (100% en Colección)**.
 

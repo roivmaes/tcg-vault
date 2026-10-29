@@ -36,7 +36,7 @@ def generate_all_decks():
             "tag_color": "red",
             "description": "Tu Mazo HÉROE definitivo de 40 cartas en el Main Deck y 7 en el Extra Deck. Una estructura rápida y agresiva basada estrictamente en tus cajas físicas y cartas sueltas reales, con Jinzo, Bottomless Trap Hole, Flash H.E.R.O. y acceso directo al Extra Deck con Trinity y Cross Crusader.",
             "cards_spec": [
-                # MONSTRUOS (14)
+                # MONSTRUOS (13)
                 # Núcleo HÉROE (9)
                 {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Carta suelta — Envía a Denier al cementerio y busca Polymerization"},
                 {"name": "Destiny HERO - Denier", "count": 1, "section": "monsters", "note": "Carta suelta — Se invoca solo desde el cementerio"},
@@ -47,13 +47,12 @@ def generate_all_decks():
                 {"name": "Evil HERO Darkest Knight", "count": 1, "section": "monsters", "note": "Evil HERO Darkest Knight (Drakes Knight) — Carta suelta"},
                 {"name": "Evil HERO Vicious Claws", "count": 2, "section": "monsters", "note": "2 copias — Héroe Malvado Garras Cruentas, cartas sueltas"},
 
-                # Defensa e Interrupción (5)
+                # Defensa e Interrupción (4)
                 {"name": "Winged Kuriboh", "count": 2, "section": "monsters", "note": "2 copias — Cartas sueltas, reduce daño a cero"},
                 {"name": "Effect Veiler", "count": 1, "section": "monsters", "note": "De tu Structure Deck: Spirit Charmers normal"},
-                {"name": "Droll & Lock Bird", "count": 1, "section": "monsters", "note": "De tu Structure Deck: Spirit Charmers normal"},
                 {"name": "Jinzo", "count": 1, "section": "monsters", "note": "De tu caja Legendary Decks II — Apaga todas las trampas del oponente"},
 
-                # MAGIAS (17)
+                # MAGIAS (18)
                 # Velocidad y Fusiones (12)
                 {"name": "A Hero Lives", "count": 2, "section": "spells", "note": "2 copias — Invoca a Vyon o Blazeman directo del mazo"},
                 {"name": "Polymerization", "count": 2, "section": "spells", "note": "2 copias — De Legendary Decks II / Midterm Paradox"},
@@ -66,12 +65,13 @@ def generate_all_decks():
                 {"name": "Hero Flash!!", "count": 1, "section": "spells", "note": "Flash H.E.R.O. — Carta suelta"},
                 {"name": "Wrath of Neos", "count": 1, "section": "spells", "note": "Carta suelta — Limpieza total de campo con Neos"},
 
-                # Limpieza de Campo (5)
+                # Limpieza y Control de Campo (6)
                 {"name": "Raigeki", "count": 1, "section": "spells", "note": "De tu Structure Deck: Spirit Charmers normal"},
                 {"name": "Dark Hole", "count": 1, "section": "spells", "note": "De Legendary Decks II / 2-Player Starter Set"},
                 {"name": "Harpie's Feather Duster", "count": 1, "section": "spells", "note": "De tu caja Obelisk the Tormentor"},
                 {"name": "Twin Twisters", "count": 1, "section": "spells", "note": "De tu Structure Deck: Spirit Charmers normal"},
                 {"name": "Dark Ruler No More", "count": 1, "section": "spells", "note": "De tu Structure Deck: Spirit Charmers normal"},
+                {"name": "Book of Moon", "count": 1, "section": "spells", "note": "De tu Set de Principiante 2 Jugadores / Decks y Cajas — Interrupción rápida para voltear boca abajo"},
 
                 # TRAMPAS (9)
                 {"name": "Hero Signal", "count": 1, "section": "traps", "note": "De Midterm Paradox"},
