@@ -30,11 +30,11 @@ def generate_all_decks():
             "id": "hero_deck",
             "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
             "short_name": "Mazo HÉROE",
-            "subtitle": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader",
+            "subtitle": "Una baraja agresiva centrada en fusiones rápidas con Polymerization, Cross Crusader y soporte puro de tu colección",
             "format": "Avanzado / Moderno",
             "tag": "HÉROE / Fusiones & Enlaces",
             "tag_color": "red",
-            "description": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader.",
+            "description": "Una baraja agresiva centrada en fusiones rápidas con Polymerization, Cross Crusader y soporte puro de tu colección.",
             "cards_spec": [
                 # MONSTRUOS (14)
                 {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Sheet #290 - Envía a Denier al cementerio"},
@@ -59,7 +59,7 @@ def generate_all_decks():
                 {"name": "Fifth Hope", "count": 1, "section": "spells", "note": "Sheet #307 - Recicla 5 Héroes y roba 2"},
                 {"name": "H - Heated Heart", "count": 1, "section": "spells", "note": "Sheet #312 - Daño de penetración + 500 ATK"},
                 {"name": "R - Righteous Justice", "count": 1, "section": "spells", "note": "Sheet #309 - Destruye Mágicas/Trampas del rival"},
-                {"name": "Miracle Fusion", "count": 1, "section": "spells", "note": "Sheet #435 - Fusión Milagrosa desde el cementerio para invocar a Gaia, Nova Master o Escuridao"},
+                {"name": "Hero Flash!!", "count": 1, "section": "spells", "note": "Sheet #201 - Flash H.E.R.O. ofensiva final: ataques directos y doble ataque"},
                 {"name": "Wrath of Neos", "count": 1, "section": "spells", "note": "Sheet #295 - Destruye todo el campo si tienes a Neos"},
                 {"name": "Raigeki", "count": 1, "section": "spells", "note": "Sheet #116 - Limpiador total de monstruos"},
                 {"name": "Dark Hole", "count": 1, "section": "spells", "note": "Sheet #31 - Destrucción de campo"},

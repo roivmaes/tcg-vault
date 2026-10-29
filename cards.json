@@ -11276,32 +11276,6 @@
     "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20Recharge"
   },
   {
-    "sheet_id": "437",
-    "name": "Miracle Fusion",
-    "original_name": "Miracle Fusion",
-    "category": "Midterm Paradox",
-    "type": "Spell Card",
-    "humanReadableCardType": "Normal Spell",
-    "frameType": "spell",
-    "desc": "Fusion Summon 1 \"Elemental HERO\" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or your GY.",
-    "race": "Normal",
-    "archetype": "Elemental HERO",
-    "atk": null,
-    "def": null,
-    "level": null,
-    "attribute": null,
-    "scale": null,
-    "linkval": null,
-    "image_url": "https://images.ygoprodeck.com/images/cards/45906428.jpg",
-    "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45906428.jpg",
-    "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45906428.jpg",
-    "prices": {
-      "tcgplayer": "0.24",
-      "cardmarket": "0.22"
-    },
-    "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Miracle%20Fusion"
-  },
-  {
     "sheet_id": "438",
     "name": "Hero Signal",
     "original_name": "Hero Signal",

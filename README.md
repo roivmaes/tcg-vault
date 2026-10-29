@@ -7,13 +7,13 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 ---
 
-## ⚔️ Mazos Listos para Jugar (Listas Definitivas, Limpias y Corregidas)
+## ⚔️ Mazos Listos para Jugar (Listas Definitivas, 100% Reales y en Inventario)
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
 ### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno)
 * **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Una baraja agresiva centrada en fusiones rápidas, con el soporte de ***Miracle Fusion*** y acceso a ***Xtra HERO Cross Crusader***. Cuenta con 2 copias de *A Hero Lives*, 2 copias de *Polymerization*, *Evil HERO Vicious Claws* (x2), *Elemental HERO Bladedge* (2600 ATK penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Blazeman*, *Wildheart*, *Neos*, *Neos Alius*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores de campo.
+* **Estrategia:** Una baraja agresiva centrada en fusiones rápidas con *Polymerization*, soporte de cartas temáticas de tu colección y acceso a *Xtra HERO Cross Crusader*. Cuenta con 2 copias de *A Hero Lives*, 2 copias de *Polymerization*, *Evil Assault*, *Hero Flash!!* (Sheet #201), *Evil HERO Vicious Claws* (x2), *Elemental HERO Bladedge* (2600 ATK penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Blazeman*, *Wildheart*, *Neos*, *Neos Alius*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores de campo.
 * **Extra Deck (7):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
 * **Estado:** **47/47 Completo (100% en Colección)**.
 

@@ -3,11 +3,11 @@ var TCG_DECKS_DATA = [
     "id": "hero_deck",
     "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
     "short_name": "Mazo HÉROE",
-    "subtitle": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader",
+    "subtitle": "Una baraja agresiva centrada en fusiones rápidas con Polymerization, Cross Crusader y soporte puro de tu colección",
     "format": "Avanzado / Moderno",
     "tag": "HÉROE / Fusiones & Enlaces",
     "tag_color": "red",
-    "description": "Una baraja agresiva centrada en fusiones rápidas, con el soporte de Miracle Fusion y acceso a Cross Crusader.",
+    "description": "Una baraja agresiva centrada en fusiones rápidas con Polymerization, Cross Crusader y soporte puro de tu colección.",
     "stats": {
       "main_total": 40,
       "extra_total": 7,
@@ -15,7 +15,7 @@ var TCG_DECKS_DATA = [
       "spells": 17,
       "traps": 9,
       "owned_count": 47,
-      "total_cost": 10.88
+      "total_cost": 10.66
     },
     "cards": [
       {
@@ -75,8 +75,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/16605586.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16605586.jpg",
         "prices": {
-          "tcgplayer": "0.23",
-          "cardmarket": "0.16"
+          "tcgplayer": "0.22",
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Destiny%20HERO%20-%20Denier"
       },
@@ -107,7 +107,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/59793705.jpg",
         "prices": {
           "tcgplayer": "0.20",
-          "cardmarket": "0.11"
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Bladedge"
       },
@@ -137,7 +137,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63060238.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63060238.jpg",
         "prices": {
-          "tcgplayer": "0.68",
+          "tcgplayer": "0.67",
           "cardmarket": "0.25"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Blazeman"
@@ -200,7 +200,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/89943723.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.15"
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos"
       },
@@ -230,7 +230,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/69884162.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/69884162.jpg",
         "prices": {
-          "tcgplayer": "0.20",
+          "tcgplayer": "0.21",
           "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Alius"
@@ -261,8 +261,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/35095329.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/35095329.jpg",
         "prices": {
-          "tcgplayer": "0.13",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.15",
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Vicious%20Claws"
       },
@@ -324,7 +324,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97268402.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.14"
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Effect%20Veiler"
       },
@@ -354,8 +354,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94145021.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/94145021.jpg",
         "prices": {
-          "tcgplayer": "0.34",
-          "cardmarket": "0.33"
+          "tcgplayer": "0.35",
+          "cardmarket": "0.35"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Droll%20%26%20Lock%20Bird"
       },
@@ -385,8 +385,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52038441.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52038441.jpg",
         "prices": {
-          "tcgplayer": "0.27",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ghost%20Mourner%20%26%20Moonlit%20Chill"
       },
@@ -417,7 +417,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8949584.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.10"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=A%20Hero%20Lives"
       },
@@ -478,8 +478,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3519195.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3519195.jpg",
         "prices": {
-          "tcgplayer": "0.85",
-          "cardmarket": "0.71"
+          "tcgplayer": "0.83",
+          "cardmarket": "0.63"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
@@ -541,7 +541,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47596607.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.12"
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Skyscraper%202%20-%20Hero%20City"
       },
@@ -639,19 +639,19 @@ var TCG_DECKS_DATA = [
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=R%20-%20Righteous%20Justice"
       },
       {
-        "name": "Miracle Fusion",
-        "original_name": "Miracle Fusion",
+        "name": "Hero Flash!!",
+        "original_name": "Hero Flash!!",
         "section": "spells",
         "count": 1,
-        "note": "Sheet #435 - Fusión Milagrosa desde el cementerio para invocar a Gaia, Nova Master o Escuridao",
+        "note": "Sheet #201 - Flash H.E.R.O. ofensiva final: ataques directos y doble ataque",
         "owned": true,
-        "sheet_id": "437",
-        "sheet_category": "Midterm Paradox",
+        "sheet_id": "201",
+        "sheet_category": "Carta Suelta",
         "box_location": "Colección Física",
         "type": "Spell Card",
         "humanReadableCardType": "Normal Spell",
         "frameType": "spell",
-        "desc": "Fusion Summon 1 \"Elemental HERO\" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or your GY.",
+        "desc": "Banish \"H - Heated Heart\", \"E - Emergency Call\", \"R - Righteous Justice\" and \"O - Oversoul\" from your Graveyard; Special Summon 1 \"Elemental HERO\" Normal Monster from your Deck. All \"Elemental HERO\" Normal Monsters you currently control can attack your opponent directly this turn.",
         "race": "Normal",
         "archetype": "Elemental HERO",
         "atk": null,
@@ -660,14 +660,14 @@ var TCG_DECKS_DATA = [
         "attribute": null,
         "scale": null,
         "linkval": null,
-        "image_url": "https://images.ygoprodeck.com/images/cards/45906428.jpg",
-        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/45906428.jpg",
-        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/45906428.jpg",
+        "image_url": "https://images.ygoprodeck.com/images/cards/191749.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/191749.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/191749.jpg",
         "prices": {
-          "tcgplayer": "0.24",
-          "cardmarket": "0.22"
+          "tcgplayer": "0.08",
+          "cardmarket": "0.05"
         },
-        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Miracle%20Fusion"
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Flash%21%21"
       },
       {
         "name": "Wrath of Neos",
@@ -727,7 +727,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12580477.jpg",
         "prices": {
           "tcgplayer": "0.22",
-          "cardmarket": "0.20"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
       },
@@ -758,7 +758,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53129443.jpg",
         "prices": {
           "tcgplayer": "0.24",
-          "cardmarket": "0.02"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Hole"
       },
@@ -788,8 +788,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144507.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18144507.jpg",
         "prices": {
-          "tcgplayer": "0.93",
-          "cardmarket": "0.48"
+          "tcgplayer": "0.90",
+          "cardmarket": "0.50"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
@@ -850,8 +850,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/54693926.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/54693926.jpg",
         "prices": {
-          "tcgplayer": "0.20",
-          "cardmarket": "0.02"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
       },
@@ -882,7 +882,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22020907.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.06"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Signal"
       },
@@ -913,7 +913,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19024706.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.05"
+          "cardmarket": "0.04"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Counterattack"
       },
@@ -974,8 +974,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84749824.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/84749824.jpg",
         "prices": {
-          "tcgplayer": "0.34",
-          "cardmarket": "0.24"
+          "tcgplayer": "0.35",
+          "cardmarket": "0.27"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
@@ -1006,7 +1006,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/83326048.jpg",
         "prices": {
           "tcgplayer": "0.17",
-          "cardmarket": "0.14"
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
@@ -1037,7 +1037,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47475363.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.15"
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Drowning%20Mirror%20Force"
       },
@@ -1099,7 +1099,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23924608.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.21"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Heavy%20Storm%20Duster"
       },
@@ -1160,7 +1160,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58004362.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58004362.jpg",
         "prices": {
-          "tcgplayer": "0.20",
+          "tcgplayer": "0.19",
           "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Cross%20Crusader"
@@ -1191,7 +1191,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/46759931.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/46759931.jpg",
         "prices": {
-          "tcgplayer": "0.23",
+          "tcgplayer": "0.21",
           "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Trinity"
@@ -1222,8 +1222,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63813056.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63813056.jpg",
         "prices": {
-          "tcgplayer": "0.33",
-          "cardmarket": "0.28"
+          "tcgplayer": "0.38",
+          "cardmarket": "0.29"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
       },
@@ -1254,7 +1254,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/1945387.jpg",
         "prices": {
           "tcgplayer": "0.21",
-          "cardmarket": "0.07"
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Nova%20Master"
       },
@@ -1285,7 +1285,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33574806.jpg",
         "prices": {
           "tcgplayer": "0.31",
-          "cardmarket": "0.18"
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Escuridao"
       },
@@ -1315,8 +1315,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72926163.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72926163.jpg",
         "prices": {
-          "tcgplayer": "0.37",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.35",
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Knight"
       }
@@ -1338,7 +1338,7 @@ var TCG_DECKS_DATA = [
       "spells": 10,
       "traps": 8,
       "owned_count": 41,
-      "total_cost": 17.2
+      "total_cost": 17.24
     },
     "cards": [
       {
@@ -1368,7 +1368,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/57774843.jpg",
         "prices": {
           "tcgplayer": "0.48",
-          "cardmarket": "0.43"
+          "cardmarket": "0.42"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Judgment%20Dragon"
       },
@@ -1399,7 +1399,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95503687.jpg",
         "prices": {
           "tcgplayer": "0.16",
-          "cardmarket": "0.11"
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lumina%2C%20Lightsworn%20Summoner"
       },
@@ -1430,7 +1430,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22624373.jpg",
         "prices": {
           "tcgplayer": "0.31",
-          "cardmarket": "0.34"
+          "cardmarket": "0.35"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lyla%2C%20Lightsworn%20Sorceress"
       },
@@ -1461,7 +1461,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21502796.jpg",
         "prices": {
           "tcgplayer": "0.26",
-          "cardmarket": "0.17"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ryko%2C%20Lightsworn%20Hunter"
       },
@@ -1491,8 +1491,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58996430.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58996430.jpg",
         "prices": {
-          "tcgplayer": "1.26",
-          "cardmarket": "1.13"
+          "tcgplayer": "1.23",
+          "cardmarket": "1.27"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wulf%2C%20Lightsworn%20Beast"
       },
@@ -1522,8 +1522,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94381039.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/94381039.jpg",
         "prices": {
-          "tcgplayer": "0.33",
-          "cardmarket": "0.21"
+          "tcgplayer": "0.34",
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Celestia%2C%20Lightsworn%20Angel"
       },
@@ -1553,8 +1553,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/59019082.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/59019082.jpg",
         "prices": {
-          "tcgplayer": "0.13",
-          "cardmarket": "0.06"
+          "tcgplayer": "0.14",
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Garoth%2C%20Lightsworn%20Warrior"
       },
@@ -1585,7 +1585,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44178886.jpg",
         "prices": {
           "tcgplayer": "0.64",
-          "cardmarket": "0.36"
+          "cardmarket": "0.33"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ehren%2C%20Lightsworn%20Monk"
       },
@@ -1616,7 +1616,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/96235275.jpg",
         "prices": {
           "tcgplayer": "0.01",
-          "cardmarket": "0.14"
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jain%2C%20Lightsworn%20Paladin"
       },
@@ -1678,7 +1678,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7183277.jpg",
         "prices": {
           "tcgplayer": "0.64",
-          "cardmarket": "0.14"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Aurkus%2C%20Lightsworn%20Druid"
       },
@@ -1740,7 +1740,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/4906301.jpg",
         "prices": {
           "tcgplayer": "0.35",
-          "cardmarket": "0.29"
+          "cardmarket": "0.33"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Necro%20Gardna"
       },
@@ -1771,7 +1771,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37742478.jpg",
         "prices": {
           "tcgplayer": "0.12",
-          "cardmarket": "0.13"
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Honest"
       },
@@ -1802,7 +1802,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77585513.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.21"
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
       },
@@ -1832,7 +1832,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24508238.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24508238.jpg",
         "prices": {
-          "tcgplayer": "0.72",
+          "tcgplayer": "0.73",
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=D.D.%20Crow"
@@ -1864,7 +1864,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/4929256.jpg",
         "prices": {
           "tcgplayer": "0.35",
-          "cardmarket": "0.43"
+          "cardmarket": "0.39"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mobius%20the%20Frost%20Monarch"
       },
@@ -1957,7 +1957,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/94886282.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.18"
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20of%20the%20Light%20Brigade"
       },
@@ -2019,7 +2019,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74848038.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.07"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reincarnation"
       },
@@ -2049,7 +2049,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/81439173.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/81439173.jpg",
         "prices": {
-          "tcgplayer": "0.15",
+          "tcgplayer": "0.14",
           "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Foolish%20Burial"
@@ -2111,8 +2111,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14087893.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14087893.jpg",
         "prices": {
-          "tcgplayer": "0.18",
-          "cardmarket": "0.10"
+          "tcgplayer": "0.05",
+          "cardmarket": "0.04"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Book%20of%20Moon"
       },
@@ -2143,7 +2143,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/67169062.jpg",
         "prices": {
           "tcgplayer": "0.60",
-          "cardmarket": "0.49"
+          "cardmarket": "0.44"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
       },
@@ -2173,7 +2173,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72892473.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72892473.jpg",
         "prices": {
-          "tcgplayer": "0.20",
+          "tcgplayer": "0.31",
           "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Card%20Destruction"
@@ -2360,7 +2360,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16255442.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.20"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beckoning%20Light"
       },
@@ -2421,8 +2421,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53582587.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53582587.jpg",
         "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.14"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Torrential%20Tribute"
       },
@@ -2452,7 +2452,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/41420027.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/41420027.jpg",
         "prices": {
-          "tcgplayer": "1.13",
+          "tcgplayer": "1.18",
           "cardmarket": "0.84"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Judgment"
@@ -2484,7 +2484,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97077563.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.03"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Call%20of%20the%20Haunted"
       },
@@ -2515,7 +2515,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44508094.jpg",
         "prices": {
           "tcgplayer": "0.67",
-          "cardmarket": "0.65"
+          "cardmarket": "0.75"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Stardust%20Dragon"
       }
@@ -2537,7 +2537,7 @@ var TCG_DECKS_DATA = [
       "spells": 7,
       "traps": 9,
       "owned_count": 46,
-      "total_cost": 11.71
+      "total_cost": 11.74
     },
     "cards": [
       {
@@ -2567,7 +2567,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/41406613.jpg",
         "prices": {
           "tcgplayer": "0.47",
-          "cardmarket": "0.61"
+          "cardmarket": "0.56"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Reign-Beaux%2C%20Overking%20of%20Dark%20World"
       },
@@ -2598,7 +2598,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34230233.jpg",
         "prices": {
           "tcgplayer": "0.16",
-          "cardmarket": "0.18"
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Lord%20of%20Dark%20World"
       },
@@ -2629,7 +2629,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77895328.jpg",
         "prices": {
           "tcgplayer": "0.33",
-          "cardmarket": "0.35"
+          "cardmarket": "0.32"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Genta%2C%20Gateman%20of%20Dark%20World"
       },
@@ -2660,7 +2660,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60228941.jpg",
         "prices": {
           "tcgplayer": "0.28",
-          "cardmarket": "0.25"
+          "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Snoww%2C%20Unlight%20of%20Dark%20World"
       },
@@ -2752,7 +2752,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79126789.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79126789.jpg",
         "prices": {
-          "tcgplayer": "0.40",
+          "tcgplayer": "0.39",
           "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Broww%2C%20Huntsman%20of%20Dark%20World"
@@ -2784,7 +2784,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33731070.jpg",
         "prices": {
           "tcgplayer": "0.17",
-          "cardmarket": "0.11"
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beiige%2C%20Vanguard%20of%20Dark%20World"
       },
@@ -2815,7 +2815,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7623640.jpg",
         "prices": {
           "tcgplayer": "0.22",
-          "cardmarket": "0.19"
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ceruli%2C%20Guru%20of%20Dark%20World"
       },
@@ -2907,8 +2907,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3289027.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3289027.jpg",
         "prices": {
-          "tcgplayer": "0.19",
-          "cardmarket": "0.11"
+          "tcgplayer": "0.17",
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Parl%2C%20Hermit%20of%20Dark%20World"
       },
@@ -3001,7 +3001,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/51232472.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.06"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gren%2C%20Tactician%20of%20Dark%20World"
       },
@@ -3093,8 +3093,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/43316238.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/43316238.jpg",
         "prices": {
-          "tcgplayer": "0.12",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.13",
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Bigfoot%21"
       },
@@ -3125,7 +3125,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90807199.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.22"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Thunderbird%21"
       },
@@ -3187,7 +3187,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/99745551.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.10"
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%3F%20Tsuchinoko%3F"
       },
@@ -3218,7 +3218,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16209941.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.09"
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Chupacabra%21"
       },
@@ -3248,8 +3248,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10802915.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10802915.jpg",
         "prices": {
-          "tcgplayer": "0.33",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.32",
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Tour%20Guide%20From%20the%20Underworld"
       },
@@ -3311,7 +3311,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33017655.jpg",
         "prices": {
           "tcgplayer": "0.27",
-          "cardmarket": "0.22"
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Gates%20of%20Dark%20World"
       },
@@ -3341,8 +3341,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/76672730.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/76672730.jpg",
         "prices": {
-          "tcgplayer": "0.14",
-          "cardmarket": "0.22"
+          "tcgplayer": "0.16",
+          "cardmarket": "0.18"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Archives"
       },
@@ -3373,7 +3373,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74117290.jpg",
         "prices": {
           "tcgplayer": "0.44",
-          "cardmarket": "0.38"
+          "cardmarket": "0.36"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Dealings"
       },
@@ -3465,7 +3465,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/93554166.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/93554166.jpg",
         "prices": {
-          "tcgplayer": "0.10",
+          "tcgplayer": "0.09",
           "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Lightning"
@@ -3497,7 +3497,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/30284022.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.26"
+          "cardmarket": "0.23"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Puppetry"
       },
@@ -3527,7 +3527,7 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3167439.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3167439.jpg",
         "prices": {
-          "tcgplayer": "0.16",
+          "tcgplayer": "0.13",
           "cardmarket": "0.04"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Punishment"
@@ -3590,7 +3590,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/69402394.jpg",
         "prices": {
           "tcgplayer": "0.20",
-          "cardmarket": "0.27"
+          "cardmarket": "0.26"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Scheme"
       },
@@ -3652,7 +3652,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/65824822.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.10"
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Deal"
       },
@@ -3683,7 +3683,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/82732705.jpg",
         "prices": {
           "tcgplayer": "0.25",
-          "cardmarket": "0.16"
+          "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Skill%20Drain"
       },
@@ -3713,8 +3713,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/54974237.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/54974237.jpg",
         "prices": {
-          "tcgplayer": "0.18",
-          "cardmarket": "0.10"
+          "tcgplayer": "0.20",
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Eradicator%20Epidemic%20Virus"
       },
@@ -3776,7 +3776,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/35027493.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.24"
+          "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Deck%20Devastation%20Virus"
       },
@@ -3807,7 +3807,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/39552584.jpg",
         "prices": {
           "tcgplayer": "0.34",
-          "cardmarket": "0.54"
+          "cardmarket": "0.53"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Overlord%20of%20Dark%20World"
       },
@@ -3837,8 +3837,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22723778.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22723778.jpg",
         "prices": {
-          "tcgplayer": "2.60",
-          "cardmarket": "1.07"
+          "tcgplayer": "2.58",
+          "cardmarket": "0.97"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Clorless%2C%20Chaos%20King%20of%20Dark%20World"
       },
@@ -3869,7 +3869,7 @@ var TCG_DECKS_DATA = [
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8264361.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.06"
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dharc%20the%20Dark%20Charmer%2C%20Gloomy"
       },
@@ -3899,8 +3899,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/90448279.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90448279.jpg",
         "prices": {
-          "tcgplayer": "0.43",
-          "cardmarket": "0.37"
+          "tcgplayer": "0.47",
+          "cardmarket": "0.38"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Divine%20Arsenal%20AA-ZEUS%20-%20Sky%20Thunder"
       },
@@ -3930,8 +3930,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/581014.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/581014.jpg",
         "prices": {
-          "tcgplayer": "0.28",
-          "cardmarket": "0.24"
+          "tcgplayer": "0.30",
+          "cardmarket": "0.23"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Daigusto%20Emeral"
       },
@@ -3961,8 +3961,8 @@ var TCG_DECKS_DATA = [
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47805931.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47805931.jpg",
         "prices": {
-          "tcgplayer": "0.31",
-          "cardmarket": "0.40"
+          "tcgplayer": "0.33",
+          "cardmarket": "0.46"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Number%2020%3A%20Giga-Brilliant"
       }
