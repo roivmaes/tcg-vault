@@ -11,11 +11,11 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
-### 1. 🔴 Mazo HÉROE Optimizado (Formato Avanzado / Moderno) — *(Motor Horus & Control de Alto Nivel)*
-* **Composición:** **40 Main Deck** (15 Monstruos, 18 Mágicas, 7 Trampas) + **12 Extra Deck**.
-* **Estrategia:** Mazo HÉROE de alto calibre que combina el núcleo agresivo de *Vision HERO Trinity* y *Xtra HERO Cross Crusader* con el motor *Horus* (*Imsety, Glory of Horus*, *Duamutef*, *Hapi*, *Qebehsenuef*, *King's Sarcophagus*) y herramientas de control de alto nivel (*Accesscode Talker*, *Silhouhatte Rabbit* + *Angel Statue - Azurune*, *The Zombie Vampire*, *Castel*, *Daigusto Emeral*, *Fairy Tail - Luna*, *Lord of the Heavenly Prison*).
-* **Extra Deck (12):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, *Accesscode Talker*, *Silhouhatte Rabbit*, *The Zombie Vampire*, *Castel, the Skyblaster Musketeer*, *Daigusto Emeral*.
-* **Estado:** **52/52 Completo (100% en Colección)**.
+### 1. 🔴 Mazo HÉROE Definitivo (Formato Avanzado / Moderno) — *(100% Cajas Físicas & Rápido/Agresivo)*
+* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
+* **Estrategia:** Una estructura rápida y agresiva 100% fiel a tus cajas físicas reales. Reemplaza cartas inexistentes por piezas de control directo (*Jinzo* para frenar trampas, *Bottomless Trap Hole*, *Flash H.E.R.O.* / *Hero Flash!!*) y acelera fusiones hacia *Vision HERO Trinity* (5000 ATK, 3 ataques) y enlaces con doble *Xtra HERO Cross Crusader*.
+* **Extra Deck (7):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
+* **Estado:** **47/47 Completo (100% en Colección)**.
 
 ### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010)
 * **Composición:** **40 Main Deck** (22 Monstruos, 10 Mágicas, 8 Trampas) + **1 Extra Deck**.
