@@ -7,27 +7,27 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 ---
 
-## ⚔️ Mazos Listos para Jugar (Actualizados y 100% en Colección)
+## ⚔️ Mazos Listos para Jugar (Actualizados y 100% Legales)
 
-Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas en físico** en tu inventario.
+Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
 ### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno)
-* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Tu mazo rápido de combate. Incorpora **2 copias de *Héroe Malvado Garras Cruentas* (*Evil HERO Vicious Claws*)** para invocación especial gratuita si controlas cualquier monstruo HÉROE, junto a ***Elemental HERO Bladedge*** (2600 ATK con daño de penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Elemental HERO Blazeman*, *Wildheart*, *Neos* y *Neos Alius*. Cuenta con 2 *A Hero Lives*, 2 *Polymerization*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores.
-* **Extra Deck (7):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
-* **Estado:** **47/47 Completo (100% en Colección)**.
+* **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **8 Extra Deck**.
+* **Estrategia:** Un mazo agresivo de fusiones, ahora mejorado con ***Miracle Fusion*** y ***Elemental HERO Gaia***. Cuenta con 2 copias de *A Hero Lives*, 2 copias de *Polymerization*, *Evil HERO Vicious Claws* (x2), *Elemental HERO Bladedge* (2600 ATK penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Blazeman*, *Wildheart*, *Neos*, *Neos Alius*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores de campo.
+* **Extra Deck (8):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, ***Elemental HERO Gaia***.
+* **Estado:** **48/48 Completo (100% en Colección)**.
 
-### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro 2010) — *(Corregido a 2010)*
-* **Composición:** **40 Main Deck** (22 Monstruos, 11 Mágicas, 7 Trampas) + **3 Extra Deck**.
-* **Estrategia:** Tu mazo clásico 100% legal en Edison (2010 o anteriores). Se incorporaron de tu caja original: ***Necro Gardna*** (defensa clave desde el cementerio), ***Jenis, Lightsworn Mender***, ***Shire, Lightsworn Spirit*** y la magia de campo ***Realm of Light***. Motor completo con *Judgment Dragon*, *Lumina*, *Lyla*, *Ryko*, *Wulf*, *Honest*, staples (*MST*, *Book of Moon*, *Swords of Revealing Light*, *Pot of Avarice*, *Mirror Force*, *Bottomless*) y trampas temáticas (*Beckoning Light*, *Vanquishing Light*, *Glorious Illusion*).
-* **Extra Deck (3):** *Naturia Beast*, *Naturia Barkion*, *Stardust Dragon*.
-* **Estado:** **43/43 Completo (100% en Colección)**.
+### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010)
+* **Composición:** **40 Main Deck** (22 Monstruos, 11 Mágicas, 7 Trampas) + **1 Extra Deck**.
+* **Estrategia:** Mazo 100% legal para el formato histórico Edison (Abril 2010). Sin Naturias en el Extra Deck y con una **segunda copia de *Ryko, Lightsworn Hunter*** en lugar de *Fabled Raven*. Incorpora a ***Necro Gardna*** (defensa clave desde el cementerio), ***Jenis, Lightsworn Mender***, ***Shire, Lightsworn Spirit***, ***D.D. Crow***, ***Mobius the Frost Monarch*** y la magia de campo ***Realm of Light***.
+* **Extra Deck (1 Carta Legal):** ***Stardust Dragon***.
+* **Estado:** **41/41 Completo (100% en Colección)**.
 
 ### 3. 🟣 Mazo DARK WORLD "Puro" (Formato Avanzado / Moderno)
-* **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **3 Extra Deck**.
-* **Estrategia:** Tu mazo de descarte 100% puro y temático. Su motor de descarte y robo continuo utiliza todo el clan Mundo Oscuro (*Reign-Beaux*, *Grapha*, *Genta*, *Snoww*, *Sillva*, *Goldd*, *Broww*, *Beiige*, etc.), sinergias Danger! (*Bigfoot*, *Thunderbird*, *Mothman*, *Tsuchinoko*, *Chupacabra*) y Tour Guide, junto al campo *The Gates of Dark World*, magias temáticas y virus de control (*Skill Drain*, *Eradicator Epidemic Virus*, *Deck Devastation Virus*, *Dark Smog*, *Dark Deal*, *Brainwashing*).
-* **Extra Deck (3):** *Grapha, Dragon Overlord of Dark World*, *Clorless, Chaos King of Dark World*, *Dharc the Dark Charmer, Gloomy*.
-* **Estado:** **43/43 Completo (100% en Colección)**.
+* **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **6 Extra Deck**.
+* **Estrategia:** Tu estrategia de descarte 100% pura y temática, ahora coronada con el poder destructivo de ***Divine Arsenal AA-ZEUS - Sky Thunder*** en el Extra Deck. Utiliza a ***Tour Guide From the Underworld*** para invocar instantáneamente a ***Number 20: Giga-Brilliant*** (Rango 3), ganar batalla y subir directamente a ZEUS para arrasar el campo rival. Además cuenta con ***Daigusto Emeral*** para reciclar y robar.
+* **Extra Deck (6):** *Grapha, Dragon Overlord of Dark World*, *Clorless, Chaos King of Dark World*, *Dharc the Dark Charmer, Gloomy*, ***Divine Arsenal AA-ZEUS - Sky Thunder***, ***Daigusto Emeral***, ***Number 20: Giga-Brilliant***.
+* **Estado:** **46/46 Completo (100% en Colección)**.
 
 ---
 
