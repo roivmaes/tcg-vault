@@ -30,21 +30,21 @@ def generate_all_decks():
             "id": "hero_deck",
             "name": "Mazo HÉROE (Formato Avanzado / Moderno)",
             "short_name": "Mazo HÉROE",
-            "subtitle": "Mazo Corregido: 40 Main Deck + 7 Extra Deck con Evil HERO Vicious Claws y Cross Crusader",
+            "subtitle": "Tu mazo rápido de combate. Ahora incluye a tus Garras Cruentas para acelerar el mazo y tus Cross Crusader en el Extra Deck",
             "format": "Avanzado / Moderno",
             "tag": "HÉROE / Fusiones & Enlaces",
             "tag_color": "red",
-            "description": "Mazo HÉROE corregido con sinergia 100% legal y jugable. Incorpora Héroe Malvado Garras Cruentas (Evil HERO Vicious Claws x2) para invocación especial inmediata, Bladedge para daño de penetración, doble A Hero Lives y doble Xtra HERO Cross Crusader en el Extra Deck.",
+            "description": "Tu mazo rápido de combate. Ahora incluye a tus Garras Cruentas para acelerar el mazo y tus Cross Crusader en el Extra Deck. Versión optimizada y 100% legal con tu inventario real.",
             "cards_spec": [
-                # MONSTRUOS (14 - CORREGIDO)
+                # MONSTRUOS (14)
                 {"name": "Vision HERO Vyon", "count": 1, "section": "monsters", "note": "Sheet #290 - Envía a Denier al cementerio"},
                 {"name": "Destiny HERO - Denier", "count": 1, "section": "monsters", "note": "Sheet #183 - Se revive del cementerio"},
-                {"name": "Elemental HERO Bladedge", "count": 1, "section": "monsters", "note": "Sheet #323 - Regresa al Main Deck; daño de penetración (2600 ATK)"},
+                {"name": "Elemental HERO Bladedge", "count": 1, "section": "monsters", "note": "Sheet #323 - 2600 ATK con penetración de defensa"},
                 {"name": "Elemental HERO Blazeman", "count": 1, "section": "monsters", "note": "Sheet #297 - Buscador estrella de Polymerization"},
                 {"name": "Elemental HERO Wildheart", "count": 1, "section": "monsters", "note": "Sheet #298 - Inmune a trampas"},
                 {"name": "Elemental HERO Neos", "count": 1, "section": "monsters", "note": "Sheet #191 - Tu clásico as"},
                 {"name": "Elemental HERO Neos Alius", "count": 1, "section": "monsters", "note": "Sheet #192 - Guerrero Géminis"},
-                {"name": "Evil HERO Vicious Claws", "count": 2, "section": "monsters", "note": "Sheet #331 - Héroe Malvado Garras Cruentas (2 copias): Invocación especial si controlas un HÉROE"},
+                {"name": "Evil HERO Vicious Claws", "count": 2, "section": "monsters", "note": "Sheet #331 - Héroe Malvado Garras Cruentas (2 copias): Invocación especial gratuita si controlas un HÉROE"},
                 {"name": "Winged Kuriboh", "count": 2, "section": "monsters", "note": "2 copias (Principal + Speed Duel GX) - Evita daño letal"},
                 {"name": "Effect Veiler", "count": 1, "section": "monsters", "note": "Sheet #47 - Handtrap niega efecto rival"},
                 {"name": "Droll & Lock Bird", "count": 1, "section": "monsters", "note": "Sheet #45 - Handtrap frena robo y búsquedas"},
@@ -78,7 +78,7 @@ def generate_all_decks():
                 {"name": "Heavy Storm Duster", "count": 1, "section": "traps", "note": "De Freezing Chains - Destruye 2 Mágicas/Trampas"},
                 {"name": "Unending Nightmare", "count": 1, "section": "traps", "note": "Sheet #324 - Destruye cartas boca arriba por 1000 LP"},
 
-                # EXTRA DECK (7 - CORREGIDO)
+                # EXTRA DECK (7)
                 {"name": "Xtra HERO Cross Crusader", "count": 2, "section": "extra", "note": "Sheet #326 - 2 copias: Motor Link clave para revivir Destiny HERO y buscar HÉROE"},
                 {"name": "Vision HERO Trinity", "count": 1, "section": "extra", "note": "Sheet #289 - Sube a 5000 ATK y ataca 3 veces"},
                 {"name": "Xtra HERO Dread Decimator", "count": 1, "section": "extra", "note": "Sheet #296 - Enlace potenciador de daño"},
@@ -88,16 +88,79 @@ def generate_all_decks():
             ]
         },
 
-        # 2. DARK WORLD PURO (FORMATO AVANZADO / MODERNO) - 40 Main + 3 Extra
+        # 2. LIGHTSWORN (FORMATO EDISON - RETRO 2010) - 40 Main + 3 Extra
+        {
+            "id": "lightsworn_edison_2010",
+            "name": "Mazo LIGHTSWORN (Formato EDISON - Retro 2010)",
+            "short_name": "Lightsworn Edison",
+            "subtitle": "Tu mazo clásico. Corregido para que todas las cartas sean del 2010 o anteriores. Añadimos Necro Gardna, Jenis, Shire y Realm of Light",
+            "format": "Edison (2010)",
+            "tag": "Retro / Edison",
+            "tag_color": "amber",
+            "description": "Tu mazo clásico. Corregido para que todas las cartas sean del 2010 o anteriores. Añadimos Necro Gardna, Jenis, Shire y Realm of Light de tu caja original para cubrir los espacios.",
+            "cards_spec": [
+                # MONSTRUOS (22)
+                {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Tu jefe final"},
+                {"name": "Lumina, Lightsworn Summoner", "count": 1, "section": "monsters", "note": "Invocadora / Resucitadora"},
+                {"name": "Lyla, Lightsworn Sorceress", "count": 1, "section": "monsters", "note": "Destructora de Mágicas/Trampas"},
+                {"name": "Ryko, Lightsworn Hunter", "count": 1, "section": "monsters", "note": "Destrucción Flip y Molienda"},
+                {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "Invocación especial al cementerio"},
+                {"name": "Celestia, Lightsworn Angel", "count": 1, "section": "monsters", "note": "Tributo Lightsworn / Destrucción x2"},
+                {"name": "Garoth, Lightsworn Warrior", "count": 1, "section": "monsters", "note": "Robo y aceleración"},
+                {"name": "Ehren, Lightsworn Monk", "count": 1, "section": "monsters", "note": "Devuelve defensas al mazo"},
+                {"name": "Jain, Lightsworn Paladin", "count": 2, "section": "monsters", "note": "2 copias (Principal + Suelta)"},
+                {"name": "Gragonith, Lightsworn Dragon", "count": 1, "section": "monsters", "note": "Daño de penetración y ATK"},
+                {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "Sheet #328 - Protege a tus Lightsworn contra efectos que seleccionen"},
+                {"name": "Jenis, Lightsworn Mender", "count": 1, "section": "monsters", "note": "Sheet #332 - Daño de efecto y recuperación de LP al moler cartas"},
+                {"name": "Shire, Lightsworn Spirit", "count": 1, "section": "monsters", "note": "Sheet #333 - Gana 300 ATK por cada Lightsworn con diferente nombre en cementerio"},
+                {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "Sheet #334 - Se destierra del cementerio para anular un ataque rival"},
+                {"name": "Honest", "count": 1, "section": "monsters", "note": "Hand-trap de ATK para LIGHT"},
+                {"name": "Jinzo", "count": 1, "section": "monsters", "note": "De Legendary Decks II - Bloqueo de trampas"},
+                {"name": "Fabled Raven", "count": 1, "section": "monsters", "note": "Cantante prestado de Dark World"},
+                {"name": "Nimble Momonga", "count": 1, "section": "monsters", "note": "Recuperación de LP y bloqueo"},
+                {"name": "Mask of Darkness", "count": 1, "section": "monsters", "note": "Recupera trampas del cementerio"},
+                {"name": "Gearfried the Iron Knight", "count": 1, "section": "monsters", "note": "Inmunidad a cartas de equipo"},
+                {"name": "Dark Valkyria", "count": 1, "section": "monsters", "note": "Géminis con contador mágico"},
+
+                # MAGIAS (11)
+                {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "Buscador clave Lightsworn"},
+                {"name": "Solar Recharge", "count": 1, "section": "spells", "note": "Robo x2 y molienda"},
+                {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "Recupera Judgment Dragon"},
+                {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "Envía a Wulf o Necro Gardna al cementerio"},
+                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "Tu clásico rompe-magias"},
+                {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Control y libro de la luna"},
+                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Protección por 3 turnos"},
+                {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Recicla 5 y roba 2"},
+                {"name": "Card Destruction", "count": 1, "section": "spells", "note": "Prestada de Dark World, perfecta para Edison"},
+                {"name": "Dragged Down into the Grave", "count": 1, "section": "spells", "note": "Prestada de Dark World"},
+                {"name": "Realm of Light", "count": 1, "section": "spells", "note": "Sheet #335 - Magia de campo legal en Edison; acumula contadores y da ATK masivo"},
+
+                # TRAMPAS (7)
+                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Castigo total al ataque rival"},
+                {"name": "Bottomless Trap Hole", "count": 1, "section": "traps", "note": "Destrucción y destierro"},
+                {"name": "Compulsory Evacuation Device", "count": 1, "section": "traps", "note": "Devuelve al rival a la mano"},
+                {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "Recupera monstruos LIGHT"},
+                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "Niega y destruye tributando"},
+                {"name": "Mind Crush", "count": 1, "section": "traps", "note": "Prestada de Dark World"},
+                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "Sheet #330 - Trampa continua que revive Lightsworns y envía cartas al cementerio"},
+
+                # EXTRA DECK (3)
+                {"name": "Naturia Beast", "count": 1, "section": "extra", "note": "Sincronía 5 - Anulación infinita de Mágicas"},
+                {"name": "Naturia Barkion", "count": 1, "section": "extra", "note": "Sincronía 6 - Anulación infinita de Trampas"},
+                {"name": "Stardust Dragon", "count": 1, "section": "extra", "note": "Sincronía 8 - Anulación de destrucción"}
+            ]
+        },
+
+        # 3. DARK WORLD PURO (FORMATO AVANZADO / MODERNO) - 40 Main + 3 Extra
         {
             "id": "dark_world_modern",
             "name": "Mazo DARK WORLD \"Puro\" (Formato Avanzado / Moderno)",
             "short_name": "Dark World Puro",
-            "subtitle": "Utiliza pura sinergia temática para descartar cartas y abrumar al rival. Es totalmente legal y muy explosivo",
+            "subtitle": "Tu mazo de descarte. 100% puro y temático. Añadimos a Dharc the Dark Charmer al Extra Deck para robar monstruos del rival",
             "format": "Avanzado / Moderno",
             "tag": "Dark World Puro",
             "tag_color": "purple",
-            "description": "Utiliza pura sinergia temática para descartar cartas y abrumar al rival. Es totalmente legal y muy explosivo. Su estrategia de descartarse a sí mismo es tan completa que no necesita magia genérica.",
+            "description": "Tu mazo de descarte. 100% puro y temático. Añadimos a Dharc the Dark Charmer al Extra Deck para robar monstruos del rival.",
             "cards_spec": [
                 # MONSTRUOS (24)
                 {"name": "Reign-Beaux, Overking of Dark World", "count": 1, "section": "monsters", "note": "Jefe supremo del mazo principal"},
@@ -150,69 +213,6 @@ def generate_all_decks():
                 {"name": "Clorless, Chaos King of Dark World", "count": 1, "section": "extra", "note": "Fusión legendaria: destruye todo el campo rival al invocarse"},
                 {"name": "Dharc the Dark Charmer, Gloomy", "count": 1, "section": "extra", "note": "Sheet #327 - Enlace 2 de OSCURIDAD: roba monstruos oscuros del cementerio rival"}
             ]
-        },
-
-        # 3. LIGHTSWORN (FORMATO EDISON - RETRO 2010) - 40 Main + 3 Extra
-        {
-            "id": "lightsworn_edison_2010",
-            "name": "Mazo LIGHTSWORN (Formato EDISON - Retro 2010)",
-            "short_name": "Lightsworn Edison",
-            "subtitle": "Este es tu mazo clásico, con Dandylion y Aurkus incluidos tras la corrección de los Kuribohs",
-            "format": "Edison (2010)",
-            "tag": "Retro / Edison",
-            "tag_color": "amber",
-            "description": "Este es tu mazo clásico, con Dandylion y Aurkus incluidos tras la corrección de los Kuribohs. Lista definitiva de exactamente 40 cartas para formato Edison (2010) sin compartir cartas con los otros mazos.",
-            "cards_spec": [
-                # MONSTRUOS (23)
-                {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Tu jefe final"},
-                {"name": "Lumina, Lightsworn Summoner", "count": 1, "section": "monsters", "note": "Invocadora / Resucitadora"},
-                {"name": "Lyla, Lightsworn Sorceress", "count": 1, "section": "monsters", "note": "Destructora de Mágicas/Trampas"},
-                {"name": "Ryko, Lightsworn Hunter", "count": 1, "section": "monsters", "note": "Destrucción Flip y Molienda"},
-                {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "Invocación especial al cementerio"},
-                {"name": "Celestia, Lightsworn Angel", "count": 1, "section": "monsters", "note": "Tributo Lightsworn / Destrucción x2"},
-                {"name": "Garoth, Lightsworn Warrior", "count": 1, "section": "monsters", "note": "Robo y aceleración"},
-                {"name": "Ehren, Lightsworn Monk", "count": 1, "section": "monsters", "note": "Devuelve defensas al mazo"},
-                {"name": "Jain, Lightsworn Paladin", "count": 2, "section": "monsters", "note": "2 copias (Principal + Suelta)"},
-                {"name": "Gragonith, Lightsworn Dragon", "count": 1, "section": "monsters", "note": "Daño de penetración y ATK"},
-                {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "Sheet #328 - Protege a tus Lightsworn contra efectos que seleccionen"},
-                {"name": "Honest", "count": 1, "section": "monsters", "note": "Hand-trap de ATK para LIGHT"},
-                {"name": "Jinzo", "count": 1, "section": "monsters", "note": "De Legendary Decks II - Bloqueo de trampas"},
-                {"name": "Fabled Raven", "count": 1, "section": "monsters", "note": "Cantante prestado de Dark World"},
-                {"name": "Nimble Momonga", "count": 1, "section": "monsters", "note": "Recuperación de LP y bloqueo"},
-                {"name": "Mask of Darkness", "count": 1, "section": "monsters", "note": "Recupera trampas del cementerio"},
-                {"name": "Gearfried the Iron Knight", "count": 1, "section": "monsters", "note": "Inmunidad a cartas de equipo"},
-                {"name": "Dark Valkyria", "count": 1, "section": "monsters", "note": "Géminis con contador mágico"},
-                {"name": "Twin-Headed Behemoth", "count": 1, "section": "monsters", "note": "Triple Headed Behemoth en tu inventario"},
-                {"name": "Dandylion", "count": 1, "section": "monsters", "note": "Sheet #329 - Dandy Withelion: Genera 2 fichas al enviarse al cementerio"},
-                {"name": "Naturia Cliff", "count": 1, "section": "monsters", "note": "Buscador Naturia de reemplazo"},
-                {"name": "Naturia Pumpkin", "count": 1, "section": "monsters", "note": "Invocación adicional para Sincronía"},
-
-                # MAGIAS (10)
-                {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "Buscador clave Lightsworn"},
-                {"name": "Solar Recharge", "count": 1, "section": "spells", "note": "Robo x2 y molienda"},
-                {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "Recupera Judgment Dragon"},
-                {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "Envía a Wulf o Dandylion al cementerio"},
-                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "Tu clásico rompe-magias"},
-                {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Control y libro de la luna"},
-                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Protección por 3 turnos"},
-                {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Recicla 5 y roba 2"},
-                {"name": "Card Destruction", "count": 1, "section": "spells", "note": "Prestada de Dark World, perfecta para Edison"},
-                {"name": "Dragged Down into the Grave", "count": 1, "section": "spells", "note": "Prestada de Dark World"},
-
-                # TRAMPAS (7)
-                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Castigo total al ataque rival"},
-                {"name": "Bottomless Trap Hole", "count": 1, "section": "traps", "note": "Destrucción y destierro"},
-                {"name": "Compulsory Evacuation Device", "count": 1, "section": "traps", "note": "Devuelve al rival a la mano"},
-                {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "Recupera monstruos LIGHT"},
-                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "Niega y destruye tributando"},
-                {"name": "Mind Crush", "count": 1, "section": "traps", "note": "Prestada de Dark World"},
-                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "Sheet #330 - Trampa continua que revive Lightsworns y envía cartas al cementerio"},
-
-                # EXTRA DECK (3)
-                {"name": "Naturia Beast", "count": 1, "section": "extra", "note": "Sincronía 5 - Anulación infinita de Mágicas"},
-                {"name": "Naturia Barkion", "count": 1, "section": "extra", "note": "Sincronía 6 - Anulación infinita de Trampas"},
-                {"name": "Stardust Dragon", "count": 1, "section": "extra", "note": "Sincronía 8 - Anulación de destrucción"}
-            ]
         }
     ]
 
@@ -230,8 +230,6 @@ def generate_all_decks():
                 # Intento con alias comunes
                 if card_name == "Triple Headed Behemoth" or card_name == "Twin-Headed Behemoth":
                     c_info = name_map.get("twin-headed behemoth")
-                elif card_name == "Dandy Withelion" or card_name == "Dandylion":
-                    c_info = name_map.get("dandylion")
                 elif card_name == "The Fabled Cerburrel":
                     c_info = name_map.get("the fabled cerburrel")
 

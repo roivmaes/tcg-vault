@@ -11,22 +11,22 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas en físico** en tu inventario.
 
-### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Corregido)*
+### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno)
 * **Composición:** **40 Main Deck** (14 Monstruos, 17 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Versión corregida y 100% legal con tu inventario real. Incorpora **2 copias de *Héroe Malvado Garras Cruentas* (*Evil HERO Vicious Claws*)** para invocación especial gratuita si controlas cualquier monstruo HÉROE, junto a ***Elemental HERO Bladedge*** (2600 ATK con daño de penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Elemental HERO Blazeman*, *Wildheart*, *Neos* y *Neos Alius*. Cuenta con 2 *A Hero Lives*, 2 *Polymerization*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores.
+* **Estrategia:** Tu mazo rápido de combate. Incorpora **2 copias de *Héroe Malvado Garras Cruentas* (*Evil HERO Vicious Claws*)** para invocación especial gratuita si controlas cualquier monstruo HÉROE, junto a ***Elemental HERO Bladedge*** (2600 ATK con daño de penetración), *Vision HERO Vyon*, *Destiny HERO Denier*, *Elemental HERO Blazeman*, *Wildheart*, *Neos* y *Neos Alius*. Cuenta con 2 *A Hero Lives*, 2 *Polymerization*, Handtraps (*Veiler*, *Droll*, *Ghost Mourner*) y potentes limpiadores.
 * **Extra Deck (7):** *Xtra HERO Cross Crusader* (Copia 1 y Copia 2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
 * **Estado:** **47/47 Completo (100% en Colección)**.
 
-### 2. 🟣 Mazo DARK WORLD "Puro" (Formato Avanzado / Moderno)
-* **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **3 Extra Deck**.
-* **Estrategia:** Utiliza pura sinergia temática para descartar cartas y abrumar al rival. Es totalmente legal y muy explosivo. Su motor de descarte y robo continuo utiliza todo el clan Mundo Oscuro (*Reign-Beaux*, *Grapha*, *Genta*, *Snoww*, *Sillva*, *Goldd*, *Broww*, *Beiige*, etc.), sinergias Danger! (*Bigfoot*, *Thunderbird*, *Mothman*, *Tsuchinoko*, *Chupacabra*) y Tour Guide, junto al campo *The Gates of Dark World*, magias temáticas y virus de control (*Skill Drain*, *Eradicator Epidemic Virus*, *Deck Devastation Virus*, *Dark Smog*, *Dark Deal*, *Brainwashing*).
-* **Extra Deck (3):** *Grapha, Dragon Overlord of Dark World*, *Clorless, Chaos King of Dark World*, *Dharc the Dark Charmer, Gloomy*.
+### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro 2010) — *(Corregido a 2010)*
+* **Composición:** **40 Main Deck** (22 Monstruos, 11 Mágicas, 7 Trampas) + **3 Extra Deck**.
+* **Estrategia:** Tu mazo clásico 100% legal en Edison (2010 o anteriores). Se incorporaron de tu caja original: ***Necro Gardna*** (defensa clave desde el cementerio), ***Jenis, Lightsworn Mender***, ***Shire, Lightsworn Spirit*** y la magia de campo ***Realm of Light***. Motor completo con *Judgment Dragon*, *Lumina*, *Lyla*, *Ryko*, *Wulf*, *Honest*, staples (*MST*, *Book of Moon*, *Swords of Revealing Light*, *Pot of Avarice*, *Mirror Force*, *Bottomless*) y trampas temáticas (*Beckoning Light*, *Vanquishing Light*, *Glorious Illusion*).
+* **Extra Deck (3):** *Naturia Beast*, *Naturia Barkion*, *Stardust Dragon*.
 * **Estado:** **43/43 Completo (100% en Colección)**.
 
-### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro 2010)
-* **Composición:** **40 Main Deck** (23 Monstruos, 10 Mágicas, 7 Trampas) + **3 Extra Deck**.
-* **Estrategia:** Tu mazo clásico de formato Edison (2010), ahora con *Dandylion* (Dandy Withelion), *Aurkus, Lightsworn Druid* y *Glorious Illusion* incluidos tras la corrección de los Kuribohs. Motor puro Luminoso con *Judgment Dragon*, *Lumina*, *Lyla*, *Ryko*, *Wulf* y *Honest*, complementado con staples clásicos (*Mystical Space Typhoon*, *Book of Moon*, *Swords of Revealing Light*, *Pot of Avarice*, *Mirror Force*, *Bottomless Trap Hole*, *Compulsory Evacuation Device*) y aceleradores de descarte prestados (*Card Destruction*, *Dragged Down into the Grave*, *Mind Crush*, *Fabled Raven*).
-* **Extra Deck (3):** *Naturia Beast*, *Naturia Barkion*, *Stardust Dragon*.
+### 3. 🟣 Mazo DARK WORLD "Puro" (Formato Avanzado / Moderno)
+* **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **3 Extra Deck**.
+* **Estrategia:** Tu mazo de descarte 100% puro y temático. Su motor de descarte y robo continuo utiliza todo el clan Mundo Oscuro (*Reign-Beaux*, *Grapha*, *Genta*, *Snoww*, *Sillva*, *Goldd*, *Broww*, *Beiige*, etc.), sinergias Danger! (*Bigfoot*, *Thunderbird*, *Mothman*, *Tsuchinoko*, *Chupacabra*) y Tour Guide, junto al campo *The Gates of Dark World*, magias temáticas y virus de control (*Skill Drain*, *Eradicator Epidemic Virus*, *Deck Devastation Virus*, *Dark Smog*, *Dark Deal*, *Brainwashing*).
+* **Extra Deck (3):** *Grapha, Dragon Overlord of Dark World*, *Clorless, Chaos King of Dark World*, *Dharc the Dark Charmer, Gloomy*.
 * **Estado:** **43/43 Completo (100% en Colección)**.
 
 ---
