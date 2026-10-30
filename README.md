@@ -11,23 +11,23 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
-### 1. 🔴 Mazo HÉROE Definitivo (Formato Avanzado / Moderno) — *(100% Cajas Físicas & Rápido/Agresivo)*
-* **Composición:** **40 Main Deck** (13 Monstruos, 18 Mágicas, 9 Trampas) + **7 Extra Deck**.
-* **Estrategia:** Una estructura rápida y agresiva 100% fiel a tus cajas físicas reales. Reemplaza cartas inexistentes por piezas de control directo (*Jinzo* para frenar trampas, *Book of Moon* para interrupción rápida, *Bottomless Trap Hole*, *Flash H.E.R.O.* / *Hero Flash!!*) y acelera fusiones hacia *Vision HERO Trinity* (5000 ATK, 3 ataques) y enlaces con doble *Xtra HERO Cross Crusader*.
-* **Extra Deck (7):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*.
-* **Estado:** **47/47 Completo (100% en Colección)**.
+### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Agresivo / Fusión)*
+* **Composición:** **40 Main Deck** (13 Monstruos, 18 Mágicas, 9 Trampas) + **8 Extra Deck**.
+* **Estrategia:** Tu baraja principal optimizada con *Elemental HERO Bubbleman* y *Soul Union*, sin cartas fantasma. Diseñada para invocar fusiones y enlaces con alta velocidad, combinando el poder ofensivo de *Vision HERO Trinity* (5000 ATK, 3 ataques), *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, *Evil HERO Darkest Knight* y doble *Xtra HERO Cross Crusader*.
+* **Extra Deck (8):** *Xtra HERO Cross Crusader* (x2), *Vision HERO Trinity*, *Xtra HERO Dread Decimator*, *Elemental HERO Nova Master*, *Elemental HERO Escuridao*, *Elemental HERO Neos Knight*, *Evil HERO Darkest Knight*.
+* **Estado:** **48/48 Completo (100% en Colección)**.
 
-### 2. 🟡 Mazo LIGHTSWORN (Formato EDISON - Retro Abril 2010)
+### 2. 🟣 Mazo DARK WORLD (Formato Avanzado / Moderno) — *(Control / Descarte)*
 * **Composición:** **40 Main Deck** (22 Monstruos, 10 Mágicas, 8 Trampas) + **1 Extra Deck**.
-* **Estrategia:** Optimizado al máximo con cartas del propio inventario (***Cyber Dragon x2***, ***Heavy Storm***, ***Solemn Judgment***, ***Torrential Tribute***, ***Breaker the Magical Warrior***, ***Call of the Haunted***) y limpio de cartas ilegales o lentas. Mantiene el motor puro con 2x *Ryko*, *Judgment Dragon*, *Lumina*, *Lyla*, *Wulf*, *Honest*, *Jinzo*, *D.D. Crow*, *Mobius*, *Necro Gardna*, *Aurkus*, *Shire* y *Realm of Light*.
-* **Extra Deck (1 Carta Legal):** ***Stardust Dragon***.
+* **Estrategia:** Construido exclusivamente con las cartas confirmadas en la fotografía de tu caja física de *Structure Deck: Dark World*. La clásica y temida estrategia de descarte masivo, robo incesante y control de recursos, coronada por la presencia de *Grapha, Dragon Overlord of Dark World* en el Extra Deck.
+* **Extra Deck (1):** *Grapha, Dragon Overlord of Dark World*.
 * **Estado:** **41/41 Completo (100% en Colección)**.
 
-### 3. 🟣 Mazo DARK WORLD "Puro" (Formato Avanzado / Moderno)
-* **Composición:** **40 Main Deck** (24 Monstruos, 7 Mágicas, 9 Trampas) + **6 Extra Deck**.
-* **Estrategia:** La estrategia clásica de descarte de la mano, coronada con Xyz potentes modernos y la amenaza destructiva de ***Divine Arsenal AA-ZEUS - Sky Thunder*** en el Extra Deck. Utiliza a ***Tour Guide From the Underworld*** para invocar instantáneamente a ***Number 20: Giga-Brilliant*** (Rango 3), ganar batalla y subir directamente a ZEUS para arrasar el campo rival. Además cuenta con ***Daigusto Emeral*** para reciclar y robar.
-* **Extra Deck (6):** *Grapha, Dragon Overlord of Dark World*, *Clorless, Chaos King of Dark World*, *Dharc the Dark Charmer, Gloomy*, ***Divine Arsenal AA-ZEUS - Sky Thunder***, ***Daigusto Emeral***, ***Number 20: Giga-Brilliant***.
-* **Estado:** **46/46 Completo (100% en Colección)**.
+### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON / Casual) — *(Realm of Light + Legendary Decks II)*
+* **Composición:** **40 Main Deck** (20 Monstruos, 12 Mágicas, 8 Trampas) + **1 Extra Deck**.
+* **Estrategia:** Armado estrictamente con lo garantizado en tu *Structure Deck: Realm of Light* y apoyado con las cartas clásicas de tu caja *Legendary Decks II*. Eliminadas cartas dudosas para asegurar fiabilidad física al 100%, con *Judgment Dragon*, *Honest*, *Necro Gardna*, los monstruos *Lightray* y *Michael, the Arch-Lightsworn*.
+* **Extra Deck (1 Carta Legal):** *Michael, the Arch-Lightsworn*.
+* **Estado:** **41/41 Completo (100% en Colección)**.
 
 ---
 
