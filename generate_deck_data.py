@@ -149,67 +149,6 @@ def generate_all_decks():
                 # EXTRA DECK (1)
                 {"name": "Grapha, Dragon Overlord of Dark World", "count": 1, "section": "extra", "note": "Jefe supremo de fusión: convierte cualquier efecto rival en descarte"}
             ]
-        },
-
-        # 3. LIGHTSWORN (40 Main + 1 Extra — Formato Edison / Casual)
-        {
-            "id": "lightsworn_edison_2010",
-            "name": "Mazo LIGHTSWORN (Formato EDISON / Casual)",
-            "short_name": "Lightsworn Edison / Casual",
-            "subtitle": "Mazo LIGHTSWORN (40 Cartas — Formato Edison / Casual): Armado estrictamente con cartas de Realm of Light y Legendary Decks II",
-            "format": "Edison / Casual",
-            "tag": "Lightsworn / Retro & Casual",
-            "tag_color": "amber",
-            "description": "Armado estrictamente con lo garantizado en tu Structure Deck: Realm of Light y apoyado con las cartas clásicas de Legendary Decks II. Máxima fiabilidad 100% física.",
-            "cards_spec": [
-                # MONSTRUOS (20)
-                {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "De Realm of Light — Tu jefe final de 3000 ATK"},
-                {"name": "Celestia, Lightsworn Angel", "count": 1, "section": "monsters", "note": "De Realm of Light — Tributo Lightsworn que destruye hasta 2 cartas rivales"},
-                {"name": "Gragonith, Lightsworn Dragon", "count": 1, "section": "monsters", "note": "De Realm of Light — Daño de penetración y ATK por cada Lightsworn en GY"},
-                {"name": "Jain, Lightsworn Paladin", "count": 2, "section": "monsters", "note": "2 copias (Realm of Light / Sueltas) — Atacante de 2100 ATK"},
-                {"name": "Lyla, Lightsworn Sorceress", "count": 1, "section": "monsters", "note": "De Realm of Light — Destructora de Mágicas/Trampas"},
-                {"name": "Garoth, Lightsworn Warrior", "count": 1, "section": "monsters", "note": "De Realm of Light — Robo y aceleración de molienda"},
-                {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "De Realm of Light — Invocación especial inmediata al ser molido"},
-                {"name": "Ehren, Lightsworn Monk", "count": 1, "section": "monsters", "note": "De Realm of Light — Devuelve cartas en defensa directo al mazo"},
-                {"name": "Lumina, Lightsworn Summoner", "count": 1, "section": "monsters", "note": "De Realm of Light — Invocadora y resucitadora de Lightsworn"},
-                {"name": "Ryko, Lightsworn Hunter", "count": 1, "section": "monsters", "note": "De Realm of Light — Destrucción de cualquier carta y molienda"},
-                {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "De Realm of Light — Protege a todos los Lightsworn de ser seleccionados"},
-                {"name": "Shire, Lightsworn Spirit", "count": 1, "section": "monsters", "note": "De Realm of Light — Gana 300 ATK por cada Lightsworn en tu cementerio"},
-                {"name": "Jenis, Lightsworn Mender", "count": 1, "section": "monsters", "note": "De Realm of Light — Inflige 500 de daño al rival y ganas 500 LP"},
-                {"name": "Honest", "count": 1, "section": "monsters", "note": "De Realm of Light — Handtrap de combate para cualquier monstruo LIGHT"},
-                {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "De Realm of Light — Se destierra del cementerio para anular un ataque"},
-                {"name": "Lightray Diabolos", "count": 1, "section": "monsters", "note": "De Realm of Light — Invocación con 5+ LIGHT; baraja cartas de la mano rival"},
-                {"name": "Lightray Daedalus", "count": 1, "section": "monsters", "note": "De Realm of Light — Invocación con 4+ LIGHT; destruye magia de campo y cartas"},
-                {"name": "Lightray Grepher", "count": 1, "section": "monsters", "note": "De Realm of Light — Descarta luz de nivel 5+ y envía luz del mazo al GY"},
-                {"name": "Lightray Sorcerer", "count": 1, "section": "monsters", "note": "De Realm of Light — Destierra un monstruo boca arriba en el campo"},
-
-                # MAGIAS (12)
-                {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "De Realm of Light — Buscador esencial de Lightsworn"},
-                {"name": "Solar Recharge", "count": 1, "section": "spells", "note": "De Realm of Light — Descarta 1 Lightsworn, roba 2 cartas y muele 2"},
-                {"name": "Realm of Light", "count": 1, "section": "spells", "note": "De Realm of Light — Magia de campo que acumula contadores y da ATK"},
-                {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "De Realm of Light — Recupera Judgment Dragon o cualquier monstruo"},
-                {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "De Realm of Light — Envía a Wulf o Necro Gardna directo al GY"},
-                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "De Legendary Decks II — Destrucción de magias o trampas"},
-                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "De Legendary Decks II — Detiene ataques rivales por 3 turnos"},
-                {"name": "Monster Reborn", "count": 1, "section": "spells", "note": "De Legendary Decks II — Resurrección universal de cualquier monstruo"},
-                {"name": "Dark Hole", "count": 1, "section": "spells", "note": "De Legendary Decks II — Destruye todos los monstruos en el campo"},
-                {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "De Legendary Decks II — Recicla 5 monstruos del GY y roba 2 cartas"},
-                {"name": "Premature Burial", "count": 1, "section": "spells", "note": "De Legendary Decks II — Revive un monstruo del cementerio pagando 800 LP"},
-                {"name": "Brain Control", "count": 1, "section": "spells", "note": "De Legendary Decks II — Toma el control de un monstruo rival boca arriba"},
-
-                # TRAMPAS (8)
-                {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "De Realm of Light — Descarta la mano y recupera monstruos LIGHT del GY"},
-                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "De Realm of Light — Tributa un Lightsworn y niega una invocación"},
-                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "De Realm of Light — Revive un Lightsworn y muele 2 cartas en tu End Phase"},
-                {"name": "Lightsworn Barrier", "count": 1, "section": "traps", "note": "De Realm of Light — Niega un ataque moliendo 2 cartas del tope del mazo"},
-                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "De Legendary Decks II — Destruye todos los monstruos en ataque del rival"},
-                {"name": "Torrential Tribute", "count": 1, "section": "traps", "note": "De Legendary Decks II — Destruye todos los monstruos tras una invocación"},
-                {"name": "Call of the Haunted", "count": 1, "section": "traps", "note": "De Legendary Decks II — Revive cualquier monstruo del cementerio"},
-                {"name": "Magic Cylinder", "count": 1, "section": "traps", "note": "De Legendary Decks II — Niega un ataque y devuelve el ATK como daño"},
-
-                # EXTRA DECK (1)
-                {"name": "Michael, the Arch-Lightsworn", "count": 1, "section": "extra", "note": "De Realm of Light — Sincronía 7: destierra cartas del campo y recicla"}
-            ]
         }
     ]
 

@@ -9,7 +9,7 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 ## ⚔️ Mazos Listos para Jugar (Listas Definitivas, 100% Reales y en Inventario)
 
-Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
+Ambos mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
 ### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Agresivo / Fusión)*
 * **Composición:** **40 Main Deck** (13 Monstruos, 18 Mágicas, 9 Trampas) + **8 Extra Deck**.
@@ -21,12 +21,6 @@ Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configur
 * **Composición:** **40 Main Deck** (22 Monstruos, 10 Mágicas, 8 Trampas) + **1 Extra Deck**.
 * **Estrategia:** Construido exclusivamente con las cartas confirmadas en la fotografía de tu caja física de *Structure Deck: Dark World*. La clásica y temida estrategia de descarte masivo, robo incesante y control de recursos, coronada por la presencia de *Grapha, Dragon Overlord of Dark World* en el Extra Deck.
 * **Extra Deck (1):** *Grapha, Dragon Overlord of Dark World*.
-* **Estado:** **41/41 Completo (100% en Colección)**.
-
-### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON / Casual) — *(Realm of Light + Legendary Decks II)*
-* **Composición:** **40 Main Deck** (20 Monstruos, 12 Mágicas, 8 Trampas) + **1 Extra Deck**.
-* **Estrategia:** Armado estrictamente con lo garantizado en tu *Structure Deck: Realm of Light* y apoyado con las cartas clásicas de tu caja *Legendary Decks II*. Eliminadas cartas dudosas para asegurar fiabilidad física al 100%, con *Judgment Dragon*, *Honest*, *Necro Gardna*, los monstruos *Lightray* y *Michael, the Arch-Lightsworn*.
-* **Extra Deck (1 Carta Legal):** *Michael, the Arch-Lightsworn*.
 * **Estado:** **41/41 Completo (100% en Colección)**.
 
 ---
