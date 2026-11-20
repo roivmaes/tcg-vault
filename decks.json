@@ -15,7 +15,7 @@
       "spells": 18,
       "traps": 9,
       "owned_count": 48,
-      "total_cost": 10.49
+      "total_cost": 10.93
     },
     "cards": [
       {
@@ -23,7 +23,7 @@
         "original_name": "Vision HERO Vyon",
         "section": "monsters",
         "count": 1,
-        "note": "Carta suelta — Envía a Denier al cementerio y busca Polymerization",
+        "note": "Carta Suelta — Envía a Denier al cementerio y busca Polymerization",
         "owned": true,
         "sheet_id": "290",
         "sheet_category": "Carta Suelta",
@@ -44,8 +44,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/27780618.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/27780618.jpg",
         "prices": {
-          "tcgplayer": "0.26",
-          "cardmarket": "0.27"
+          "tcgplayer": "0.28",
+          "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Vyon"
       },
@@ -54,7 +54,7 @@
         "original_name": "Destiny HERO - Denier",
         "section": "monsters",
         "count": 1,
-        "note": "Carta suelta — Se invoca solo desde el cementerio",
+        "note": "Carta Suelta — Se invoca solo desde el cementerio",
         "owned": true,
         "sheet_id": "183",
         "sheet_category": "Carta Suelta",
@@ -75,7 +75,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/16605586.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16605586.jpg",
         "prices": {
-          "tcgplayer": "0.22",
+          "tcgplayer": "0.25",
           "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Destiny%20HERO%20-%20Denier"
@@ -85,7 +85,7 @@
         "original_name": "Elemental HERO Blazeman",
         "section": "monsters",
         "count": 1,
-        "note": "De Midterm Paradox — Busca Polymerization",
+        "note": "Carta Suelta / Midterm Paradox — Busca Polymerization",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -106,8 +106,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63060238.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63060238.jpg",
         "prices": {
-          "tcgplayer": "0.67",
-          "cardmarket": "0.25"
+          "tcgplayer": "0.59",
+          "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Blazeman"
       },
@@ -116,7 +116,7 @@
         "original_name": "Elemental HERO Wildheart",
         "section": "monsters",
         "count": 1,
-        "note": "De Midterm Paradox — Inmune a trampas",
+        "note": "Midterm Paradox — Inmune a trampas",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -138,7 +138,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/86188410.jpg",
         "prices": {
           "tcgplayer": "0.11",
-          "cardmarket": "0.07"
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Wildheart"
       },
@@ -147,7 +147,7 @@
         "original_name": "Elemental HERO Neos",
         "section": "monsters",
         "count": 1,
-        "note": "Carta suelta — Guerrero clásico de 2500 ATK",
+        "note": "Carta Suelta — Guerrero clásico de 2500 ATK",
         "owned": true,
         "sheet_id": "191",
         "sheet_category": "Carta Suelta",
@@ -168,8 +168,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/89943723.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/89943723.jpg",
         "prices": {
-          "tcgplayer": "0.19",
-          "cardmarket": "0.13"
+          "tcgplayer": "0.17",
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos"
       },
@@ -178,7 +178,7 @@
         "original_name": "Elemental HERO Neos Alius",
         "section": "monsters",
         "count": 1,
-        "note": "Carta suelta — Atacante de 1900 ATK y atributo LUZ",
+        "note": "Carta Suelta — Atacante de 1900 ATK y atributo LUZ",
         "owned": true,
         "sheet_id": "192",
         "sheet_category": "Carta Suelta",
@@ -199,8 +199,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/69884162.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/69884162.jpg",
         "prices": {
-          "tcgplayer": "0.21",
-          "cardmarket": "0.08"
+          "tcgplayer": "0.22",
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Alius"
       },
@@ -209,7 +209,7 @@
         "original_name": "Evil HERO Darkest Knight",
         "section": "monsters",
         "count": 1,
-        "note": "Evil HERO Drakes Knight (Darkest Knight) — Carta suelta",
+        "note": "Cartas Sueltas — Evil HERO Drakes Knight",
         "owned": true,
         "sheet_id": "303",
         "sheet_category": "Cartas Sueltas",
@@ -230,8 +230,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86282581.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/86282581.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.08"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Darkest%20Knight"
       },
@@ -240,7 +240,7 @@
         "original_name": "Evil HERO Vicious Claws",
         "section": "monsters",
         "count": 2,
-        "note": "2 copias — Héroe Malvado Garras Cruentas, cartas sueltas",
+        "note": "Cartas Sueltas — 2 copias: Héroe Malvado Garras Cruentas",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -261,8 +261,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/35095329.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/35095329.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.10"
+          "tcgplayer": "0.20",
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Vicious%20Claws"
       },
@@ -271,7 +271,7 @@
         "original_name": "Winged Kuriboh",
         "section": "monsters",
         "count": 2,
-        "note": "2 copias — Cartas sueltas, reduce daño a cero",
+        "note": "Carta Suelta / Cartas Sueltas — 2 copias: reduce daño a cero",
         "owned": true,
         "sheet_id": "298",
         "sheet_category": "Cartas Sueltas",
@@ -293,7 +293,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/57116033.jpg",
         "prices": {
           "tcgplayer": "0.16",
-          "cardmarket": "0.07"
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Winged%20Kuriboh"
       },
@@ -302,7 +302,7 @@
         "original_name": "Effect Veiler",
         "section": "monsters",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers normal — Handtrap de interrupción",
+        "note": "Decks y Cajas — Handtrap de interrupción",
         "owned": true,
         "sheet_id": "47",
         "sheet_category": "Decks y Cajas",
@@ -323,8 +323,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97268402.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97268402.jpg",
         "prices": {
-          "tcgplayer": "0.25",
-          "cardmarket": "0.15"
+          "tcgplayer": "0.31",
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Effect%20Veiler"
       },
@@ -333,7 +333,7 @@
         "original_name": "Elemental HERO Bubbleman",
         "section": "monsters",
         "count": 1,
-        "note": "De Midterm Paradox — Invocación especial y robo cuando tu mano está vacía",
+        "note": "Midterm Paradox — Invocación especial y robo cuando tu mano está vacía",
         "owned": true,
         "sheet_id": "424",
         "sheet_category": "Midterm Paradox",
@@ -354,8 +354,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79979666.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79979666.jpg",
         "prices": {
-          "tcgplayer": "0.24",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Bubbleman"
       },
@@ -364,7 +364,7 @@
         "original_name": "A Hero Lives",
         "section": "spells",
         "count": 2,
-        "note": "2 copias — Invoca a Vyon o Blazeman directo del mazo",
+        "note": "Carta Suelta / Cartas Sueltas — 2 copias: invoca a Vyon o Blazeman directo del mazo",
         "owned": true,
         "sheet_id": "429",
         "sheet_category": "Midterm Paradox",
@@ -386,7 +386,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/8949584.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.09"
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=A%20Hero%20Lives"
       },
@@ -395,7 +395,7 @@
         "original_name": "Polymerization",
         "section": "spells",
         "count": 2,
-        "note": "2 copias — De Legendary Decks II / Midterm Paradox",
+        "note": "Decks y Cajas / Midterm Paradox — 2 copias: magia de fusión principal",
         "owned": true,
         "sheet_id": "495",
         "sheet_category": "Midterm Paradox",
@@ -416,7 +416,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/24094653.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/24094653.jpg",
         "prices": {
-          "tcgplayer": "0.12",
+          "tcgplayer": "0.13",
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Polymerization"
@@ -426,7 +426,7 @@
         "original_name": "Evil Assault",
         "section": "spells",
         "count": 1,
-        "note": "Carta suelta — Busca o invoca HÉROE Malvado del mazo",
+        "note": "Carta Suelta — Busca o invoca HÉROE Malvado del mazo",
         "owned": true,
         "sheet_id": "197",
         "sheet_category": "Carta Suelta",
@@ -447,8 +447,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3519195.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3519195.jpg",
         "prices": {
-          "tcgplayer": "0.83",
-          "cardmarket": "0.63"
+          "tcgplayer": "0.91",
+          "cardmarket": "0.76"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20Assault"
       },
@@ -457,7 +457,7 @@
         "original_name": "Monster Reborn",
         "section": "spells",
         "count": 1,
-        "note": "De Legendary Decks II / Sueltas — Resurrección universal",
+        "note": "Decks y Cajas / Cartas Sueltas — Resurrección universal",
         "owned": true,
         "sheet_id": "320",
         "sheet_category": "Cartas Sueltas",
@@ -488,7 +488,7 @@
         "original_name": "Skyscraper 2 - Hero City",
         "section": "spells",
         "count": 1,
-        "note": "De Midterm Paradox — Revive héroes caídos en batalla",
+        "note": "Midterm Paradox — Revive héroes caídos en batalla",
         "owned": true,
         "sheet_id": "428",
         "sheet_category": "Midterm Paradox",
@@ -509,7 +509,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47596607.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47596607.jpg",
         "prices": {
-          "tcgplayer": "0.14",
+          "tcgplayer": "0.15",
           "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Skyscraper%202%20-%20Hero%20City"
@@ -519,7 +519,7 @@
         "original_name": "Fifth Hope",
         "section": "spells",
         "count": 1,
-        "note": "De Midterm Paradox — Recicla 5 cartas al mazo y roba",
+        "note": "Midterm Paradox — Recicla 5 cartas al mazo y roba",
         "owned": true,
         "sheet_id": "433",
         "sheet_category": "Midterm Paradox",
@@ -540,8 +540,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/55428811.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/55428811.jpg",
         "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.11"
+          "tcgplayer": "0.18",
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fifth%20Hope"
       },
@@ -550,7 +550,7 @@
         "original_name": "H - Heated Heart",
         "section": "spells",
         "count": 1,
-        "note": "De Midterm Paradox — Otorga +500 ATK y daño de penetración",
+        "note": "Midterm Paradox — Otorga +500 ATK y daño de penetración",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -572,7 +572,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74825788.jpg",
         "prices": {
           "tcgplayer": "0.07",
-          "cardmarket": "0.02"
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=H%20-%20Heated%20Heart"
       },
@@ -581,7 +581,7 @@
         "original_name": "R - Righteous Justice",
         "section": "spells",
         "count": 1,
-        "note": "De Midterm Paradox — Destruye magias y trampas rivales",
+        "note": "Midterm Paradox — Destruye magias y trampas rivales",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -603,7 +603,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37318031.jpg",
         "prices": {
           "tcgplayer": "0.08",
-          "cardmarket": "0.07"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=R%20-%20Righteous%20Justice"
       },
@@ -612,7 +612,7 @@
         "original_name": "Hero Flash!!",
         "section": "spells",
         "count": 1,
-        "note": "Flash H.E.R.O. — Carta suelta",
+        "note": "Carta Suelta (Hero Flash!!) — Flash H.E.R.O.",
         "owned": true,
         "sheet_id": "201",
         "sheet_category": "Carta Suelta",
@@ -633,8 +633,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/191749.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/191749.jpg",
         "prices": {
-          "tcgplayer": "0.08",
-          "cardmarket": "0.05"
+          "tcgplayer": "0.05",
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Flash%21%21"
       },
@@ -643,7 +643,7 @@
         "original_name": "Wrath of Neos",
         "section": "spells",
         "count": 1,
-        "note": "Carta suelta — Limpieza total de campo regresando a Neos al mazo",
+        "note": "Carta Suelta — Limpieza total de campo regresando a Neos al mazo",
         "owned": true,
         "sheet_id": "295",
         "sheet_category": "Carta Suelta",
@@ -664,8 +664,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52098461.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52098461.jpg",
         "prices": {
-          "tcgplayer": "0.23",
-          "cardmarket": "0.29"
+          "tcgplayer": "0.27",
+          "cardmarket": "0.25"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wrath%20of%20Neos"
       },
@@ -674,7 +674,7 @@
         "original_name": "Raigeki",
         "section": "spells",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers — Limpiador de monstruos",
+        "note": "Decks y Cajas — Limpiador de monstruos",
         "owned": true,
         "sheet_id": "116",
         "sheet_category": "Decks y Cajas",
@@ -695,8 +695,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/12580477.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/12580477.jpg",
         "prices": {
-          "tcgplayer": "0.22",
-          "cardmarket": "0.19"
+          "tcgplayer": "0.26",
+          "cardmarket": "0.24"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Raigeki"
       },
@@ -705,7 +705,7 @@
         "original_name": "Dark Hole",
         "section": "spells",
         "count": 1,
-        "note": "De Legendary Decks II / 2-Player Starter Set — Destrucción de campo",
+        "note": "Decks y Cajas / Set Principiante — Destrucción de campo",
         "owned": true,
         "sheet_id": "353",
         "sheet_category": "Set de Principiante 2 Jugadores",
@@ -726,8 +726,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53129443.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53129443.jpg",
         "prices": {
-          "tcgplayer": "0.24",
-          "cardmarket": "0.09"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Hole"
       },
@@ -736,7 +736,7 @@
         "original_name": "Harpie's Feather Duster",
         "section": "spells",
         "count": 1,
-        "note": "De tu caja Obelisk the Tormentor — Destruye todas las magias/trampas rivales",
+        "note": "Decks y Cajas — Destruye todas las magias/trampas rivales",
         "owned": true,
         "sheet_id": "78",
         "sheet_category": "Decks y Cajas",
@@ -757,8 +757,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/18144507.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/18144507.jpg",
         "prices": {
-          "tcgplayer": "0.90",
-          "cardmarket": "0.50"
+          "tcgplayer": "1.10",
+          "cardmarket": "0.56"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Harpie%27s%20Feather%20Duster"
       },
@@ -767,7 +767,7 @@
         "original_name": "Twin Twisters",
         "section": "spells",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers — Destruye 2 magias/trampas",
+        "note": "Decks y Cajas — Destruye 2 magias/trampas",
         "owned": true,
         "sheet_id": "149",
         "sheet_category": "Decks y Cajas",
@@ -789,7 +789,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/43898403.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.10"
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Twin%20Twisters"
       },
@@ -798,7 +798,7 @@
         "original_name": "Dark Ruler No More",
         "section": "spells",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers — Niega efectos de monstruos rivales",
+        "note": "Decks y Cajas — Niega efectos de monstruos rivales",
         "owned": true,
         "sheet_id": "34",
         "sheet_category": "Decks y Cajas",
@@ -819,7 +819,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/54693926.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/54693926.jpg",
         "prices": {
-          "tcgplayer": "0.19",
+          "tcgplayer": "0.25",
           "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Ruler%20No%20More"
@@ -829,7 +829,7 @@
         "original_name": "Book of Moon",
         "section": "spells",
         "count": 1,
-        "note": "De 2-Player Starter Set / Decks y Cajas — Interrupción rápida boca abajo",
+        "note": "Decks y Cajas / Set Principiante — Interrupción rápida boca abajo",
         "owned": true,
         "sheet_id": "399",
         "sheet_category": "Set de Principiante 2 Jugadores",
@@ -850,8 +850,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14087893.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14087893.jpg",
         "prices": {
-          "tcgplayer": "0.05",
-          "cardmarket": "0.04"
+          "tcgplayer": "0.10",
+          "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Book%20of%20Moon"
       },
@@ -860,7 +860,7 @@
         "original_name": "Hero Signal",
         "section": "traps",
         "count": 1,
-        "note": "De Midterm Paradox — Invoca un HÉROE cuando destruyen un monstruo",
+        "note": "Midterm Paradox — Invoca un HÉROE cuando destruyen un monstruo",
         "owned": true,
         "sheet_id": "432",
         "sheet_category": "Midterm Paradox",
@@ -882,7 +882,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22020907.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.05"
+          "cardmarket": "0.04"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Signal"
       },
@@ -891,7 +891,7 @@
         "original_name": "Hero Counterattack",
         "section": "traps",
         "count": 1,
-        "note": "De Midterm Paradox — Invoca un HÉROE al azar de la mano al ser atacado",
+        "note": "Midterm Paradox — Invoca un HÉROE al azar de la mano al ser atacado",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -912,8 +912,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/19024706.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/19024706.jpg",
         "prices": {
-          "tcgplayer": "0.14",
-          "cardmarket": "0.04"
+          "tcgplayer": "0.12",
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Hero%20Counterattack"
       },
@@ -922,7 +922,7 @@
         "original_name": "Crackdown",
         "section": "traps",
         "count": 1,
-        "note": "De tu caja Freezing Chains — Toma el control permanente de un monstruo rival",
+        "note": "Decks y Cajas — Toma el control permanente de un monstruo rival",
         "owned": true,
         "sheet_id": "26",
         "sheet_category": "Decks y Cajas",
@@ -943,8 +943,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36975314.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36975314.jpg",
         "prices": {
-          "tcgplayer": "0.11",
-          "cardmarket": "0.15"
+          "tcgplayer": "0.13",
+          "cardmarket": "0.04"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Crackdown"
       },
@@ -953,7 +953,7 @@
         "original_name": "Solemn Warning",
         "section": "traps",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers — Niega una invocación",
+        "note": "Decks y Cajas — Niega una invocación",
         "owned": true,
         "sheet_id": "133",
         "sheet_category": "Decks y Cajas",
@@ -974,8 +974,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/84749824.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/84749824.jpg",
         "prices": {
-          "tcgplayer": "0.35",
-          "cardmarket": "0.27"
+          "tcgplayer": "0.34",
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solemn%20Warning"
       },
@@ -984,7 +984,7 @@
         "original_name": "Dimensional Barrier",
         "section": "traps",
         "count": 1,
-        "note": "De Structure Deck: Spirit Charmers — Bloquea invocaciones del Extra Deck",
+        "note": "Decks y Cajas — Bloquea invocaciones del Extra Deck",
         "owned": true,
         "sheet_id": "43",
         "sheet_category": "Decks y Cajas",
@@ -1005,8 +1005,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/83326048.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/83326048.jpg",
         "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.12"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dimensional%20Barrier"
       },
@@ -1015,7 +1015,7 @@
         "original_name": "Drowning Mirror Force",
         "section": "traps",
         "count": 1,
-        "note": "De tu caja Obelisk the Tormentor — Baraja monstruos atacantes al mazo",
+        "note": "Decks y Cajas — Baraja monstruos atacantes al mazo",
         "owned": true,
         "sheet_id": "46",
         "sheet_category": "Decks y Cajas",
@@ -1037,7 +1037,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47475363.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.12"
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Drowning%20Mirror%20Force"
       },
@@ -1046,7 +1046,7 @@
         "original_name": "Fiendish Chain",
         "section": "traps",
         "count": 1,
-        "note": "De tu caja Freezing Chains — Niega efectos y bloquea ataque",
+        "note": "Decks y Cajas — Niega efectos y bloquea ataque",
         "owned": true,
         "sheet_id": "57",
         "sheet_category": "Decks y Cajas",
@@ -1067,8 +1067,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/50078509.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/50078509.jpg",
         "prices": {
-          "tcgplayer": "0.20",
-          "cardmarket": "0.13"
+          "tcgplayer": "0.21",
+          "cardmarket": "0.20"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fiendish%20Chain"
       },
@@ -1077,7 +1077,7 @@
         "original_name": "Heavy Storm Duster",
         "section": "traps",
         "count": 1,
-        "note": "De tu caja Freezing Chains — Destruye hasta 2 magias/trampas",
+        "note": "Decks y Cajas — Destruye hasta 2 magias/trampas",
         "owned": true,
         "sheet_id": "79",
         "sheet_category": "Decks y Cajas",
@@ -1099,7 +1099,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23924608.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.19"
+          "cardmarket": "0.22"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Heavy%20Storm%20Duster"
       },
@@ -1108,7 +1108,7 @@
         "original_name": "Soul Union",
         "section": "traps",
         "count": 1,
-        "note": "De tus cartas sueltas — Potenciador de ATK de HÉROE durante el cálculo de daño",
+        "note": "Cartas Sueltas — Potenciador de ATK de HÉROE durante el cálculo de daño",
         "owned": true,
         "sheet_id": "318",
         "sheet_category": "Cartas Sueltas",
@@ -1129,8 +1129,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/69389481.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/69389481.jpg",
         "prices": {
-          "tcgplayer": "0.19",
-          "cardmarket": "0.15"
+          "tcgplayer": "0.20",
+          "cardmarket": "0.09"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Soul%20Union"
       },
@@ -1139,7 +1139,7 @@
         "original_name": "Xtra HERO Cross Crusader",
         "section": "extra",
         "count": 2,
-        "note": "2 copias — Cartas sueltas, Link-2 buscador de HÉROES",
+        "note": "Cartas Sueltas — 2 copias: Link-2 buscador de HÉROES",
         "owned": true,
         "sheet_id": "315",
         "sheet_category": "Cartas Sueltas",
@@ -1160,8 +1160,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58004362.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58004362.jpg",
         "prices": {
-          "tcgplayer": "0.19",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.15",
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Cross%20Crusader"
       },
@@ -1170,7 +1170,7 @@
         "original_name": "Vision HERO Trinity",
         "section": "extra",
         "count": 1,
-        "note": "Carta suelta — Fusión devastadora de 5000 ATK y 3 ataques",
+        "note": "Carta Suelta — Fusión devastadora de 5000 ATK y 3 ataques",
         "owned": true,
         "sheet_id": "289",
         "sheet_category": "Carta Suelta",
@@ -1191,8 +1191,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/46759931.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/46759931.jpg",
         "prices": {
-          "tcgplayer": "0.21",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.24",
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vision%20HERO%20Trinity"
       },
@@ -1201,7 +1201,7 @@
         "original_name": "Xtra HERO Dread Decimator",
         "section": "extra",
         "count": 1,
-        "note": "Carta suelta — Link-3 con daño de penetración para tus HÉROES",
+        "note": "Carta Suelta — Link-3 con daño de penetración para tus HÉROES",
         "owned": true,
         "sheet_id": "296",
         "sheet_category": "Carta Suelta",
@@ -1222,8 +1222,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/63813056.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/63813056.jpg",
         "prices": {
-          "tcgplayer": "0.38",
-          "cardmarket": "0.29"
+          "tcgplayer": "0.24",
+          "cardmarket": "0.39"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Xtra%20HERO%20Dread%20Decimator"
       },
@@ -1232,7 +1232,7 @@
         "original_name": "Elemental HERO Nova Master",
         "section": "extra",
         "count": 1,
-        "note": "De Midterm Paradox — Fusión Blazeman + HÉROE: roba 1 carta al destruir",
+        "note": "Cartas Sueltas / Midterm Paradox — Fusión Blazeman + HÉROE",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1253,8 +1253,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/1945387.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/1945387.jpg",
         "prices": {
-          "tcgplayer": "0.21",
-          "cardmarket": "0.08"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Nova%20Master"
       },
@@ -1263,7 +1263,7 @@
         "original_name": "Elemental HERO Escuridao",
         "section": "extra",
         "count": 1,
-        "note": "Carta suelta — Fusión con monstruo Oscuridad (Vyon/Denier)",
+        "note": "Carta Suelta — Fusión con monstruo Oscuridad (Vyon/Denier)",
         "owned": true,
         "sheet_id": "190",
         "sheet_category": "Carta Suelta",
@@ -1284,8 +1284,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33574806.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33574806.jpg",
         "prices": {
-          "tcgplayer": "0.31",
-          "cardmarket": "0.20"
+          "tcgplayer": "0.27",
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Escuridao"
       },
@@ -1294,7 +1294,7 @@
         "original_name": "Elemental HERO Neos Knight",
         "section": "extra",
         "count": 1,
-        "note": "Carta suelta — Fusión Neos + Guerrero: doble ataque",
+        "note": "Carta Suelta — Fusión Neos + Guerrero: doble ataque",
         "owned": true,
         "sheet_id": "193",
         "sheet_category": "Carta Suelta",
@@ -1315,8 +1315,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72926163.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72926163.jpg",
         "prices": {
-          "tcgplayer": "0.35",
-          "cardmarket": "0.14"
+          "tcgplayer": "0.31",
+          "cardmarket": "0.23"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Elemental%20HERO%20Neos%20Knight"
       },
@@ -1325,7 +1325,7 @@
         "original_name": "Evil HERO Darkest Knight",
         "section": "extra",
         "count": 1,
-        "note": "Carta suelta — Fusión HÉROE Malvado con presencia de campo",
+        "note": "Carta Suelta / Cartas Sueltas — Fusión HÉROE Malvado",
         "owned": true,
         "sheet_id": "303",
         "sheet_category": "Cartas Sueltas",
@@ -1346,8 +1346,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/86282581.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/86282581.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.08"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Evil%20HERO%20Darkest%20Knight"
       }
@@ -1369,7 +1369,7 @@
       "spells": 10,
       "traps": 8,
       "owned_count": 41,
-      "total_cost": 8.05
+      "total_cost": 8.43
     },
     "cards": [
       {
@@ -1377,7 +1377,7 @@
         "original_name": "Reign-Beaux, Overking of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Jefe supremo del mazo principal",
+        "note": "Decks y Cajas (SD Dark World) — Jefe supremo del mazo principal",
         "owned": true,
         "sheet_id": "120",
         "sheet_category": "Decks y Cajas",
@@ -1398,8 +1398,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/41406613.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/41406613.jpg",
         "prices": {
-          "tcgplayer": "0.47",
-          "cardmarket": "0.56"
+          "tcgplayer": "0.56",
+          "cardmarket": "0.32"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Reign-Beaux%2C%20Overking%20of%20Dark%20World"
       },
@@ -1408,7 +1408,7 @@
         "original_name": "Reign-Beaux, Overlord of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Monstruo jefe clásico de Dark World",
+        "note": "Decks y Cajas (SD Dark World) — Monstruo jefe clásico de Dark World",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1429,8 +1429,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/99458769.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/99458769.jpg",
         "prices": {
-          "tcgplayer": "0.14",
-          "cardmarket": "0.09"
+          "tcgplayer": "0.12",
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Reign-Beaux%2C%20Overlord%20of%20Dark%20World"
       },
@@ -1439,7 +1439,7 @@
         "original_name": "Grapha, Dragon Lord of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Resurrección infinita y destrucción de cartas",
+        "note": "Decks y Cajas (SD Dark World) — Resurrección infinita y destrucción de cartas",
         "owned": true,
         "sheet_id": "72",
         "sheet_category": "Decks y Cajas",
@@ -1460,8 +1460,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34230233.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34230233.jpg",
         "prices": {
-          "tcgplayer": "0.16",
-          "cardmarket": "0.16"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.11"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Lord%20of%20Dark%20World"
       },
@@ -1470,7 +1470,7 @@
         "original_name": "Snoww, Unlight of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Buscadora universal de cualquier carta Dark World",
+        "note": "Decks y Cajas (SD Dark World) — Buscadora universal de cualquier carta Dark World",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1491,8 +1491,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60228941.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60228941.jpg",
         "prices": {
-          "tcgplayer": "0.28",
-          "cardmarket": "0.21"
+          "tcgplayer": "0.34",
+          "cardmarket": "0.28"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Snoww%2C%20Unlight%20of%20Dark%20World"
       },
@@ -1501,7 +1501,7 @@
         "original_name": "Genta, Gateman of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Busca The Gates of Dark World descartándose",
+        "note": "Decks y Cajas (SD Dark World) — Busca The Gates of Dark World descartándose",
         "owned": true,
         "sheet_id": "66",
         "sheet_category": "Decks y Cajas",
@@ -1522,8 +1522,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77895328.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77895328.jpg",
         "prices": {
-          "tcgplayer": "0.33",
-          "cardmarket": "0.32"
+          "tcgplayer": "0.28",
+          "cardmarket": "0.54"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Genta%2C%20Gateman%20of%20Dark%20World"
       },
@@ -1532,7 +1532,7 @@
         "original_name": "Parl, Hermit of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Recupera monstruos Dark World desterrados",
+        "note": "Decks y Cajas (SD Dark World) — Recupera monstruos Dark World desterrados",
         "owned": true,
         "sheet_id": "109",
         "sheet_category": "Decks y Cajas",
@@ -1553,8 +1553,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3289027.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3289027.jpg",
         "prices": {
-          "tcgplayer": "0.17",
-          "cardmarket": "0.09"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Parl%2C%20Hermit%20of%20Dark%20World"
       },
@@ -1563,7 +1563,7 @@
         "original_name": "Lucent, Netherlord of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación especial de demonios de nivel 5 o mayor",
+        "note": "Decks y Cajas (SD Dark World) — Invocación especial de demonios de nivel 5 o mayor",
         "owned": true,
         "sheet_id": "90",
         "sheet_category": "Decks y Cajas",
@@ -1584,7 +1584,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/34968834.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/34968834.jpg",
         "prices": {
-          "tcgplayer": "0.23",
+          "tcgplayer": "0.22",
           "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lucent%2C%20Netherlord%20of%20Dark%20World"
@@ -1594,7 +1594,7 @@
         "original_name": "Latinum, Exarch of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Potenciador de ATK e invocación especial",
+        "note": "Decks y Cajas (SD Dark World) — Potenciador de ATK e invocación especial",
         "owned": true,
         "sheet_id": "87",
         "sheet_category": "Decks y Cajas",
@@ -1616,7 +1616,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/15667446.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.10"
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Latinum%2C%20Exarch%20of%20Dark%20World"
       },
@@ -1625,7 +1625,7 @@
         "original_name": "Goldd, Wu-Lord of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación especial y destrucción de hasta 2 cartas rivales",
+        "note": "Decks y Cajas (SD Dark World) — Invocación especial y destrucción de hasta 2 cartas",
         "owned": true,
         "sheet_id": "69",
         "sheet_category": "Decks y Cajas",
@@ -1646,8 +1646,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/78004197.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/78004197.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.10"
+          "tcgplayer": "0.14",
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Goldd%2C%20Wu-Lord%20of%20Dark%20World"
       },
@@ -1656,7 +1656,7 @@
         "original_name": "Sillva, Warlord of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación especial y descarte al rival",
+        "note": "Decks y Cajas (SD Dark World) — Invocación especial y descarte al rival",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1678,7 +1678,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/32619583.jpg",
         "prices": {
           "tcgplayer": "0.14",
-          "cardmarket": "0.07"
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Sillva%2C%20Warlord%20of%20Dark%20World"
       },
@@ -1687,7 +1687,7 @@
         "original_name": "Brron, Mad King of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Provoca descarte al infligir daño de batalla",
+        "note": "Decks y Cajas (SD Dark World) — Provoca descarte al infligir daño de batalla",
         "owned": true,
         "sheet_id": "15",
         "sheet_category": "Decks y Cajas",
@@ -1708,7 +1708,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/6214884.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/6214884.jpg",
         "prices": {
-          "tcgplayer": "0.08",
+          "tcgplayer": "0.09",
           "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Brron%2C%20Mad%20King%20of%20Dark%20World"
@@ -1718,7 +1718,7 @@
         "original_name": "Beiige, Vanguard of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación especial inmediata al descartarse",
+        "note": "Decks y Cajas (SD Dark World) — Invocación especial inmediata al descartarse",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1739,7 +1739,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33731070.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33731070.jpg",
         "prices": {
-          "tcgplayer": "0.17",
+          "tcgplayer": "0.16",
           "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beiige%2C%20Vanguard%20of%20Dark%20World"
@@ -1749,7 +1749,7 @@
         "original_name": "Broww, Huntsman of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Motor de robo constante al ser descartado",
+        "note": "Decks y Cajas (SD Dark World) — Motor de robo constante al ser descartado",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -1770,8 +1770,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/79126789.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/79126789.jpg",
         "prices": {
-          "tcgplayer": "0.39",
-          "cardmarket": "0.24"
+          "tcgplayer": "0.36",
+          "cardmarket": "0.31"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Broww%2C%20Huntsman%20of%20Dark%20World"
       },
@@ -1780,7 +1780,7 @@
         "original_name": "Ceruli, Guru of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Se invoca en campo rival para activar efectos secundarios",
+        "note": "Decks y Cajas (SD Dark World) — Se invoca en campo rival para activar efectos secundarios",
         "owned": true,
         "sheet_id": "20",
         "sheet_category": "Decks y Cajas",
@@ -1801,8 +1801,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/7623640.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7623640.jpg",
         "prices": {
-          "tcgplayer": "0.22",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.23",
+          "cardmarket": "0.16"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ceruli%2C%20Guru%20of%20Dark%20World"
       },
@@ -1811,7 +1811,7 @@
         "original_name": "Gren, Tactician of Dark World",
         "section": "monsters",
         "count": 1,
-        "note": "Destruye una magia/trampa al descartarse",
+        "note": "Decks y Cajas (SD Dark World) — Destruye una magia/trampa al descartarse",
         "owned": true,
         "sheet_id": "75",
         "sheet_category": "Decks y Cajas",
@@ -1833,7 +1833,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/51232472.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.05"
+          "cardmarket": "0.03"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gren%2C%20Tactician%20of%20Dark%20World"
       },
@@ -1842,7 +1842,7 @@
         "original_name": "Danger! Bigfoot!",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación Danger! y destrucción de carta boca arriba",
+        "note": "Decks y Cajas (SD Dark World) — Invocación Danger! y destrucción boca arriba",
         "owned": true,
         "sheet_id": "27",
         "sheet_category": "Decks y Cajas",
@@ -1863,8 +1863,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/43316238.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/43316238.jpg",
         "prices": {
-          "tcgplayer": "0.13",
-          "cardmarket": "0.13"
+          "tcgplayer": "0.12",
+          "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Bigfoot%21"
       },
@@ -1873,7 +1873,7 @@
         "original_name": "Danger! Thunderbird!",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación Danger! y destrucción de carta colocada",
+        "note": "Decks y Cajas (SD Dark World) — Invocación Danger! y destrucción de carta colocada",
         "owned": true,
         "sheet_id": "29",
         "sheet_category": "Decks y Cajas",
@@ -1894,8 +1894,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/90807199.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/90807199.jpg",
         "prices": {
-          "tcgplayer": "0.18",
-          "cardmarket": "0.19"
+          "tcgplayer": "0.17",
+          "cardmarket": "0.13"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Thunderbird%21"
       },
@@ -1904,7 +1904,7 @@
         "original_name": "Danger! Mothman!",
         "section": "monsters",
         "count": 1,
-        "note": "Ambos jugadores roban 1 y descartan 1",
+        "note": "Decks y Cajas (SD Dark World) — Ambos jugadores roban 1 y descartan 1",
         "owned": true,
         "sheet_id": "28",
         "sheet_category": "Decks y Cajas",
@@ -1925,7 +1925,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/52350806.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/52350806.jpg",
         "prices": {
-          "tcgplayer": "0.38",
+          "tcgplayer": "0.35",
           "cardmarket": "0.06"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%20Mothman%21"
@@ -1935,7 +1935,7 @@
         "original_name": "Danger!? Tsuchinoko?",
         "section": "monsters",
         "count": 1,
-        "note": "Invocación especial gratis siempre que se revela/descarta",
+        "note": "Decks y Cajas (SD Dark World) — Invocación especial gratis siempre que se descarta",
         "owned": true,
         "sheet_id": "30",
         "sheet_category": "Decks y Cajas",
@@ -1957,7 +1957,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/99745551.jpg",
         "prices": {
           "tcgplayer": "0.18",
-          "cardmarket": "0.09"
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Danger%21%3F%20Tsuchinoko%3F"
       },
@@ -1966,7 +1966,7 @@
         "original_name": "Lilith, Lady of Lament",
         "section": "monsters",
         "count": 1,
-        "note": "Buscadora rápida de cartas de trampa normales",
+        "note": "Decks y Cajas (SD Dark World) — Buscadora rápida de cartas de trampa normales",
         "owned": true,
         "sheet_id": "89",
         "sheet_category": "Decks y Cajas",
@@ -1988,7 +1988,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/23898021.jpg",
         "prices": {
           "tcgplayer": "0.15",
-          "cardmarket": "0.10"
+          "cardmarket": "0.12"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lilith%2C%20Lady%20of%20Lament"
       },
@@ -1997,7 +1997,7 @@
         "original_name": "Fabled Raven",
         "section": "monsters",
         "count": 1,
-        "note": "Monstruo cantante y activador de descartes múltiple",
+        "note": "Decks y Cajas (SD Dark World) — Monstruo cantante y activador de descartes múltiple",
         "owned": true,
         "sheet_id": "52",
         "sheet_category": "Decks y Cajas",
@@ -2019,7 +2019,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47217354.jpg",
         "prices": {
           "tcgplayer": "0.10",
-          "cardmarket": "0.09"
+          "cardmarket": "0.07"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fabled%20Raven"
       },
@@ -2028,7 +2028,7 @@
         "original_name": "Absolute King Back Jack",
         "section": "monsters",
         "count": 1,
-        "note": "Reorganiza el tope del mazo y activa trampas desde el cementerio",
+        "note": "Decks y Cajas (SD Dark World) — Reorganiza tope del mazo y activa trampas desde GY",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2049,7 +2049,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/60990740.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/60990740.jpg",
         "prices": {
-          "tcgplayer": "0.08",
+          "tcgplayer": "0.10",
           "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Absolute%20King%20Back%20Jack"
@@ -2059,7 +2059,7 @@
         "original_name": "The Gates of Dark World",
         "section": "spells",
         "count": 1,
-        "note": "Magia de campo: robo y descarte continuo",
+        "note": "Decks y Cajas (SD Dark World) — Magia de campo: robo y descarte continuo",
         "owned": true,
         "sheet_id": "144",
         "sheet_category": "Decks y Cajas",
@@ -2081,7 +2081,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33017655.jpg",
         "prices": {
           "tcgplayer": "0.27",
-          "cardmarket": "0.20"
+          "cardmarket": "0.21"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Gates%20of%20Dark%20World"
       },
@@ -2090,7 +2090,7 @@
         "original_name": "Dark World Puppetry",
         "section": "spells",
         "count": 1,
-        "note": "Destierra hasta 3 cartas de cementerios y descarta",
+        "note": "Decks y Cajas (SD Dark World) — Destierra hasta 3 cartas de cementerios y descarta",
         "owned": true,
         "sheet_id": "40",
         "sheet_category": "Decks y Cajas",
@@ -2111,8 +2111,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/30284022.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/30284022.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.23"
+          "tcgplayer": "0.19",
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Puppetry"
       },
@@ -2121,7 +2121,7 @@
         "original_name": "Dark World Archives",
         "section": "spells",
         "count": 1,
-        "note": "Aceleración de descartes y aumento de ATK",
+        "note": "Decks y Cajas (SD Dark World) — Aceleración de descartes y aumento de ATK",
         "owned": true,
         "sheet_id": "36",
         "sheet_category": "Decks y Cajas",
@@ -2142,8 +2142,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/76672730.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/76672730.jpg",
         "prices": {
-          "tcgplayer": "0.16",
-          "cardmarket": "0.18"
+          "tcgplayer": "0.24",
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Archives"
       },
@@ -2152,7 +2152,7 @@
         "original_name": "Dark World Dealings",
         "section": "spells",
         "count": 1,
-        "note": "Ambos jugadores roban y descartan (dispara efectos Dark World)",
+        "note": "Decks y Cajas (SD Dark World) — Ambos jugadores roban y descartan",
         "owned": true,
         "sheet_id": "37",
         "sheet_category": "Decks y Cajas",
@@ -2173,8 +2173,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/74117290.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74117290.jpg",
         "prices": {
-          "tcgplayer": "0.44",
-          "cardmarket": "0.36"
+          "tcgplayer": "0.43",
+          "cardmarket": "0.19"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Dealings"
       },
@@ -2183,7 +2183,7 @@
         "original_name": "Charge Into a Dark World",
         "section": "spells",
         "count": 1,
-        "note": "Revive un Dark World del cementerio y descarta un demonio",
+        "note": "Decks y Cajas (SD Dark World) — Revive un Dark World y descarta un demonio",
         "owned": true,
         "sheet_id": "21",
         "sheet_category": "Decks y Cajas",
@@ -2204,8 +2204,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/85325774.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/85325774.jpg",
         "prices": {
-          "tcgplayer": "0.10",
-          "cardmarket": "0.03"
+          "tcgplayer": "0.07",
+          "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20Into%20a%20Dark%20World"
       },
@@ -2214,7 +2214,7 @@
         "original_name": "Gateway to Dark World",
         "section": "spells",
         "count": 1,
-        "note": "Magia rápida de resurrección de cualquier Dark World",
+        "note": "Decks y Cajas (SD Dark World) — Magia rápida de resurrección de cualquier Dark World",
         "owned": true,
         "sheet_id": "63",
         "sheet_category": "Decks y Cajas",
@@ -2235,8 +2235,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/93431518.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/93431518.jpg",
         "prices": {
-          "tcgplayer": "0.08",
-          "cardmarket": "0.09"
+          "tcgplayer": "0.09",
+          "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gateway%20to%20Dark%20World"
       },
@@ -2245,7 +2245,7 @@
         "original_name": "Dark World Lightning",
         "section": "spells",
         "count": 1,
-        "note": "Destruye carta colocada y descarta",
+        "note": "Decks y Cajas (SD Dark World) — Destruye carta colocada y descarta",
         "owned": true,
         "sheet_id": "38",
         "sheet_category": "Decks y Cajas",
@@ -2276,7 +2276,7 @@
         "original_name": "Dragged Down into the Grave",
         "section": "spells",
         "count": 1,
-        "note": "Mira la mano del rival y descárgale su mejor carta",
+        "note": "Decks y Cajas (SD Dark World) — Mira la mano del rival y descarta su mejor carta",
         "owned": true,
         "sheet_id": "44",
         "sheet_category": "Decks y Cajas",
@@ -2297,7 +2297,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/16435215.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16435215.jpg",
         "prices": {
-          "tcgplayer": "0.16",
+          "tcgplayer": "0.20",
           "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dragged%20Down%20into%20the%20Grave"
@@ -2307,7 +2307,7 @@
         "original_name": "Card Destruction",
         "section": "spells",
         "count": 1,
-        "note": "Ambos descartan su mano entera y roban el mismo número",
+        "note": "Decks y Cajas (SD Dark World) — Ambos descartan la mano entera y roban",
         "owned": true,
         "sheet_id": "18",
         "sheet_category": "Decks y Cajas",
@@ -2338,7 +2338,7 @@
         "original_name": "Dark World Accession",
         "section": "spells",
         "count": 1,
-        "note": "Fusión rápida de Dark World usando cartas en mano/campo/cementerio",
+        "note": "Decks y Cajas (SD Dark World) — Fusión rápida de Dark World",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2359,8 +2359,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/65956182.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/65956182.jpg",
         "prices": {
-          "tcgplayer": "0.22",
-          "cardmarket": "0.28"
+          "tcgplayer": "0.25",
+          "cardmarket": "0.35"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Accession"
       },
@@ -2369,7 +2369,7 @@
         "original_name": "Dark World Punishment",
         "section": "traps",
         "count": 1,
-        "note": "Niega invocación normal o especial y descarta un demonio",
+        "note": "Decks y Cajas (SD Dark World) — Niega invocación y descarta un demonio",
         "owned": true,
         "sheet_id": "39",
         "sheet_category": "Decks y Cajas",
@@ -2390,8 +2390,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/3167439.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/3167439.jpg",
         "prices": {
-          "tcgplayer": "0.13",
-          "cardmarket": "0.04"
+          "tcgplayer": "0.20",
+          "cardmarket": "0.14"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Punishment"
       },
@@ -2400,7 +2400,7 @@
         "original_name": "The Forces of Darkness",
         "section": "traps",
         "count": 1,
-        "note": "Recupera 2 Dark World del cementerio a la mano",
+        "note": "Decks y Cajas (SD Dark World) — Recupera 2 Dark World del cementerio a la mano",
         "owned": true,
         "sheet_id": "143",
         "sheet_category": "Decks y Cajas",
@@ -2422,7 +2422,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/29826127.jpg",
         "prices": {
           "tcgplayer": "0.08",
-          "cardmarket": "0.02"
+          "cardmarket": "0.03"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Forces%20of%20Darkness"
       },
@@ -2431,7 +2431,7 @@
         "original_name": "Dark World Brainwashing",
         "section": "traps",
         "count": 1,
-        "note": "Convierte el efecto activado del rival en un descarte para ti",
+        "note": "Decks y Cajas (SD Dark World) — Convierte efecto rival en un descarte para ti",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2452,8 +2452,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/10131855.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/10131855.jpg",
         "prices": {
-          "tcgplayer": "0.16",
-          "cardmarket": "0.03"
+          "tcgplayer": "0.14",
+          "cardmarket": "0.02"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20World%20Brainwashing"
       },
@@ -2462,7 +2462,7 @@
         "original_name": "Dark Smog",
         "section": "traps",
         "count": 1,
-        "note": "Destierra carta del cementerio rival y descarta un demonio",
+        "note": "Decks y Cajas (SD Dark World) — Destierra carta de cementerio rival y descarta demonio",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2483,8 +2483,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/41930553.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/41930553.jpg",
         "prices": {
-          "tcgplayer": "0.15",
-          "cardmarket": "0.02"
+          "tcgplayer": "0.11",
+          "cardmarket": "0.08"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Dark%20Smog"
       },
@@ -2493,7 +2493,7 @@
         "original_name": "Mind Crush",
         "section": "traps",
         "count": 1,
-        "note": "Declara el nombre de una carta para descartarla de la mano rival",
+        "note": "Decks y Cajas (SD Dark World) — Declara nombre de carta para descartarla de mano rival",
         "owned": true,
         "sheet_id": "98",
         "sheet_category": "Decks y Cajas",
@@ -2514,8 +2514,8 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/15800838.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/15800838.jpg",
         "prices": {
-          "tcgplayer": "0.24",
-          "cardmarket": "0.16"
+          "tcgplayer": "0.31",
+          "cardmarket": "0.17"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mind%20Crush"
       },
@@ -2524,7 +2524,7 @@
         "original_name": "Deck Devastation Virus",
         "section": "traps",
         "count": 1,
-        "note": "Tributa oscuridad de 2000+ ATK y destruye monstruos de 1500- ATK del rival",
+        "note": "Decks y Cajas (SD Dark World) — Destruye monstruos de 1500- ATK del rival",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2546,7 +2546,7 @@
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/35027493.jpg",
         "prices": {
           "tcgplayer": "0.19",
-          "cardmarket": "0.22"
+          "cardmarket": "0.05"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Deck%20Devastation%20Virus"
       },
@@ -2555,7 +2555,7 @@
         "original_name": "Paleozoic Dinomischus",
         "section": "traps",
         "count": 1,
-        "note": "Destierra cualquier carta boca arriba del campo descartando 1 carta",
+        "note": "Decks y Cajas (SD Dark World) — Destierra cualquier carta boca arriba del campo",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2576,7 +2576,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/38761908.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/38761908.jpg",
         "prices": {
-          "tcgplayer": "0.16",
+          "tcgplayer": "0.19",
           "cardmarket": "0.10"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Paleozoic%20Dinomischus"
@@ -2586,7 +2586,7 @@
         "original_name": "Skill Drain",
         "section": "traps",
         "count": 1,
-        "note": "Anula los efectos de todos los monstruos boca arriba en el campo",
+        "note": "Decks y Cajas (SD Dark World) — Anula efectos de monstruos boca arriba en el campo",
         "owned": true,
         "sheet_id": "",
         "sheet_category": "Decks y Cajas",
@@ -2607,7 +2607,7 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/82732705.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/82732705.jpg",
         "prices": {
-          "tcgplayer": "0.25",
+          "tcgplayer": "0.28",
           "cardmarket": "0.15"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Skill%20Drain"
@@ -2617,7 +2617,7 @@
         "original_name": "Grapha, Dragon Overlord of Dark World",
         "section": "extra",
         "count": 1,
-        "note": "Jefe supremo de fusión: convierte cualquier efecto rival en descarte",
+        "note": "Decks y Cajas (SD Dark World) — Jefe supremo de fusión: convierte efectos en descarte",
         "owned": true,
         "sheet_id": "73",
         "sheet_category": "Decks y Cajas",
@@ -2638,10 +2638,1271 @@
         "image_url_small": "https://images.ygoprodeck.com/images/cards_small/39552584.jpg",
         "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/39552584.jpg",
         "prices": {
-          "tcgplayer": "0.34",
-          "cardmarket": "0.53"
+          "tcgplayer": "0.32",
+          "cardmarket": "0.44"
         },
         "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Grapha%2C%20Dragon%20Overlord%20of%20Dark%20World"
+      }
+    ]
+  },
+  {
+    "id": "lightsworn_edison_2010",
+    "name": "Mazo LIGHTSWORN (Formato EDISON)",
+    "short_name": "Lightsworn Edison",
+    "subtitle": "Mazo LIGHTSWORN Edison (40 Cartas Main + 3 Extra): Armado según tu lista física exacta (SD Realm of Light, Cartas Sueltas y Decks)",
+    "format": "Edison (Abril 2010)",
+    "tag": "Lightsworn / Edison Retro",
+    "tag_color": "amber",
+    "description": "Mazo Lightsworn diseñado para el formato Edison 2010. Construido con tus cartas exactas de Structure Deck: Realm of Light, Cartas Sueltas y Decks, con acceso a Naturia Beast, Naturia Barkion y Stardust Dragon en el Extra Deck.",
+    "stats": {
+      "main_total": 40,
+      "extra_total": 3,
+      "monsters": 23,
+      "spells": 10,
+      "traps": 7,
+      "owned_count": 43,
+      "total_cost": 13.26
+    },
+    "cards": [
+      {
+        "name": "Judgment Dragon",
+        "original_name": "Judgment Dragon",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Jefe supremo de 3000 ATK",
+        "owned": true,
+        "sheet_id": "84",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 4 or more \"Lightsworn\" monsters with different names in your GY. You can pay 1000 LP; destroy all other cards on the field. Once per turn, during your End Phase: Send the top 4 cards of your Deck to the GY.",
+        "race": "Dragon",
+        "archetype": "Lightsworn",
+        "atk": 3000,
+        "def": 2600,
+        "level": 8,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/57774843.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/57774843.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/57774843.jpg",
+        "prices": {
+          "tcgplayer": "0.47",
+          "cardmarket": "0.48"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Judgment%20Dragon"
+      },
+      {
+        "name": "Celestia, Lightsworn Angel",
+        "original_name": "Celestia, Lightsworn Angel",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Tributo Lightsworn que destruye 2 cartas",
+        "owned": true,
+        "sheet_id": "19",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "When you Tribute Summon this card by Tributing a \"Lightsworn\" monster: You can send the top 4 cards of your Deck to the GY, then target up to 2 cards your opponent controls; destroy those targets.",
+        "race": "Fairy",
+        "archetype": "Lightsworn",
+        "atk": 2300,
+        "def": 200,
+        "level": 5,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/94381039.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94381039.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/94381039.jpg",
+        "prices": {
+          "tcgplayer": "0.34",
+          "cardmarket": "0.19"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Celestia%2C%20Lightsworn%20Angel"
+      },
+      {
+        "name": "Gragonith, Lightsworn Dragon",
+        "original_name": "Gragonith, Lightsworn Dragon",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Daño de penetración y ATK por Lightsworn en GY",
+        "owned": true,
+        "sheet_id": "70",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "This card gains 300 ATK and DEF for each \"Lightsworn\" monster with a different name in your Graveyard. If this card attacks a Defense Position monster, inflict piercing battle damage to your opponent. During each of your End Phases: Send the top 3 cards of your Deck to the Graveyard.",
+        "race": "Dragon",
+        "archetype": "Lightsworn",
+        "atk": 2000,
+        "def": 1600,
+        "level": 6,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/21785144.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21785144.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21785144.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.08"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Gragonith%2C%20Lightsworn%20Dragon"
+      },
+      {
+        "name": "Lumina, Lightsworn Summoner",
+        "original_name": "Lumina, Lightsworn Summoner",
+        "section": "monsters",
+        "count": 2,
+        "note": "Decks y Cajas (SD Realm of Light) — 2 copias: resucitadora de Lightsworn",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Once per turn: You can discard 1 card, then target 1 Level 4 or lower \"Lightsworn\" monster in your GY; Special Summon that target. Once per turn, during your End Phase: Send the top 3 cards of your Deck to the GY.",
+        "race": "Spellcaster",
+        "archetype": "Lightsworn",
+        "atk": 1000,
+        "def": 1000,
+        "level": 3,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/95503687.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/95503687.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/95503687.jpg",
+        "prices": {
+          "tcgplayer": "0.14",
+          "cardmarket": "0.18"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lumina%2C%20Lightsworn%20Summoner"
+      },
+      {
+        "name": "Lyla, Lightsworn Sorceress",
+        "original_name": "Lyla, Lightsworn Sorceress",
+        "section": "monsters",
+        "count": 2,
+        "note": "Decks y Cajas (SD Realm of Light) — 2 copias: destructora de Mágicas/Trampas",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "You can target 1 Spell/Trap your opponent controls; this card's battle position cannot be changed until the end of your next turn, also change this card you control from face-up Attack Position to face-up Defense Position, and if you do, destroy that target. Once per turn, during your End Phase: Send the top 3 cards of your Deck to the GY.",
+        "race": "Spellcaster",
+        "archetype": "Lightsworn",
+        "atk": 1700,
+        "def": 200,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/22624373.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22624373.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22624373.jpg",
+        "prices": {
+          "tcgplayer": "0.30",
+          "cardmarket": "0.34"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lyla%2C%20Lightsworn%20Sorceress"
+      },
+      {
+        "name": "Ryko, Lightsworn Hunter",
+        "original_name": "Ryko, Lightsworn Hunter",
+        "section": "monsters",
+        "count": 2,
+        "note": "Decks y Cajas (SD Realm of Light) — 2 copias: destrucción Flip y molienda",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Flip Effect Monster",
+        "humanReadableCardType": "Flip Effect Monster",
+        "frameType": "effect",
+        "desc": "FLIP: Apply these effects (simultaneously).\r\n● You can destroy 1 card on the field.\r\n● Send the top 3 cards of your Deck to the GY.",
+        "race": "Beast",
+        "archetype": "Lightsworn",
+        "atk": 200,
+        "def": 100,
+        "level": 2,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/21502796.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/21502796.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/21502796.jpg",
+        "prices": {
+          "tcgplayer": "0.23",
+          "cardmarket": "0.14"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ryko%2C%20Lightsworn%20Hunter"
+      },
+      {
+        "name": "Jain, Lightsworn Paladin",
+        "original_name": "Jain, Lightsworn Paladin",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Atacante de 2100 ATK",
+        "owned": true,
+        "sheet_id": "214",
+        "sheet_category": "Carta Suelta",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "If this card attacks an opponent's monster, it gains 300 ATK during the Damage Step only. Once per turn, during your End Phase: Send the top 2 cards of your Deck to the Graveyard.",
+        "race": "Warrior",
+        "archetype": "Lightsworn",
+        "atk": 1800,
+        "def": 1200,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/96235275.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/96235275.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/96235275.jpg",
+        "prices": {
+          "tcgplayer": "0.01",
+          "cardmarket": "0.15"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jain%2C%20Lightsworn%20Paladin"
+      },
+      {
+        "name": "Wulf, Lightsworn Beast",
+        "original_name": "Wulf, Lightsworn Beast",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Invocación especial al cementerio",
+        "owned": true,
+        "sheet_id": "154",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect. If this card is sent from your Deck to the GY: Special Summon it.",
+        "race": "Beast-Warrior",
+        "archetype": "Lightsworn",
+        "atk": 2100,
+        "def": 300,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/58996430.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/58996430.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/58996430.jpg",
+        "prices": {
+          "tcgplayer": "1.11",
+          "cardmarket": "1.28"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Wulf%2C%20Lightsworn%20Beast"
+      },
+      {
+        "name": "Garoth, Lightsworn Warrior",
+        "original_name": "Garoth, Lightsworn Warrior",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Robo y aceleración de molienda",
+        "owned": true,
+        "sheet_id": "62",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Each time a card(s) is sent from your Deck to the GY by the effect of a \"Lightsworn\" monster you control, except \"Garoth, Lightsworn Warrior\": Send the top 2 cards of your Deck to the GY, then draw 1 card for each \"Lightsworn\" monster sent to the GY by this effect.",
+        "race": "Warrior",
+        "archetype": "Lightsworn",
+        "atk": 1850,
+        "def": 1300,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/59019082.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/59019082.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/59019082.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.10"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Garoth%2C%20Lightsworn%20Warrior"
+      },
+      {
+        "name": "Ehren, Lightsworn Monk",
+        "original_name": "Ehren, Lightsworn Monk",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Devuelve monstruos en defensa al mazo",
+        "owned": true,
+        "sheet_id": "48",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "If this card attacks a Defense Position monster, before damage calculation: Shuffle that monster into the Deck. Once per turn, during your End Phase: Send the top 3 cards of your Deck to the Graveyard.",
+        "race": "Warrior",
+        "archetype": "Lightsworn",
+        "atk": 1600,
+        "def": 1000,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/44178886.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/44178886.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44178886.jpg",
+        "prices": {
+          "tcgplayer": "0.62",
+          "cardmarket": "0.31"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Ehren%2C%20Lightsworn%20Monk"
+      },
+      {
+        "name": "Aurkus, Lightsworn Druid",
+        "original_name": "Aurkus, Lightsworn Druid",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Protege contra efectos que seleccionan",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Neither player can target \"Lightsworn\" monsters (anywhere) with card effects. During each of your End Phases: Send the top 2 cards of your Deck to the Graveyard.",
+        "race": "Beast-Warrior",
+        "archetype": "Lightsworn",
+        "atk": 1200,
+        "def": 1800,
+        "level": 3,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/7183277.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/7183277.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/7183277.jpg",
+        "prices": {
+          "tcgplayer": "0.65",
+          "cardmarket": "0.30"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Aurkus%2C%20Lightsworn%20Druid"
+      },
+      {
+        "name": "Shire, Lightsworn Spirit",
+        "original_name": "Shire, Lightsworn Spirit",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Gana ATK por cada Lightsworn en GY",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "This card gains 300 ATK for each \"Lightsworn\" monster with a different name in your Graveyard. During each of your End Phases: Send the top 2 cards of your Deck to the Graveyard.",
+        "race": "Fairy",
+        "archetype": "Lightsworn",
+        "atk": 400,
+        "def": 1400,
+        "level": 3,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/2420921.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/2420921.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/2420921.jpg",
+        "prices": {
+          "tcgplayer": "0.30",
+          "cardmarket": "0.20"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Shire%2C%20Lightsworn%20Spirit"
+      },
+      {
+        "name": "Honest",
+        "original_name": "Honest",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Handtrap de combate para monstruos LIGHT",
+        "owned": true,
+        "sheet_id": "81",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "During your Main Phase: You can return this face-up card from the field to the hand. During the Damage Step, when a LIGHT monster you control battles (Quick Effect): You can send this card from your hand to the GY; that monster gains ATK equal to the ATK of the opponent's monster it is battling, until the end of this turn.",
+        "race": "Fairy",
+        "archetype": "",
+        "atk": 1100,
+        "def": 1900,
+        "level": 4,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/37742478.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/37742478.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/37742478.jpg",
+        "prices": {
+          "tcgplayer": "0.12",
+          "cardmarket": "0.16"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Honest"
+      },
+      {
+        "name": "Necro Gardna",
+        "original_name": "Necro Gardna",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Anula un ataque desde el cementerio",
+        "owned": true,
+        "sheet_id": "425",
+        "sheet_category": "Midterm Paradox",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "During your opponent's turn: You can banish this card from your Graveyard; negate the next attack this turn from a monster your opponent controls (this is a Quick Effect).",
+        "race": "Warrior",
+        "archetype": "",
+        "atk": 600,
+        "def": 1300,
+        "level": 3,
+        "attribute": "DARK",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/4906301.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/4906301.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/4906301.jpg",
+        "prices": {
+          "tcgplayer": "0.35",
+          "cardmarket": "0.36"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Necro%20Gardna"
+      },
+      {
+        "name": "Fabled Raven",
+        "original_name": "Fabled Raven",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Cantante y activador de descartes",
+        "owned": true,
+        "sheet_id": "52",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Tuner Monster",
+        "humanReadableCardType": "Tuner Effect Monster",
+        "frameType": "effect",
+        "desc": "Once per turn: You can discard any number of cards, and if you do, this card gains 1 Level and 400 ATK for each discarded card, until the end of this turn.",
+        "race": "Fiend",
+        "archetype": "Fabled",
+        "atk": 1300,
+        "def": 1000,
+        "level": 2,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/47217354.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/47217354.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/47217354.jpg",
+        "prices": {
+          "tcgplayer": "0.10",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Fabled%20Raven"
+      },
+      {
+        "name": "The Fabled Cerburrel",
+        "original_name": "The Fabled Cerburrel",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Cantante nivel 2 que revive al descartarse",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Tuner Monster",
+        "humanReadableCardType": "Tuner Effect Monster",
+        "frameType": "effect",
+        "desc": "If this card is discarded to the GY: Special Summon it.",
+        "race": "Beast",
+        "archetype": "Fabled",
+        "atk": 1000,
+        "def": 400,
+        "level": 2,
+        "attribute": "LIGHT",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/82888408.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/82888408.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/82888408.jpg",
+        "prices": {
+          "tcgplayer": "0.18",
+          "cardmarket": "0.11"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=The%20Fabled%20Cerburrel"
+      },
+      {
+        "name": "Blackwing - Zephyros the Elite",
+        "original_name": "Blackwing - Zephyros the Elite",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Se revive regresando una carta al campo",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "If this card is in your GY: You can return 1 face-up card you control to the hand; Special Summon this card, and if you do, take 400 damage. You can only use this effect of \"Blackwing - Zephyros the Elite\" once per Duel.",
+        "race": "Winged Beast",
+        "archetype": "Blackwing",
+        "atk": 1600,
+        "def": 1000,
+        "level": 4,
+        "attribute": "DARK",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/14785765.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14785765.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14785765.jpg",
+        "prices": {
+          "tcgplayer": "0.11",
+          "cardmarket": "0.13"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Blackwing%20-%20Zephyros%20the%20Elite"
+      },
+      {
+        "name": "Jinzo",
+        "original_name": "Jinzo",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas — Apaga todas las cartas de trampa",
+        "owned": true,
+        "sheet_id": "83",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "Trap Cards, and their effects on the field, cannot be activated. Negate all Trap effects on the field.",
+        "race": "Machine",
+        "archetype": "Jinzo",
+        "atk": 2400,
+        "def": 1500,
+        "level": 6,
+        "attribute": "DARK",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/77585513.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/77585513.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/77585513.jpg",
+        "prices": {
+          "tcgplayer": "0.26",
+          "cardmarket": "0.21"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Jinzo"
+      },
+      {
+        "name": "Nimble Momonga",
+        "original_name": "Nimble Momonga",
+        "section": "monsters",
+        "count": 1,
+        "note": "Decks y Cajas — Gana 1000 LP e invoca copias al destruirse por batalla",
+        "owned": true,
+        "sheet_id": "107",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Effect Monster",
+        "humanReadableCardType": "Effect Monster",
+        "frameType": "effect",
+        "desc": "When this card is destroyed by battle and sent to the Graveyard: Gain 1000 Life Points, then you can Special Summon any number of \"Nimble Momongas\" from your Deck in face-down Defense Position.",
+        "race": "Beast",
+        "archetype": "Nimble",
+        "atk": 1000,
+        "def": 100,
+        "level": 2,
+        "attribute": "EARTH",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/22567609.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22567609.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22567609.jpg",
+        "prices": {
+          "tcgplayer": "0.11",
+          "cardmarket": "0.11"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Nimble%20Momonga"
+      },
+      {
+        "name": "Mask of Darkness",
+        "original_name": "Mask of Darkness",
+        "section": "monsters",
+        "count": 1,
+        "note": "Carta Suelta / Set Principiante — Efecto Flip: recupera 1 trampa del cementerio",
+        "owned": true,
+        "sheet_id": "352",
+        "sheet_category": "Set de Principiante 2 Jugadores",
+        "box_location": "Colección Física",
+        "type": "Flip Effect Monster",
+        "humanReadableCardType": "Flip Effect Monster",
+        "frameType": "effect",
+        "desc": "FLIP: Target 1 Trap in your GY; add that target to your hand.",
+        "race": "Fiend",
+        "archetype": "Mask",
+        "atk": 900,
+        "def": 400,
+        "level": 2,
+        "attribute": "DARK",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/28933734.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/28933734.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/28933734.jpg",
+        "prices": {
+          "tcgplayer": "0.15",
+          "cardmarket": "0.06"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mask%20of%20Darkness"
+      },
+      {
+        "name": "Charge of the Light Brigade",
+        "original_name": "Charge of the Light Brigade",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Buscador principal de Lightsworn",
+        "owned": true,
+        "sheet_id": "22",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Send the top 3 cards of your Deck to the Graveyard; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand.",
+        "race": "Normal",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/94886282.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/94886282.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/94886282.jpg",
+        "prices": {
+          "tcgplayer": "0.16",
+          "cardmarket": "0.21"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Charge%20of%20the%20Light%20Brigade"
+      },
+      {
+        "name": "Solar Recharge",
+        "original_name": "Solar Recharge",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Descarta 1 Lightsworn, roba 2 y muele 2",
+        "owned": true,
+        "sheet_id": "132",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Discard 1 \"Lightsworn\" monster; draw 2 cards, then send the top 2 cards of your Deck to the GY.",
+        "race": "Normal",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/691925.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/691925.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/691925.jpg",
+        "prices": {
+          "tcgplayer": "2.25",
+          "cardmarket": "1.18"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Solar%20Recharge"
+      },
+      {
+        "name": "Monster Reincarnation",
+        "original_name": "Monster Reincarnation",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Recupera cualquier monstruo del cementerio",
+        "owned": true,
+        "sheet_id": "494",
+        "sheet_category": "Midterm Paradox",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Discard 1 card, then target 1 monster in your GY; add it to your hand.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/74848038.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/74848038.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/74848038.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.09"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Monster%20Reincarnation"
+      },
+      {
+        "name": "Foolish Burial",
+        "original_name": "Foolish Burial",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Envía a Wulf o Necro Gardna directo al GY",
+        "owned": true,
+        "sheet_id": "59",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Send 1 monster from your Deck to the GY.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/81439173.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/81439173.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/81439173.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Foolish%20Burial"
+      },
+      {
+        "name": "Realm of Light",
+        "original_name": "Realm of Light",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Magia de campo: contadores de luz y ATK masivo",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Field Spell",
+        "frameType": "spell",
+        "desc": "Each time a card(s) is sent from your Deck to the Graveyard, place 1 Shine Counter on this card. All \"Lightsworn\" monsters gain 100 ATK for each Shine Counter on this card. If this card would be destroyed by a card effect, remove 2 Shine Counters from this card instead.",
+        "race": "Field",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/36099620.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/36099620.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/36099620.jpg",
+        "prices": {
+          "tcgplayer": "0.14",
+          "cardmarket": "0.07"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Realm%20of%20Light"
+      },
+      {
+        "name": "Mystical Space Typhoon",
+        "original_name": "Mystical Space Typhoon",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas / Set Principiante — Destruye una magia o trampa",
+        "owned": true,
+        "sheet_id": "498",
+        "sheet_category": "Midterm Paradox",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Quick-Play Spell",
+        "frameType": "spell",
+        "desc": "Target 1 Spell/Trap on the field; destroy that target.",
+        "race": "Quick-Play",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/5318639.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/5318639.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/5318639.jpg",
+        "prices": {
+          "tcgplayer": "0.24",
+          "cardmarket": "0.08"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mystical%20Space%20Typhoon"
+      },
+      {
+        "name": "Book of Moon",
+        "original_name": "Book of Moon",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas / Set Principiante — Voltea un monstruo boca abajo",
+        "owned": true,
+        "sheet_id": "399",
+        "sheet_category": "Set de Principiante 2 Jugadores",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Quick-Play Spell",
+        "frameType": "spell",
+        "desc": "Target 1 face-up monster on the field; change that target to face-down Defense Position.",
+        "race": "Quick-Play",
+        "archetype": "Book of",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/14087893.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/14087893.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/14087893.jpg",
+        "prices": {
+          "tcgplayer": "0.10",
+          "cardmarket": "0.02"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Book%20of%20Moon"
+      },
+      {
+        "name": "Swords of Revealing Light",
+        "original_name": "Swords of Revealing Light",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas / Set Principiante — Detiene ataques rivales por 3 turnos",
+        "owned": true,
+        "sheet_id": "337",
+        "sheet_category": "Set de Principiante 2 Jugadores",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "After this card's activation, it remains on the field, but you must destroy it during the End Phase of your opponent's 3rd turn. When this card is activated: If your opponent controls a face-down monster, flip all monsters they control face-up. While this card is face-up on the field, your opponent's monsters cannot declare an attack.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/72302403.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72302403.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72302403.jpg",
+        "prices": {
+          "tcgplayer": "0.14",
+          "cardmarket": "0.03"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Swords%20of%20Revealing%20Light"
+      },
+      {
+        "name": "Pot of Avarice",
+        "original_name": "Pot of Avarice",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas — Recicla 5 monstruos del GY y roba 2 cartas",
+        "owned": true,
+        "sheet_id": "113",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Target 5 monsters in your GY; shuffle all 5 into the Deck, then draw 2 cards.",
+        "race": "Normal",
+        "archetype": "Greed",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/67169062.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/67169062.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/67169062.jpg",
+        "prices": {
+          "tcgplayer": "0.61",
+          "cardmarket": "0.49"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Pot%20of%20Avarice"
+      },
+      {
+        "name": "Card Destruction",
+        "original_name": "Card Destruction",
+        "section": "spells",
+        "count": 1,
+        "note": "Decks y Cajas — Ambos jugadores descartan su mano entera y roban",
+        "owned": true,
+        "sheet_id": "18",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Spell Card",
+        "humanReadableCardType": "Normal Spell",
+        "frameType": "spell",
+        "desc": "Both players discard as many cards as possible from their hands, then each player draws the same number of cards they discarded.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/72892473.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/72892473.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/72892473.jpg",
+        "prices": {
+          "tcgplayer": "0.31",
+          "cardmarket": "0.09"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Card%20Destruction"
+      },
+      {
+        "name": "Beckoning Light",
+        "original_name": "Beckoning Light",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Descarta la mano y recupera monstruos LIGHT",
+        "owned": true,
+        "sheet_id": "6",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Normal Trap",
+        "frameType": "trap",
+        "desc": "Discard your entire hand, then for each card you discarded to the GY by this effect, add 1 LIGHT monster from your GY to your hand.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/16255442.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/16255442.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/16255442.jpg",
+        "prices": {
+          "tcgplayer": "0.19",
+          "cardmarket": "0.17"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Beckoning%20Light"
+      },
+      {
+        "name": "Vanquishing Light",
+        "original_name": "Vanquishing Light",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Tributa un Lightsworn y niega invocación",
+        "owned": true,
+        "sheet_id": "151",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Counter Trap",
+        "frameType": "trap",
+        "desc": "When a monster(s) would be Summoned: Tribute 1 \"Lightsworn\" monster; negate the Summon, and if you do, destroy that monster(s).",
+        "race": "Counter",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/32233746.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/32233746.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/32233746.jpg",
+        "prices": {
+          "tcgplayer": "0.09",
+          "cardmarket": "0.02"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Vanquishing%20Light"
+      },
+      {
+        "name": "Glorious Illusion",
+        "original_name": "Glorious Illusion",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Revive un Lightsworn y muele 2 cartas",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Continuous Trap",
+        "frameType": "trap",
+        "desc": "Activate this card by targeting 1 \"Lightsworn\" monster in your Graveyard; Special Summon that target in face-up Attack Position. During each of your End Phases: Send the top 2 cards of your Deck to the Graveyard. When this card leaves the field, destroy that monster. When that monster leaves the field, destroy this card.",
+        "race": "Continuous",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/61962135.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/61962135.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/61962135.jpg",
+        "prices": {
+          "tcgplayer": "0.15",
+          "cardmarket": "0.22"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Glorious%20Illusion"
+      },
+      {
+        "name": "Lightsworn Barrier",
+        "original_name": "Lightsworn Barrier",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas (SD Realm of Light) — Niega un ataque moliendo 2 cartas",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas (SD Realm of Light)",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Continuous Trap",
+        "frameType": "trap",
+        "desc": "When a \"Lightsworn\" monster you control is targeted for an attack: You can send the top 2 cards of your Deck to the Graveyard, then target the attacking monster; negate the attack.",
+        "race": "Continuous",
+        "archetype": "Lightsworn",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/22201234.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/22201234.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/22201234.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.10"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Lightsworn%20Barrier"
+      },
+      {
+        "name": "Mirror Force",
+        "original_name": "Mirror Force",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas / Midterm Paradox — Destruye monstruos en ataque del rival",
+        "owned": true,
+        "sheet_id": "499",
+        "sheet_category": "Midterm Paradox",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Normal Trap",
+        "frameType": "trap",
+        "desc": "When an opponent's monster declares an attack: Destroy all your opponent's Attack Position monsters.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/44095762.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/44095762.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44095762.jpg",
+        "prices": {
+          "tcgplayer": "0.65",
+          "cardmarket": "0.02"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Mirror%20Force"
+      },
+      {
+        "name": "Torrential Tribute",
+        "original_name": "Torrential Tribute",
+        "section": "traps",
+        "count": 1,
+        "note": "Decks y Cajas — Destruye todos los monstruos tras una invocación",
+        "owned": true,
+        "sheet_id": "",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Normal Trap",
+        "frameType": "trap",
+        "desc": "When a monster(s) is Summoned: Destroy all monsters on the field.",
+        "race": "Normal",
+        "archetype": "",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/53582587.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/53582587.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/53582587.jpg",
+        "prices": {
+          "tcgplayer": "0.20",
+          "cardmarket": "0.08"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Torrential%20Tribute"
+      },
+      {
+        "name": "Call of the Haunted",
+        "original_name": "Call of the Haunted",
+        "section": "traps",
+        "count": 1,
+        "note": "Midterm Paradox / Set Principiante — Revive un monstruo del cementerio",
+        "owned": true,
+        "sheet_id": "500",
+        "sheet_category": "Midterm Paradox",
+        "box_location": "Colección Física",
+        "type": "Trap Card",
+        "humanReadableCardType": "Continuous Trap",
+        "frameType": "trap",
+        "desc": "Activate this card by targeting 1 monster in your GY; Special Summon that target in Attack Position. When this card leaves the field, destroy that monster. When that monster is destroyed, destroy this card.",
+        "race": "Continuous",
+        "archetype": "Call of the Haunted",
+        "atk": null,
+        "def": null,
+        "level": null,
+        "attribute": null,
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/97077563.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/97077563.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/97077563.jpg",
+        "prices": {
+          "tcgplayer": "0.10",
+          "cardmarket": "0.02"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Call%20of%20the%20Haunted"
+      },
+      {
+        "name": "Naturia Beast",
+        "original_name": "Naturia Beast",
+        "section": "extra",
+        "count": 1,
+        "note": "Carta Suelta / Cartas Sueltas — Sincronía 5: niega activación de magias moliendo 2 cartas",
+        "owned": true,
+        "sheet_id": "321",
+        "sheet_category": "Cartas Sueltas",
+        "box_location": "Colección Física",
+        "type": "Synchro Monster",
+        "humanReadableCardType": "Synchro Effect Monster",
+        "frameType": "synchro",
+        "desc": "1 EARTH Tuner + 1+ non-Tuner EARTH monsters \r\nWhen a Spell Card is activated (Quick Effect): You can send the top 2 cards of your Deck to the GY; negate the activation, and if you do, destroy it. This card must be face-up on the field to activate and to resolve this effect.",
+        "race": "Beast",
+        "archetype": "Naturia",
+        "atk": 2200,
+        "def": 1700,
+        "level": 5,
+        "attribute": "EARTH",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/33198837.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/33198837.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/33198837.jpg",
+        "prices": {
+          "tcgplayer": "0.20",
+          "cardmarket": "0.17"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Beast"
+      },
+      {
+        "name": "Naturia Barkion",
+        "original_name": "Naturia Barkion",
+        "section": "extra",
+        "count": 1,
+        "note": "Carta Suelta / Cartas Sueltas — Sincronía 6: niega activación de trampas desterrando 2 cartas",
+        "owned": true,
+        "sheet_id": "328",
+        "sheet_category": "Cartas Sueltas",
+        "box_location": "Colección Física",
+        "type": "Synchro Monster",
+        "humanReadableCardType": "Synchro Effect Monster",
+        "frameType": "synchro",
+        "desc": "1 EARTH Tuner + 1 or more non-Tuner EARTH monsters \nDuring either player's turn, when a Trap Card is activated: You can banish 2 cards from your Graveyard; negate the activation, and if you do, destroy it. This card must be face-up on the field to activate and to resolve this effect.",
+        "race": "Dragon",
+        "archetype": "Naturia",
+        "atk": 2500,
+        "def": 1800,
+        "level": 6,
+        "attribute": "EARTH",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/2956282.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/2956282.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/2956282.jpg",
+        "prices": {
+          "tcgplayer": "0.13",
+          "cardmarket": "0.08"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Naturia%20Barkion"
+      },
+      {
+        "name": "Stardust Dragon",
+        "original_name": "Stardust Dragon",
+        "section": "extra",
+        "count": 1,
+        "note": "Decks y Cajas — Sincronía 8: anula destrucción de cartas tributándose",
+        "owned": true,
+        "sheet_id": "137",
+        "sheet_category": "Decks y Cajas",
+        "box_location": "Colección Física",
+        "type": "Synchro Monster",
+        "humanReadableCardType": "Synchro Effect Monster",
+        "frameType": "synchro",
+        "desc": "1 Tuner + 1+ non-Tuner monsters\r\nWhen a card or effect is activated that would destroy a card(s) on the field (Quick Effect): You can Tribute this card; negate the activation, and if you do, destroy it. During the End Phase, if this effect was activated this turn (and was not negated): You can Special Summon this card from your GY.",
+        "race": "Dragon",
+        "archetype": "Stardust",
+        "atk": 2500,
+        "def": 2000,
+        "level": 8,
+        "attribute": "WIND",
+        "scale": null,
+        "linkval": null,
+        "image_url": "https://images.ygoprodeck.com/images/cards/44508094.jpg",
+        "image_url_small": "https://images.ygoprodeck.com/images/cards_small/44508094.jpg",
+        "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/44508094.jpg",
+        "prices": {
+          "tcgplayer": "0.73",
+          "cardmarket": "0.70"
+        },
+        "ygoprodeck_url": "https://ygoprodeck.com/card/?search=Stardust%20Dragon"
       }
     ]
   }

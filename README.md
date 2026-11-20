@@ -9,7 +9,7 @@ Plataforma interactiva para la gestión de cartas físicas, análisis de mazos c
 
 ## ⚔️ Mazos Listos para Jugar (Listas Definitivas, 100% Reales y en Inventario)
 
-Ambos mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
+Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configurados con **100% de cartas físicas** en tu inventario, sin compartir cartas entre ellos.
 
 ### 1. 🔴 Mazo HÉROE (Formato Avanzado / Moderno) — *(Agresivo / Fusión)*
 * **Composición:** **40 Main Deck** (13 Monstruos, 18 Mágicas, 9 Trampas) + **8 Extra Deck**.
@@ -22,6 +22,12 @@ Ambos mazos cuentan con **exactamente 40 cartas de Main Deck** y están configur
 * **Estrategia:** Construido exclusivamente con las cartas confirmadas en la fotografía de tu caja física de *Structure Deck: Dark World*. La clásica y temida estrategia de descarte masivo, robo incesante y control de recursos, coronada por la presencia de *Grapha, Dragon Overlord of Dark World* en el Extra Deck.
 * **Extra Deck (1):** *Grapha, Dragon Overlord of Dark World*.
 * **Estado:** **41/41 Completo (100% en Colección)**.
+
+### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON) — *(Realm of Light + Cartas Sueltas & Decks)*
+* **Composición:** **40 Main Deck** (23 Monstruos, 10 Mágicas, 7 Trampas) + **3 Extra Deck**.
+* **Estrategia:** Diseñado para el formato competitivo Edison 2010. Construido con tus cartas exactas de *Structure Deck: Realm of Light*, tus *Cartas Sueltas* y cajas (*Judgment Dragon*, 2x *Lumina*, 2x *Lyla*, 2x *Ryko*, *Honest*, *Fabled Raven*, *Cerburrel*, *Zephyros*, *Jinzo*, *Nimble Momonga*, *Mask of Darkness*, *Pot of Avarice*, etc.), con acceso a potentes sincronías en el Extra Deck.
+* **Extra Deck (3):** *Naturia Beast*, *Naturia Barkion*, *Stardust Dragon*.
+* **Estado:** **43/43 Completo (100% en Colección)**.
 
 ---
 
