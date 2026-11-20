@@ -206,7 +206,7 @@
           <button id="tab-btn-inventory" onclick="switchMainTab('inventory')" class="nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border whitespace-nowrap">
             <i data-lucide="archive" class="w-4 h-4"></i>
             <span>Colección</span>
-            <span class="px-1.5 py-0.2 rounded-full bg-black/60 text-gray-300 text-[10px] font-mono">296</span>
+            <span id="header-collection-badge" class="px-1.5 py-0.2 rounded-full bg-black/60 text-gray-300 text-[10px] font-mono">0</span>
           </button>
           <button id="tab-btn-decks" onclick="switchMainTab('decks')" class="flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-white transition-all border border-transparent whitespace-nowrap">
             <i data-lucide="swords" class="w-4 h-4 text-cyan-400"></i>
@@ -334,9 +334,9 @@
       <div class="glass-panel rounded-3xl p-5 shadow-2xl space-y-4">
         
         <!-- Fila 1: Buscador con resplandor y Toggle de Vista (Grid vs Tabla) -->
-        <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+        <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
           
-          <div class="relative w-full md:w-[420px]">
+          <div class="relative w-full lg:w-[340px] xl:w-[400px]">
             <i data-lucide="search" class="w-4 h-4 text-cyan-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
             <input 
               type="text" 
@@ -350,23 +350,29 @@
             </button>
           </div>
 
-          <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
-            <!-- Pestañas de Categoría del Sheet -->
-            <div class="flex items-center p-1 bg-[#091322] rounded-2xl border border-white/10 overflow-x-auto shadow-inner">
-              <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-4 py-2 text-xs font-bold rounded-xl text-white bg-cyan-600 transition-all whitespace-nowrap shadow-md shadow-cyan-600/30">
+          <div class="flex items-center gap-3 w-full lg:w-auto justify-between lg:justify-end">
+            <!-- Pestañas de Categoría y Estado en Mazos -->
+            <div class="flex items-center p-1 bg-[#091322] rounded-2xl border border-white/10 overflow-x-auto shadow-inner gap-0.5">
+              <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill active-cat px-3.5 py-2 text-xs font-bold rounded-xl text-white bg-cyan-600 transition-all whitespace-nowrap shadow-md shadow-cyan-600/30">
                 Todas
               </button>
-              <button onclick="setCategoryFilter('Decks y Cajas')" data-cat="Decks y Cajas" class="cat-pill px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+              <button onclick="setCategoryFilter('boxes')" data-cat="boxes" class="cat-pill px-3.5 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
                 Decks & Cajas
               </button>
-              <button onclick="setCategoryFilter('Carta Suelta')" data-cat="Carta Suelta" class="cat-pill px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+              <button onclick="setCategoryFilter('singles')" data-cat="singles" class="cat-pill px-3.5 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
                 Cartas Sueltas
+              </button>
+              <button onclick="setCategoryFilter('in_decks')" data-cat="in_decks" class="cat-pill px-3.5 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+                ⚔️ En Mazos
+              </button>
+              <button onclick="setCategoryFilter('free')" data-cat="free" class="cat-pill px-3.5 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap">
+                📦 Libres
               </button>
             </div>
 
             <!-- TOGGLE DE VISTA: CUADRÍCULA vs TABLA -->
             <div class="flex items-center p-1 bg-[#091322] rounded-2xl border border-white/10 shrink-0 shadow-inner">
-              <button onclick="setViewMode('grid')" id="btn-view-grid" class="p-2 rounded-xl bg-[#1e1e28] text-cyan-300 transition" title="Vista Cuadrícula">
+              <button onclick="setViewMode('grid')" id="btn-view-grid" class="p-2 rounded-xl bg-[#162844] text-cyan-300 border border-cyan-500/30 transition" title="Vista Cuadrícula">
                 <i data-lucide="grid-3x3" class="w-4 h-4"></i>
               </button>
               <button onclick="setViewMode('table')" id="btn-view-table" class="p-2 rounded-xl text-gray-400 hover:text-white transition" title="Vista Tabla">
@@ -606,51 +612,113 @@
 
       </div>
 
+      <!-- BARRA DE NAVEGACIÓN RÁPIDA, BUSCADOR Y DENSIDAD DEL MAZO -->
+      <div id="deck-quick-toolbar" class="glass-panel rounded-2xl p-3.5 shadow-xl flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3 md:sticky md:top-[5.25rem] z-30 border border-cyan-500/20">
+        
+        <!-- Quick-Jump Pills -->
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0">
+          <button onclick="scrollToDeckSection('deck-sec-monsters')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold whitespace-nowrap transition">
+            <span>🟡 Monstruos</span>
+            <span id="qj-monsters-count" class="px-1.5 py-0.2 rounded-md bg-black/50 text-[10px] font-mono">0</span>
+          </button>
+          <button onclick="scrollToDeckSection('deck-sec-spells')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold whitespace-nowrap transition">
+            <span>🟢 Mágicas</span>
+            <span id="qj-spells-count" class="px-1.5 py-0.2 rounded-md bg-black/50 text-[10px] font-mono">0</span>
+          </button>
+          <button onclick="scrollToDeckSection('deck-sec-traps')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-pink-500/10 hover:bg-pink-500/20 text-pink-300 border border-pink-500/30 text-xs font-bold whitespace-nowrap transition">
+            <span>🟣 Trampas</span>
+            <span id="qj-traps-count" class="px-1.5 py-0.2 rounded-md bg-black/50 text-[10px] font-mono">0</span>
+          </button>
+          <button onclick="scrollToDeckSection('deck-sec-extra')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-bold whitespace-nowrap transition">
+            <span>⬛ Extra Deck</span>
+            <span id="qj-extra-count" class="px-1.5 py-0.2 rounded-md bg-black/50 text-[10px] font-mono">0</span>
+          </button>
+        </div>
+
+        <!-- Buscador Interno + Densidad de Vista -->
+        <div class="flex items-center gap-2.5 flex-1 lg:flex-initial justify-between lg:justify-end">
+          <div class="relative flex-1 lg:w-64">
+            <i data-lucide="search" class="w-3.5 h-3.5 text-cyan-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input
+              type="text"
+              id="deck-internal-search"
+              oninput="renderDeckView()"
+              placeholder="Buscar carta o efecto en el mazo..."
+              class="w-full pl-9 pr-8 py-2 bg-[#091322] border border-white/10 rounded-xl text-xs text-gray-100 placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+            >
+            <button id="clear-deck-search" onclick="clearDeckSearch()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+              <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <div class="flex items-center p-1 bg-[#091322] rounded-xl border border-white/10 shrink-0 shadow-inner">
+            <button onclick="setDeckViewDensity('standard')" id="btn-deck-density-standard" class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-[#162844] text-cyan-300 border border-cyan-500/30 text-[11px] font-bold transition" title="Vista Estándar con detalles">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+              <span class="hidden sm:inline">Estándar</span>
+            </button>
+            <button onclick="setDeckViewDensity('compact')" id="btn-deck-density-compact" class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-gray-400 hover:text-white text-[11px] font-bold transition" title="Vista Tapete Compacto (todo a la vista)">
+              <i data-lucide="grid-3x3" class="w-3.5 h-3.5"></i>
+              <span class="hidden sm:inline">Tapete</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AVISO SIN RESULTADOS EN BÚSQUEDA INTERNA DE MAZO -->
+      <div id="deck-search-empty" class="hidden glass-panel rounded-3xl py-14 text-center space-y-3">
+        <i data-lucide="search-x" class="w-10 h-10 mx-auto text-cyan-400/70"></i>
+        <p class="text-sm font-bold text-gray-200">No se encontraron cartas con ese filtro en este mazo</p>
+        <button onclick="clearDeckSearch()" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-xl text-xs font-bold transition">
+          Mostrar todas las cartas del mazo
+        </button>
+      </div>
+
       <!-- SECCIONES DE CARTAS -->
-      <section class="space-y-4">
+      <section id="deck-sec-monsters" class="space-y-4 scroll-mt-36">
         <div class="flex items-center justify-between border-b border-amber-500/30 pb-2.5">
           <div class="flex items-center gap-2.5">
             <span class="w-3.5 h-3.5 rounded-full bg-amber-500 shadow-glow-amber"></span>
             <h3 class="text-xl font-bold font-display text-amber-300">Monstruos</h3>
             <span id="deck-monsters-count-pill" class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">0 Cartas</span>
           </div>
-          <span class="text-xs text-gray-400">Haz clic en cualquier carta para ver su efecto e información</span>
+          <span class="text-xs text-gray-400 hidden sm:inline">Haz clic en cualquier carta para ver su efecto e información</span>
         </div>
         <div id="deck-monsters-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
       </section>
 
-      <section class="space-y-4 pt-5">
+      <section id="deck-sec-spells" class="space-y-4 pt-5 scroll-mt-36">
         <div class="flex items-center justify-between border-b border-emerald-500/30 pb-2.5">
           <div class="flex items-center gap-2.5">
             <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 shadow-glow-emerald"></span>
             <h3 class="text-xl font-bold font-display text-emerald-300">Cartas Mágicas</h3>
             <span id="deck-spells-count-pill" class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">0 Cartas</span>
           </div>
-          <span class="text-xs text-gray-400">Molienda, robo, disrupción y limpiacampos</span>
+          <span class="text-xs text-gray-400 hidden sm:inline">Búsqueda, aceleración, fusión y limpieza de campo</span>
         </div>
         <div id="deck-spells-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
       </section>
 
-      <section class="space-y-4 pt-5">
+      <section id="deck-sec-traps" class="space-y-4 pt-5 scroll-mt-36">
         <div class="flex items-center justify-between border-b border-pink-500/30 pb-2.5">
           <div class="flex items-center gap-2.5">
             <span class="w-3.5 h-3.5 rounded-full bg-pink-500"></span>
             <h3 class="text-xl font-bold font-display text-pink-300">Cartas de Trampa</h3>
             <span id="deck-traps-count-pill" class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">0 Cartas</span>
           </div>
-          <span class="text-xs text-gray-400">Protección, anulación y contratrampas</span>
+          <span class="text-xs text-gray-400 hidden sm:inline">Protección, anulación y control</span>
         </div>
         <div id="deck-traps-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
       </section>
 
-      <section class="space-y-4 pt-5">
+      <section id="deck-sec-extra" class="space-y-4 pt-5 scroll-mt-36">
         <div class="flex items-center justify-between border-b border-indigo-500/30 pb-2.5">
           <div class="flex items-center gap-2.5">
             <span class="w-3.5 h-3.5 rounded-full bg-indigo-500 shadow-glow-purple"></span>
             <h3 class="text-xl font-bold font-display text-indigo-300">Extra Deck</h3>
             <span id="deck-extra-count-pill" class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">0 Cartas</span>
           </div>
-          <span class="text-xs text-gray-400">Fusiones, Sincronías y Enlaces (Links)</span>
+          <span class="text-xs text-gray-400 hidden sm:inline">Fusiones, Sincronías y Enlaces (Links)</span>
         </div>
         <div id="deck-extra-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
       </section>
@@ -803,7 +871,7 @@
               <i data-lucide="book-open-check" class="w-5 h-5 text-amber-400"></i>
               <h3 class="text-base font-bold font-display text-white">Tu Inventario</h3>
             </div>
-            <span class="text-xs text-gray-400 font-mono"><span id="b-catalog-count">296</span> disponibles</span>
+            <span class="text-xs text-gray-400 font-mono"><span id="b-catalog-count">0</span> disponibles</span>
           </div>
 
           <div class="space-y-2.5">
@@ -814,16 +882,16 @@
                 id="b-search-input" 
                 oninput="filterBuilderCatalog()" 
                 placeholder="Buscar carta para añadir..." 
-                class="w-full pl-10 pr-3.5 py-2.5 bg-[#080d1a] border border-white/10 rounded-2xl text-xs text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500"
+                class="w-full pl-10 pr-3.5 py-2.5 bg-[#080d1a] border border-white/10 rounded-2xl text-xs text-gray-200 placeholder-gray-500 focus:outline-none focus:border-cyan-400"
               >
             </div>
 
             <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-[11px]">
-              <button onclick="setBuilderCatalogFilter('all')" data-bcat="all" class="b-cat-btn px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold whitespace-nowrap shadow">Todas</button>
-              <button onclick="setBuilderCatalogFilter('monster')" data-bcat="monster" class="b-cat-btn px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Monstruos</button>
-              <button onclick="setBuilderCatalogFilter('spell')" data-bcat="spell" class="b-cat-btn px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Mágicas</button>
-              <button onclick="setBuilderCatalogFilter('trap')" data-bcat="trap" class="b-cat-btn px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Trampas</button>
-              <button onclick="setBuilderCatalogFilter('extra')" data-bcat="extra" class="b-cat-btn px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap">Extra Deck</button>
+              <button onclick="setBuilderCatalogFilter('all')" data-bcat="all" class="b-cat-btn px-3 py-1.5 rounded-xl bg-cyan-600 text-white font-bold whitespace-nowrap shadow shadow-cyan-600/30">Todas</button>
+              <button onclick="setBuilderCatalogFilter('monster')" data-bcat="monster" class="b-cat-btn px-3 py-1.5 rounded-xl bg-[#0e172a] text-gray-300 hover:text-white border border-white/5 whitespace-nowrap">Monstruos</button>
+              <button onclick="setBuilderCatalogFilter('spell')" data-bcat="spell" class="b-cat-btn px-3 py-1.5 rounded-xl bg-[#0e172a] text-gray-300 hover:text-white border border-white/5 whitespace-nowrap">Mágicas</button>
+              <button onclick="setBuilderCatalogFilter('trap')" data-bcat="trap" class="b-cat-btn px-3 py-1.5 rounded-xl bg-[#0e172a] text-gray-300 hover:text-white border border-white/5 whitespace-nowrap">Trampas</button>
+              <button onclick="setBuilderCatalogFilter('extra')" data-bcat="extra" class="b-cat-btn px-3 py-1.5 rounded-xl bg-[#0e172a] text-gray-300 hover:text-white border border-white/5 whitespace-nowrap">Extra Deck</button>
             </div>
           </div>
 
@@ -838,18 +906,18 @@
   <!-- ========================================== -->
   <!-- MODAL DE DETALLE TEATRO 3D (FLIP CARD)     -->
   <!-- ========================================== -->
-  <div id="card-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+  <div id="card-modal" class="fixed inset-0 z-[55] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
     <div class="absolute inset-0" onclick="closeModal()"></div>
 
     <div class="relative bg-[#0b101e] border border-white/15 rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh] z-10 animate-in fade-in zoom-in-95 duration-200">
-      <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 text-gray-300 hover:text-white flex items-center justify-center transition border border-gray-700">
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/70 hover:bg-black/95 text-gray-300 hover:text-white flex items-center justify-center transition border border-gray-700" title="Cerrar (Esc)">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
-      <button onclick="prevCard()" class="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/70 hover:bg-emerald-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700">
+      <button onclick="prevCard()" class="flex absolute left-2 top-44 md:top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/75 hover:bg-cyan-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700 shadow-lg" title="Carta anterior (←)">
         <i data-lucide="chevron-left" class="w-5 h-5"></i>
       </button>
-      <button onclick="nextCard()" class="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/70 hover:bg-emerald-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700">
+      <button onclick="nextCard()" class="flex absolute right-2 top-44 md:top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/75 hover:bg-cyan-600 text-gray-200 hover:text-white items-center justify-center transition border border-gray-700 shadow-lg" title="Carta siguiente (→)">
         <i data-lucide="chevron-right" class="w-5 h-5"></i>
       </button>
 
@@ -986,9 +1054,15 @@
   </div>
 
   <!-- MODAL IMAGEN COMPLETA HD -->
-  <div id="full-image-modal" class="fixed inset-0 z-50 hidden bg-black/95 flex items-center justify-center p-4" onclick="closeFullImage()">
-    <img id="full-image-target" src="" alt="Full Card" class="max-w-full max-h-[95vh] object-contain rounded-2xl shadow-2xl">
+  <div id="full-image-modal" class="fixed inset-0 z-[65] hidden bg-black/95 flex flex-col items-center justify-center p-4 cursor-zoom-out" onclick="closeFullImage()">
+    <img id="full-image-target" src="" alt="Full Card" class="max-w-full max-h-[88vh] object-contain rounded-2xl shadow-2xl">
+    <span class="mt-3 text-[11px] text-gray-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">Haz clic en cualquier lugar o presiona Esc para cerrar</span>
   </div>
+
+  <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+  <button id="btn-scroll-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-2xl bg-[#0c1a30]/90 hover:bg-cyan-600 text-cyan-300 hover:text-white border border-cyan-500/40 shadow-2xl shadow-cyan-500/20 backdrop-blur-xl flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3" title="Volver arriba">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
 
   <!-- FOOTER -->
   <footer class="border-t border-white/[0.06] bg-[#050811] py-8 text-center text-xs text-gray-500 mt-auto">
@@ -1008,35 +1082,79 @@
 
   <!-- LÓGICA DE LA APLICACIÓN -->
   <script>
-    let allCards = (typeof TCG_INITIAL_CARDS !== 'undefined') ? TCG_INITIAL_CARDS : [];
+    let allCards = (typeof TCG_INITIAL_CARDS !== 'undefined')
+      ? TCG_INITIAL_CARDS
+      : ((typeof window !== 'undefined' && window.ALL_CARDS) ? window.ALL_CARDS : []);
     let initialDecks = (typeof TCG_DECKS_DATA !== 'undefined') ? TCG_DECKS_DATA : [];
-    
-    function loadAllDecks() {
+    let customDecks = [];
+
+    function loadCustomDecks() {
+      const customMap = new Map();
       try {
-        const raw = localStorage.getItem('TCG_ALL_DECKS');
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          const updated = parsed.map(p => {
-            const fresh = initialDecks.find(id => id.id === p.id);
-            return fresh || p;
-          });
-          initialDecks.forEach(id => {
-            if (!updated.some(u => u.id === id.id)) {
-              updated.unshift(id);
+        const rawCustom = localStorage.getItem('TCG_CUSTOM_DECKS');
+        if (rawCustom) {
+          const parsed = JSON.parse(rawCustom);
+          if (Array.isArray(parsed)) {
+            parsed.forEach(d => {
+              if (d && d.id && String(d.id).startsWith('custom_')) {
+                customMap.set(d.id, d);
+              }
+            });
+          }
+        } else {
+          const rawAll = localStorage.getItem('TCG_ALL_DECKS');
+          if (rawAll) {
+            const parsedAll = JSON.parse(rawAll);
+            if (Array.isArray(parsedAll)) {
+              parsedAll.forEach(d => {
+                if (d && d.id && String(d.id).startsWith('custom_')) {
+                  customMap.set(d.id, d);
+                }
+              });
             }
-          });
-          localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(updated));
-          return updated;
+          }
         }
       } catch (e) {}
-      localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(initialDecks));
-      return [...initialDecks];
+      const result = Array.from(customMap.values());
+      try {
+        localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(result));
+      } catch (e) {}
+      return result;
+    }
+
+    function loadAllDecks() {
+      customDecks = loadCustomDecks();
+      const merged = [...initialDecks, ...customDecks];
+      try {
+        localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(merged));
+      } catch (e) {}
+      return merged;
     }
 
     let allDecks = loadAllDecks();
-    let customDecks = allDecks;
     let activeDeckIndex = 0;
     let activeDeck = allDecks.length > 0 ? allDecks[0] : null;
+    let deckUsageMap = new Map();
+    let deckViewDensity = 'standard';
+
+    function isSingleCard(card) {
+      return Boolean(card && card.category && card.category.toLowerCase().includes('suelta'));
+    }
+
+    function buildDeckUsageMap() {
+      deckUsageMap = new Map();
+      allDecks.forEach(d => {
+        if (!d || !Array.isArray(d.cards)) return;
+        const label = d.short_name || d.name;
+        d.cards.forEach(c => {
+          const key = (c.name || '').trim().toLowerCase();
+          if (!key) return;
+          if (!deckUsageMap.has(key)) deckUsageMap.set(key, []);
+          deckUsageMap.get(key).push({ deckName: label, count: c.count || 1 });
+        });
+      });
+    }
+    buildDeckUsageMap();
 
     let filteredCards = [];
     let currentCategory = 'all';
@@ -1045,6 +1163,7 @@
     let currentPage = 1;
     const PAGE_SIZE = 36;
     let currentModalIndex = -1;
+    let currentModalCard = null;
     let modalMode = 'inventory';
 
     const FRAME_STYLES = {
@@ -1058,6 +1177,18 @@
       'link': { border: 'border-blue-600/60', topBar: 'bg-blue-600', glow: 'hover:shadow-blue-600/30', badge: 'bg-blue-600/20 text-blue-300 border-blue-600/40' },
       'ritual': { border: 'border-sky-600/60', topBar: 'bg-sky-600', glow: 'hover:shadow-sky-600/30', badge: 'bg-sky-600/20 text-sky-300 border-sky-600/40' }
     };
+
+    function getFrameStyle(frame) {
+      if (!frame) return FRAME_STYLES['normal'];
+      if (FRAME_STYLES[frame]) return FRAME_STYLES[frame];
+      if (frame.includes('fusion')) return FRAME_STYLES['fusion'];
+      if (frame.includes('synchro')) return FRAME_STYLES['synchro'];
+      if (frame.includes('xyz')) return FRAME_STYLES['xyz'];
+      if (frame.includes('link')) return FRAME_STYLES['link'];
+      if (frame.includes('ritual')) return FRAME_STYLES['ritual'];
+      if (frame.includes('effect')) return FRAME_STYLES['effect'];
+      return FRAME_STYLES['normal'];
+    }
 
     const ATTR_ICONS = {
       'LIGHT': '☀️',
@@ -1077,6 +1208,10 @@
     };
     let builderCatalogCategory = 'all';
 
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     function switchMainTab(tab) {
       const secInv = document.getElementById('section-inventory');
       const secDecks = document.getElementById('section-decks');
@@ -1092,24 +1227,24 @@
 
       [secInv, secDecks, secBuilder].forEach(s => s.classList.add('hidden'));
       [btnInv, btnDecks, btnBuilder].forEach(b => {
-        b.className = "flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-white transition-all border border-transparent";
+        b.className = "flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-white transition-all border border-transparent whitespace-nowrap";
       });
       [mobInv, mobDecks, mobBuilder].forEach(m => m.className = "px-2.5 py-1 rounded-lg text-gray-400 font-bold");
 
       if (tab === 'inventory') {
         secInv.classList.remove('hidden');
-        btnInv.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border";
-        mobInv.className = "px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold";
+        btnInv.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border whitespace-nowrap";
+        mobInv.className = "px-2.5 py-1 rounded-lg bg-cyan-600 text-white font-bold shadow-glow-cyan";
       } else if (tab === 'decks') {
         secDecks.classList.remove('hidden');
-        btnDecks.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border";
-        mobDecks.className = "px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold";
+        btnDecks.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border whitespace-nowrap";
+        mobDecks.className = "px-2.5 py-1 rounded-lg bg-cyan-600 text-white font-bold shadow-glow-cyan";
         renderDeckSelector();
         renderDeckView();
       } else if (tab === 'builder') {
         secBuilder.classList.remove('hidden');
-        btnBuilder.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border";
-        mobBuilder.className = "px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold";
+        btnBuilder.className = "nav-tab-active flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-xl transition-all border whitespace-nowrap";
+        mobBuilder.className = "px-2.5 py-1 rounded-lg bg-cyan-600 text-white font-bold shadow-glow-cyan";
         renderBuilderView();
         filterBuilderCatalog();
       }
@@ -1127,13 +1262,13 @@
       if (mode === 'grid') {
         grid.classList.remove('hidden');
         table.classList.add('hidden');
-        btnGrid.className = "p-2 rounded-xl bg-gray-800 text-emerald-400 transition";
-        btnTable.className = "p-2 rounded-xl text-gray-400 hover:text-white transition";
+        btnGrid.className = "p-2 rounded-xl bg-[#162844] text-cyan-300 border border-cyan-500/30 transition";
+        btnTable.className = "p-2 rounded-xl text-gray-400 hover:text-white transition border border-transparent";
       } else {
         grid.classList.add('hidden');
         table.classList.remove('hidden');
-        btnGrid.className = "p-2 rounded-xl text-gray-400 hover:text-white transition";
-        btnTable.className = "p-2 rounded-xl bg-gray-800 text-emerald-400 transition";
+        btnGrid.className = "p-2 rounded-xl text-gray-400 hover:text-white transition border border-transparent";
+        btnTable.className = "p-2 rounded-xl bg-[#162844] text-cyan-300 border border-cyan-500/30 transition";
       }
       renderCards();
     }
@@ -1143,24 +1278,47 @@
       updateStatistics();
       applyFilters();
 
-      if (allDecks.length > 0) {
-        document.getElementById('header-deck-count-badge').innerText = allDecks.length;
-      }
+      document.getElementById('header-deck-count-badge').innerText = allDecks.length;
+
+      window.addEventListener('scroll', () => {
+        const scrollBtn = document.getElementById('btn-scroll-top');
+        if (!scrollBtn) return;
+        if (window.scrollY > 350) {
+          scrollBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+        } else {
+          scrollBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+        }
+      }, { passive: true });
 
       window.addEventListener('keydown', (e) => {
+        const fullImgModal = document.getElementById('full-image-modal');
+        if (fullImgModal && !fullImgModal.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeFullImage();
+          return;
+        }
+        const shareModal = document.getElementById('share-modal');
+        if (shareModal && !shareModal.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeShareModal();
+          return;
+        }
         const modal = document.getElementById('card-modal');
-        if (!modal.classList.contains('hidden')) {
+        if (modal && !modal.classList.contains('hidden')) {
           if (e.key === 'Escape') closeModal();
           if (e.key === 'ArrowLeft') prevCard();
           if (e.key === 'ArrowRight') nextCard();
+          return;
+        }
+        const simModal = document.getElementById('hand-simulator-modal');
+        if (simModal && !simModal.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeHandSimulator();
         }
       });
     });
 
     function updateStatistics() {
       const total = allCards.length;
-      const decks = allCards.filter(c => c.category && c.category.toLowerCase().includes('decks')).length;
-      const sueltas = allCards.filter(c => c.category && c.category.toLowerCase().includes('suelta')).length;
+      const sueltas = allCards.filter(c => isSingleCard(c)).length;
+      const decks = total - sueltas;
       const totalVal = allCards.reduce((acc, c) => acc + (parseFloat(c.prices?.tcgplayer) || 0), 0);
 
       document.getElementById('stat-total').innerText = total;
@@ -1168,15 +1326,20 @@
       document.getElementById('stat-sueltas').innerText = sueltas;
       document.getElementById('stat-total-value').innerText = `$${totalVal.toFixed(2)}`;
       document.getElementById('header-quick-total-value').innerText = `$${totalVal.toFixed(2)} USD`;
+
+      const headerBadge = document.getElementById('header-collection-badge');
+      if (headerBadge) headerBadge.innerText = total;
+      const builderCatCount = document.getElementById('b-catalog-count');
+      if (builderCatCount) builderCatCount.innerText = total;
     }
 
     function setCategoryFilter(category) {
       currentCategory = category;
       document.querySelectorAll('.cat-pill').forEach(btn => {
         if (btn.dataset.cat === category) {
-          btn.className = "cat-pill active-cat px-4 py-2 text-xs font-bold rounded-xl text-white bg-emerald-600 transition-all whitespace-nowrap shadow-md";
+          btn.className = "cat-pill active-cat px-3.5 py-2 text-xs font-bold rounded-xl text-white bg-cyan-600 transition-all whitespace-nowrap shadow-md shadow-cyan-600/30";
         } else {
-          btn.className = "cat-pill px-4 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap";
+          btn.className = "cat-pill px-3.5 py-2 text-xs font-bold rounded-xl text-gray-400 hover:text-gray-200 transition-all whitespace-nowrap";
         }
       });
       applyFilters();
@@ -1192,7 +1355,15 @@
       document.getElementById('clear-search').classList.toggle('hidden', query.length === 0);
 
       filteredCards = allCards.filter(card => {
-        if (currentCategory !== 'all') {
+        if (currentCategory === 'boxes') {
+          if (isSingleCard(card)) return false;
+        } else if (currentCategory === 'singles') {
+          if (!isSingleCard(card)) return false;
+        } else if (currentCategory === 'in_decks') {
+          if (!deckUsageMap.has((card.name || '').trim().toLowerCase())) return false;
+        } else if (currentCategory === 'free') {
+          if (deckUsageMap.has((card.name || '').trim().toLowerCase())) return false;
+        } else if (currentCategory !== 'all') {
           if (!card.category || !card.category.toLowerCase().includes(currentCategory.toLowerCase())) {
             return false;
           }
@@ -1213,7 +1384,7 @@
           const frame = (card.frameType || '').toLowerCase();
           if (typeFilter === 'monster' && !t.includes('monster')) return false;
           if (typeFilter === 'normal' && frame !== 'normal') return false;
-          if (typeFilter === 'effect' && frame !== 'effect') return false;
+          if (typeFilter === 'effect' && !frame.includes('effect')) return false;
           if (typeFilter === 'spell' && !t.includes('spell')) return false;
           if (typeFilter === 'trap' && !t.includes('trap')) return false;
           if (typeFilter === 'fusion' && !t.includes('fusion')) return false;
@@ -1283,13 +1454,15 @@
       if (viewMode === 'grid') {
         grid.innerHTML = visibleCards.map((card, idx) => {
           const isMonster = card.atk !== null && card.atk !== undefined;
-          const frame = card.frameType || 'normal';
-          const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+          const style = getFrameStyle(card.frameType);
           const attrIcon = ATTR_ICONS[card.attribute] || '🔮';
 
-          const categoryBadgeColor = card.category && card.category.includes('Decks') 
+          const categoryBadgeColor = !isSingleCard(card)
             ? 'bg-blue-500/20 text-blue-300 border-blue-500/30' 
             : 'bg-purple-500/20 text-purple-300 border-purple-500/30';
+
+          const usageList = deckUsageMap.get((card.name || '').trim().toLowerCase());
+          const inDeckTooltip = usageList ? usageList.map(u => `${u.deckName} (x${u.count})`).join(', ') : '';
 
           const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
           const priceFormatted = `$${priceNum.toFixed(2)}`;
@@ -1310,7 +1483,7 @@
                     onerror="this.src='https://images.ygoprodeck.com/images/cards_small/back.jpg'"
                   >
                   
-                  <span class="absolute top-3 left-3 text-[9px] font-bold px-2 py-0.5 rounded-md border backdrop-blur-md ${categoryBadgeColor} z-20 shadow">
+                  <span class="absolute top-3 left-3 max-w-[52%] truncate text-[9px] font-bold px-2 py-0.5 rounded-md border backdrop-blur-md ${categoryBadgeColor} z-20 shadow" title="${card.category || 'TCG'}">
                     ${card.category || 'TCG'}
                   </span>
 
@@ -1324,6 +1497,12 @@
                     #${card.sheet_id}
                   </span>
 
+                  ${usageList ? `
+                    <span class="absolute bottom-3 left-3 text-[9px] font-bold px-2 py-0.5 rounded-lg bg-cyan-950/90 text-cyan-300 border border-cyan-500/40 backdrop-blur-md shadow z-20 flex items-center gap-1" title="En uso en: ${inDeckTooltip}">
+                      ⚔️ En Mazo
+                    </span>
+                  ` : ''}
+
                   <span class="absolute bottom-3 right-3 text-[11px] font-black px-2.5 py-0.5 rounded-xl bg-black/90 backdrop-blur-md text-emerald-400 border border-emerald-500/40 shadow-xl font-stats z-20 flex items-center gap-0.5">
                     <span class="text-[9px] text-emerald-500 font-bold">$</span>${priceNum.toFixed(2)}
                   </span>
@@ -1331,7 +1510,7 @@
 
                 <div class="p-3 flex-1 flex flex-col justify-between bg-[#080d1a]">
                   <div>
-                    <h3 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
+                    <h3 class="text-xs font-bold text-gray-100 truncate group-hover:text-cyan-300 transition" title="${card.name}">
                       ${card.name}
                     </h3>
                     <p class="text-[10px] text-gray-400 truncate mt-0.5">
@@ -1363,9 +1542,9 @@
         }).join('');
       } else {
         tableBody.innerHTML = visibleCards.map((card, idx) => {
-          const frame = card.frameType || 'normal';
-          const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+          const style = getFrameStyle(card.frameType);
           const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+          const usageList = deckUsageMap.get((card.name || '').trim().toLowerCase());
 
           return `
             <tr class="hover:bg-white/[0.03] cursor-pointer transition" onclick="openModal(${idx}, 'inventory')">
@@ -1373,7 +1552,10 @@
                 <img src="${card.image_url_small || card.image_url}" class="w-8 h-12 object-contain rounded shadow" alt="${card.name}">
               </td>
               <td class="py-2.5 px-4">
-                <div class="font-bold text-gray-100 text-xs hover:text-emerald-400">${card.name}</div>
+                <div class="font-bold text-gray-100 text-xs hover:text-cyan-300 flex items-center gap-2">
+                  <span>${card.name}</span>
+                  ${usageList ? `<span class="text-[9px] px-1.5 py-0.2 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30 font-semibold">⚔️ Mazo</span>` : ''}
+                </div>
                 <div class="text-[10px] text-gray-500">${card.category}</div>
               </td>
               <td class="py-2.5 px-4">
@@ -1448,6 +1630,13 @@
     }
 
     
+    function escJsAttr(str) {
+      return String(str || '')
+        .replace(/\\/g, '\\\\')
+        .replace(/'/g, "\\'")
+        .replace(/"/g, '&quot;');
+    }
+
     // ==========================================
     // ELIMINACIÓN DE CUALQUIER MAZO
     // ==========================================
@@ -1463,9 +1652,13 @@
       }
 
       allDecks.splice(idx, 1);
-      localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(allDecks));
-      customDecks = allDecks;
+      customDecks = allDecks.filter(d => d && d.id && String(d.id).startsWith('custom_'));
+      try {
+        localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(customDecks));
+        localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(allDecks));
+      } catch (e) {}
 
+      buildDeckUsageMap();
       document.getElementById('header-deck-count-badge').innerText = allDecks.length;
 
       if (allDecks.length === 0) {
@@ -1473,10 +1666,10 @@
         activeDeckIndex = -1;
         document.getElementById('deck-title').innerText = "Sin mazos guardados";
         document.getElementById('deck-desc').innerText = "Crea un mazo nuevo en el Deck Builder.";
-        document.getElementById('deck-monsters-cards').innerHTML = "";
-        document.getElementById('deck-spells-cards').innerHTML = "";
-        document.getElementById('deck-traps-cards').innerHTML = "";
-        document.getElementById('deck-extra-cards').innerHTML = "";
+        document.getElementById('deck-monsters-grid').innerHTML = "";
+        document.getElementById('deck-spells-grid').innerHTML = "";
+        document.getElementById('deck-traps-grid').innerHTML = "";
+        document.getElementById('deck-extra-grid').innerHTML = "";
       } else {
         activeDeckIndex = 0;
         activeDeck = allDecks[0];
@@ -1484,6 +1677,7 @@
       }
 
       renderDeckSelector();
+      renderCards();
       alert(`El mazo '${deckName}' fue eliminado.`);
     }
 
@@ -1495,15 +1689,18 @@
     function selectDeck(idx) {
       activeDeckIndex = idx;
       activeDeck = allDecks[idx];
+      const searchInput = document.getElementById('deck-internal-search');
+      if (searchInput) searchInput.value = '';
       renderDeckSelector();
       renderDeckView();
     }
 
     function editDeckInBuilder() {
       if (!activeDeck) return;
+      const isCustom = activeDeck.id && String(activeDeck.id).startsWith('custom_');
       builderDeck = {
-        id: activeDeck.id || 'custom_' + Date.now(),
-        name: activeDeck.name || 'Mazo Editado',
+        id: isCustom ? activeDeck.id : ('custom_' + Date.now()),
+        name: isCustom ? (activeDeck.name || 'Mazo Editado') : `${activeDeck.short_name || activeDeck.name} (Copia)`,
         format: activeDeck.format || 'Avanzado / Actual',
         cards: {}
       };
@@ -1522,6 +1719,35 @@
       switchMainTab('builder');
     }
 
+    function scrollToDeckSection(sectionId) {
+      const el = document.getElementById(sectionId);
+      if (el && !el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function clearDeckSearch() {
+      const searchInput = document.getElementById('deck-internal-search');
+      if (searchInput) searchInput.value = '';
+      renderDeckView();
+    }
+
+    function setDeckViewDensity(density) {
+      deckViewDensity = density;
+      const btnStd = document.getElementById('btn-deck-density-standard');
+      const btnCmp = document.getElementById('btn-deck-density-compact');
+      if (btnStd && btnCmp) {
+        if (density === 'standard') {
+          btnStd.className = "flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-[#162844] text-cyan-300 border border-cyan-500/30 text-[11px] font-bold transition";
+          btnCmp.className = "flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-gray-400 hover:text-white text-[11px] font-bold transition";
+        } else {
+          btnStd.className = "flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-gray-400 hover:text-white text-[11px] font-bold transition";
+          btnCmp.className = "flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-[#162844] text-cyan-300 border border-cyan-500/30 text-[11px] font-bold transition";
+        }
+      }
+      renderDeckView();
+    }
+
     function renderDeckView() {
       if (!activeDeck) return;
 
@@ -1532,8 +1758,9 @@
       const delBtn = document.getElementById('hero-btn-delete-deck');
       if (delBtn) delBtn.classList.remove('hidden');
 
-      const completionPct = Math.round((activeDeck.stats.owned_count / (activeDeck.stats.main_total + activeDeck.stats.extra_total)) * 100);
-      document.getElementById('deck-completion-pill').innerText = `${activeDeck.stats.owned_count}/${activeDeck.stats.main_total + activeDeck.stats.extra_total} Completo (${completionPct}% Listo para Duelo)`;
+      const totalExpected = activeDeck.stats.main_total + activeDeck.stats.extra_total;
+      const completionPct = totalExpected > 0 ? Math.round((activeDeck.stats.owned_count / totalExpected) * 100) : 100;
+      document.getElementById('deck-completion-pill').innerText = `${activeDeck.stats.owned_count}/${totalExpected} Completo (${completionPct}% Listo para Duelo)`;
 
       const deckCost = activeDeck.stats?.total_cost || 0;
       document.getElementById('deck-cost-pill').innerText = `Costo Total: $${deckCost.toFixed(2)} USD`;
@@ -1545,14 +1772,14 @@
       document.getElementById('deck-stat-traps').innerText = activeDeck.stats.traps;
       document.getElementById('deck-stat-extra').innerText = `${activeDeck.stats.extra_total} cartas`;
 
-      document.getElementById('deck-monsters-count-pill').innerText = `${activeDeck.stats.monsters} Cartas`;
-      document.getElementById('deck-spells-count-pill').innerText = `${activeDeck.stats.spells} Cartas`;
-      document.getElementById('deck-traps-count-pill').innerText = `${activeDeck.stats.traps} Cartas`;
-      document.getElementById('deck-extra-count-pill').innerText = `${activeDeck.stats.extra_total} Cartas`;
+      document.getElementById('qj-monsters-count').innerText = activeDeck.stats.monsters;
+      document.getElementById('qj-spells-count').innerText = activeDeck.stats.spells;
+      document.getElementById('qj-traps-count').innerText = activeDeck.stats.traps;
+      document.getElementById('qj-extra-count').innerText = activeDeck.stats.extra_total;
 
-      const monsters = activeDeck.cards.filter(c => c.section === 'monsters');
+      const monstersAll = activeDeck.cards.filter(c => c.section === 'monsters');
       let low = 0, mid = 0, high = 0;
-      monsters.forEach(m => {
+      monstersAll.forEach(m => {
         const lvl = m.level || 4;
         const cnt = m.count || 1;
         if (lvl <= 4) low += cnt;
@@ -1565,26 +1792,103 @@
       document.getElementById('curve-high').innerText = high;
       document.getElementById('deck-curve-summary').innerText = low >= 12 ? '✓ Alta consistencia de inicio' : '⚠️ Pocos monstruos nivel 1-4';
 
-      const spells = activeDeck.cards.filter(c => c.section === 'spells');
-      const traps = activeDeck.cards.filter(c => c.section === 'traps');
-      const extra = activeDeck.cards.filter(c => c.section === 'extra');
+      const searchEl = document.getElementById('deck-internal-search');
+      const query = searchEl ? searchEl.value.trim().toLowerCase() : '';
+      const clearBtn = document.getElementById('clear-deck-search');
+      if (clearBtn) clearBtn.classList.toggle('hidden', query.length === 0);
 
-      renderDeckGrid('deck-monsters-grid', monsters);
-      renderDeckGrid('deck-spells-grid', spells);
-      renderDeckGrid('deck-traps-grid', traps);
-      renderDeckGrid('deck-extra-grid', extra);
+      const matchesQuery = (c) => {
+        if (!query) return true;
+        return (c.name || '').toLowerCase().includes(query) ||
+               (c.original_name || '').toLowerCase().includes(query) ||
+               (c.desc || '').toLowerCase().includes(query) ||
+               (c.note || '').toLowerCase().includes(query) ||
+               (c.race || '').toLowerCase().includes(query) ||
+               (c.archetype || '').toLowerCase().includes(query);
+      };
+
+      const spellsAll = activeDeck.cards.filter(c => c.section === 'spells');
+      const trapsAll = activeDeck.cards.filter(c => c.section === 'traps');
+      const extraAll = activeDeck.cards.filter(c => c.section === 'extra');
+
+      const monsters = monstersAll.filter(matchesQuery);
+      const spells = spellsAll.filter(matchesQuery);
+      const traps = trapsAll.filter(matchesQuery);
+      const extra = extraAll.filter(matchesQuery);
+
+      const sumCount = (arr) => arr.reduce((acc, c) => acc + (c.count || 1), 0);
+      document.getElementById('deck-monsters-count-pill').innerText = `${sumCount(monsters)} Cartas`;
+      document.getElementById('deck-spells-count-pill').innerText = `${sumCount(spells)} Cartas`;
+      document.getElementById('deck-traps-count-pill').innerText = `${sumCount(traps)} Cartas`;
+      document.getElementById('deck-extra-count-pill').innerText = `${sumCount(extra)} Cartas`;
+
+      const toggleSec = (secId, list) => {
+        const sec = document.getElementById(secId);
+        if (sec) sec.classList.toggle('hidden', list.length === 0);
+      };
+      toggleSec('deck-sec-monsters', monsters);
+      toggleSec('deck-sec-spells', spells);
+      toggleSec('deck-sec-traps', traps);
+      toggleSec('deck-sec-extra', extra);
+
+      const totalMatched = monsters.length + spells.length + traps.length + extra.length;
+      const emptyBanner = document.getElementById('deck-search-empty');
+      if (emptyBanner) emptyBanner.classList.toggle('hidden', totalMatched > 0 || !query);
+
+      renderDeckGrid('deck-monsters-grid', monsters, 'lg:grid-cols-6');
+      renderDeckGrid('deck-spells-grid', spells, 'lg:grid-cols-5');
+      renderDeckGrid('deck-traps-grid', traps, 'lg:grid-cols-6');
+      renderDeckGrid('deck-extra-grid', extra, 'lg:grid-cols-5');
 
       lucide.createIcons();
     }
 
-    function renderDeckGrid(containerId, cardList) {
+    function renderDeckGrid(containerId, cardList, standardLgCols = 'lg:grid-cols-6') {
       const container = document.getElementById(containerId);
       if (!container) return;
 
+      if (deckViewDensity === 'compact') {
+        container.className = 'grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2 sm:gap-2.5';
+      } else {
+        container.className = `grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 ${standardLgCols} gap-4`;
+      }
+
       container.innerHTML = cardList.map((card) => {
-        let locationLabel = card.sheet_id ? `Sheet #${card.sheet_id}` : (card.custom_location || 'En tu Colección');
-        const frame = card.frameType || 'normal';
-        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+        const invMatch = card.sheet_id ? card : allCards.find(c => c.name.toLowerCase() === card.name.toLowerCase());
+        const resolvedSid = card.sheet_id || (invMatch && invMatch.sheet_id) || '';
+        const locationLabel = resolvedSid ? `Sheet #${resolvedSid}` : (card.custom_location || 'En tu Colección');
+        const style = getFrameStyle(card.frameType);
+        const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
+        const totalCardPrice = unitPrice * (card.count || 1);
+        const safeName = escJsAttr(card.name);
+        const safeSection = escJsAttr(card.section || '');
+
+        if (deckViewDensity === 'compact') {
+          return `
+            <div class="card-container group" onclick="openDeckCardModal('${safeName}', '${safeSection}')" title="${card.name}${card.note ? ' — ' + card.note : ''}">
+              <div class="tcg-card relative bg-[#0d1424] rounded-xl overflow-hidden border ${style.border} transition-all duration-200 cursor-pointer flex flex-col h-full shadow">
+                <div class="h-1 w-full ${style.topBar}"></div>
+                <div class="relative w-full aspect-[293/427] bg-[#050811] overflow-hidden flex items-center justify-center p-1">
+                  <img
+                    src="${card.image_url_small || card.image_url}"
+                    alt="${card.name}"
+                    loading="lazy"
+                    class="w-full h-full object-contain rounded transition-transform duration-200 group-hover:scale-105"
+                  >
+                  <span class="absolute top-1.5 right-1.5 text-[10px] font-black px-1.5 py-0.2 rounded-md bg-cyan-500 text-black shadow font-stats z-20">
+                    x${card.count}
+                  </span>
+                  <span class="absolute bottom-1.5 right-1.5 text-[9px] font-bold px-1.5 py-0.2 rounded bg-black/90 text-emerald-400 border border-emerald-500/30 font-stats z-20">
+                    $${unitPrice.toFixed(2)}
+                  </span>
+                </div>
+                <div class="px-1.5 py-1.5 bg-[#080d1a]">
+                  <p class="text-[10px] font-semibold text-gray-200 truncate group-hover:text-cyan-300 transition">${card.name}</p>
+                </div>
+              </div>
+            </div>
+          `;
+        }
 
         const ownedBadge = `
           <span class="bg-emerald-500/30 text-emerald-300 border-emerald-500/40 text-[9px] px-2 py-0.5 rounded-md border backdrop-blur-md flex items-center gap-0.5 shadow">
@@ -1592,11 +1896,8 @@
           </span>
         `;
 
-        const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
-        const totalCardPrice = unitPrice * (card.count || 1);
-
         return `
-          <div class="card-container group" onclick="openDeckCardModal('${card.name}')">
+          <div class="card-container group" onclick="openDeckCardModal('${safeName}', '${safeSection}')">
             <div class="tcg-card relative bg-[#0d1424] rounded-2xl overflow-hidden border ${style.border} ${style.glow} transition-all duration-300 cursor-pointer flex flex-col h-full shadow-lg">
               
               <div class="h-1.5 w-full ${style.topBar}"></div>
@@ -1610,7 +1911,7 @@
                   class="w-full h-full object-contain rounded-lg transition-transform duration-300 group-hover:scale-105"
                 >
                 
-                <span class="absolute top-3 right-3 text-xs font-black px-2.5 py-0.5 rounded-lg bg-emerald-500 text-black shadow-lg font-stats z-20">
+                <span class="absolute top-3 right-3 text-xs font-black px-2.5 py-0.5 rounded-lg bg-cyan-500 text-black shadow-lg font-stats z-20">
                   x${card.count}
                 </span>
 
@@ -1625,7 +1926,7 @@
 
               <div class="p-3 flex-1 flex flex-col justify-between bg-[#080d1a]">
                 <div>
-                  <h4 class="text-xs font-bold text-gray-100 truncate group-hover:text-emerald-400 transition" title="${card.name}">
+                  <h4 class="text-xs font-bold text-gray-100 truncate group-hover:text-cyan-300 transition" title="${card.name}">
                     ${card.name}
                   </h4>
                   <p class="text-[10px] text-amber-300/90 truncate font-medium mt-0.5" title="${card.note || ''}">
@@ -1653,9 +1954,15 @@
       }).join('');
     }
 
-    function openDeckCardModal(cardName) {
+    function openDeckCardModal(cardName, section = '') {
       if (!activeDeck) return;
-      const idx = activeDeck.cards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase());
+      let idx = -1;
+      if (section) {
+        idx = activeDeck.cards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase() && c.section === section);
+      }
+      if (idx === -1) {
+        idx = activeDeck.cards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase());
+      }
       if (idx !== -1) {
         modalMode = 'deck';
         currentModalIndex = idx;
@@ -1789,21 +2096,21 @@
       container.innerHTML = entries.map(entry => {
         const card = entry.card;
         const count = entry.count;
-        const frame = card.frameType || 'normal';
-        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+        const style = getFrameStyle(card.frameType);
         const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
+        const safeName = escJsAttr(card.name);
 
         return `
           <div class="relative bg-[#0d1424] rounded-2xl overflow-hidden border ${style.border} p-2 flex flex-col justify-between group shadow-md">
             
-            <div class="relative w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+            <div class="relative w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${safeName}')">
               <img src="${card.image_url_small || card.image_url}" alt="${card.name}" class="w-full h-full object-contain">
               
               <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-2 py-0.5 rounded-md border border-emerald-500/30">
                 $${unitPrice.toFixed(2)}
               </span>
 
-              <span class="absolute top-1.5 right-1.5 bg-emerald-500 text-black font-black font-stats text-xs px-2.5 py-0.5 rounded-lg shadow-lg">
+              <span class="absolute top-1.5 right-1.5 bg-cyan-500 text-black font-black font-stats text-xs px-2.5 py-0.5 rounded-lg shadow-lg">
                 x${count}
               </span>
             </div>
@@ -1817,13 +2124,13 @@
             </div>
 
             <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-white/[0.06] gap-1">
-              <button onclick="removeCardFromBuilder('${card.name}')" class="flex-1 py-1.5 bg-[#080d1a] hover:bg-gray-800 text-red-400 font-bold text-xs rounded-lg transition flex items-center justify-center border border-white/5" title="Quitar 1 copia">
+              <button onclick="removeCardFromBuilder('${safeName}')" class="flex-1 py-1.5 bg-[#080d1a] hover:bg-gray-800 text-red-400 font-bold text-xs rounded-lg transition flex items-center justify-center border border-white/5" title="Quitar 1 copia">
                 <i data-lucide="minus" class="w-3 h-3"></i>
               </button>
-              <button onclick="addCardToBuilder('${card.name}')" class="flex-1 py-1.5 bg-[#080d1a] hover:bg-gray-800 text-emerald-400 font-bold text-xs rounded-lg transition flex items-center justify-center border border-white/5" title="Añadir otra copia">
+              <button onclick="addCardToBuilder('${safeName}')" class="flex-1 py-1.5 bg-[#080d1a] hover:bg-gray-800 text-cyan-400 font-bold text-xs rounded-lg transition flex items-center justify-center border border-white/5" title="Añadir otra copia">
                 <i data-lucide="plus" class="w-3 h-3"></i>
               </button>
-              <button onclick="deleteCardFromBuilder('${card.name}')" class="p-1.5 bg-red-950/40 hover:bg-red-900 text-red-300 rounded-lg transition border border-red-800/30" title="Remover del mazo">
+              <button onclick="deleteCardFromBuilder('${safeName}')" class="p-1.5 bg-red-950/40 hover:bg-red-900 text-red-300 rounded-lg transition border border-red-800/30" title="Remover del mazo">
                 <i data-lucide="x" class="w-3 h-3"></i>
               </button>
             </div>
@@ -1834,19 +2141,20 @@
     }
 
     function openBuilderCardModal(cardName) {
-      const card = allCards.find(c => c.name.toLowerCase() === cardName.toLowerCase());
-      if (!card) return;
+      const idx = allCards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase());
+      if (idx === -1) return;
       modalMode = 'builder';
-      populateModalWithCard(card);
+      currentModalIndex = idx;
+      populateModalWithCard(allCards[idx]);
     }
 
     function setBuilderCatalogFilter(cat) {
       builderCatalogCategory = cat;
       document.querySelectorAll('.b-cat-btn').forEach(b => {
         if (b.dataset.bcat === cat) {
-          b.className = "b-cat-btn px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold whitespace-nowrap shadow";
+          b.className = "b-cat-btn px-3 py-1.5 rounded-xl bg-cyan-600 text-white font-bold whitespace-nowrap shadow shadow-cyan-600/30";
         } else {
-          b.className = "b-cat-btn px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 hover:text-white whitespace-nowrap";
+          b.className = "b-cat-btn px-3 py-1.5 rounded-xl bg-[#0e172a] text-gray-300 hover:text-white border border-white/5 whitespace-nowrap";
         }
       });
       filterBuilderCatalog();
@@ -1881,14 +2189,14 @@
       container.innerHTML = matches.map(card => {
         const inDeck = builderDeck.cards[card.name];
         const countInDeck = inDeck ? inDeck.count : 0;
-        const frame = card.frameType || 'normal';
-        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+        const style = getFrameStyle(card.frameType);
         const priceNum = parseFloat(card.prices?.tcgplayer) || 0;
+        const safeName = escJsAttr(card.name);
 
         return `
           <div class="relative bg-[#0d1424] rounded-2xl overflow-hidden border ${style.border} p-2 flex flex-col justify-between shadow-md">
             
-            <div class="relative w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${card.name}')">
+            <div class="relative w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openBuilderCardModal('${safeName}')">
               <img src="${card.image_url_small || card.image_url}" alt="${card.name}" loading="lazy" class="w-full h-full object-contain">
               
               <span class="absolute top-1.5 left-1.5 bg-black/85 text-emerald-400 font-bold font-stats text-[10px] px-2 py-0.5 rounded-md border border-emerald-500/30">
@@ -1896,7 +2204,7 @@
               </span>
 
               ${countInDeck > 0 ? `
-                <span class="absolute top-1.5 right-1.5 bg-emerald-500 text-black font-black font-stats text-xs px-2.5 py-0.5 rounded-lg shadow-lg">
+                <span class="absolute top-1.5 right-1.5 bg-cyan-500 text-black font-black font-stats text-xs px-2.5 py-0.5 rounded-lg shadow-lg">
                   x${countInDeck}
                 </span>
               ` : ''}
@@ -1911,8 +2219,8 @@
             </div>
 
             <button 
-              onclick="addCardToBuilder('${card.name}')" 
-              class="mt-2.5 w-full py-2 bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-1 shadow-md shadow-emerald-600/20"
+              onclick="addCardToBuilder('${safeName}')" 
+              class="mt-2.5 w-full py-2 bg-cyan-600/90 hover:bg-cyan-500 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-1 shadow-md shadow-cyan-600/20"
             >
               <i data-lucide="plus" class="w-3.5 h-3.5"></i>
               <span>${countInDeck > 0 ? `Añadir (${countInDeck}/3)` : 'Añadir'}</span>
@@ -1935,6 +2243,9 @@
       const titleInput = document.getElementById('builder-deck-title').value.trim() || "Mazo Personalizado";
       const formatInput = document.getElementById('builder-deck-format').value;
 
+      if (!builderDeck.id || !String(builderDeck.id).startsWith('custom_')) {
+        builderDeck.id = 'custom_' + Date.now();
+      }
       builderDeck.name = titleInput;
       builderDeck.format = formatInput;
 
@@ -1985,7 +2296,7 @@
         subtitle: `Mazo de ${mainTotal} Cartas Creado por Ti`,
         format: builderDeck.format,
         tag: "Personalizado",
-        tag_color: "emerald",
+        tag_color: "cyan",
         description: `Mazo creado con el Deck Builder visual. Contiene ${mainTotal} cartas en el Main Deck y ${countExtra} en el Extra Deck.`,
         stats: {
           main_total: mainTotal,
@@ -1999,6 +2310,7 @@
         cards: formattedCards
       };
 
+      customDecks = customDecks.filter(d => d && d.id && String(d.id).startsWith('custom_'));
       const existingIdx = customDecks.findIndex(d => d.id === deckObj.id);
       if (existingIdx !== -1) {
         customDecks[existingIdx] = deckObj;
@@ -2006,12 +2318,18 @@
         customDecks.push(deckObj);
       }
 
-      localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(customDecks));
       allDecks = [...initialDecks, ...customDecks];
+      try {
+        localStorage.setItem('TCG_CUSTOM_DECKS', JSON.stringify(customDecks));
+        localStorage.setItem('TCG_ALL_DECKS', JSON.stringify(allDecks));
+      } catch (e) {}
+
+      buildDeckUsageMap();
+      renderCards();
 
       document.getElementById('header-deck-count-badge').innerText = allDecks.length;
       document.getElementById('builder-saved-status').innerText = "✓ Guardado con éxito";
-      document.getElementById('builder-saved-status').className = "text-[10px] text-emerald-300 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-500/40 shadow";
+      document.getElementById('builder-saved-status').className = "text-[10px] text-cyan-300 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-500/40 shadow";
 
       setTimeout(() => {
         document.getElementById('builder-saved-status').innerText = "Editando";
@@ -2143,7 +2461,10 @@
     }
 
     function getCardYdkId(name) {
-      const match = allCards.find(c => c.name.toLowerCase() === name.toLowerCase());
+      let match = allCards.find(c => c.name.toLowerCase() === name.toLowerCase());
+      if (!match && activeDeck && Array.isArray(activeDeck.cards)) {
+        match = activeDeck.cards.find(c => c.name.toLowerCase() === name.toLowerCase());
+      }
       if (match && match.image_url) {
         const parts = match.image_url.split('/');
         const file = parts[parts.length - 1];
@@ -2159,6 +2480,11 @@
     }
 
     function populateModalWithCard(card) {
+      currentModalCard = card;
+      const matchedInv = card.sheet_id ? card : allCards.find(c => c.name.toLowerCase() === (card.name || '').toLowerCase());
+      const resolvedSheetId = card.sheet_id || (matchedInv && matchedInv.sheet_id) || '';
+      const resolvedCategory = card.sheet_category || card.category || (matchedInv && matchedInv.category) || (card.owned ? 'En Inventario' : 'Mazo Activo');
+
       const unitPrice = parseFloat(card.prices?.tcgplayer) || 0;
       const formattedPrice = `$${unitPrice.toFixed(2)} USD`;
 
@@ -2166,9 +2492,9 @@
 
       document.getElementById('modal-card-img').src = card.image_url || card.image_url_small;
       document.getElementById('modal-card-name').innerText = card.name;
-      document.getElementById('modal-card-category').innerText = card.sheet_category || card.category || (card.owned ? 'En Inventario' : 'Mazo Activo');
-      document.getElementById('modal-card-id').innerText = card.sheet_id ? `ID #${card.sheet_id}` : `Mazo: x${card.count || 1}`;
-      document.getElementById('modal-card-type-line').innerText = `[ ${card.type} • ${card.race || 'General'} ]`;
+      document.getElementById('modal-card-category').innerText = resolvedCategory;
+      document.getElementById('modal-card-id').innerText = resolvedSheetId ? `ID #${resolvedSheetId}` : `Mazo: x${card.count || 1}`;
+      document.getElementById('modal-card-type-line').innerText = `[ ${card.type || 'Carta'} • ${card.race || 'General'} ]`;
       document.getElementById('modal-card-desc').innerText = card.desc || 'Sin descripción disponible.';
       document.getElementById('modal-card-floating-price').innerText = formattedPrice;
 
@@ -2189,7 +2515,7 @@
         lvlBox.classList.add('hidden');
       }
 
-      document.getElementById('modal-card-race').innerText = card.archetype ? `${card.race} (${card.archetype})` : card.race;
+      document.getElementById('modal-card-race').innerText = card.archetype ? `${card.race || ''} (${card.archetype})` : (card.race || '');
 
       const atkDefRow = document.getElementById('modal-atk-def-row');
       if (card.atk !== null && card.atk !== undefined) {
@@ -2202,18 +2528,12 @@
 
       // INDICADOR DE USO EN MAZOS
       const usageContainer = document.getElementById('modal-deck-usage-tags');
-      const usedInDecks = [];
-      allDecks.forEach(d => {
-        const found = d.cards.find(c => c.name.toLowerCase() === card.name.toLowerCase());
-        if (found) {
-          usedInDecks.push(`${d.short_name || d.name} (x${found.count})`);
-        }
-      });
+      const usedInDecks = deckUsageMap.get((card.name || '').trim().toLowerCase()) || [];
 
       if (usedInDecks.length > 0) {
-        usageContainer.innerHTML = usedInDecks.map(tag => `
-          <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold">
-            ✓ ${tag}
+        usageContainer.innerHTML = usedInDecks.map(u => `
+          <span class="px-2.5 py-0.5 rounded-full bg-cyan-950/80 text-cyan-300 border border-cyan-500/40 text-[10px] font-bold">
+            ✓ ${u.deckName} (x${u.count})
           </span>
         `).join('');
       } else {
@@ -2251,54 +2571,43 @@
 
     function closeModal() {
       document.getElementById('card-modal').classList.add('hidden');
-      document.body.style.overflow = '';
+      const simModal = document.getElementById('hand-simulator-modal');
+      const isSimOpen = simModal && !simModal.classList.contains('hidden');
+      if (!isSimOpen) {
+        document.body.style.overflow = '';
+      }
     }
 
     function nextCard() {
-      if (modalMode === 'inventory') {
-        if (currentModalIndex < filteredCards.length - 1) {
-          openModal(currentModalIndex + 1, 'inventory');
-        } else {
-          openModal(0, 'inventory');
-        }
-      } else if (modalMode === 'deck' && activeDeck) {
-        if (currentModalIndex < activeDeck.cards.length - 1) {
-          currentModalIndex++;
-          populateModalWithCard(activeDeck.cards[currentModalIndex]);
-        } else {
-          currentModalIndex = 0;
-          populateModalWithCard(activeDeck.cards[0]);
-        }
-      }
+      let list = null;
+      if (modalMode === 'inventory') list = filteredCards;
+      else if (modalMode === 'deck' && activeDeck) list = activeDeck.cards;
+      else if (modalMode === 'builder') list = allCards;
+      else if (modalMode === 'hand') list = simulatedHand;
+      if (!list || list.length === 0) return;
+
+      currentModalIndex = (currentModalIndex >= 0 && currentModalIndex < list.length - 1) ? currentModalIndex + 1 : 0;
+      populateModalWithCard(list[currentModalIndex]);
     }
 
     function prevCard() {
-      if (modalMode === 'inventory') {
-        if (currentModalIndex > 0) {
-          openModal(currentModalIndex - 1, 'inventory');
-        } else {
-          openModal(filteredCards.length - 1, 'inventory');
-        }
-      } else if (modalMode === 'deck' && activeDeck) {
-        if (currentModalIndex > 0) {
-          currentModalIndex--;
-          populateModalWithCard(activeDeck.cards[currentModalIndex]);
-        } else {
-          currentModalIndex = activeDeck.cards.length - 1;
-          populateModalWithCard(activeDeck.cards[currentModalIndex]);
-        }
-      }
+      let list = null;
+      if (modalMode === 'inventory') list = filteredCards;
+      else if (modalMode === 'deck' && activeDeck) list = activeDeck.cards;
+      else if (modalMode === 'builder') list = allCards;
+      else if (modalMode === 'hand') list = simulatedHand;
+      if (!list || list.length === 0) return;
+
+      currentModalIndex = (currentModalIndex > 0 && currentModalIndex < list.length) ? currentModalIndex - 1 : list.length - 1;
+      populateModalWithCard(list[currentModalIndex]);
     }
 
     function openFullImage() {
-      let card = null;
-      if (modalMode === 'inventory') {
-        card = filteredCards[currentModalIndex];
-      } else if (modalMode === 'deck' && activeDeck) {
-        card = activeDeck.cards[currentModalIndex];
-      }
-      if (!card) return;
-      document.getElementById('full-image-target').src = card.image_url;
+      const card = currentModalCard ||
+        (modalMode === 'inventory' ? filteredCards[currentModalIndex] :
+        (modalMode === 'deck' && activeDeck ? activeDeck.cards[currentModalIndex] : null));
+      if (!card || (!card.image_url && !card.image_url_small)) return;
+      document.getElementById('full-image-target').src = card.image_url || card.image_url_small;
       document.getElementById('full-image-modal').classList.remove('hidden');
     }
 
@@ -2441,14 +2750,14 @@
       const container = document.getElementById('sim-hand-cards');
       if (!container) return;
 
-      container.innerHTML = simulatedHand.map((card) => {
-        const frame = card.frameType || 'normal';
-        const style = FRAME_STYLES[frame] || FRAME_STYLES['normal'];
+      container.innerHTML = simulatedHand.map((card, idx) => {
+        const style = getFrameStyle(card.frameType);
         const price = parseFloat(card.prices?.tcgplayer) || 0;
+        const safeName = escJsAttr(card.name);
 
         return `
           <div class="relative group bg-[#090e17] rounded-2xl overflow-hidden border ${style.border} p-1.5 shadow-xl hover:-translate-y-2 transition-all duration-300">
-            <div class="w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openModalByName('${card.name}')">
+            <div class="w-full aspect-[293/427] bg-[#050811] rounded-xl overflow-hidden cursor-pointer" onclick="openModalByName('${safeName}', ${idx})">
               <img src="${card.image_url_small || card.image_url}" alt="${card.name}" class="w-full h-full object-contain">
             </div>
             <div class="mt-1.5 text-center">
@@ -2484,11 +2793,18 @@
       lucide.createIcons();
     }
 
-    function openModalByName(cardName) {
-      const card = allCards.find(c => c.name.toLowerCase() === cardName.toLowerCase());
-      if (card) {
-        modalMode = 'inventory';
-        populateModalWithCard(card);
+    function openModalByName(cardName, handIndex = -1) {
+      if (handIndex >= 0 && simulatedHand[handIndex]) {
+        modalMode = 'hand';
+        currentModalIndex = handIndex;
+        populateModalWithCard(simulatedHand[handIndex]);
+        return;
+      }
+      const idx = allCards.findIndex(c => c.name.toLowerCase() === cardName.toLowerCase());
+      if (idx !== -1) {
+        modalMode = 'builder';
+        currentModalIndex = idx;
+        populateModalWithCard(allCards[idx]);
       }
     }
 
