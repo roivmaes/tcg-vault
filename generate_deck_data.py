@@ -151,64 +151,62 @@ def generate_all_decks():
             ]
         },
 
-        # 3. LIGHTSWORN EDISON (40 Main + 3 Extra)
+        # 3. LIGHTSWORN EDISON (40 Main + 2 Extra)
         {
             "id": "lightsworn_edison_2010",
             "name": "Mazo LIGHTSWORN (Formato EDISON)",
             "short_name": "Lightsworn Edison",
-            "subtitle": "Mazo LIGHTSWORN Edison (40 Cartas Main + 3 Extra): Armado según tu lista física exacta (SD Realm of Light, Cartas Sueltas y Decks)",
+            "subtitle": "Mazo Lightsworn Edison Corregido (40 Main Deck + 2 Extra Deck): 100% legal en Edison y verificado en inventario",
             "format": "Edison (Abril 2010)",
             "tag": "Lightsworn / Edison Retro",
             "tag_color": "amber",
-            "description": "Mazo Lightsworn diseñado para el formato Edison 2010. Construido con tus cartas exactas de Structure Deck: Realm of Light, Cartas Sueltas y Decks, con acceso a Naturia Beast, Naturia Barkion y Stardust Dragon en el Extra Deck.",
+            "description": "Mazo Lightsworn optimizado y 100% legal para el formato Edison 2010 (Abril 2010). Sin conflictos con HÉROE y Dark World. Molienda turbo, control de campo con Judgment Dragon, Honest y Jinzo, y acceso en el Extra Deck a Stardust Dragon y Brionac, Dragon of the Ice Barrier.",
             "cards_spec": [
-                # MONSTRUOS (23)
-                {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Jefe supremo de 3000 ATK"},
+                # MONSTRUOS (22)
+                {"name": "Judgment Dragon", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Jefe supremo de 3000 ATK (Semi-Limitada a 2)"},
                 {"name": "Celestia, Lightsworn Angel", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Tributo Lightsworn que destruye 2 cartas"},
                 {"name": "Gragonith, Lightsworn Dragon", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Daño de penetración y ATK por Lightsworn en GY"},
-                {"name": "Lumina, Lightsworn Summoner", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — 2 copias: resucitadora de Lightsworn"},
-                {"name": "Lyla, Lightsworn Sorceress", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — 2 copias: destructora de Mágicas/Trampas"},
-                {"name": "Ryko, Lightsworn Hunter", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — 2 copias: destrucción Flip y molienda"},
-                {"name": "Jain, Lightsworn Paladin", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Atacante de 2100 ATK"},
-                {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Invocación especial al cementerio"},
+                {"name": "Lumina, Lightsworn Summoner", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Resucitadora de Lightsworn (Limitada a 1 en Edison)"},
+                {"name": "Lyla, Lightsworn Sorceress", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Destructora de Mágicas/Trampas y molienda (2 copias)"},
+                {"name": "Ryko, Lightsworn Hunter", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Destrucción Flip y molienda (2 copias)"},
+                {"name": "Jain, Lightsworn Paladin", "count": 2, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Atacante de 2100 ATK y molienda (2 copias)"},
+                {"name": "Wulf, Lightsworn Beast", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Invocación especial inmediata al cementerio"},
                 {"name": "Garoth, Lightsworn Warrior", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Robo y aceleración de molienda"},
-                {"name": "Ehren, Lightsworn Monk", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Devuelve monstruos en defensa al mazo"},
-                {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Protege contra efectos que seleccionan"},
-                {"name": "Shire, Lightsworn Spirit", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Gana ATK por cada Lightsworn en GY"},
-                {"name": "Honest", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Handtrap de combate para monstruos LIGHT"},
-                {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Anula un ataque desde el cementerio"},
-                {"name": "Fabled Raven", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Cantante y activador de descartes"},
-                {"name": "The Fabled Cerburrel", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Cantante nivel 2 que revive al descartarse"},
-                {"name": "Blackwing - Zephyros the Elite", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Se revive regresando una carta al campo"},
-                {"name": "Jinzo", "count": 1, "section": "monsters", "note": "Decks y Cajas — Apaga todas las cartas de trampa"},
-                {"name": "Nimble Momonga", "count": 1, "section": "monsters", "note": "Decks y Cajas — Gana 1000 LP e invoca copias al destruirse por batalla"},
-                {"name": "Mask of Darkness", "count": 1, "section": "monsters", "note": "Carta Suelta / Set Principiante — Efecto Flip: recupera 1 trampa del cementerio"},
+                {"name": "Ehren, Lightsworn Monk", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Devuelve monstruos en defensa al mazo sin activar Flip"},
+                {"name": "Aurkus, Lightsworn Druid", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Protege a los Lightsworn contra efectos que seleccionan"},
+                {"name": "Shire, Lightsworn Spirit", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Gana 300 ATK por cada Lightsworn con nombre diferente en GY"},
+                {"name": "Honest", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Handtrap de combate para monstruos LUZ (Semi-Limitada a 2)"},
+                {"name": "Necro Gardna", "count": 1, "section": "monsters", "note": "Decks y Cajas (SD Realm of Light) — Anula un ataque desde el cementerio (Limitada a 1 en Edison)"},
+                {"name": "Cyber Dragon", "count": 2, "section": "monsters", "note": "Set de Principiante 2 Jugadores — Atacante de 2100 ATK e invocación gratis (Semi-Limitada a 2)"},
+                {"name": "D.D. Crow", "count": 1, "section": "monsters", "note": "Set de Principiante 2 Jugadores — Handtrap que destierra carta clave del cementerio rival"},
+                {"name": "Jinzo", "count": 1, "section": "monsters", "note": "Decks y Cajas — Anula y previene todas las cartas de trampa"},
+                {"name": "Mobius the Frost Monarch", "count": 1, "section": "monsters", "note": "Set de Principiante 2 Jugadores — Al ser invocado por tributo destruye hasta 2 Mágicas/Trampas"},
 
                 # MAGIAS (10)
-                {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Buscador principal de Lightsworn"},
+                {"name": "Charge of the Light Brigade", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Muele 3 cartas y busca cualquier Lightsworn nivel 4- (Limitada a 1 en Edison)"},
                 {"name": "Solar Recharge", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Descarta 1 Lightsworn, roba 2 y muele 2"},
-                {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Recupera cualquier monstruo del cementerio"},
-                {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Envía a Wulf o Necro Gardna directo al GY"},
-                {"name": "Realm of Light", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Magia de campo: contadores de luz y ATK masivo"},
-                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "Decks y Cajas / Set Principiante — Destruye una magia o trampa"},
-                {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Decks y Cajas / Set Principiante — Voltea un monstruo boca abajo"},
-                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Decks y Cajas / Set Principiante — Detiene ataques rivales por 3 turnos"},
-                {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Decks y Cajas — Recicla 5 monstruos del GY y roba 2 cartas"},
-                {"name": "Card Destruction", "count": 1, "section": "spells", "note": "Decks y Cajas — Ambos jugadores descartan su mano entera y roban"},
+                {"name": "Monster Reincarnation", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Descarta 1 carta y recupera cualquier monstruo del cementerio"},
+                {"name": "Foolish Burial", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Envía a Wulf o Necro Gardna directo al GY (Limitada a 1 en Edison)"},
+                {"name": "Realm of Light", "count": 1, "section": "spells", "note": "Decks y Cajas (SD Realm of Light) — Magia de campo: acumula contadores de brillo y otorga ATK masivo"},
+                {"name": "Heavy Storm", "count": 1, "section": "spells", "note": "Midterm Paradox — Destruye todas las Mágicas y Trampas del campo (Limitada a 1 en Edison)"},
+                {"name": "Mystical Space Typhoon", "count": 1, "section": "spells", "note": "Decks y Cajas / Set Principiante — Destruye una magia o trampa boca arriba o boca abajo (Limitada a 1 en Edison)"},
+                {"name": "Book of Moon", "count": 1, "section": "spells", "note": "Set de Principiante 2 Jugadores — Voltea un monstruo boca abajo para cortar ataques o efectos"},
+                {"name": "Swords of Revealing Light", "count": 1, "section": "spells", "note": "Decks y Cajas / Set Principiante — Detiene todos los ataques rivales por 3 turnos (Limitada a 1 en Edison)"},
+                {"name": "Pot of Avarice", "count": 1, "section": "spells", "note": "Decks y Cajas — Recicla 5 monstruos del cementerio al mazo y roba 2 cartas"},
 
-                # TRAMPAS (7)
-                {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Descarta la mano y recupera monstruos LIGHT"},
-                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Tributa un Lightsworn y niega invocación"},
-                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Revive un Lightsworn y muele 2 cartas"},
-                {"name": "Lightsworn Barrier", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Niega un ataque moliendo 2 cartas"},
-                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Decks y Cajas / Midterm Paradox — Destruye monstruos en ataque del rival"},
-                {"name": "Torrential Tribute", "count": 1, "section": "traps", "note": "Decks y Cajas — Destruye todos los monstruos tras una invocación"},
-                {"name": "Call of the Haunted", "count": 1, "section": "traps", "note": "Midterm Paradox / Set Principiante — Revive un monstruo del cementerio"},
+                # TRAMPAS (8)
+                {"name": "Beckoning Light", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Descarta la mano y recupera monstruos LUZ (JD, Honest, Lumina)"},
+                {"name": "Vanquishing Light", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Tributa un Lightsworn y niega la invocación de un monstruo rival"},
+                {"name": "Glorious Illusion", "count": 1, "section": "traps", "note": "Decks y Cajas (SD Realm of Light) — Revive un Lightsworn del cementerio y muele 2 cartas en la End Phase"},
+                {"name": "Solemn Judgment", "count": 1, "section": "traps", "note": "Midterm Paradox — Paga la mitad de tus LP y niega cualquier invocación, magia o trampa (Limitada a 1 en Edison)"},
+                {"name": "Bottomless Trap Hole", "count": 1, "section": "traps", "note": "Decks y Cajas — Destruye y destierra monstruos con 1500+ ATK al ser invocados (Semi-Limitada a 2)"},
+                {"name": "Compulsory Evacuation Device", "count": 1, "section": "traps", "note": "Decks y Cajas — Regresa cualquier monstruo del campo a la mano"},
+                {"name": "Mirror Force", "count": 1, "section": "traps", "note": "Decks y Cajas / Midterm Paradox — Destruye todos los monstruos en modo de ataque del oponente (Limitada a 1 en Edison)"},
+                {"name": "Call of the Haunted", "count": 1, "section": "traps", "note": "Midterm Paradox / Set Principiante — Revive un monstruo de tu cementerio en modo de ataque (Limitada a 1 en Edison)"},
 
-                # EXTRA DECK (3)
-                {"name": "Naturia Beast", "count": 1, "section": "extra", "note": "Carta Suelta / Cartas Sueltas — Sincronía 5: niega activación de magias moliendo 2 cartas"},
-                {"name": "Naturia Barkion", "count": 1, "section": "extra", "note": "Carta Suelta / Cartas Sueltas — Sincronía 6: niega activación de trampas desterrando 2 cartas"},
-                {"name": "Stardust Dragon", "count": 1, "section": "extra", "note": "Decks y Cajas — Sincronía 8: anula destrucción de cartas tributándose"}
+                # EXTRA DECK (2)
+                {"name": "Stardust Dragon", "count": 1, "section": "extra", "note": "Set de Principiante 2 Jugadores — Sincronía 8: anula destrucción de cartas tributándose y revive en la End Phase"},
+                {"name": "Brionac, Dragon of the Ice Barrier", "count": 1, "section": "extra", "note": "Cartas Sueltas / Decks — Sincronía 6: descarta cartas de tu mano para devolver cartas del campo a la mano (Limitada a 1 en Edison)"}
             ]
         }
     ]

@@ -23,11 +23,11 @@ Los 3 mazos cuentan con **exactamente 40 cartas de Main Deck** y están configur
 * **Extra Deck (1):** *Grapha, Dragon Overlord of Dark World*.
 * **Estado:** **41/41 Completo (100% en Colección)**.
 
-### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON) — *(Realm of Light + Cartas Sueltas & Decks)*
-* **Composición:** **40 Main Deck** (23 Monstruos, 10 Mágicas, 7 Trampas) + **3 Extra Deck**.
-* **Estrategia:** Diseñado para el formato competitivo Edison 2010. Construido con tus cartas exactas de *Structure Deck: Realm of Light*, tus *Cartas Sueltas* y cajas (*Judgment Dragon*, 2x *Lumina*, 2x *Lyla*, 2x *Ryko*, *Honest*, *Fabled Raven*, *Cerburrel*, *Zephyros*, *Jinzo*, *Nimble Momonga*, *Mask of Darkness*, *Pot of Avarice*, etc.), con acceso a potentes sincronías en el Extra Deck.
-* **Extra Deck (3):** *Naturia Beast*, *Naturia Barkion*, *Stardust Dragon*.
-* **Estado:** **43/43 Completo (100% en Colección)**.
+### 3. 🟡 Mazo LIGHTSWORN (Formato EDISON) — *(Edison 2010 Corregido & Verificado)*
+* **Composición:** **40 Main Deck** (22 Monstruos, 10 Mágicas, 8 Trampas) + **2 Extra Deck**.
+* **Estrategia:** Diseñado y 100% legal para el formato retro competitivo Edison (Abril 2010). Sin conflictos de cartas con HÉROE y Dark World. Molienda turbo con *Judgment Dragon* (Semi-Limitada), *Lumina* (Limitada), 2x *Lyla*, 2x *Ryko*, 2x *Jain*, *Honest*, *Necro Gardna*, 2x *Cyber Dragon*, *D.D. Crow*, *Jinzo*, *Mobius the Frost Monarch*, *Charge of the Light Brigade*, *Heavy Storm*, *Solemn Judgment* y *Mirror Force*. En el Extra Deck cuenta con *Stardust Dragon* y *Brionac, Dragon of the Ice Barrier*.
+* **Extra Deck (2):** *Stardust Dragon*, *Brionac, Dragon of the Ice Barrier*.
+* **Estado:** **42/42 Completo (100% en Colección)**.
 
 ---
 
